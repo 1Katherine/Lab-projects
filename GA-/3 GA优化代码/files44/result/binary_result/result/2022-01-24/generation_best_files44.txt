@@ -1,0 +1,185 @@
+
+binary GA xgb ,sizePop=44 ,maxIter=30
+['spark.executor.cores', 'spark.executor.instances', 'spark.scheduler.revive.interval', 'spark.executor.memoryOverhead']
+best_x : [  4.   4. 935. 674.]
+best_y : [176.27263]
+generation_best 
+
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 603.0, 'spark.executor.memoryOverhead': 674.0, 'runtime': 183.17903}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 613.0, 'spark.executor.memoryOverhead': 662.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 547.0, 'spark.executor.memoryOverhead': 667.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 935.0, 'spark.executor.memoryOverhead': 674.0, 'runtime': 176.27263}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 531.0, 'spark.executor.memoryOverhead': 667.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 844.0, 'spark.executor.memoryOverhead': 667.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 672.0, 'spark.executor.memoryOverhead': 668.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 865.0, 'spark.executor.memoryOverhead': 667.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 706.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 794.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 664.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 876.0, 'spark.executor.memoryOverhead': 668.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 682.0, 'spark.executor.memoryOverhead': 671.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 858.0, 'spark.executor.memoryOverhead': 671.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 751.0, 'spark.executor.memoryOverhead': 665.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 684.0, 'spark.executor.memoryOverhead': 668.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 542.0, 'spark.executor.memoryOverhead': 665.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 542.0, 'spark.executor.memoryOverhead': 665.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 739.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 707.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 652.0, 'spark.executor.memoryOverhead': 665.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 640.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 615.0, 'spark.executor.memoryOverhead': 667.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 759.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 878.0, 'spark.executor.memoryOverhead': 491.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 563.0, 'spark.executor.memoryOverhead': 667.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 563.0, 'spark.executor.memoryOverhead': 674.0, 'runtime': 176.27263}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 872.0, 'spark.executor.memoryOverhead': 496.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 937.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 851.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+
+binary GA xgb ,sizePop=44 ,maxIter=30
+['spark.executor.cores', 'spark.executor.instances', 'spark.scheduler.revive.interval', 'spark.executor.memoryOverhead']
+best_x : [  4.   6. 615. 673.]
+best_y : [176.27263]
+generation_best 
+
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 603.0, 'spark.executor.memoryOverhead': 674.0, 'runtime': 183.17903}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 627.0, 'spark.executor.memoryOverhead': 581.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 614.0, 'spark.executor.memoryOverhead': 426.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 615.0, 'spark.executor.memoryOverhead': 580.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 632.0, 'spark.executor.memoryOverhead': 570.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 694.0, 'spark.executor.memoryOverhead': 580.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 646.0, 'spark.executor.memoryOverhead': 420.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 832.0, 'spark.executor.memoryOverhead': 663.0, 'runtime': 176.27289}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 752.0, 'spark.executor.memoryOverhead': 424.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 756.0, 'spark.executor.memoryOverhead': 564.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 669.0, 'spark.executor.memoryOverhead': 456.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 991.0, 'spark.executor.memoryOverhead': 457.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 528.0, 'spark.executor.memoryOverhead': 427.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 534.0, 'spark.executor.memoryOverhead': 484.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 888.0, 'spark.executor.memoryOverhead': 582.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 669.0, 'spark.executor.memoryOverhead': 581.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 920.0, 'spark.executor.memoryOverhead': 581.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 4.0, 'spark.scheduler.revive.interval': 668.0, 'spark.executor.memoryOverhead': 581.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 601.0, 'spark.executor.memoryOverhead': 596.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 875.0, 'spark.executor.memoryOverhead': 426.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 543.0, 'spark.executor.memoryOverhead': 596.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 894.0, 'spark.executor.memoryOverhead': 573.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 755.0, 'spark.executor.memoryOverhead': 596.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'spark.scheduler.revive.interval': 651.0, 'spark.executor.memoryOverhead': 592.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 504.0, 'spark.executor.memoryOverhead': 596.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 512.0, 'spark.executor.memoryOverhead': 473.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 852.0, 'spark.executor.memoryOverhead': 592.0, 'runtime': 180.35922}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 6.0, 'spark.scheduler.revive.interval': 615.0, 'spark.executor.memoryOverhead': 673.0, 'runtime': 176.27263}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'spark.scheduler.revive.interval': 667.0, 'spark.executor.memoryOverhead': 445.0, 'runtime': 180.3876}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 5.0, 'spark.scheduler.revive.interval': 864.0, 'spark.executor.memoryOverhead': 669.0, 'runtime': 176.27289}
+
+binary GA gbdt ,sizePop=44 ,maxIter=30
+['spark.executor.cores', 'spark.scheduler.revive.interval']
+best_x : [  2. 548.]
+best_y : [169.97366]
+generation_best 
+
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 548.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 681.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 688.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 883.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 519.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 563.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 706.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 838.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 790.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 681.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 759.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 536.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 818.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 802.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 583.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 860.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 942.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 590.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 832.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 808.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 618.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 616.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 918.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 926.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 850.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 804.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 527.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 976.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 765.0, 'runtime': 169.97366000000008}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 822.0, 'runtime': 169.97366000000008}
+
+binary GA rf ,sizePop=44 ,maxIter=30
+['spark.executor.cores', 'spark.scheduler.revive.interval']
+best_x : [  2. 548.]
+best_y : [171.29599]
+generation_best 
+
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 548.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 617.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 752.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 775.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 935.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 740.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 940.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 730.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 868.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 942.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 677.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 578.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 966.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 762.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 702.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 648.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 776.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 709.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 886.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 568.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 961.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 939.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 691.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 779.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 1.0, 'spark.scheduler.revive.interval': 766.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 595.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 4.0, 'spark.scheduler.revive.interval': 926.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 856.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 2.0, 'spark.scheduler.revive.interval': 862.0, 'runtime': 171.29599000000005}
+{'spark.executor.cores': 3.0, 'spark.scheduler.revive.interval': 866.0, 'runtime': 171.29599000000005}
+
+binary GA ada ,sizePop=44 ,maxIter=30
+['spark.scheduler.revive.interval', 'spark.executor.cores']
+best_x : [534.   4.]
+best_y : [180.737]
+generation_best 
+
+{'spark.scheduler.revive.interval': 672.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 616.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 766.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 534.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 568.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 705.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 573.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 566.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 532.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 564.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 701.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 561.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 570.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 574.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 740.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 529.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 574.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 562.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 559.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 548.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 559.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 531.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 614.0, 'spark.executor.cores': 4.0, 'runtime': 187.5896111111111}
+{'spark.scheduler.revive.interval': 541.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 572.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 545.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 530.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 562.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 537.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}
+{'spark.scheduler.revive.interval': 539.0, 'spark.executor.cores': 4.0, 'runtime': 180.737}

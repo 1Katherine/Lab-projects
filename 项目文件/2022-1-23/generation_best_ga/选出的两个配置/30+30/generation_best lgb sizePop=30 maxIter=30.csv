@@ -1,0 +1,3 @@
+spark.reducer.maxSizeInFlight,spark.scheduler.revive.interval,spark.maxRemoteBlockSizeFetchToMem,spark.shuffle.file.buffer,spark.default.parallelism,runtime
+64,767,2041757568,21,346,212.1613471
+61,747,2031255457,21,346,212.1613471

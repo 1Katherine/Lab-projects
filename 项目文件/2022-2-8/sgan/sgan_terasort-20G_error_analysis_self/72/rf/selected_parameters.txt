@@ -1,0 +1,6 @@
+vital_params
+spark.executor.cores
+spark.memory.fraction
+spark.executor.memoryOverhead
+spark.reducer.maxReqsInFlight
+spark.shuffle.compress

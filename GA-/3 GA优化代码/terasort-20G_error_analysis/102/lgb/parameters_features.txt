@@ -1,0 +1,20 @@
+
+2022-02-03 09:08:58
+训练时长0m1s
+使用算法: lgb
+0.2167936927959259
+4
+spark.executor.memoryOverhead: 74.0
+spark.shuffle.sort.bypassMergeThreshold: 63.0
+spark.maxRemoteBlockSizeFetchToMem: 40.0
+spark.executor.memory: 37.0
+
+2022-02-03 09:19:55
+训练时长0m1s
+使用算法: lgb
+0.2167936927959259
+4
+spark.executor.memoryOverhead: 74.0
+spark.shuffle.sort.bypassMergeThreshold: 63.0
+spark.maxRemoteBlockSizeFetchToMem: 40.0
+spark.executor.memory: 37.0

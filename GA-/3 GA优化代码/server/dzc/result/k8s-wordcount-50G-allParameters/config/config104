@@ -1,0 +1,122 @@
+# Fixed configuration
+# Spark home
+hibench.spark.home      /usr/local/home/spark/spark
+# hibench.spark.master     yarn-client
+hibench.spark.master    k8s://https://192.168.0.10:6443
+spark.kubernetes.container.image     192.168.0.40/library/spark:v2.4.4
+
+spark.eventLog.enabled           true
+spark.eventLog.dir               hdfs://192.168.0.10:9000/spark/log
+spark.history.fs.logDirectory 	 hdfs://192.168.0.10:9000/spark/log
+spark.eventLog.compress true
+
+#======================================================
+# Spark Streaming
+#======================================================
+# Spark streaming Batchnterval in millisecond (default 100)
+hibench.streambench.spark.batchInterval          100
+
+# Number of nodes that will receive kafka input (default: 4)
+hibench.streambench.spark.receiverNumber        4
+
+# Indicate RDD storage level. (default: 2)
+# 0 = StorageLevel.MEMORY_ONLY
+# 1 = StorageLevel.MEMORY_AND_DISK_SER
+# other = StorageLevel.MEMORY_AND_DISK_SER_2
+hibench.streambench.spark.storageLevel 2
+
+# indicate whether to test the write ahead log new feature (default: false)
+hibench.streambench.spark.enableWAL false
+
+# if testWAL is true, this path to store stream context in hdfs shall be specified. If false, it can be empty (default: /var/tmp)
+hibench.streambench.spark.checkpointPath /var/tmp
+
+# whether to use direct approach or not (dafault: true)
+hibench.streambench.spark.useDirectMode true
+
+
+# Random configuration
+ spark.broadcast.blockSize	79m
+ spark.broadcast.checksum	false
+ spark.broadcast.compress	true
+ spark.cleaner.periodicGC.interval	61min
+ spark.cleaner.referenceTracking	true
+ spark.cleaner.referenceTracking.blocking	true
+ spark.cleaner.referenceTracking.blocking.shuffle	false
+ spark.cleaner.referenceTracking.cleanCheckpoints	false
+ spark.default.parallelism	38
+ spark.driver.cores	2
+ spark.driver.maxResultSize	381m
+ spark.driver.memory	2g
+ spark.driver.memoryOverhead	2048M
+ spark.executor.cores	10
+ spark.executor.heartbeatInterval	16s
+ spark.executor.instances	7
+ spark.executor.memory	16g
+ spark.files.fetchTimeout	90s
+ spark.files.maxPartitionBytes	117128358
+ spark.files.openCostInBytes	4758039
+ spark.files.overwrite	false
+ spark.files.useFetchCache	true
+ spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version	1
+ spark.io.compression.codec	snappy
+ spark.io.compression.lz4.blockSize	174k
+ spark.io.compression.snappy.blockSize	204k
+ spark.kryo.referenceTracking	true
+ spark.kryoserializer.buffer	3k
+ spark.kryoserializer.buffer.max	117m
+ spark.locality.wait	10s
+ spark.maxRemoteBlockSizeFetchToMem	1121698862m
+ spark.memory.fraction	0.52
+ spark.memory.offHeap.enabled	true
+ spark.memory.offHeap.size	745m
+ spark.memory.storageFraction	0.56
+ spark.memory.useLegacyMode	true
+ spark.network.timeout	500s
+ spark.port.maxRetries	17
+ spark.python.worker.memory	724m
+ spark.python.worker.reuse	true
+ spark.rdd.compress	true
+ spark.reducer.maxBlocksInFlightPerAddress	2121472162
+ spark.reducer.maxReqsInFlight	305700562
+ spark.reducer.maxSizeInFlight	254m
+ spark.rpc.io.backLog	101
+ spark.rpc.lookupTimeout	50s
+ spark.rpc.message.maxSize	168
+ spark.rpc.retry.wait	3s
+ spark.scheduler.blacklist.unschedulableTaskSetTimeout	206s
+ spark.scheduler.listenerbus.eventqueue.capacity	5579
+ spark.scheduler.minRegisteredResourcesRatio	0.84
+ spark.scheduler.mode	FIFO
+ spark.scheduler.revive.interval	26s
+ spark.serializer	org.apache.spark.serializer.KryoSerializer
+ spark.serializer.objectStreamReset	125
+ spark.shuffle.compress	false
+ spark.shuffle.file.buffer	124k
+ spark.shuffle.io.backLog	111
+ spark.shuffle.io.maxRetries	10
+ spark.shuffle.io.numConnectionsPerPeer	3
+ spark.shuffle.io.preferDirectBufs	false
+ spark.shuffle.maxChunksBeingTransferred	6575921442941902848
+ spark.shuffle.memoryFraction	0.07
+ spark.shuffle.service.index.cache.size	135m
+ spark.shuffle.sort.bypassMergeThreshold	986
+ spark.shuffle.spill.compress	false
+ spark.speculation	false
+ spark.speculation.interval	412ms
+ spark.speculation.multiplier	4.9
+ spark.speculation.quantile	0.65
+ spark.stage.maxConsecutiveAttempts	5
+ spark.storage.memoryFraction	0.66
+ spark.storage.memoryMapThreshold	269m
+ spark.storage.replication.proactive	false
+ spark.storage.unrollFraction	0.24
+ spark.streaming.backpressure.enabled	false
+ spark.streaming.blockInterval	340ms
+ spark.streaming.receiver.writeAheadLog.enable	true
+ spark.streaming.stopGracefullyOnShutdown	false
+ spark.streaming.unpersist	true
+ spark.task.maxFailures	7
+ spark.task.reaper.enabled	true
+ spark.task.reaper.pollingInterval	20s
+ spark.task.reaper.threadDump	false

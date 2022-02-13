@@ -1,0 +1,5 @@
+vital_params
+spark.executor.memory
+spark.kryoserializer.buffer.max
+spark.shuffle.compress
+spark.maxRemoteBlockSizeFetchToMem

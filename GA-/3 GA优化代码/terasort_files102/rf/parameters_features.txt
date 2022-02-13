@@ -1,0 +1,11 @@
+
+2022-01-29 14:56:08
+训练时长0m9s
+使用算法: rf
+0.084218031527356
+5
+spark.executor.memory: 0.40463510117765783
+spark.executor.cores: 0.27149645098867053
+spark.executor.memoryOverhead: 0.12577804902602505
+spark.kryoserializer.buffer: 0.11865647139741614
+spark.shuffle.compress: 0.07943392741023055

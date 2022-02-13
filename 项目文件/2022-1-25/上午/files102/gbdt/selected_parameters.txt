@@ -1,0 +1,12 @@
+vital_params
+spark.executor.cores
+spark.executor.instances
+spark.executor.memory
+spark.reducer.maxSizeInFlight
+spark.default.parallelism
+spark.executor.memoryOverhead
+spark.reducer.maxReqsInFlight
+spark.maxRemoteBlockSizeFetchToMem
+spark.memory.offHeap.size
+spark.memory.fraction
+spark.memory.storageFraction

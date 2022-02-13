@@ -1,0 +1,10 @@
+vital_params
+spark.executor.memory
+spark.executor.cores
+spark.default.parallelism
+spark.memory.storageFraction
+spark.shuffle.io.numConnectionsPerPeer
+spark.memory.offHeap.size
+spark.reducer.maxReqsInFlight
+spark.kryoserializer.buffer.max
+spark.shuffle.sort.bypassMergeThreshold

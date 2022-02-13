@@ -1,0 +1,80 @@
+
+2022-01-23 17:22:36
+训练时长0m0s
+使用算法: lgb
+0.09845590840394365
+5
+spark.reducer.maxSizeInFlight: 30.0
+spark.scheduler.revive.interval: 27.0
+spark.maxRemoteBlockSizeFetchToMem: 16.0
+spark.shuffle.file.buffer: 14.0
+spark.default.parallelism: 13.0
+
+2022-01-23 17:33:40
+训练时长0m0s
+使用算法: lgb
+0.09845590840394365
+5
+spark.reducer.maxSizeInFlight: 30.0
+spark.scheduler.revive.interval: 27.0
+spark.maxRemoteBlockSizeFetchToMem: 16.0
+spark.shuffle.file.buffer: 14.0
+spark.default.parallelism: 13.0
+
+2022-01-23 17:58:45
+训练时长0m0s
+使用算法: lgb
+0.09845590840394365
+5
+spark.reducer.maxSizeInFlight: 30.0
+spark.scheduler.revive.interval: 27.0
+spark.maxRemoteBlockSizeFetchToMem: 16.0
+spark.shuffle.file.buffer: 14.0
+spark.default.parallelism: 13.0
+
+2022-01-25 11:09:43
+训练时长0m0s
+使用算法: lgb
+0.1152182354635553
+2
+spark.executor.memoryOverhead: 71.0
+spark.default.parallelism: 29.0
+
+2022-01-25 11:25:20
+训练时长0m0s
+使用算法: lgb
+0.11402561589405301
+7
+spark.executor.memoryOverhead: 25.0
+spark.scheduler.revive.interval: 24.0
+spark.shuffle.file.buffer: 21.0
+spark.memory.fraction: 13.0
+spark.default.parallelism: 8.0
+spark.kryoserializer.buffer.max: 7.0
+spark.maxRemoteBlockSizeFetchToMem: 2.0
+
+2022-01-25 12:37:39
+训练时长0m0s
+使用算法: lgb
+0.11402561589405301
+7
+spark.executor.memoryOverhead: 25.0
+spark.scheduler.revive.interval: 24.0
+spark.shuffle.file.buffer: 21.0
+spark.memory.fraction: 13.0
+spark.default.parallelism: 8.0
+spark.kryoserializer.buffer.max: 7.0
+spark.maxRemoteBlockSizeFetchToMem: 2.0
+
+2022-01-25 15:15:45
+训练时长0m0s
+使用算法: lgb
+0.11402561589405301
+7
+spark.executor.memoryOverhead: 25.0
+spark.scheduler.revive.interval: 24.0
+spark.shuffle.file.buffer: 21.0
+spark.memory.fraction: 13.0
+spark.default.parallelism: 8.0
+spark.kryoserializer.buffer.max: 7.0
+spark.maxRemoteBlockSizeFetchToMem: 2.0

@@ -1,0 +1,17 @@
+
+2022-02-07 09:07:47
+训练时长0m0s
+使用算法: lgb
+0.28720092495940425
+11
+spark.executor.cores: 17.0
+spark.kryoserializer.buffer.max: 14.0
+spark.locality.wait: 12.0
+spark.executor.memoryOverhead: 11.0
+spark.broadcast.checksum: 11.0
+spark.maxRemoteBlockSizeFetchToMem: 9.0
+spark.broadcast.blockSize: 8.0
+spark.rdd.compress: 6.0
+spark.shuffle.sort.bypassMergeThreshold: 6.0
+spark.default.parallelism: 4.0
+spark.shuffle.io.numConnectionsPerPeer: 2.0

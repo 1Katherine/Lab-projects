@@ -1,0 +1,5 @@
+vital_params
+spark.executor.memoryOverhead
+spark.broadcast.blockSize
+spark.reducer.maxBlocksInFlightPerAddress
+spark.kryoserializer.buffer

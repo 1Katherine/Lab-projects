@@ -1,0 +1,3 @@
+spark.memory.fraction,spark.maxRemoteBlockSizeFetchToMem,spark.executor.memoryOverhead,spark.reducer.maxReqsInFlight,spark.executor.instances,spark.default.parallelism,spark.shuffle.sort.bypassMergeThreshold,runtime
+0.63968254,1284994940,589,1759420839,8,322,312,211.9734286
+0.63968254,1616255156,744,1962201837,8,354,335,211.9734286

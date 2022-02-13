@@ -1,0 +1,57 @@
+mean_count: 
+dbus - ses: 0
+dbus - sys: 0
+dsk/total - read: 0
+dsk/total - reads: 0
+dsk/total - writ: 0
+file locks - lck: 0
+file locks - pos: 0
+file locks - rea: 0
+file locks - wri: 0
+filesystem - files: 0
+io/total - read: 0
+memory usage - free: 0
+memory usage - used: 0
+sda - util: 0
+sdb - util: 0
+sdc - util: 0
+sdd - util: 0
+snooze - snooze: 0
+sockets - tcp: 0
+sockets - tot: 0
+sockets - udp: 0
+system - csw: 0
+tcp sockets - act: 0
+tcp sockets - lis: 0
+tcp sockets - tim: 0
+total cpu usage - sys: 0
+total cpu usage - usr: 0
+udp - lis: 0
+unix sockets - dgm: 0
+virtual memory - alloc: 0
+virtual memory - free: 0
+virtual memory - majpf: 0
+interrupts - 235: 1
+procs - run: 1
+system - int: 1
+total cpu usage - siq: 1
+total cpu usage - wai: 1
+virtual memory - minpf: 1
+interrupts - 236: 2
+pkt/total - #send: 2
+procs - new: 2
+dsk/total - writs: 3
+filesystem - inodes: 3
+io/total - writ: 3
+load avg - 15m: 3
+load avg - 1m: 3
+load avg - 5m: 3
+memory usage - cach: 3
+net/total - recv: 3
+net/total - send: 3
+pkt/total - #recv: 3
+procs - total: 3
+total cpu usage - idl: 3
+unix sockets - act: 3
+unix sockets - lis: 3
+unix sockets - str: 3

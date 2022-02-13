@@ -1,0 +1,10 @@
+
+2022-02-06 18:27:55
+训练时长0m3s
+使用算法: lgb
+0.16158004825250072
+4
+spark.maxRemoteBlockSizeFetchToMem: 77.0
+spark.executor.memoryOverhead: 50.0
+spark.scheduler.revive.interval: 47.0
+spark.memory.storageFraction: 35.0

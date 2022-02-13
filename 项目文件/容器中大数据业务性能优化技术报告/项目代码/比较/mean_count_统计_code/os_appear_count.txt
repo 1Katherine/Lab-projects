@@ -1,0 +1,73 @@
+load avg - 1m:1
+load avg - 5m:1
+load avg - 15m:1
+total cpu usage - usr:1
+total cpu usage - sys:1
+total cpu usage - idl:1
+total cpu usage - wai:1
+total cpu usage - siq:1
+snooze - snooze:1
+procs - run:1
+procs - blk:1
+procs - new:1
+procs - total:1
+system - int:1
+system - csw:1
+interrupts - 235:1
+interrupts - 236:1
+sysv ipc - shm:1
+dbus - sys:1
+dbus - ses:1
+memory usage - used:1
+memory usage - cach:1
+memory usage - free:1
+virtual memory - majpf:1
+virtual memory - minpf:1
+virtual memory - alloc:1
+virtual memory - free:1
+net/total - recv:1
+net/total - send:1
+pkt/total - #recv:1
+pkt/total - #send:1
+sockets - tot:1
+sockets - tcp:1
+sockets - udp:1
+tcp sockets - lis:1
+tcp sockets - act:1
+tcp sockets - tim:1
+tcp sockets - clo:1
+udp - lis:1
+unix sockets - dgm:1
+unix sockets - str:1
+unix sockets - lis:1
+unix sockets - act:1
+dsk/total - read:1
+dsk/total - writ:1
+io/total - read:1
+io/total - writ:1
+dsk/total - reads:1
+dsk/total - writs:1
+sda - util:1
+sdb - util:1
+sdc - util:1
+sdd - util:1
+filesystem - files:1
+filesystem - inodes:1
+file locks - pos:1
+file locks - lck:1
+file locks - rea:1
+file locks - wri:1
+total cpu usage - hiq:0
+interrupts - 271:0
+sysv ipc - msg:0
+sysv ipc - sem:0
+memory usage - buff:0
+paging - in:0
+paging - out:0
+swap - used:0
+swap - free:0
+sockets - raw:0
+sockets - frg:0
+tcp sockets - syn:0
+udp - act:0
+async - #aio:0

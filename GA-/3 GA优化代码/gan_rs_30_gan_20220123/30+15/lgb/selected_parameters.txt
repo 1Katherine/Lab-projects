@@ -1,0 +1,6 @@
+vital_params
+spark.executor.memoryOverhead
+spark.kryoserializer.buffer.max
+spark.shuffle.io.numConnectionsPerPeer
+spark.locality.wait
+spark.maxRemoteBlockSizeFetchToMem

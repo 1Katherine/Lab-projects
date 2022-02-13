@@ -1,0 +1,23 @@
+os
+figsize 100 75  dpi=100
+
+title size 120
+
+xtick size 80
+ytick size 120
+
+textHeight 45 or 50
+
+
+
+
+
+micro
+figsize 100 75  dpi=100
+
+title size 120
+
+xtick size 20
+ytick size 120
+
+textHeight 9

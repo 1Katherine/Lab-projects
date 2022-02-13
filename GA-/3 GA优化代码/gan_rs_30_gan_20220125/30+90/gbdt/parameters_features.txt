@@ -1,0 +1,63 @@
+
+2022-01-23 17:31:46
+训练时长0m1s
+使用算法: gbdt
+0.08410990806712827
+11
+spark.memory.fraction: 0.3269582758055411
+spark.reducer.maxReqsInFlight: 0.26663227659848254
+spark.executor.instances: 0.13696090637249525
+spark.maxRemoteBlockSizeFetchToMem: 0.09811169707550639
+spark.executor.memoryOverhead: 0.03259678684706806
+spark.shuffle.sort.bypassMergeThreshold: 0.03006308014238442
+spark.scheduler.revive.interval: 0.027322936970685562
+spark.reducer.maxBlocksInFlightPerAddress: 0.027067371648259186
+spark.kryoserializer.buffer.max: 0.02330415758111325
+spark.memory.storageFraction: 0.01943721309881879
+spark.default.parallelism: 0.011545297859645517
+
+2022-01-23 17:34:31
+训练时长0m0s
+使用算法: gbdt
+0.08812951364454262
+5
+spark.memory.fraction: 0.3462083772582329
+spark.reducer.maxReqsInFlight: 0.3186871318733143
+spark.executor.instances: 0.14742249690225742
+spark.maxRemoteBlockSizeFetchToMem: 0.12456088451246132
+spark.shuffle.sort.bypassMergeThreshold: 0.06312110945373399
+
+2022-01-23 18:00:22
+训练时长0m0s
+使用算法: gbdt
+0.08835257913369299
+5
+spark.memory.fraction: 0.34649801356828974
+spark.reducer.maxReqsInFlight: 0.32193624434085144
+spark.executor.instances: 0.14565763969912904
+spark.maxRemoteBlockSizeFetchToMem: 0.12564602719069795
+spark.shuffle.sort.bypassMergeThreshold: 0.0602620752010318
+
+2022-01-25 11:30:25
+训练时长0m1s
+使用算法: gbdt
+0.04537661419735536
+6
+spark.executor.memory: 0.36718187492320026
+spark.executor.cores: 0.31390311699377765
+spark.executor.instances: 0.11302286878887884
+spark.reducer.maxBlocksInFlightPerAddress: 0.0960400868571941
+spark.maxRemoteBlockSizeFetchToMem: 0.06495239077157236
+spark.memory.fraction: 0.044899661665376754
+
+2022-01-25 15:17:36
+训练时长0m1s
+使用算法: gbdt
+0.04688928625756053
+6
+spark.executor.memory: 0.3745313257025304
+spark.executor.cores: 0.30620942323527106
+spark.executor.instances: 0.10710364554340611
+spark.reducer.maxBlocksInFlightPerAddress: 0.09887281707068378
+spark.maxRemoteBlockSizeFetchToMem: 0.065430477781194
+spark.memory.fraction: 0.04785231066691451

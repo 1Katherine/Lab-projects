@@ -1,0 +1,6 @@
+vital_params
+spark.executor.memoryOverhead
+spark.kryoserializer.buffer
+spark.storage.memoryMapThreshold
+spark.shuffle.compress
+spark.memory.fraction

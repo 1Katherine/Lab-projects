@@ -1,0 +1,27 @@
+
+2022-02-03 09:00:55
+训练时长0m1s
+使用算法: gbdt
+0.06356826528566327
+3
+spark.executor.memory: 0.49062910469066195
+spark.executor.cores: 0.42065278156635005
+spark.reducer.maxBlocksInFlightPerAddress: 0.08871811374298798
+
+2022-02-03 09:05:53
+训练时长0m1s
+使用算法: gbdt
+0.06335496711071444
+3
+spark.executor.cores: 0.4940167002767142
+spark.executor.memory: 0.41726588111991525
+spark.reducer.maxBlocksInFlightPerAddress: 0.08871741860337055
+
+2022-02-03 09:16:59
+训练时长0m1s
+使用算法: gbdt
+0.06325613357881224
+3
+spark.executor.memory: 0.5270139939663899
+spark.executor.cores: 0.38426760862199155
+spark.reducer.maxBlocksInFlightPerAddress: 0.08871839741161862

@@ -1,0 +1,16 @@
+vital_params
+spark.executor.cores
+spark.shuffle.compress
+spark.shuffle.sort.bypassMergeThreshold
+spark.memory.fraction
+spark.executor.memory
+spark.shuffle.file.buffer
+spark.locality.wait
+spark.memory.storageFraction
+spark.reducer.maxBlocksInFlightPerAddress
+spark.broadcast.compress
+spark.memory.offHeap.size
+spark.broadcast.blockSize
+spark.default.parallelism
+spark.storage.memoryMapThreshold
+spark.executor.instances

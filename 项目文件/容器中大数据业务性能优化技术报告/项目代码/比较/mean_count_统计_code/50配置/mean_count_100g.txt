@@ -1,0 +1,60 @@
+mean_count: 
+dbus - ses: 0
+memory usage - cach: 0
+sysv ipc - shm: 0
+tcp sockets - lis: 0
+udp - lis: 0
+file locks - rea: 1
+sockets - udp: 3
+file locks - lck: 4
+filesystem - inodes: 6
+tcp sockets - act: 6
+tcp sockets - tim: 7
+procs - new: 8
+sockets - tcp: 12
+system - csw: 12
+dsk/total - writ: 14
+file locks - pos: 14
+total cpu usage - idl: 15
+file locks - wri: 16
+sdc - util: 18
+sockets - tot: 19
+procs - blk: 20
+filesystem - files: 23
+virtual memory - free: 24
+dbus - sys: 27
+total cpu usage - usr: 27
+virtual memory - majpf: 27
+interrupts - 235: 28
+procs - run: 28
+tcp sockets - clo: 28
+snooze - snooze: 29
+system - int: 31
+dsk/total - reads: 32
+io/total - read: 32
+total cpu usage - sys: 32
+sdb - util: 33
+dsk/total - writs: 36
+io/total - writ: 36
+load avg - 1m: 36
+memory usage - free: 36
+total cpu usage - wai: 36
+virtual memory - alloc: 36
+interrupts - 236: 37
+load avg - 5m: 38
+load avg - 15m: 39
+virtual memory - minpf: 41
+sdd - util: 43
+net/total - recv: 44
+sda - util: 44
+dsk/total - read: 47
+total cpu usage - siq: 48
+memory usage - used: 49
+net/total - send: 50
+pkt/total - #recv: 50
+pkt/total - #send: 50
+procs - total: 50
+unix sockets - act: 50
+unix sockets - dgm: 50
+unix sockets - lis: 50
+unix sockets - str: 50

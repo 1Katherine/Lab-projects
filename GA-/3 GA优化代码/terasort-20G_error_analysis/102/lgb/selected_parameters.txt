@@ -1,0 +1,5 @@
+vital_params
+spark.executor.memoryOverhead
+spark.shuffle.sort.bypassMergeThreshold
+spark.maxRemoteBlockSizeFetchToMem
+spark.executor.memory

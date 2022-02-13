@@ -1,0 +1,5 @@
+vital_params
+spark.executor.cores
+spark.default.parallelism
+spark.reducer.maxSizeInFlight
+spark.kryoserializer.buffer

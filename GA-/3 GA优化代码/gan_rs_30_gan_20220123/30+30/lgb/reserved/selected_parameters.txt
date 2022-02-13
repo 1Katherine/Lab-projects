@@ -1,0 +1,9 @@
+vital_params
+spark.reducer.maxSizeInFlight
+spark.scheduler.revive.interval
+spark.maxRemoteBlockSizeFetchToMem
+spark.shuffle.file.buffer
+spark.default.parallelism
+spark.executor.cores
+spark.executor.instances
+spark.executor.memory

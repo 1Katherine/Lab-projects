@@ -1,0 +1,11 @@
+
+2022-02-08 11:48:41
+训练时长0m1s
+使用算法: gbdt
+0.15173823352552532
+5
+spark.executor.memory: 0.44694469399353803
+spark.shuffle.compress: 0.18068917940566398
+spark.reducer.maxBlocksInFlightPerAddress: 0.13111522883880256
+spark.executor.cores: 0.12186281597599087
+spark.memory.fraction: 0.11938808178600453

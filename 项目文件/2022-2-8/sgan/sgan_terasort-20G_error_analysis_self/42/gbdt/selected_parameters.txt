@@ -1,0 +1,7 @@
+vital_params
+spark.executor.memoryOverhead
+spark.kryoserializer.buffer.max
+spark.shuffle.compress
+spark.kryoserializer.buffer
+spark.broadcast.blockSize
+spark.shuffle.file.buffer

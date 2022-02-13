@@ -1,0 +1,6 @@
+vital_params
+spark.shuffle.sort.bypassMergeThreshold
+spark.executor.memory
+spark.executor.cores
+spark.executor.instances
+spark.default.parallelism

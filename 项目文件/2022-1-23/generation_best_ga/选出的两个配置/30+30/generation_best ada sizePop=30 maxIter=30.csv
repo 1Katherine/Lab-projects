@@ -1,0 +1,3 @@
+spark.reducer.maxSizeInFlight,spark.default.parallelism,spark.reducer.maxBlocksInFlightPerAddress,spark.maxRemoteBlockSizeFetchToMem,spark.executor.instances,spark.reducer.maxReqsInFlight,spark.kryoserializer.buffer.max,spark.shuffle.file.buffer,spark.executor.memory,spark.executor.memoryOverhead,spark.memory.storageFraction,runtime
+56,298,1491823055,1649294543,7,1854308912,120,28,5,500,0.696825397,212.6110769
+32,306,1095815690,1573805122,7,1816119159,118,22,5,492,0.9,212.6110769

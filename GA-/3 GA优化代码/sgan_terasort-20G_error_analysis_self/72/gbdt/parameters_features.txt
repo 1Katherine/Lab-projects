@@ -1,0 +1,11 @@
+
+2022-02-08 11:25:15
+训练时长0m1s
+使用算法: gbdt
+0.08191080772266773
+5
+spark.executor.memoryOverhead: 0.4747851413330597
+spark.kryoserializer.buffer: 0.20719325110469744
+spark.storage.memoryMapThreshold: 0.12509243783258883
+spark.shuffle.compress: 0.11314579421673475
+spark.memory.fraction: 0.07978337551291927

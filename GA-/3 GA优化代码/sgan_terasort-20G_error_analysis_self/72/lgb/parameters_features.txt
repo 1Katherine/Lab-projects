@@ -1,0 +1,9 @@
+
+2022-02-08 11:25:16
+训练时长0m0s
+使用算法: lgb
+0.05991144571251741
+3
+spark.memory.fraction: 44.0
+spark.locality.wait: 34.0
+spark.reducer.maxReqsInFlight: 22.0

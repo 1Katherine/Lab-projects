@@ -1,0 +1,9 @@
+vital_params
+spark.shuffle.io.numConnectionsPerPeer
+spark.reducer.maxReqsInFlight
+spark.kryoserializer.buffer
+spark.broadcast.blockSize
+spark.executor.instances
+spark.executor.cores
+spark.executor.memory
+spark.default.parallelism

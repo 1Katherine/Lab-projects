@@ -1,0 +1,6 @@
+vital_params
+spark.executor.cores
+spark.kryoserializer.buffer
+spark.executor.instances
+spark.executor.memory
+spark.default.parallelism

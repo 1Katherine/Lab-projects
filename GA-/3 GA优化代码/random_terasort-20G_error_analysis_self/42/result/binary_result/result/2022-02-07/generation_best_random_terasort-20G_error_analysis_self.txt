@@ -1,0 +1,185 @@
+
+binary GA lgb ,sizePop=30 ,maxIter=30
+['spark.rdd.compress', 'spark.executor.memoryOverhead']
+best_x : [1.000e+00 1.755e+03]
+best_y : [392.24166593]
+generation_best 
+
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1126.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 910.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1110.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 881.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1225.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1294.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1214.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 961.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 654.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 641.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 833.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 513.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 833.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 1350.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 862.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 830.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 830.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 865.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 0.0, 'spark.executor.memoryOverhead': 1755.0, 'runtime': 392.24166592684657}
+{'spark.rdd.compress': 1.0, 'spark.executor.memoryOverhead': 889.0, 'runtime': 392.24166592684657}
+
+binary GA xgb ,sizePop=30 ,maxIter=30
+['spark.executor.memory', 'spark.shuffle.compress']
+best_x : [14.  1.]
+best_y : [412.95874]
+generation_best 
+
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 11.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 8.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 12.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 13.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 8.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 13.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 12.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 13.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 12.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 10.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 12.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 9.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 11.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+{'spark.executor.memory': 8.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 13.0, 'spark.shuffle.compress': 0.0, 'runtime': 412.95874}
+{'spark.executor.memory': 14.0, 'spark.shuffle.compress': 1.0, 'runtime': 412.95874}
+
+binary GA gbdt ,sizePop=30 ,maxIter=30
+['spark.executor.memory', 'spark.kryoserializer.buffer', 'spark.executor.cores']
+best_x : [11. 87.  6.]
+best_y : [290.02872059]
+generation_best 
+
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 87.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 111.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 121.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 115.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 62.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 59.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 38.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 67.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 62.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 96.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 64.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 87.0, 'spark.executor.cores': 7.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 74.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 125.0, 'spark.executor.cores': 7.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 77.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 124.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 34.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 96.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 78.0, 'spark.executor.cores': 7.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 34.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 128.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 78.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 95.0, 'spark.executor.cores': 7.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 114.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 59.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 40.0, 'spark.executor.cores': 4.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 128.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 125.0, 'spark.executor.cores': 6.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 128.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+{'spark.executor.memory': 11.0, 'spark.kryoserializer.buffer': 128.0, 'spark.executor.cores': 5.0, 'runtime': 290.02872059016937}
+
+binary GA rf ,sizePop=30 ,maxIter=30
+['spark.executor.memory', 'spark.executor.memoryOverhead']
+best_x : [ 14. 985.]
+best_y : [260.68514]
+generation_best 
+
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 985.0, 'runtime': 260.68514000000044}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1111.0, 'runtime': 264.33792999999963}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 586.0, 'runtime': 287.80157999999983}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 978.0, 'runtime': 261.09269000000046}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1001.0, 'runtime': 263.83173999999997}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 979.0, 'runtime': 261.09269000000046}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1287.0, 'runtime': 274.92796000000027}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1108.0, 'runtime': 264.33792999999963}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1018.0, 'runtime': 265.0661399999999}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1228.0, 'runtime': 283.25679000000025}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1330.0, 'runtime': 275.59844000000044}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 969.0, 'runtime': 261.15104000000053}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 981.0, 'runtime': 261.07122000000055}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1220.0, 'runtime': 273.76244000000025}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 956.0, 'runtime': 260.9697000000005}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 942.0, 'runtime': 260.96671000000003}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1127.0, 'runtime': 265.4833499999997}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1374.0, 'runtime': 264.97536000000053}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 942.0, 'runtime': 260.96671000000003}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1097.0, 'runtime': 262.52090999999973}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1113.0, 'runtime': 262.52090999999973}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 975.0, 'runtime': 261.09269000000046}
+{'spark.executor.memory': 12.0, 'spark.executor.memoryOverhead': 1095.0, 'runtime': 265.1443099999996}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 942.0, 'runtime': 260.96671000000003}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 965.0, 'runtime': 261.22049000000044}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1187.0, 'runtime': 268.0389299999997}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1068.0, 'runtime': 262.06623999999977}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 954.0, 'runtime': 264.8412900000004}
+{'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1338.0, 'runtime': 268.5097100000004}
+{'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1069.0, 'runtime': 263.91547999999966}
+
+binary GA ada ,sizePop=30 ,maxIter=30
+['spark.kryoserializer.buffer.max', 'spark.shuffle.compress', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.reducer.maxSizeInFlight']
+best_x : [126.   0.  14. 960.  42.]
+best_y : [314.334]
+generation_best 
+
+{'spark.kryoserializer.buffer.max': 114.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 639.0, 'spark.reducer.maxSizeInFlight': 38.0, 'runtime': 363.647}
+{'spark.kryoserializer.buffer.max': 113.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 649.0, 'spark.reducer.maxSizeInFlight': 55.0, 'runtime': 369.4379}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 12.0, 'spark.executor.memoryOverhead': 1673.0, 'spark.reducer.maxSizeInFlight': 35.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 127.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 947.0, 'spark.reducer.maxSizeInFlight': 58.0, 'runtime': 325.0562}
+{'spark.kryoserializer.buffer.max': 118.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 13.0, 'spark.executor.memoryOverhead': 1755.0, 'spark.reducer.maxSizeInFlight': 36.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 117.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1129.0, 'spark.reducer.maxSizeInFlight': 46.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 9.0, 'spark.executor.memoryOverhead': 962.0, 'spark.reducer.maxSizeInFlight': 26.0, 'runtime': 345.157}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 11.0, 'spark.executor.memoryOverhead': 1755.0, 'spark.reducer.maxSizeInFlight': 46.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 110.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 1755.0, 'spark.reducer.maxSizeInFlight': 42.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 104.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 621.0, 'spark.reducer.maxSizeInFlight': 54.0, 'runtime': 365.0796666666667}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1755.0, 'spark.reducer.maxSizeInFlight': 47.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 640.0, 'spark.reducer.maxSizeInFlight': 56.0, 'runtime': 341.1395}
+{'spark.kryoserializer.buffer.max': 127.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 12.0, 'spark.executor.memoryOverhead': 680.0, 'spark.reducer.maxSizeInFlight': 40.0, 'runtime': 369.4379}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 640.0, 'spark.reducer.maxSizeInFlight': 24.0, 'runtime': 369.4379}
+{'spark.kryoserializer.buffer.max': 91.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 12.0, 'spark.executor.memoryOverhead': 967.0, 'spark.reducer.maxSizeInFlight': 57.0, 'runtime': 340.45126666666675}
+{'spark.kryoserializer.buffer.max': 126.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 960.0, 'spark.reducer.maxSizeInFlight': 42.0, 'runtime': 314.334}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 986.0, 'spark.reducer.maxSizeInFlight': 43.0, 'runtime': 340.45126666666675}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 9.0, 'spark.executor.memoryOverhead': 680.0, 'spark.reducer.maxSizeInFlight': 51.0, 'runtime': 369.4379}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 731.0, 'spark.reducer.maxSizeInFlight': 43.0, 'runtime': 369.4379}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 943.0, 'spark.reducer.maxSizeInFlight': 47.0, 'runtime': 314.334}
+{'spark.kryoserializer.buffer.max': 120.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1755.0, 'spark.reducer.maxSizeInFlight': 45.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 111.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 964.0, 'spark.reducer.maxSizeInFlight': 53.0, 'runtime': 314.334}
+{'spark.kryoserializer.buffer.max': 117.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 11.0, 'spark.executor.memoryOverhead': 730.0, 'spark.reducer.maxSizeInFlight': 54.0, 'runtime': 369.4379}
+{'spark.kryoserializer.buffer.max': 126.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1524.0, 'spark.reducer.maxSizeInFlight': 37.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 8.0, 'spark.executor.memoryOverhead': 982.0, 'spark.reducer.maxSizeInFlight': 53.0, 'runtime': 361.4388333333334}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 982.0, 'spark.reducer.maxSizeInFlight': 53.0, 'runtime': 361.4388333333334}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 14.0, 'spark.executor.memoryOverhead': 1475.0, 'spark.reducer.maxSizeInFlight': 43.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 1201.0, 'spark.reducer.maxSizeInFlight': 50.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 1.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 1650.0, 'spark.reducer.maxSizeInFlight': 37.0, 'runtime': 369.5345}
+{'spark.kryoserializer.buffer.max': 128.0, 'spark.shuffle.compress': 0.0, 'spark.executor.memory': 10.0, 'spark.executor.memoryOverhead': 624.0, 'spark.reducer.maxSizeInFlight': 51.0, 'runtime': 363.647}

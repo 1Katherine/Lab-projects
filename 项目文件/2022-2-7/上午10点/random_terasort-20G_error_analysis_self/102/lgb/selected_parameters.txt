@@ -1,0 +1,9 @@
+vital_params
+spark.executor.cores
+spark.shuffle.sort.bypassMergeThreshold
+spark.default.parallelism
+spark.kryoserializer.buffer.max
+spark.shuffle.compress
+spark.memory.fraction
+spark.executor.memoryOverhead
+spark.kryoserializer.buffer

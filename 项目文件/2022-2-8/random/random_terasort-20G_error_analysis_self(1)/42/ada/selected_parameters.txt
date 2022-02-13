@@ -1,0 +1,7 @@
+vital_params
+spark.executor.memory
+spark.scheduler.revive.interval
+spark.reducer.maxSizeInFlight
+spark.memory.offHeap.size
+spark.executor.memoryOverhead
+spark.reducer.maxBlocksInFlightPerAddress

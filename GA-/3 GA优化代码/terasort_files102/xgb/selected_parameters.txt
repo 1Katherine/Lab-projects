@@ -1,0 +1,4 @@
+vital_params
+spark.executor.cores
+spark.shuffle.compress
+spark.executor.memory

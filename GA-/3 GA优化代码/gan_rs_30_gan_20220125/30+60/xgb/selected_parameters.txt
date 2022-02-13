@@ -1,0 +1,4 @@
+vital_params
+spark.executor.memory
+spark.shuffle.io.numConnectionsPerPeer
+spark.executor.instances

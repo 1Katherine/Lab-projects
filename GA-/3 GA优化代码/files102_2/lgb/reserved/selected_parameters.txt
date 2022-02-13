@@ -1,0 +1,9 @@
+vital_params
+spark.maxRemoteBlockSizeFetchToMem
+spark.executor.memoryOverhead
+spark.scheduler.revive.interval
+spark.memory.storageFraction
+spark.executor.cores
+spark.executor.instances
+spark.executor.memory
+spark.default.parallelism

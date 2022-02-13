@@ -1,0 +1,3 @@
+vital_params
+spark.rdd.compress
+spark.executor.memoryOverhead

@@ -1,0 +1,24 @@
+cache-misses
+L1-dcache-load-misses
+branch-misses
+msr/pperf/
+topdown-slots-retired
+cache-references
+L1-dcache-stores
+ld_blocks_partial.address_alias
+container_spec_cpu_shares
+int_misc.recovery_cycles
+iTLB-load-misses
+node-store-misses
+unix sockets - str
+topdown-total-slots
+container_start_time_seconds
+total cpu usage - idl
+container_cpu_system_seconds_total
+topdown-recovery-bubbles
+branch-instructions
+memory usage - used
+exe_activity.4_ports_util
+dTLB-loads
+frontend_retired.itlb_miss
+frontend_retired.stlb_miss

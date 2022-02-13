@@ -1,0 +1,13 @@
+vital_params
+spark.default.parallelism
+spark.executor.cores
+spark.executor.memory
+spark.memory.offHeap.size
+spark.memory.fraction
+spark.reducer.maxSizeInFlight
+spark.memory.offHeap.enabled
+spark.reducer.maxReqsInFlight
+spark.reducer.maxBlocksInFlightPerAddress
+spark.executor.memoryOverhead
+spark.shuffle.sort.bypassMergeThreshold
+spark.executor.instances

@@ -1,0 +1,59 @@
+procs - total:150
+net/total - send:150
+pkt/total - #recv:150
+pkt/total - #send:150
+unix sockets - str:150
+unix sockets - lis:150
+unix sockets - act:150
+total cpu usage - siq:147
+memory usage - used:140
+memory usage - free:133
+load avg - 5m:120
+load avg - 15m:116
+net/total - recv:116
+load avg - 1m:115
+virtual memory - minpf:114
+unix sockets - dgm:113
+interrupts - 236:109
+io/total - writ:109
+dsk/total - writs:109
+virtual memory - alloc:108
+system - int:105
+sdd - util:101
+dsk/total - read:100
+interrupts - 235:95
+virtual memory - free:95
+procs - run:92
+total cpu usage - usr:89
+total cpu usage - sys:89
+tcp sockets - clo:84
+io/total - read:83
+dsk/total - reads:83
+snooze - snooze:81
+sda - util:76
+total cpu usage - wai:74
+dbus - sys:74
+virtual memory - majpf:70
+sockets - tot:63
+total cpu usage - idl:57
+file locks - wri:54
+filesystem - files:48
+sdc - util:46
+system - csw:44
+sockets - tcp:44
+dsk/total - writ:44
+procs - new:42
+file locks - pos:42
+sdb - util:41
+procs - blk:35
+tcp sockets - tim:31
+filesystem - inodes:17
+file locks - lck:12
+file locks - rea:11
+tcp sockets - act:10
+sockets - udp:7
+sysv ipc - shm:0
+dbus - ses:0
+memory usage - cach:0
+tcp sockets - lis:0
+udp - lis:0

@@ -1,0 +1,12 @@
+
+2022-02-08 11:46:15
+训练时长0m2s
+使用算法: ada
+0.09625013167752039
+6
+spark.executor.memory: 0.19379078690356644
+spark.scheduler.revive.interval: 0.18573313754292217
+spark.reducer.maxSizeInFlight: 0.1730321563841435
+spark.memory.offHeap.size: 0.16092502735624545
+spark.executor.memoryOverhead: 0.1561827629147855
+spark.reducer.maxBlocksInFlightPerAddress: 0.13033612889833704

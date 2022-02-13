@@ -1,0 +1,17 @@
+
+2022-01-25 02:57:53
+训练时长0m2s
+使用算法: gbdt
+0.06542897034198748
+11
+spark.executor.cores: 0.41885069445468776
+spark.executor.instances: 0.2457543980424135
+spark.executor.memory: 0.1877550971614368
+spark.reducer.maxSizeInFlight: 0.08678515418191729
+spark.default.parallelism: 0.014230275676663844
+spark.executor.memoryOverhead: 0.011804640179731887
+spark.reducer.maxReqsInFlight: 0.00967385715582144
+spark.maxRemoteBlockSizeFetchToMem: 0.007372951548157455
+spark.memory.offHeap.size: 0.007320014669907476
+spark.memory.fraction: 0.005467180792567784
+spark.memory.storageFraction: 0.004985736136694822

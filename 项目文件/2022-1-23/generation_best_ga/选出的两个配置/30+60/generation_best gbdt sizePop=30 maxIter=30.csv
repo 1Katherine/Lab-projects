@@ -1,0 +1,3 @@
+spark.shuffle.io.numConnectionsPerPeer,spark.executor.memoryOverhead,spark.memory.fraction,spark.reducer.maxBlocksInFlightPerAddress,spark.kryoserializer.buffer,spark.maxRemoteBlockSizeFetchToMem,spark.shuffle.sort.bypassMergeThreshold,spark.reducer.maxSizeInFlight,spark.reducer.maxReqsInFlight,spark.default.parallelism,spark.kryoserializer.buffer.max,spark.broadcast.blockSize,spark.scheduler.revive.interval,spark.shuffle.file.buffer,spark.memory.storageFraction,spark.memory.offHeap.size,spark.scheduler.mode,runtime
+5,435,0.531746032,1908239721,74,1620222705,282,66,1094914313,392,80,39,595,44,0.836507937,128,0,204.9258645
+4,464,0.506349206,1910369513,71,1150985057,292,60,1095247128,471,78,38,716,44,0.836507937,128,0,207.6301601

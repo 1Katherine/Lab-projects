@@ -1,0 +1,12 @@
+
+2022-02-07 09:09:58
+训练时长0m3s
+使用算法: xgb
+0.17813126969528914
+6
+spark.shuffle.compress: 0.5023524165153503
+spark.executor.memory: 0.3453202247619629
+spark.kryoserializer.buffer.max: 0.07253529876470566
+spark.memory.fraction: 0.030712496489286423
+spark.maxRemoteBlockSizeFetchToMem: 0.02789238467812538
+spark.storage.memoryMapThreshold: 0.021187154576182365

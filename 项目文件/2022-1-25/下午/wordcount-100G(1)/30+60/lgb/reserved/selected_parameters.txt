@@ -1,0 +1,14 @@
+vital_params
+spark.memory.fraction
+spark.scheduler.revive.interval
+spark.executor.memoryOverhead
+spark.shuffle.sort.bypassMergeThreshold
+spark.executor.instances
+spark.reducer.maxBlocksInFlightPerAddress
+spark.kryoserializer.buffer.max
+spark.reducer.maxSizeInFlight
+spark.reducer.maxReqsInFlight
+spark.maxRemoteBlockSizeFetchToMem
+spark.executor.cores
+spark.executor.memory
+spark.default.parallelism

@@ -1,0 +1,10 @@
+
+2022-02-08 11:24:07
+训练时长0m6s
+使用算法: rf
+0.11521448792749954
+4
+spark.shuffle.file.buffer: 0.3157179014426868
+spark.executor.memoryOverhead: 0.2675852879382616
+spark.reducer.maxBlocksInFlightPerAddress: 0.248485171941332
+spark.reducer.maxSizeInFlight: 0.16821163867771974

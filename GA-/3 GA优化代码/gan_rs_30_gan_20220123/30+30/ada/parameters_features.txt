@@ -1,0 +1,59 @@
+
+2022-01-23 17:22:43
+训练时长0m1s
+使用算法: ada
+0.10469882016505977
+17
+spark.reducer.maxSizeInFlight: 0.285902458576498
+spark.default.parallelism: 0.08834018673120285
+spark.executor.instances: 0.07399903828027188
+spark.reducer.maxReqsInFlight: 0.07213863926377245
+spark.maxRemoteBlockSizeFetchToMem: 0.059030857536562654
+spark.shuffle.file.buffer: 0.056596707502741816
+spark.kryoserializer.buffer.max: 0.05409848020361414
+spark.reducer.maxBlocksInFlightPerAddress: 0.05224360078472004
+spark.memory.storageFraction: 0.04705217984548383
+spark.executor.memory: 0.04500580059095779
+spark.kryoserializer.buffer: 0.03557442824606306
+spark.executor.memoryOverhead: 0.02619897082256517
+spark.broadcast.blockSize: 0.025093519432956235
+spark.scheduler.revive.interval: 0.024941638097181834
+spark.locality.wait: 0.021962402612241885
+spark.shuffle.sort.bypassMergeThreshold: 0.016948738435477766
+spark.memory.fraction: 0.014872353037688657
+
+2022-01-23 17:33:47
+训练时长0m1s
+使用算法: ada
+0.09495554482710829
+13
+spark.reducer.maxSizeInFlight: 0.31134283557928427
+spark.default.parallelism: 0.10849566257618433
+spark.maxRemoteBlockSizeFetchToMem: 0.07677752764595497
+spark.reducer.maxReqsInFlight: 0.07552003242174916
+spark.reducer.maxBlocksInFlightPerAddress: 0.07351782011060759
+spark.executor.instances: 0.0609215079623771
+spark.shuffle.file.buffer: 0.052174634854555736
+spark.kryoserializer.buffer.max: 0.05156354182401505
+spark.executor.memoryOverhead: 0.04460763009495331
+spark.memory.storageFraction: 0.040536376342815414
+spark.executor.memory: 0.040205320958728454
+spark.broadcast.blockSize: 0.03519422741524465
+spark.kryoserializer.buffer: 0.02914288221352983
+
+2022-01-23 17:58:52
+训练时长0m1s
+使用算法: ada
+0.10449611174610969
+11
+spark.reducer.maxSizeInFlight: 0.2995490067732595
+spark.default.parallelism: 0.11534859599279701
+spark.reducer.maxBlocksInFlightPerAddress: 0.1055107200176633
+spark.maxRemoteBlockSizeFetchToMem: 0.09539306821729408
+spark.executor.instances: 0.08011815975167455
+spark.reducer.maxReqsInFlight: 0.07725396301815793
+spark.kryoserializer.buffer.max: 0.06503244891888264
+spark.shuffle.file.buffer: 0.046922303233646066
+spark.executor.memory: 0.04670380462363046
+spark.executor.memoryOverhead: 0.03550343981291628
+spark.memory.storageFraction: 0.03266448964007812

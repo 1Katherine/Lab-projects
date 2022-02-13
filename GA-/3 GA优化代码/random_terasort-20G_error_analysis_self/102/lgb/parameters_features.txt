@@ -1,0 +1,14 @@
+
+2022-02-07 09:09:47
+训练时长0m0s
+使用算法: lgb
+0.2875908066992275
+8
+spark.executor.cores: 42.0
+spark.shuffle.sort.bypassMergeThreshold: 41.0
+spark.default.parallelism: 30.0
+spark.kryoserializer.buffer.max: 24.0
+spark.shuffle.compress: 19.0
+spark.memory.fraction: 16.0
+spark.executor.memoryOverhead: 14.0
+spark.kryoserializer.buffer: 14.0

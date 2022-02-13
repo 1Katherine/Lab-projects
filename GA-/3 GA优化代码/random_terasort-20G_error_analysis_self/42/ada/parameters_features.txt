@@ -1,0 +1,11 @@
+
+2022-02-07 09:07:13
+训练时长0m2s
+使用算法: ada
+0.14039827268646501
+5
+spark.kryoserializer.buffer.max: 0.28166542381537163
+spark.shuffle.compress: 0.23053655848685492
+spark.executor.memory: 0.17984469747947998
+spark.executor.memoryOverhead: 0.155128153905139
+spark.reducer.maxSizeInFlight: 0.15282516631315435

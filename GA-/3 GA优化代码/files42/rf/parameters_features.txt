@@ -1,0 +1,14 @@
+
+2022-01-23 21:07:33
+训练时长0m7s
+使用算法: rf
+0.10214872917667751
+8
+spark.executor.cores: 0.39620072700742526
+spark.executor.memory: 0.3446126012657919
+spark.executor.memoryOverhead: 0.061044254199341806
+spark.executor.instances: 0.053572091290919326
+spark.reducer.maxBlocksInFlightPerAddress: 0.04926916010231838
+spark.kryoserializer.buffer: 0.033968484904377504
+spark.maxRemoteBlockSizeFetchToMem: 0.03334417991575126
+spark.reducer.maxReqsInFlight: 0.027988501314074543

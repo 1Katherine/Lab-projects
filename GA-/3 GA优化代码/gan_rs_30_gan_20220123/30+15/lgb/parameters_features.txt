@@ -1,0 +1,33 @@
+
+2022-01-23 17:21:07
+训练时长0m0s
+使用算法: lgb
+0.08282976870579228
+5
+spark.executor.memoryOverhead: 61.0
+spark.kryoserializer.buffer.max: 39.0
+spark.memory.offHeap.enabled: 0.0
+spark.reducer.maxReqsInFlight: 0.0
+spark.rdd.compress: 0.0
+
+2022-01-23 17:33:16
+训练时长0m0s
+使用算法: lgb
+0.08282976870579228
+5
+spark.executor.memoryOverhead: 61.0
+spark.kryoserializer.buffer.max: 39.0
+spark.broadcast.checksum: 0.0
+spark.broadcast.blockSize: 0.0
+spark.storage.memoryMapThreshold: 0.0
+
+2022-01-23 17:57:04
+训练时长0m0s
+使用算法: lgb
+0.08282976870579228
+5
+spark.executor.memoryOverhead: 61.0
+spark.kryoserializer.buffer.max: 39.0
+spark.shuffle.io.numConnectionsPerPeer: 0.0
+spark.locality.wait: 0.0
+spark.maxRemoteBlockSizeFetchToMem: 0.0

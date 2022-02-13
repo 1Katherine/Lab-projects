@@ -1,0 +1,10 @@
+vital_params
+spark.memory.fraction
+spark.maxRemoteBlockSizeFetchToMem
+spark.executor.memoryOverhead
+spark.executor.instances
+spark.reducer.maxBlocksInFlightPerAddress
+spark.shuffle.io.numConnectionsPerPeer
+spark.memory.offHeap.size
+spark.shuffle.sort.bypassMergeThreshold
+spark.default.parallelism

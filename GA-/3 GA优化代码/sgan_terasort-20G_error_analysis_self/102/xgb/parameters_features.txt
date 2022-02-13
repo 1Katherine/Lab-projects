@@ -1,0 +1,13 @@
+
+2022-02-08 11:26:48
+训练时长0m3s
+使用算法: xgb
+0.07050817149667972
+7
+spark.executor.cores: 0.4624517261981964
+spark.executor.instances: 0.2121143788099289
+spark.storage.memoryMapThreshold: 0.12778326869010925
+spark.memory.fraction: 0.11694425344467163
+spark.reducer.maxReqsInFlight: 0.034509651362895966
+spark.shuffle.compress: 0.02821779064834118
+spark.executor.memoryOverhead: 0.01797892525792122

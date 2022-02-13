@@ -1,0 +1,186 @@
+
+binary GA ada ,sizePop=30 ,maxIter=30
+['spark.executor.cores', 'spark.executor.memory', 'spark.executor.instances']
+best_x : [4. 7. 7.]
+best_y : [204.762625]
+generation_best 
+
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 211.943}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 2.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 211.943}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 3.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 4.0, 'spark.executor.instances': 7.0, 'runtime': 204.76262499999996}
+
+binary GA rf ,sizePop=30 ,maxIter=30
+['spark.executor.cores', 'spark.executor.memory', 'spark.executor.instances']
+best_x : [3. 7. 8.]
+best_y : [178.60291252]
+generation_best 
+
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 184.43750098015872}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 184.43750098015872}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 8.0, 'runtime': 189.9743529166665}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 6.0, 'spark.executor.instances': 8.0, 'runtime': 184.0765906071426}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 184.43750098015872}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 8.0, 'runtime': 178.6029125238095}
+{'spark.executor.cores': 4.0, 'spark.executor.memory': 5.0, 'spark.executor.instances': 8.0, 'runtime': 189.9743529166665}
+{'spark.executor.cores': 3.0, 'spark.executor.memory': 7.0, 'spark.executor.instances': 7.0, 'runtime': 184.43750098015872}
+
+binary GA gbdt ,sizePop=30 ,maxIter=30
+['spark.executor.memory', 'spark.executor.cores', 'spark.executor.instances']
+best_x : [5. 4. 8.]
+best_y : [195.9976712]
+generation_best 
+
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 255.01755480413465}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 7.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 3.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 7.0, 'runtime': 207.56128454999234}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 3.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 3.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 3.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 7.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 7.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 5.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 6.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 4.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 3.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+{'spark.executor.memory': 7.0, 'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 195.9976712048939}
+
+binary GA lgb ,sizePop=30 ,maxIter=30
+['spark.memory.storageFraction', 'spark.reducer.maxReqsInFlight', 'spark.executor.memoryOverhead', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.broadcast.checksum', 'spark.executor.instances', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.locality.wait']
+best_x : [5.06349206e-01 1.13593255e+09 6.33000000e+02 1.65000000e+02
+ 0.00000000e+00 8.00000000e+00 1.41839593e+09 5.00000000e+00]
+best_y : [145.99346869]
+generation_best 
+
+{'spark.memory.storageFraction': 0.5063492063492063, 'spark.reducer.maxReqsInFlight': 1135932551.0, 'spark.executor.memoryOverhead': 633.0, 'spark.shuffle.sort.bypassMergeThreshold': 165.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1418395930.0, 'spark.locality.wait': 5.0, 'runtime': 145.99346869220022}
+{'spark.memory.storageFraction': 0.8238095238095238, 'spark.reducer.maxReqsInFlight': 1593325111.0, 'spark.executor.memoryOverhead': 877.0, 'spark.shuffle.sort.bypassMergeThreshold': 339.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 7.0, 'spark.maxRemoteBlockSizeFetchToMem': 1379680476.0, 'spark.locality.wait': 6.0, 'runtime': 175.89662488156586}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1839772160.0, 'spark.executor.memoryOverhead': 670.0, 'spark.shuffle.sort.bypassMergeThreshold': 334.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160895.0, 'spark.locality.wait': 7.0, 'runtime': 151.5794909594071}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1515664506.0, 'spark.executor.memoryOverhead': 623.0, 'spark.shuffle.sort.bypassMergeThreshold': 327.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 5.0, 'spark.maxRemoteBlockSizeFetchToMem': 1135700238.0, 'spark.locality.wait': 7.0, 'runtime': 224.30455724748055}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1705576064.0, 'spark.executor.memoryOverhead': 670.0, 'spark.shuffle.sort.bypassMergeThreshold': 334.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160895.0, 'spark.locality.wait': 7.0, 'runtime': 151.5794909594071}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1564925338.0, 'spark.executor.memoryOverhead': 623.0, 'spark.shuffle.sort.bypassMergeThreshold': 340.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 5.0, 'spark.maxRemoteBlockSizeFetchToMem': 1195804424.0, 'spark.locality.wait': 7.0, 'runtime': 224.30455724748055}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1705816576.0, 'spark.executor.memoryOverhead': 670.0, 'spark.shuffle.sort.bypassMergeThreshold': 308.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1483306623.0, 'spark.locality.wait': 7.0, 'runtime': 151.5794909594071}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1515670938.0, 'spark.executor.memoryOverhead': 623.0, 'spark.shuffle.sort.bypassMergeThreshold': 344.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1740801647.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1656300132.0, 'spark.executor.memoryOverhead': 670.0, 'spark.shuffle.sort.bypassMergeThreshold': 348.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160895.0, 'spark.locality.wait': 7.0, 'runtime': 151.5794909594071}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1515408894.0, 'spark.executor.memoryOverhead': 590.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 5.0, 'spark.maxRemoteBlockSizeFetchToMem': 1135700238.0, 'spark.locality.wait': 7.0, 'runtime': 224.30455724748055}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1705583108.0, 'spark.executor.memoryOverhead': 670.0, 'spark.shuffle.sort.bypassMergeThreshold': 323.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1479112320.0, 'spark.locality.wait': 7.0, 'runtime': 151.5794909594071}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1514462718.0, 'spark.executor.memoryOverhead': 623.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1741063807.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1723386756.0, 'spark.executor.memoryOverhead': 670.0, 'spark.shuffle.sort.bypassMergeThreshold': 323.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 7.0, 'spark.maxRemoteBlockSizeFetchToMem': 2088335343.0, 'spark.locality.wait': 7.0, 'runtime': 172.60513980697775}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1498887294.0, 'spark.executor.memoryOverhead': 562.0, 'spark.shuffle.sort.bypassMergeThreshold': 319.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 5.0, 'spark.maxRemoteBlockSizeFetchToMem': 1132889359.0, 'spark.locality.wait': 7.0, 'runtime': 224.30455724748055}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1656277888.0, 'spark.executor.memoryOverhead': 699.0, 'spark.shuffle.sort.bypassMergeThreshold': 183.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1483306623.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1564963966.0, 'spark.executor.memoryOverhead': 560.0, 'spark.shuffle.sort.bypassMergeThreshold': 342.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1737918079.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1656261504.0, 'spark.executor.memoryOverhead': 701.0, 'spark.shuffle.sort.bypassMergeThreshold': 158.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160895.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.8301587301587301, 'spark.reducer.maxReqsInFlight': 1565734014.0, 'spark.executor.memoryOverhead': 616.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1735427696.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.6841269841269841, 'spark.reducer.maxReqsInFlight': 1656277888.0, 'spark.executor.memoryOverhead': 699.0, 'spark.shuffle.sort.bypassMergeThreshold': 183.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1484355198.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1565734014.0, 'spark.executor.memoryOverhead': 562.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1741063791.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.5571428571428572, 'spark.reducer.maxReqsInFlight': 1655491456.0, 'spark.executor.memoryOverhead': 645.0, 'spark.shuffle.sort.bypassMergeThreshold': 183.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160911.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1565734014.0, 'spark.executor.memoryOverhead': 616.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1741063791.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.5698412698412698, 'spark.reducer.maxReqsInFlight': 1655229312.0, 'spark.executor.memoryOverhead': 701.0, 'spark.shuffle.sort.bypassMergeThreshold': 158.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1483306639.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.7158730158730159, 'spark.reducer.maxReqsInFlight': 1565734014.0, 'spark.executor.memoryOverhead': 616.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1741063791.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.5571428571428572, 'spark.reducer.maxReqsInFlight': 1655491456.0, 'spark.executor.memoryOverhead': 699.0, 'spark.shuffle.sort.bypassMergeThreshold': 183.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160911.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.8428571428571429, 'spark.reducer.maxReqsInFlight': 1565996542.0, 'spark.executor.memoryOverhead': 616.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1735427696.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.5571428571428572, 'spark.reducer.maxReqsInFlight': 1656277888.0, 'spark.executor.memoryOverhead': 640.0, 'spark.shuffle.sort.bypassMergeThreshold': 158.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1483308671.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.8428571428571429, 'spark.reducer.maxReqsInFlight': 1565734014.0, 'spark.executor.memoryOverhead': 562.0, 'spark.shuffle.sort.bypassMergeThreshold': 317.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1736869488.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+{'spark.memory.storageFraction': 0.5698412698412698, 'spark.reducer.maxReqsInFlight': 1656277888.0, 'spark.executor.memoryOverhead': 645.0, 'spark.shuffle.sort.bypassMergeThreshold': 183.0, 'spark.broadcast.checksum': 0.0, 'spark.executor.instances': 8.0, 'spark.maxRemoteBlockSizeFetchToMem': 1480160911.0, 'spark.locality.wait': 7.0, 'runtime': 174.16433801701135}
+{'spark.memory.storageFraction': 0.8428571428571429, 'spark.reducer.maxReqsInFlight': 1564947582.0, 'spark.executor.memoryOverhead': 616.0, 'spark.shuffle.sort.bypassMergeThreshold': 342.0, 'spark.broadcast.checksum': 1.0, 'spark.executor.instances': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1736607344.0, 'spark.locality.wait': 7.0, 'runtime': 245.3302060950512}
+
+binary GA xgb ,sizePop=30 ,maxIter=30
+['spark.executor.cores', 'spark.executor.instances']
+best_x : [3. 8.]
+best_y : [180.52475]
+generation_best 
+
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 4.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 8.0, 'runtime': 180.52475}
+{'spark.executor.cores': 3.0, 'spark.executor.instances': 7.0, 'runtime': 192.30484}

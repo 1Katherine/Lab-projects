@@ -1,0 +1,12 @@
+vital_params
+spark.executor.cores
+spark.executor.memory
+spark.executor.instances
+spark.reducer.maxReqsInFlight
+spark.reducer.maxBlocksInFlightPerAddress
+spark.maxRemoteBlockSizeFetchToMem
+spark.kryoserializer.buffer
+spark.shuffle.file.buffer
+spark.broadcast.blockSize
+spark.reducer.maxSizeInFlight
+spark.default.parallelism

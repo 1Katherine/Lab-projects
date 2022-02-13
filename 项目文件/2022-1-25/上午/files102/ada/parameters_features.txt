@@ -1,0 +1,10 @@
+
+2022-01-25 02:57:58
+训练时长0m3s
+使用算法: ada
+0.08209329378564136
+4
+spark.executor.cores: 0.38548302782837457
+spark.reducer.maxSizeInFlight: 0.22168622378705102
+spark.executor.instances: 0.20023434825315678
+spark.executor.memory: 0.19259640013141768

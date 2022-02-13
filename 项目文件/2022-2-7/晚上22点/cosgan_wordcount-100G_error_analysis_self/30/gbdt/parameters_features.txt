@@ -1,0 +1,13 @@
+
+2022-02-07 10:43:35
+训练时长0m1s
+使用算法: gbdt
+0.10607207069226067
+7
+spark.executor.memory: 0.3227098737718077
+spark.executor.memoryOverhead: 0.30507523158479405
+spark.executor.cores: 0.23035704242724167
+spark.executor.instances: 0.048132120715206485
+spark.shuffle.file.buffer: 0.041194750742674986
+spark.default.parallelism: 0.034103941314440556
+spark.shuffle.io.numConnectionsPerPeer: 0.01842703944383448

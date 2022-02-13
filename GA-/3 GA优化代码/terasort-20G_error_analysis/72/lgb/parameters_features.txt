@@ -1,0 +1,24 @@
+
+2022-02-03 09:02:19
+训练时长0m0s
+使用算法: lgb
+0.274229920230916
+2
+spark.shuffle.sort.bypassMergeThreshold: 63.0
+spark.executor.memory: 37.0
+
+2022-02-03 09:07:14
+训练时长0m0s
+使用算法: lgb
+0.274229920230916
+2
+spark.shuffle.sort.bypassMergeThreshold: 63.0
+spark.executor.memory: 37.0
+
+2022-02-03 09:18:24
+训练时长0m0s
+使用算法: lgb
+0.274229920230916
+2
+spark.shuffle.sort.bypassMergeThreshold: 63.0
+spark.executor.memory: 37.0

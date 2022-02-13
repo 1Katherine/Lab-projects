@@ -1,0 +1,33 @@
+
+2022-01-23 17:22:36
+训练时长0m0s
+使用算法: lgb
+0.09845590840394365
+5
+spark.reducer.maxSizeInFlight: 30.0
+spark.scheduler.revive.interval: 27.0
+spark.maxRemoteBlockSizeFetchToMem: 16.0
+spark.shuffle.file.buffer: 14.0
+spark.default.parallelism: 13.0
+
+2022-01-23 17:33:40
+训练时长0m0s
+使用算法: lgb
+0.09845590840394365
+5
+spark.reducer.maxSizeInFlight: 30.0
+spark.scheduler.revive.interval: 27.0
+spark.maxRemoteBlockSizeFetchToMem: 16.0
+spark.shuffle.file.buffer: 14.0
+spark.default.parallelism: 13.0
+
+2022-01-23 17:58:45
+训练时长0m0s
+使用算法: lgb
+0.09845590840394365
+5
+spark.reducer.maxSizeInFlight: 30.0
+spark.scheduler.revive.interval: 27.0
+spark.maxRemoteBlockSizeFetchToMem: 16.0
+spark.shuffle.file.buffer: 14.0
+spark.default.parallelism: 13.0

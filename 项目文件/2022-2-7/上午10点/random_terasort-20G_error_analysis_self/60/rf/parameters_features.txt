@@ -1,0 +1,23 @@
+
+2022-02-07 09:07:54
+训练时长0m6s
+使用算法: rf
+0.16201936549536455
+17
+spark.executor.memory: 0.3717343974573491
+spark.executor.cores: 0.14275102763223277
+spark.kryoserializer.buffer.max: 0.08008709084950436
+spark.shuffle.compress: 0.06456387230119541
+spark.maxRemoteBlockSizeFetchToMem: 0.05514469231787125
+spark.memory.fraction: 0.0506369334338875
+spark.executor.memoryOverhead: 0.04575603575398086
+spark.reducer.maxBlocksInFlightPerAddress: 0.03604286576702316
+spark.reducer.maxSizeInFlight: 0.02050277379611685
+spark.shuffle.sort.bypassMergeThreshold: 0.019883117713251356
+spark.memory.storageFraction: 0.019264290427096382
+spark.default.parallelism: 0.01818897821417911
+spark.locality.wait: 0.017725250004893216
+spark.reducer.maxReqsInFlight: 0.017516522783078584
+spark.kryoserializer.buffer: 0.016950271248269994
+spark.scheduler.revive.interval: 0.012609765044040383
+spark.broadcast.blockSize: 0.010642115256029682

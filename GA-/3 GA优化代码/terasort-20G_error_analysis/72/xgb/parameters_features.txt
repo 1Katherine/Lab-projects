@@ -1,0 +1,31 @@
+
+2022-02-03 09:02:29
+训练时长0m3s
+使用算法: xgb
+0.051373541390053595
+5
+spark.executor.cores: 0.6727986931800842
+spark.executor.memory: 0.18909546732902527
+spark.shuffle.compress: 0.08998605608940125
+spark.executor.instances: 0.024091247469186783
+spark.memory.fraction: 0.024028485640883446
+
+2022-02-03 09:07:25
+训练时长0m3s
+使用算法: xgb
+0.051373541390053595
+5
+spark.executor.cores: 0.6727986931800842
+spark.executor.memory: 0.18909546732902527
+spark.shuffle.compress: 0.08998605608940125
+spark.executor.instances: 0.024091247469186783
+spark.memory.fraction: 0.024028485640883446
+
+2022-02-03 09:18:35
+训练时长0m3s
+使用算法: xgb
+0.0527650884279278
+3
+spark.executor.cores: 0.8378605246543884
+spark.executor.memory: 0.1109565943479538
+spark.shuffle.compress: 0.051182858645915985

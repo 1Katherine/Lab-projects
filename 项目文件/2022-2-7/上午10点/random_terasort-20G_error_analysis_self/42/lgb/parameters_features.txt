@@ -1,0 +1,8 @@
+
+2022-02-07 09:07:01
+训练时长0m0s
+使用算法: lgb
+0.4116745461943456
+2
+spark.rdd.compress: 0.0
+spark.executor.memoryOverhead: 0.0

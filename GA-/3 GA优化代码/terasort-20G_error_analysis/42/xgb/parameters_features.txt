@@ -1,0 +1,42 @@
+
+2022-02-03 09:01:06
+训练时长0m3s
+使用算法: xgb
+0.06147191552026215
+7
+spark.executor.cores: 0.7852954864501953
+spark.executor.memory: 0.0900806188583374
+spark.shuffle.compress: 0.08103851974010468
+spark.executor.instances: 0.03775414079427719
+spark.reducer.maxBlocksInFlightPerAddress: 0.003406265052035451
+spark.memory.storageFraction: 0.0017913611372932792
+spark.broadcast.blockSize: 0.0006336403894238174
+
+2022-02-03 09:06:05
+训练时长0m3s
+使用算法: xgb
+0.09082448730471054
+13
+spark.executor.memory: 0.6876146793365479
+spark.executor.cores: 0.16403701901435852
+spark.shuffle.compress: 0.08902683109045029
+spark.executor.instances: 0.04768230393528938
+spark.storage.memoryMapThreshold: 0.009149577468633652
+spark.shuffle.file.buffer: 0.0006837958353571594
+spark.memory.storageFraction: 0.0005359333590604365
+spark.broadcast.blockSize: 0.00041023449739441276
+spark.kryoserializer.buffer.max: 0.00038629345363005996
+spark.maxRemoteBlockSizeFetchToMem: 0.000250043289270252
+spark.reducer.maxSizeInFlight: 0.00010672998905647546
+spark.shuffle.sort.bypassMergeThreshold: 5.9263813454890624e-05
+spark.scheduler.mode: 5.7345230743521824e-05
+
+2022-02-03 09:17:11
+训练时长0m3s
+使用算法: xgb
+0.0742830552360447
+4
+spark.executor.cores: 0.8956619501113892
+spark.executor.instances: 0.050711438059806824
+spark.executor.memory: 0.027080358937382698
+spark.shuffle.compress: 0.026546260342001915

@@ -1,0 +1,3 @@
+vital_params
+spark.default.parallelism
+spark.memory.fraction

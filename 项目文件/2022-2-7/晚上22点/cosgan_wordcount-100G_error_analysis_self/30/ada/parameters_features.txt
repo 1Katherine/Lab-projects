@@ -1,0 +1,16 @@
+
+2022-02-07 10:43:49
+训练时长0m2s
+使用算法: ada
+0.08967367673727661
+10
+spark.executor.cores: 0.26116179973210324
+spark.executor.memory: 0.22771978126251735
+spark.executor.memoryOverhead: 0.20821894450103995
+spark.default.parallelism: 0.08173147046286362
+spark.executor.instances: 0.05307789433401699
+spark.memory.storageFraction: 0.04865393060829306
+spark.shuffle.file.buffer: 0.0423565425674526
+spark.reducer.maxBlocksInFlightPerAddress: 0.035627058873070376
+spark.reducer.maxReqsInFlight: 0.021731507395355853
+spark.shuffle.sort.bypassMergeThreshold: 0.019721070263286965

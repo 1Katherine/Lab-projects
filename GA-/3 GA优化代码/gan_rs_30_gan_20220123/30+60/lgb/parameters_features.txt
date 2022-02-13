@@ -1,0 +1,89 @@
+
+2022-01-23 17:25:28
+训练时长0m0s
+使用算法: lgb
+0.07915376949497296
+7
+spark.reducer.maxReqsInFlight: 40.0
+spark.shuffle.sort.bypassMergeThreshold: 40.0
+spark.executor.memoryOverhead: 34.0
+spark.kryoserializer.buffer: 25.0
+spark.default.parallelism: 24.0
+spark.reducer.maxBlocksInFlightPerAddress: 22.0
+spark.reducer.maxSizeInFlight: 19.0
+
+2022-01-23 17:31:10
+训练时长0m0s
+使用算法: lgb
+0.09980707885396188
+13
+spark.maxRemoteBlockSizeFetchToMem: 33.0
+spark.reducer.maxBlocksInFlightPerAddress: 32.0
+spark.default.parallelism: 27.0
+spark.reducer.maxSizeInFlight: 22.0
+spark.kryoserializer.buffer.max: 18.0
+spark.shuffle.sort.bypassMergeThreshold: 18.0
+spark.reducer.maxReqsInFlight: 16.0
+spark.executor.memoryOverhead: 15.0
+spark.scheduler.revive.interval: 14.0
+spark.kryoserializer.buffer: 8.0
+spark.executor.instances: 4.0
+spark.memory.storageFraction: 4.0
+spark.broadcast.blockSize: 0.0
+
+2022-01-23 17:34:05
+训练时长0m0s
+使用算法: lgb
+0.09980707885396188
+13
+spark.maxRemoteBlockSizeFetchToMem: 33.0
+spark.reducer.maxBlocksInFlightPerAddress: 32.0
+spark.default.parallelism: 27.0
+spark.reducer.maxSizeInFlight: 22.0
+spark.kryoserializer.buffer.max: 18.0
+spark.shuffle.sort.bypassMergeThreshold: 18.0
+spark.reducer.maxReqsInFlight: 16.0
+spark.executor.memoryOverhead: 15.0
+spark.scheduler.revive.interval: 14.0
+spark.kryoserializer.buffer: 8.0
+spark.executor.instances: 4.0
+spark.memory.storageFraction: 4.0
+spark.broadcast.blockSize: 0.0
+
+2022-01-23 17:59:21
+训练时长0m0s
+使用算法: lgb
+0.09980707885396188
+13
+spark.maxRemoteBlockSizeFetchToMem: 33.0
+spark.reducer.maxBlocksInFlightPerAddress: 32.0
+spark.default.parallelism: 27.0
+spark.reducer.maxSizeInFlight: 22.0
+spark.kryoserializer.buffer.max: 18.0
+spark.shuffle.sort.bypassMergeThreshold: 18.0
+spark.reducer.maxReqsInFlight: 16.0
+spark.executor.memoryOverhead: 15.0
+spark.scheduler.revive.interval: 14.0
+spark.kryoserializer.buffer: 8.0
+spark.executor.instances: 4.0
+spark.memory.storageFraction: 4.0
+spark.broadcast.blockSize: 0.0
+
+2022-01-23 17:59:49
+训练时长0m0s
+使用算法: lgb
+0.09980707885396188
+13
+spark.maxRemoteBlockSizeFetchToMem: 33.0
+spark.reducer.maxBlocksInFlightPerAddress: 32.0
+spark.default.parallelism: 27.0
+spark.reducer.maxSizeInFlight: 22.0
+spark.kryoserializer.buffer.max: 18.0
+spark.shuffle.sort.bypassMergeThreshold: 18.0
+spark.reducer.maxReqsInFlight: 16.0
+spark.executor.memoryOverhead: 15.0
+spark.scheduler.revive.interval: 14.0
+spark.kryoserializer.buffer: 8.0
+spark.executor.instances: 4.0
+spark.memory.storageFraction: 4.0
+spark.broadcast.blockSize: 0.0

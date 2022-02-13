@@ -1,0 +1,10 @@
+vital_params
+spark.executor.memory
+spark.shuffle.compress
+spark.memory.storageFraction
+spark.kryoserializer.buffer.max
+spark.scheduler.revive.interval
+spark.memory.fraction
+spark.executor.cores
+spark.executor.instances
+spark.default.parallelism

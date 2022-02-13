@@ -1,0 +1,9 @@
+
+2022-02-08 11:48:53
+训练时长0m3s
+使用算法: xgb
+0.13103581243728596
+3
+spark.executor.memory: 0.6106576919555664
+spark.shuffle.compress: 0.27838000655174255
+spark.memory.fraction: 0.11096233129501343

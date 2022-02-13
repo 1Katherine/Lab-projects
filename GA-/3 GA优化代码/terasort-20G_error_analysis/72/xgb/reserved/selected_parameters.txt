@@ -1,0 +1,6 @@
+vital_params
+spark.executor.cores
+spark.executor.memory
+spark.shuffle.compress
+spark.executor.instances
+spark.default.parallelism

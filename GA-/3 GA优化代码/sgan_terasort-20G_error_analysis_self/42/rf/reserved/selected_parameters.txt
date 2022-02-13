@@ -1,0 +1,9 @@
+vital_params
+spark.shuffle.file.buffer
+spark.executor.memoryOverhead
+spark.reducer.maxBlocksInFlightPerAddress
+spark.reducer.maxSizeInFlight
+spark.executor.cores
+spark.executor.instances
+spark.executor.memory
+spark.default.parallelism

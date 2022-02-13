@@ -1,0 +1,30 @@
+
+2021-07-06 19:09:58
+训练时长13m34s
+使用算法: lgb
+0.08
+24
+cache-misses: 283
+L1-dcache-load-misses: 254
+branch-misses: 245
+msr/pperf/: 237
+topdown-slots-retired: 200
+cache-references: 154
+L1-dcache-stores: 134
+ld_blocks_partial.address_alias: 133
+container_spec_cpu_shares: 122
+int_misc.recovery_cycles: 120
+iTLB-load-misses: 110
+node-store-misses: 98
+unix sockets - str: 96
+topdown-total-slots: 94
+container_start_time_seconds: 94
+total cpu usage - idl: 81
+container_cpu_system_seconds_total: 78
+topdown-recovery-bubbles: 78
+branch-instructions: 69
+memory usage - used: 69
+exe_activity.4_ports_util: 67
+dTLB-loads: 65
+frontend_retired.itlb_miss: 63
+frontend_retired.stlb_miss: 56

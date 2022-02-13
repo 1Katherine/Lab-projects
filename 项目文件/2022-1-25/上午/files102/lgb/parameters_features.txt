@@ -1,0 +1,10 @@
+
+2022-01-25 02:57:49
+训练时长0m4s
+使用算法: lgb
+0.1493599288895902
+4
+spark.executor.memoryOverhead: 68.0
+spark.broadcast.blockSize: 54.0
+spark.reducer.maxBlocksInFlightPerAddress: 47.0
+spark.kryoserializer.buffer: 45.0

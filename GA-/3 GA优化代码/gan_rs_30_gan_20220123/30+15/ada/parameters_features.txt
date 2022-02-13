@@ -1,0 +1,89 @@
+
+2022-01-23 17:21:14
+训练时长0m1s
+使用算法: ada
+0.09378493294648947
+19
+spark.broadcast.blockSize: 0.17250351704877084
+spark.shuffle.io.numConnectionsPerPeer: 0.13687820392789443
+spark.broadcast.compress: 0.1314239468785026
+spark.executor.instances: 0.08837462308260713
+spark.kryoserializer.buffer: 0.06984999597303516
+spark.reducer.maxReqsInFlight: 0.056581061133293
+spark.reducer.maxSizeInFlight: 0.055580121474553205
+spark.locality.wait: 0.04152586495385872
+spark.shuffle.sort.bypassMergeThreshold: 0.035602808278211606
+spark.memory.fraction: 0.028023359812714508
+spark.executor.memory: 0.026799402346483255
+spark.memory.offHeap.size: 0.0264716173381194
+spark.maxRemoteBlockSizeFetchToMem: 0.0262624099590887
+spark.scheduler.revive.interval: 0.025719733071308194
+spark.default.parallelism: 0.0236006566582022
+spark.executor.memoryOverhead: 0.023228838546714675
+spark.memory.storageFraction: 0.017297891829654587
+spark.kryoserializer.buffer.max: 0.01136918633968731
+spark.shuffle.file.buffer: 0.002906761347300615
+
+2022-01-23 17:33:23
+训练时长0m1s
+使用算法: ada
+0.10138704651963419
+25
+spark.broadcast.compress: 0.15355635725027836
+spark.broadcast.blockSize: 0.13496735474263513
+spark.shuffle.io.numConnectionsPerPeer: 0.10997989105793855
+spark.executor.instances: 0.08756610715001391
+spark.reducer.maxReqsInFlight: 0.0708670474644503
+spark.scheduler.revive.interval: 0.05978534685382272
+spark.reducer.maxSizeInFlight: 0.051963529644530514
+spark.default.parallelism: 0.04022086173332775
+spark.memory.fraction: 0.03333755827394631
+spark.kryoserializer.buffer: 0.032608606183302476
+spark.shuffle.sort.bypassMergeThreshold: 0.030624211671145634
+spark.executor.memory: 0.024917288837990176
+spark.memory.offHeap.size: 0.024577241277286787
+spark.kryoserializer.buffer.max: 0.0243358749384566
+spark.locality.wait: 0.022191551443389943
+spark.executor.memoryOverhead: 0.02069217444551896
+spark.maxRemoteBlockSizeFetchToMem: 0.01972260948501861
+spark.memory.storageFraction: 0.013504153755334652
+spark.shuffle.file.buffer: 0.012623743027086286
+spark.reducer.maxBlocksInFlightPerAddress: 0.006683524474102149
+spark.executor.cores: 0.005626489897062316
+spark.memory.offHeap.enabled: 0.0053340199051697505
+spark.storage.memoryMapThreshold: 0.005272987094257491
+spark.scheduler.mode: 0.005225665104190514
+spark.shuffle.compress: 0.0038158042897441257
+
+2022-01-23 17:57:11
+训练时长0m1s
+使用算法: ada
+0.08708095545856799
+27
+spark.broadcast.blockSize: 0.13642549716011806
+spark.broadcast.compress: 0.12641121468210928
+spark.shuffle.io.numConnectionsPerPeer: 0.10328018255063852
+spark.executor.instances: 0.08977709160776264
+spark.reducer.maxReqsInFlight: 0.07589508654817374
+spark.reducer.maxSizeInFlight: 0.05938446124269268
+spark.kryoserializer.buffer: 0.05634990656386405
+spark.default.parallelism: 0.04177172023059483
+spark.scheduler.revive.interval: 0.035050397876717224
+spark.kryoserializer.buffer.max: 0.02958005309484606
+spark.memory.fraction: 0.027978873050403124
+spark.memory.offHeap.size: 0.027322223649767344
+spark.executor.memoryOverhead: 0.026366953240742907
+spark.shuffle.sort.bypassMergeThreshold: 0.02469243171606506
+spark.executor.memory: 0.02356104719749132
+spark.reducer.maxBlocksInFlightPerAddress: 0.0202796253509363
+spark.memory.storageFraction: 0.015427974235818357
+spark.locality.wait: 0.013985885407602405
+spark.maxRemoteBlockSizeFetchToMem: 0.012913688135416023
+spark.memory.offHeap.enabled: 0.01212337540671933
+spark.scheduler.mode: 0.010817187544897309
+spark.broadcast.checksum: 0.010491791432491425
+spark.shuffle.file.buffer: 0.006262447179803156
+spark.executor.cores: 0.004344430688800365
+spark.storage.memoryMapThreshold: 0.004075320582517754
+spark.rdd.compress: 0.0028173647969259997
+spark.shuffle.compress: 0.002613768826084778
