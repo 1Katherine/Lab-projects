@@ -9,10 +9,11 @@
 import pandas as pd
 import csv
 import numpy as np
+
+# ----------------------- 数据处理：csv转换成df ---------------------
 params_names = []
 def csvTodf():
     global params_names
-    # ----------------------- 数据处理：csv转换成df ---------------------
     tmp_lst = []
     with open('generationConf.csv', 'r') as f:
         reader = csv.reader(f)
@@ -30,8 +31,7 @@ def csvTodf():
     return df_data, df_target
 
 
-def feature_selected_K(df_data, df_target, k):
-    global params_names
+def feature_selected_K(df_data, df_target, k, params_names):
     # ----------------------- 数据处理：标准化 ---------------------
     from sklearn.preprocessing import StandardScaler
     # 标准化，返回值为标准化后的数据
@@ -75,5 +75,5 @@ def feature_selected_K(df_data, df_target, k):
 
 if __name__ == '__main__':
     df_data, df_target = csvTodf()
-    vitual_params = feature_selected_K(df_data, df_target, df_data.shape[1] - 10)
+    vitual_params = feature_selected_K(df_data, df_target, df_data.shape[1] - 20, params_names)
     print(vitual_params)

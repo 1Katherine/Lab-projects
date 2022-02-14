@@ -6,7 +6,7 @@ import os
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 from bayes_scode import JSONLogger, Events, BayesianOptimization,SequentialDomainReductionTransformer
 import matplotlib.pyplot as plt
-# 调用代码：python ganrs_Bayesian_Optimization_server.py --sampleType=all --ganrsGroup=4 --niters=10 --initFile=/usr/local/home/yyq/bo/ganrs_bo/wordcount-100G-GAN.csv
+# 调用代码：python feature_selection_bo.py --sampleType=all --ganrsGroup=4 --niters=10 --initFile=/usr/local/home/yyq/bo/ganrs_bo/wordcount-100G-GAN.csv
 import argparse
 parser = argparse.ArgumentParser(description='manual to this script')
 # 采样方式：0表示所有样本，1表示前ganrsGroup*2个样本，2表示间隔采样每一组样本中只选一个rs一个gan,3表示选择执行时间最少的几个样本作为初始样本
