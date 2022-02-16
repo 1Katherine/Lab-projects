@@ -1,4 +1,8 @@
 import pandas as pd
+# 导入后加入以下列，再显示时显示完全。
+pd.set_option('display.max_rows',500)
+pd.set_option('display.max_columns',500)
+pd.set_option('display.width',1000)
 import shutil
 import time
 import sys
@@ -12,7 +16,7 @@ from rs_bayes_opt import JSONLogger as rs_JSONLogger
 from rs_bayes_opt import Events as rs_Events
 from rs_bayes_opt import BayesianOptimization as rs_BayesianOptimization
 import matplotlib.pyplot as plt
-from feature_selection.corraltion import feature_selected_K
+# 调用代码：python feature_selection_bo_laptop.py --sampleType=all --ganrsGroup=4 --niters=10 --initFile=/usr/local/home/yyq/bo/ganrs_bo/wordcount-100G-GAN.csv
 import argparse
 parser = argparse.ArgumentParser(description='manual to this script')
 parser.add_argument('--benchmark', type=str, help='benchmark type')
@@ -26,10 +30,6 @@ current_path = os.path.abspath(__file__)
 # 获取当前文件的父目录,比如/usr/local/home/yyq/bo/rs_bo/rs_bo_newEI
 father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + ".")
 
-# 获取当前文件路径
-current_path = os.path.abspath(__file__)
-# 获取当前文件的父目录
-father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + ".")
 
 # 服务器运行spark时config文件
 config_run_path = father_path + "/config/" + args.benchmark +  "/"
@@ -40,9 +40,8 @@ conf_range_table = father_path + "/Spark_conf_range_"  + args.benchmark.split('-
 # 保存配置
 # generation_confs = father_path + "/generationConf.csv"
 
-
 def black_box_function(**params):
-    i=[]
+    i = []
     for conf in vital_params['vital_params']:
         i.append(params[conf])
     return -schafferRun(i)
@@ -149,10 +148,7 @@ def rs_bo(ninit, iter, vital_params_range):
     logpath = father_path + "/logs_"+ str(iterations) +".json"
     logger = rs_JSONLogger(path=logpath)
     optimizer.subscribe(rs_Events.OPTIMIZATION_STEP, logger)
-
-    init_points = ninit
-    n_iter = iter
-    optimizer.maximize(init_points=init_points, n_iter=n_iter, acq='ei')
+    optimizer.maximize(init_points=ninit, n_iter=iter, acq='ei')
 
     # 存储所有样本数据
     # 读取json文件, 转成csv
@@ -160,7 +156,7 @@ def rs_bo(ninit, iter, vital_params_range):
     for line in open(logpath).readlines():
         one_res = {}
         js_l = json.loads(line)
-        one_res['target'] = -js_l['target']
+        one_res['runtime'] = -js_l['target']
         vital_names = sorted(vital_params_range)  # sorted(vital_params_range) = vital_params_name
         for pname in vital_names:
             one_res[pname] = js_l['params'][pname]
@@ -171,8 +167,8 @@ def rs_bo(ninit, iter, vital_params_range):
     res_df.to_csv(father_path + "/generationConf_"+ str(iterations) +".csv")
 
     df_data = res_df[vital_names]
-    df_target = res_df['target']
-
+    df_target = res_df['runtime']
+    from feature_selection.corraltion import feature_selected_K
     # 降维后的重要参数名称(减少10个参数）
     vitual_params = feature_selected_K(df_data, df_target, df_data.shape[1] - 10, vital_names)
     return res_df, vitual_params
@@ -205,7 +201,7 @@ def init_bo(initsamples, iter, vital_params_range):
     for line in open(logpath).readlines():
         one_res = {}
         js_l = json.loads(line)
-        one_res['target'] = -js_l['target']
+        one_res['runtime'] = -js_l['target']
         vital_names = sorted(vital_params_range)  # sorted(vital_params_range) = vital_params_name
         for pname in vital_names:
             one_res[pname] = js_l['params'][pname]
@@ -216,7 +212,7 @@ def init_bo(initsamples, iter, vital_params_range):
     res_df.to_csv(father_path + "/generationConf_" + str(iterations) + ".csv")
 
     df_data = res_df[vital_names]
-    df_target = res_df['target']
+    df_target = res_df['runtime']
     from feature_selection.corraltion import feature_selected_K
     # 降维后的重要参数名称(减少10个参数）
     vitual_params = feature_selected_K(df_data, df_target, df_data.shape[1] - 10, vital_names)
@@ -225,9 +221,23 @@ def init_bo(initsamples, iter, vital_params_range):
 # --------------------- 读取初始样本 初始 start -------------------
 # 取所有样本作为bo初始样本
 def get_init_samples(initsamples_df, params_names):
-    print('get_init_samples的params_names参数 : ' + str(params_names))
     # 初始样本
-    vital_params_list = params_names.append('runtime')
+    params_names.append('runtime')
+    vital_params_list = params_names
+    # print('res_samples_df = \n' + str(initsamples_df))
+    # print('res_samples_df.columns = \n' + str(initsamples_df.columns) +'res_samples_df.columns.len = \n' + str(len(initsamples_df.columns)) +
+    #       '\nvital_params_names = \n' + str(params_names) + '\nvital_params_names.len = \n' + str(len(params_names)))
+    # # print(sorted(vital_params_list) == sorted(initsamples_df.columns))
+    # print('vital_params_list = ' + str(vital_params_list) + ', type = ' + str(type(vital_params_list)))
+    # for col in vital_params_list:
+    #     print(col)
+    #     if col in initsamples_df.columns:
+    #         print(col)
+    #         print(initsamples_df[col])
+    #     else:
+    #         print(col + '在vital_params_list中，不在initsamples_df.columns中')
+    # print('initsamples_df[vital_params_list] = \n')
+    print(initsamples_df[vital_params_list])
     initsamples = initsamples_df[vital_params_list].to_numpy()
     print('从csv文件中获取初始样本:' + str(len(initsamples)))
     return initsamples
@@ -263,20 +273,20 @@ if __name__ == '__main__':
 
     iterations = 1
     vitual_params = []
-    # res_samples_df = []
+    res_samples_df = pd.DataFrame()
     max_niterations = args.niters
     current_niterations = 0
     # ------------------ 第一次迭代bo：使用随机生成样本 -------------
     while current_niterations + 5 <= max_niterations:
+        print('进入current_niterations，current_niterations = ' + str(current_niterations))
         if iterations == 1:
-            res_samples_df, vitual_params = rs_bo(ninit = args.ninits, iter = 1, vital_params_range = d2)
-            print('第 ' + str(iterations) + ' 次迭代的结果样本为\n' + str(res_samples_df))
-            current_niterations += 1
+            print('iterations == 1')
+            res_samples_df, vitual_params = rs_bo(ninit = args.ninits, iter = 3, vital_params_range = d2)
+            iterations += 1
+            current_niterations += 3
         else:
-            nonlocal res_samples_df
-            init_samples = get_init_samples(res_samples_df, sorted(d2))
-            print('第 ' + str(iterations) + ' 次迭代使用的初始样本为\n' + str(init_samples))
-            if len(sorted(d2)) < 10:
+            if len(sorted(d2)) < 6:
+                print('剩余参数少于6个不再降维直接搜索。降维后剩余的参数个数:' + str(len(d2)) + '降维后的vital_params_range = ' + str(d2))
                 res_samples_df, vitual_params = init_bo(init_samples, iter=max_niterations - current_niterations, vital_params_range=d2)
                 print('第 ' + str(iterations) + ' 次迭代的结果样本为\n' + str(res_samples_df))
                 break
@@ -290,8 +300,14 @@ if __name__ == '__main__':
                         d2.update(d1)
                     else:
                         print(conf, '-----参数没有维护: ', '-----')
+                print('降维后剩余的参数个数:' + str(len(d2)) + '降维后的vital_params_range = ' + str(d2))
+                print('降维后的初始样本 = \n' + str(res_samples_df))
+                vital_params = pd.DataFrame(sorted(vitual_params),columns=['vital_params'])
+                init_samples = get_init_samples(res_samples_df, sorted(vitual_params))
                 res_samples_df, vitual_params = init_bo(init_samples, iter = 5, vital_params_range = d2)
+                iterations += 1
                 current_niterations += 5
-        iterations += 1
+        print('第 ' + str(iterations) + ' 次迭代的结果样本为\n' + str(res_samples_df))
+
 
 

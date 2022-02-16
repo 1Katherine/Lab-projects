@@ -8,6 +8,10 @@ import joblib
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+# 获取当前文件路径
+current_path = os.path.abspath(__file__)
+# 获取当前文件的父目录
+father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + ".")
 from bayes_scode import BayesianOptimization, SequentialDomainReductionTransformer, JSONLogger, Events
 import warnings
 # 调用代码：python ganrs_Bayesian_Optimization_regitser.py --sampleType=all --ganrsGroup=4 --niters=10 --initFile=wordcount-100G-GAN-30.csv
@@ -112,6 +116,7 @@ def draw_target(bo):
     plt.legend()
     plt.savefig(generation_confs_png)
     plt.show()
+    plt.close('all')
 
 # --------------------- 生成 gan-rs 初始种群 start -------------------
 initpoint_path = args.initFile
@@ -165,7 +170,7 @@ if __name__ == '__main__':
     # 重要参数
     vital_params_path = modelfile + name + "/selected_parameters.txt"
     # 维护的参数-范围表
-    conf_range_table = "E:\\Desktop\\github同步代码\\ade\\GAN_Bayes\\laptop\\Spark_conf_range_wordcount.xlsx"
+    conf_range_table = father_path + "\\Spark_conf_range_wordcount.xlsx"
 
 
     vital_params = pd.read_csv(vital_params_path)
@@ -247,6 +252,23 @@ if __name__ == '__main__':
     optimizer.maximize(init_points=init_points, n_iter=n_iter, acq='ei',xi=args.xi)
     print('optimizer.max = ' + str(optimizer.max))
     draw_target(optimizer)
+    # -----------------------------
+    optimizer = BayesianOptimization(
+        f=black_box_function,
+        pbounds=pbounds,
+        verbose=2,
+        random_state=1,
+        bounds_transformer=bounds_transformer,
+        custom_initsamples=initsamples
+    )
+    logger = JSONLogger(path=logpath)
+    optimizer.subscribe(Events.OPTIMIZATION_STEP, logger)
+    optimizer.maximize(init_points=init_points, n_iter=15, acq='ei',xi=args.xi)
+    print('optimizer.max = ' + str(optimizer.max))
+    draw_target(optimizer)
+    print('2')
+
+    # --------------------------
 
 
     generation_confs_csv = modelfile + 'result/' + str(init_points) + '/' + name + " - generationbestConf - init_points=" + str(

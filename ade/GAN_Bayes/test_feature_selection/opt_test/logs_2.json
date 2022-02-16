@@ -1,0 +1,3 @@
+{"target": -295.26034428571404, "params": {"spark.executor.cores": 2.251066014107722, "spark.executor.instances": 6.881297973768632}, "datetime": {"datetime": "2022-02-15 10:34:50", "elapsed": 0.0, "delta": 0.0}}
+{"target": -356.7406071666666, "params": {"spark.executor.cores": 1.9069977178955193, "spark.executor.instances": 4.587023563268453}, "datetime": {"datetime": "2022-02-15 10:34:50", "elapsed": 0.00097, "delta": 0.00097}}
+{"target": -231.4015805757576, "params": {"spark.executor.cores": 3.3801733178461686, "spark.executor.instances": 7.056346642647473}, "datetime": {"datetime": "2022-02-15 10:34:50", "elapsed": 0.00097, "delta": 0.0}}

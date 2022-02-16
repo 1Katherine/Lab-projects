@@ -89,7 +89,7 @@ def run(configNum):
     runtime = float(line.split()[4])
     global last_runtime
     if runtime == last_runtime:
-        rumtime = 100000.0
+        runtime = 100000.0
     else:
         last_runtime = runtime
     return runtime

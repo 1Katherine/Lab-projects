@@ -31,7 +31,7 @@ def csvTodf():
 
 
 def feature_selected_K(df_data, df_target, k, params_names):
-    print('重要参数列表 : ' + str(params_names))
+    print('feature_selected_K中降维前的重要参数个数：'+ str(len(params_names)) +' , 重要参数列表 : ' + str(params_names))
     # ----------------------- 数据处理：标准化 ---------------------
     from sklearn.preprocessing import StandardScaler
     # 标准化，返回值为标准化后的数据
