@@ -193,8 +193,11 @@ class BayesianOptimization(Observable):
         '''
         print('------------使用ganrs生成初始样本点------------')
         import numpy as np
+        f = open('output.txt', "w+")
         for sample in self.custom_initsamples:
-            target = 0 - sample[-1:][0].astype(np.float64)
+            print('custom_initsamples中的sample为 : ' + str(sample), file=f)
+            target = 0 - sample[-1]
+            print('sample执行时间为 : ' + str(target), file=f)
             x = sample[:-1]
             self.register(x, target)
             # self._queue.add(x.ravel())

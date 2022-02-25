@@ -238,13 +238,17 @@ if __name__ == '__main__':
     '''
         开始贝叶斯优化，传入pbounds = {'x': (-5, 5), 'y': (-2, 15)}
     '''
-    bounds_transformer = SequentialDomainReductionTransformer()
+    # bounds_transformer = SequentialDomainReductionTransformer()
+
+    f = open("output.txt", 'w+')
+    print('initsamples for bo is:', file=f)
+    print(initsamples, file=f)
     optimizer = BayesianOptimization(
         f=black_box_function,
         pbounds=pbounds,
         verbose=2,
         random_state=1,
-        bounds_transformer=bounds_transformer,
+        # bounds_transformer=bounds_transformer,
         custom_initsamples=initsamples
     )
     logger = JSONLogger(path=logpath)
@@ -258,7 +262,7 @@ if __name__ == '__main__':
         pbounds=pbounds,
         verbose=2,
         random_state=1,
-        bounds_transformer=bounds_transformer,
+        # bounds_transformer=bounds_transformer,
         custom_initsamples=initsamples
     )
     logger = JSONLogger(path=logpath)

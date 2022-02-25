@@ -26,10 +26,6 @@ current_path = os.path.abspath(__file__)
 # 获取当前文件的父目录,比如/usr/local/home/yyq/bo/rs_bo/rs_bo_newEI
 father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + ".")
 
-# 获取当前文件路径
-current_path = os.path.abspath(__file__)
-# 获取当前文件的父目录
-father_path = os.path.abspath(os.path.dirname(current_path) + os.path.sep + ".")
 
 # 服务器运行spark时config文件
 config_run_path = father_path + "/config/" + args.benchmark +  "/"

@@ -1,0 +1,8 @@
+
+2022-02-23 18:34:52
+训练时长0m3s
+使用算法: ada
+0.18352911792775575
+2
+spark.sql.autoBroadcastJoinThreshold: 0.6471642036701525
+spark.maxRemoteBlockSizeFetchToMem: 0.35283579632984763

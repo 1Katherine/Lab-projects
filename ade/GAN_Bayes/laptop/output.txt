@@ -1,0 +1,69 @@
+initsamples for bo is:
+[[308.      3.      6.    209.646]
+ [358.      1.      8.    300.603]
+ [360.      2.      8.    210.803]
+ [342.      2.      8.    207.942]
+ [346.      2.      8.    220.532]
+ [339.      2.      8.    216.546]
+ [281.      1.      5.    463.057]
+ [378.      3.      4.    261.291]
+ [415.      2.      8.    217.651]
+ [340.      2.      8.    218.302]
+ [344.      2.      8.    211.907]
+ [341.      2.      8.    215.583]
+ [441.      1.      5.    458.204]
+ [431.      1.      7.    355.582]
+ [267.      2.      7.    238.41 ]
+ [335.      2.      8.    202.15 ]
+ [348.      2.      8.    213.448]
+ [333.      2.      8.    218.702]
+ [437.      3.      4.    249.5  ]
+ [425.      3.      6.    210.039]
+ [444.      1.      6.    382.999]
+ [330.      2.      8.    212.629]
+ [333.      2.      8.    216.353]
+ [336.      2.      8.    214.035]
+ [357.      1.      4.    515.218]
+ [355.      2.      5.    299.594]
+ [494.      2.      4.    332.861]
+ [422.      3.      6.    232.895]
+ [423.      3.      6.    224.474]
+ [423.      3.      6.    211.437]]
+      2.      8.    215.583]
+sample执行时间为 : -215.583
+custom_initsamples中的sample为 : [441.      1.      5.    458.204]
+sample执行时间为 : -458.204
+custom_initsamples中的sample为 : [431.      1.      7.    355.582]
+sample执行时间为 : -355.582
+custom_initsamples中的sample为 : [267.     2.     7.   238.41]
+sample执行时间为 : -238.41
+custom_initsamples中的sample为 : [335.     2.     8.   202.15]
+sample执行时间为 : -202.15
+custom_initsamples中的sample为 : [348.      2.      8.    213.448]
+sample执行时间为 : -213.448
+custom_initsamples中的sample为 : [333.      2.      8.    218.702]
+sample执行时间为 : -218.702
+custom_initsamples中的sample为 : [437.    3.    4.  249.5]
+sample执行时间为 : -249.5
+custom_initsamples中的sample为 : [425.      3.      6.    210.039]
+sample执行时间为 : -210.039
+custom_initsamples中的sample为 : [444.      1.      6.    382.999]
+sample执行时间为 : -382.999
+custom_initsamples中的sample为 : [330.      2.      8.    212.629]
+sample执行时间为 : -212.629
+custom_initsamples中的sample为 : [333.      2.      8.    216.353]
+sample执行时间为 : -216.353
+custom_initsamples中的sample为 : [336.      2.      8.    214.035]
+sample执行时间为 : -214.035
+custom_initsamples中的sample为 : [357.      1.      4.    515.218]
+sample执行时间为 : -515.218
+custom_initsamples中的sample为 : [355.      2.      5.    299.594]
+sample执行时间为 : -299.594
+custom_initsamples中的sample为 : [494.      2.      4.    332.861]
+sample执行时间为 : -332.861
+custom_initsamples中的sample为 : [422.      3.      6.    232.895]
+sample执行时间为 : -232.895
+custom_initsamples中的sample为 : [423.      3.      6.    224.474]
+sample执行时间为 : -224.474
+custom_initsamples中的sample为 : [423.      3.      6.    211.437]
+sample执行时间为 : -211.437

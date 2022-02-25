@@ -1,0 +1,150 @@
+# Fixed configuration
+# Spark home
+hibench.spark.home      /usr/local/home/spark/spark
+# hibench.spark.master     yarn-client
+hibench.spark.master    k8s://https://192.168.0.10:6443
+spark.kubernetes.container.image     192.168.0.40/library/spark:v2.4.4
+spark.kubernetes.node.selector.cluster    cluster02
+spark.ui.port 4044
+
+ spark.driver.memory 4g
+ spark.driver.cores 1
+ spark.io.compression.codec zstd
+ spark.io.compression.zstd.blockSize 32k
+ spark.network.timeout 120s
+ spark.speculation false
+ spark.serializer org.apache.spark.serializer.KryoSerializer
+
+spark.eventLog.enabled           true
+spark.eventLog.dir               hdfs://192.168.0.50:9000/spark/log
+spark.history.fs.logDirectory 	 hdfs://192.168.0.50:9000/spark/log
+spark.eventLog.compress true
+
+#======================================================
+# Spark Streaming
+#======================================================
+# Spark streaming Batchnterval in millisecond (default 100)
+hibench.streambench.spark.batchInterval          100
+
+# Number of nodes that will receive kafka input (default: 4)
+hibench.streambench.spark.receiverNumber        4
+
+# Indicate RDD storage level. (default: 2)
+# 0 = StorageLevel.MEMORY_ONLY
+# 1 = StorageLevel.MEMORY_AND_DISK_SER
+# other = StorageLevel.MEMORY_AND_DISK_SER_2
+hibench.streambench.spark.storageLevel 2
+
+# indicate whether to test the write ahead log new feature (default: false)
+hibench.streambench.spark.enableWAL false
+
+# if testWAL is true, this path to store stream context in hdfs shall be specified. If false, it can be empty (default: /var/tmp)
+hibench.streambench.spark.checkpointPath /var/tmp
+
+# whether to use direct approach or not (dafault: true)
+hibench.streambench.spark.useDirectMode true
+
+
+# Random configuration
+ spark.broadcast.blockSize	61m
+ spark.broadcast.checksum	false
+ spark.broadcast.compress	false
+ spark.default.parallelism	373
+ spark.executor.cores	4
+ spark.executor.instances	10
+ spark.executor.memory	8g
+ spark.executor.memoryOverhead	497m
+ spark.kryoserializer.buffer	55k
+ spark.kryoserializer.buffer.max	36m
+ spark.locality.wait	4s
+ spark.maxRemoteBlockSizeFetchToMem	1643994657
+ spark.memory.fraction	0.63
+ spark.memory.offHeap.enabled	true
+ spark.memory.offHeap.size	347m
+ spark.memory.storageFraction	0.71
+ spark.rdd.compress	false
+ spark.reducer.maxBlocksInFlightPerAddress	1394064677
+ spark.reducer.maxReqsInFlight	1091685694
+ spark.reducer.maxSizeInFlight	52m
+ spark.scheduler.mode	FIFO
+ spark.scheduler.revive.interval	609ms
+ spark.shuffle.compress	true
+ spark.shuffle.file.buffer	21k
+ spark.shuffle.io.numConnectionsPerPeer	2
+ spark.shuffle.sort.bypassMergeThreshold	434
+ spark.storage.memoryMapThreshold	10m
+# Fixed configuration
+# Spark home
+hibench.spark.home      /usr/local/home/spark/spark
+# hibench.spark.master     yarn-client
+hibench.spark.master    k8s://https://192.168.0.10:6443
+spark.kubernetes.container.image     192.168.0.40/library/spark:v2.4.4
+spark.kubernetes.node.selector.cluster    cluster02
+spark.ui.port 4044
+
+ spark.driver.memory 4g
+ spark.driver.cores 1
+ spark.io.compression.codec zstd
+ spark.io.compression.zstd.blockSize 32k
+ spark.network.timeout 120s
+ spark.speculation false
+ spark.serializer org.apache.spark.serializer.KryoSerializer
+
+spark.eventLog.enabled           true
+spark.eventLog.dir               hdfs://192.168.0.50:9000/spark/log
+spark.history.fs.logDirectory 	 hdfs://192.168.0.50:9000/spark/log
+spark.eventLog.compress true
+
+#======================================================
+# Spark Streaming
+#======================================================
+# Spark streaming Batchnterval in millisecond (default 100)
+hibench.streambench.spark.batchInterval          100
+
+# Number of nodes that will receive kafka input (default: 4)
+hibench.streambench.spark.receiverNumber        4
+
+# Indicate RDD storage level. (default: 2)
+# 0 = StorageLevel.MEMORY_ONLY
+# 1 = StorageLevel.MEMORY_AND_DISK_SER
+# other = StorageLevel.MEMORY_AND_DISK_SER_2
+hibench.streambench.spark.storageLevel 2
+
+# indicate whether to test the write ahead log new feature (default: false)
+hibench.streambench.spark.enableWAL false
+
+# if testWAL is true, this path to store stream context in hdfs shall be specified. If false, it can be empty (default: /var/tmp)
+hibench.streambench.spark.checkpointPath /var/tmp
+
+# whether to use direct approach or not (dafault: true)
+hibench.streambench.spark.useDirectMode true
+
+
+# Random configuration
+ spark.broadcast.blockSize	62m
+ spark.broadcast.checksum	true
+ spark.broadcast.compress	false
+ spark.default.parallelism	446
+ spark.executor.cores	4
+ spark.executor.instances	14
+ spark.executor.memory	10g
+ spark.executor.memoryOverhead	897m
+ spark.kryoserializer.buffer	80k
+ spark.kryoserializer.buffer.max	100m
+ spark.locality.wait	6s
+ spark.maxRemoteBlockSizeFetchToMem	1357856244
+ spark.memory.fraction	0.54
+ spark.memory.offHeap.enabled	false
+ spark.memory.offHeap.size	593m
+ spark.memory.storageFraction	0.85
+ spark.rdd.compress	true
+ spark.reducer.maxBlocksInFlightPerAddress	1593078953
+ spark.reducer.maxReqsInFlight	1919501508
+ spark.reducer.maxSizeInFlight	47m
+ spark.scheduler.mode	FIFO
+ spark.scheduler.revive.interval	812ms
+ spark.shuffle.compress	false
+ spark.shuffle.file.buffer	31k
+ spark.shuffle.io.numConnectionsPerPeer	4
+ spark.shuffle.sort.bypassMergeThreshold	359
+ spark.storage.memoryMapThreshold	5m

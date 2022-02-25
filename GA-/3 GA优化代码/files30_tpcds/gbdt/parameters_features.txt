@@ -1,0 +1,8 @@
+
+2022-02-23 18:34:46
+训练时长0m1s
+使用算法: gbdt
+0.1777832861165626
+2
+spark.sql.autoBroadcastJoinThreshold: 0.593519452917572
+spark.kryoserializer.buffer: 0.4064805470824279

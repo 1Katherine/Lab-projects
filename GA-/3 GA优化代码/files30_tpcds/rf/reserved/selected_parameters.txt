@@ -1,0 +1,7 @@
+vital_params
+spark.kryoserializer.buffer
+spark.sql.autoBroadcastJoinThreshold
+spark.executor.cores
+spark.executor.instances
+spark.executor.memory
+spark.default.parallelism

@@ -1,0 +1,260 @@
+
+binary GA ada ,sizePop=30 ,maxIter=30
+['spark.sql.autoBroadcastJoinThreshold', 'spark.maxRemoteBlockSizeFetchToMem']
+best_x : [1.55494610e+07 1.79333003e+09]
+best_y : [1560.]
+generation_best 
+
+{'spark.sql.autoBroadcastJoinThreshold': 15549461.0, 'spark.maxRemoteBlockSizeFetchToMem': 1793330030.0, 'runtime': 1560.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15062996.0, 'spark.maxRemoteBlockSizeFetchToMem': 2024432490.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15244408.0, 'spark.maxRemoteBlockSizeFetchToMem': 1827967270.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14859166.0, 'spark.maxRemoteBlockSizeFetchToMem': 1110407558.0, 'runtime': 1635.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15674074.0, 'spark.maxRemoteBlockSizeFetchToMem': 1159763755.0, 'runtime': 1635.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15288142.0, 'spark.maxRemoteBlockSizeFetchToMem': 1825352791.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14748382.0, 'spark.maxRemoteBlockSizeFetchToMem': 1752571488.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15642870.0, 'spark.maxRemoteBlockSizeFetchToMem': 2146931682.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 14885982.0, 'spark.maxRemoteBlockSizeFetchToMem': 1702203702.0, 'runtime': 1595.0}
+{'spark.sql.autoBroadcastJoinThreshold': 14990934.0, 'spark.maxRemoteBlockSizeFetchToMem': 1889603864.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15415919.0, 'spark.maxRemoteBlockSizeFetchToMem': 1815904175.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14961417.0, 'spark.maxRemoteBlockSizeFetchToMem': 2037615279.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14203251.0, 'spark.maxRemoteBlockSizeFetchToMem': 1277149677.0, 'runtime': 1676.0}
+{'spark.sql.autoBroadcastJoinThreshold': 14412096.0, 'spark.maxRemoteBlockSizeFetchToMem': 1875362024.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 14054811.0, 'spark.maxRemoteBlockSizeFetchToMem': 1925975433.0, 'runtime': 1595.0}
+{'spark.sql.autoBroadcastJoinThreshold': 14265454.0, 'spark.maxRemoteBlockSizeFetchToMem': 1892855579.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15513937.0, 'spark.maxRemoteBlockSizeFetchToMem': 2090972743.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15057194.0, 'spark.maxRemoteBlockSizeFetchToMem': 1833349132.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15063739.0, 'spark.maxRemoteBlockSizeFetchToMem': 1688030295.0, 'runtime': 1595.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15496467.0, 'spark.maxRemoteBlockSizeFetchToMem': 2085249205.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 14734473.0, 'spark.maxRemoteBlockSizeFetchToMem': 1951858176.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 10424355.0, 'spark.maxRemoteBlockSizeFetchToMem': 1854003500.0, 'runtime': 1591.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15236446.0, 'spark.maxRemoteBlockSizeFetchToMem': 1814926924.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14734319.0, 'spark.maxRemoteBlockSizeFetchToMem': 1908690132.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14554506.0, 'spark.maxRemoteBlockSizeFetchToMem': 1915737231.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15601626.0, 'spark.maxRemoteBlockSizeFetchToMem': 2051354231.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 15536199.0, 'spark.maxRemoteBlockSizeFetchToMem': 1911889273.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14269535.0, 'spark.maxRemoteBlockSizeFetchToMem': 1914658057.0, 'runtime': 1590.0}
+{'spark.sql.autoBroadcastJoinThreshold': 15702489.0, 'spark.maxRemoteBlockSizeFetchToMem': 1762557577.0, 'runtime': 1577.5}
+{'spark.sql.autoBroadcastJoinThreshold': 14637887.0, 'spark.maxRemoteBlockSizeFetchToMem': 1987333492.0, 'runtime': 1577.5}
+
+binary GA gbdt ,sizePop=30 ,maxIter=30
+['spark.sql.autoBroadcastJoinThreshold', 'spark.kryoserializer.buffer']
+best_x : [1.5549461e+07 1.0200000e+02]
+best_y : [1531.6163673]
+generation_best 
+
+{'spark.sql.autoBroadcastJoinThreshold': 15549461.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 15126509.0, 'spark.kryoserializer.buffer': 93.0, 'runtime': 1557.4523772345244}
+{'spark.sql.autoBroadcastJoinThreshold': 14856131.0, 'spark.kryoserializer.buffer': 103.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 12865737.0, 'spark.kryoserializer.buffer': 105.0, 'runtime': 1611.9213603152639}
+{'spark.sql.autoBroadcastJoinThreshold': 9432348.0, 'spark.kryoserializer.buffer': 88.0, 'runtime': 1594.2514375981336}
+{'spark.sql.autoBroadcastJoinThreshold': 15259719.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 8737205.0, 'spark.kryoserializer.buffer': 121.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 9448727.0, 'spark.kryoserializer.buffer': 86.0, 'runtime': 1594.2514375981336}
+{'spark.sql.autoBroadcastJoinThreshold': 9814751.0, 'spark.kryoserializer.buffer': 87.0, 'runtime': 1602.5763320090382}
+{'spark.sql.autoBroadcastJoinThreshold': 9440269.0, 'spark.kryoserializer.buffer': 123.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 13576696.0, 'spark.kryoserializer.buffer': 90.0, 'runtime': 1616.8377195328987}
+{'spark.sql.autoBroadcastJoinThreshold': 8845498.0, 'spark.kryoserializer.buffer': 112.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 14543387.0, 'spark.kryoserializer.buffer': 88.0, 'runtime': 1628.2339704629246}
+{'spark.sql.autoBroadcastJoinThreshold': 9003091.0, 'spark.kryoserializer.buffer': 123.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 14675085.0, 'spark.kryoserializer.buffer': 92.0, 'runtime': 1540.0569420880072}
+{'spark.sql.autoBroadcastJoinThreshold': 13529532.0, 'spark.kryoserializer.buffer': 88.0, 'runtime': 1628.2339704629246}
+{'spark.sql.autoBroadcastJoinThreshold': 14784284.0, 'spark.kryoserializer.buffer': 90.0, 'runtime': 1537.6810693716886}
+{'spark.sql.autoBroadcastJoinThreshold': 12822229.0, 'spark.kryoserializer.buffer': 92.0, 'runtime': 1604.763372066859}
+{'spark.sql.autoBroadcastJoinThreshold': 15514932.0, 'spark.kryoserializer.buffer': 89.0, 'runtime': 1571.9484744956958}
+{'spark.sql.autoBroadcastJoinThreshold': 9859644.0, 'spark.kryoserializer.buffer': 128.0, 'runtime': 1608.699699620648}
+{'spark.sql.autoBroadcastJoinThreshold': 9089690.0, 'spark.kryoserializer.buffer': 115.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 8855195.0, 'spark.kryoserializer.buffer': 114.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 14380712.0, 'spark.kryoserializer.buffer': 86.0, 'runtime': 1643.4658094823494}
+{'spark.sql.autoBroadcastJoinThreshold': 14446727.0, 'spark.kryoserializer.buffer': 103.0, 'runtime': 1622.3257215382434}
+{'spark.sql.autoBroadcastJoinThreshold': 14241676.0, 'spark.kryoserializer.buffer': 89.0, 'runtime': 1651.1051246569061}
+{'spark.sql.autoBroadcastJoinThreshold': 13812594.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1622.3257215382434}
+{'spark.sql.autoBroadcastJoinThreshold': 15673805.0, 'spark.kryoserializer.buffer': 105.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 15015464.0, 'spark.kryoserializer.buffer': 86.0, 'runtime': 1564.3091593211395}
+{'spark.sql.autoBroadcastJoinThreshold': 9341521.0, 'spark.kryoserializer.buffer': 97.0, 'runtime': 1636.823322618369}
+{'spark.sql.autoBroadcastJoinThreshold': 9410486.0, 'spark.kryoserializer.buffer': 128.0, 'runtime': 1595.9398552318348}
+
+binary GA rf ,sizePop=30 ,maxIter=30
+['spark.kryoserializer.buffer', 'spark.sql.autoBroadcastJoinThreshold']
+best_x : [9.8000000e+01 1.5095701e+07]
+best_y : [1619.74]
+generation_best 
+
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 15549461.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 14533413.0, 'runtime': 1675.48}
+{'spark.kryoserializer.buffer': 98.0, 'spark.sql.autoBroadcastJoinThreshold': 15095701.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 9509938.0, 'runtime': 1665.52}
+{'spark.kryoserializer.buffer': 95.0, 'spark.sql.autoBroadcastJoinThreshold': 15552011.0, 'runtime': 1642.68}
+{'spark.kryoserializer.buffer': 98.0, 'spark.sql.autoBroadcastJoinThreshold': 9318013.0, 'runtime': 1657.38}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 9968967.0, 'runtime': 1673.52}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 9672849.0, 'runtime': 1673.52}
+{'spark.kryoserializer.buffer': 95.0, 'spark.sql.autoBroadcastJoinThreshold': 14400054.0, 'runtime': 1669.86}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 9464867.0, 'runtime': 1657.22}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 12959032.0, 'runtime': 1671.91}
+{'spark.kryoserializer.buffer': 94.0, 'spark.sql.autoBroadcastJoinThreshold': 14820078.0, 'runtime': 1642.68}
+{'spark.kryoserializer.buffer': 98.0, 'spark.sql.autoBroadcastJoinThreshold': 13643627.0, 'runtime': 1656.74}
+{'spark.kryoserializer.buffer': 91.0, 'spark.sql.autoBroadcastJoinThreshold': 14863167.0, 'runtime': 1650.09}
+{'spark.kryoserializer.buffer': 100.0, 'spark.sql.autoBroadcastJoinThreshold': 8979273.0, 'runtime': 1673.1}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 15425479.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 103.0, 'spark.sql.autoBroadcastJoinThreshold': 14733744.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 104.0, 'spark.sql.autoBroadcastJoinThreshold': 15146064.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 94.0, 'spark.sql.autoBroadcastJoinThreshold': 15605332.0, 'runtime': 1642.68}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 9356709.0, 'runtime': 1665.52}
+{'spark.kryoserializer.buffer': 91.0, 'spark.sql.autoBroadcastJoinThreshold': 13220319.0, 'runtime': 1669.54}
+{'spark.kryoserializer.buffer': 101.0, 'spark.sql.autoBroadcastJoinThreshold': 9446998.0, 'runtime': 1644.86}
+{'spark.kryoserializer.buffer': 100.0, 'spark.sql.autoBroadcastJoinThreshold': 13641823.0, 'runtime': 1629.22}
+{'spark.kryoserializer.buffer': 92.0, 'spark.sql.autoBroadcastJoinThreshold': 15176331.0, 'runtime': 1644.21}
+{'spark.kryoserializer.buffer': 100.0, 'spark.sql.autoBroadcastJoinThreshold': 9969019.0, 'runtime': 1653.27}
+{'spark.kryoserializer.buffer': 122.0, 'spark.sql.autoBroadcastJoinThreshold': 10034644.0, 'runtime': 1741.09}
+{'spark.kryoserializer.buffer': 93.0, 'spark.sql.autoBroadcastJoinThreshold': 15684308.0, 'runtime': 1655.05}
+{'spark.kryoserializer.buffer': 103.0, 'spark.sql.autoBroadcastJoinThreshold': 9596640.0, 'runtime': 1665.52}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 10084589.0, 'runtime': 1661.49}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 9454747.0, 'runtime': 1657.22}
+
+binary GA gbdt ,sizePop=30 ,maxIter=30
+['spark.sql.autoBroadcastJoinThreshold', 'spark.kryoserializer.buffer']
+best_x : [1.5549461e+07 1.0200000e+02]
+best_y : [1531.6163673]
+generation_best 
+
+{'spark.sql.autoBroadcastJoinThreshold': 15549461.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 9842072.0, 'spark.kryoserializer.buffer': 110.0, 'runtime': 1608.699699620648}
+{'spark.sql.autoBroadcastJoinThreshold': 9337785.0, 'spark.kryoserializer.buffer': 120.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 15126451.0, 'spark.kryoserializer.buffer': 88.0, 'runtime': 1549.0773203017143}
+{'spark.sql.autoBroadcastJoinThreshold': 14865909.0, 'spark.kryoserializer.buffer': 89.0, 'runtime': 1571.9484744956958}
+{'spark.sql.autoBroadcastJoinThreshold': 14634954.0, 'spark.kryoserializer.buffer': 86.0, 'runtime': 1564.3091593211395}
+{'spark.sql.autoBroadcastJoinThreshold': 14629239.0, 'spark.kryoserializer.buffer': 98.0, 'runtime': 1572.572727625472}
+{'spark.sql.autoBroadcastJoinThreshold': 14694430.0, 'spark.kryoserializer.buffer': 86.0, 'runtime': 1564.3091593211395}
+{'spark.sql.autoBroadcastJoinThreshold': 9358014.0, 'spark.kryoserializer.buffer': 110.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 12927355.0, 'spark.kryoserializer.buffer': 105.0, 'runtime': 1611.9213603152639}
+{'spark.sql.autoBroadcastJoinThreshold': 12730349.0, 'spark.kryoserializer.buffer': 101.0, 'runtime': 1611.9213603152639}
+{'spark.sql.autoBroadcastJoinThreshold': 14684353.0, 'spark.kryoserializer.buffer': 104.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 8863553.0, 'spark.kryoserializer.buffer': 127.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 15133984.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 9507817.0, 'spark.kryoserializer.buffer': 114.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 13987626.0, 'spark.kryoserializer.buffer': 92.0, 'runtime': 1619.2135922492173}
+{'spark.sql.autoBroadcastJoinThreshold': 9592937.0, 'spark.kryoserializer.buffer': 87.0, 'runtime': 1594.2514375981336}
+{'spark.sql.autoBroadcastJoinThreshold': 14842314.0, 'spark.kryoserializer.buffer': 88.0, 'runtime': 1549.0773203017143}
+{'spark.sql.autoBroadcastJoinThreshold': 8755223.0, 'spark.kryoserializer.buffer': 127.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 14830392.0, 'spark.kryoserializer.buffer': 92.0, 'runtime': 1540.0569420880072}
+{'spark.sql.autoBroadcastJoinThreshold': 15125628.0, 'spark.kryoserializer.buffer': 110.0, 'runtime': 1669.1935707309833}
+{'spark.sql.autoBroadcastJoinThreshold': 14633221.0, 'spark.kryoserializer.buffer': 101.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 15206751.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1531.6163673029994}
+{'spark.sql.autoBroadcastJoinThreshold': 13976184.0, 'spark.kryoserializer.buffer': 101.0, 'runtime': 1622.3257215382434}
+{'spark.sql.autoBroadcastJoinThreshold': 15387786.0, 'spark.kryoserializer.buffer': 92.0, 'runtime': 1540.0569420880072}
+{'spark.sql.autoBroadcastJoinThreshold': 9942975.0, 'spark.kryoserializer.buffer': 101.0, 'runtime': 1632.215861039889}
+{'spark.sql.autoBroadcastJoinThreshold': 9255983.0, 'spark.kryoserializer.buffer': 100.0, 'runtime': 1619.4560166510755}
+{'spark.sql.autoBroadcastJoinThreshold': 8996191.0, 'spark.kryoserializer.buffer': 127.0, 'runtime': 1595.9398552318348}
+{'spark.sql.autoBroadcastJoinThreshold': 14466509.0, 'spark.kryoserializer.buffer': 102.0, 'runtime': 1622.3257215382434}
+{'spark.sql.autoBroadcastJoinThreshold': 14531069.0, 'spark.kryoserializer.buffer': 92.0, 'runtime': 1619.2135922492173}
+
+binary GA lgb ,sizePop=30 ,maxIter=30
+['spark.storage.memoryMapThreshold', 'spark.scheduler.revive.interval']
+best_x : [  2. 543.]
+best_y : [2193.375]
+generation_best 
+
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 543.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 766.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 4.0, 'spark.scheduler.revive.interval': 732.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 866.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 609.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 3.0, 'spark.scheduler.revive.interval': 977.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 3.0, 'spark.scheduler.revive.interval': 705.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 836.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 548.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 708.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 986.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 4.0, 'spark.scheduler.revive.interval': 798.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 4.0, 'spark.scheduler.revive.interval': 791.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 642.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 650.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 735.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 955.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 955.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 3.0, 'spark.scheduler.revive.interval': 764.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 4.0, 'spark.scheduler.revive.interval': 548.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 644.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 783.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 3.0, 'spark.scheduler.revive.interval': 955.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 798.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 697.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 642.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 822.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 806.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 2.0, 'spark.scheduler.revive.interval': 814.0, 'runtime': 2193.375}
+{'spark.storage.memoryMapThreshold': 1.0, 'spark.scheduler.revive.interval': 986.0, 'runtime': 2193.375}
+
+binary GA xgb ,sizePop=30 ,maxIter=30
+['spark.kryoserializer.buffer', 'spark.sql.autoBroadcastJoinThreshold', 'spark.sql.shuffle.partitions', 'spark.scheduler.revive.interval', 'spark.executor.memoryOverhead', 'spark.shuffle.file.buffer']
+best_x : [5.8000000e+01 1.0791591e+07 2.7400000e+02 5.4300000e+02 3.8400000e+02
+ 4.0000000e+01]
+best_y : [3370.3455]
+generation_best 
+
+{'spark.kryoserializer.buffer': 58.0, 'spark.sql.autoBroadcastJoinThreshold': 10791591.0, 'spark.sql.shuffle.partitions': 274.0, 'spark.scheduler.revive.interval': 543.0, 'spark.executor.memoryOverhead': 384.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 67.0, 'spark.sql.autoBroadcastJoinThreshold': 6131855.0, 'spark.sql.shuffle.partitions': 296.0, 'spark.scheduler.revive.interval': 943.0, 'spark.executor.memoryOverhead': 573.0, 'spark.shuffle.file.buffer': 38.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 123.0, 'spark.sql.autoBroadcastJoinThreshold': 12347539.0, 'spark.sql.shuffle.partitions': 330.0, 'spark.scheduler.revive.interval': 707.0, 'spark.executor.memoryOverhead': 718.0, 'spark.shuffle.file.buffer': 38.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 104.0, 'spark.sql.autoBroadcastJoinThreshold': 13754945.0, 'spark.sql.shuffle.partitions': 365.0, 'spark.scheduler.revive.interval': 669.0, 'spark.executor.memoryOverhead': 500.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 128.0, 'spark.sql.autoBroadcastJoinThreshold': 13591403.0, 'spark.sql.shuffle.partitions': 365.0, 'spark.scheduler.revive.interval': 922.0, 'spark.executor.memoryOverhead': 500.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 67.0, 'spark.sql.autoBroadcastJoinThreshold': 11214698.0, 'spark.sql.shuffle.partitions': 365.0, 'spark.scheduler.revive.interval': 899.0, 'spark.executor.memoryOverhead': 469.0, 'spark.shuffle.file.buffer': 38.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 46.0, 'spark.sql.autoBroadcastJoinThreshold': 12484142.0, 'spark.sql.shuffle.partitions': 352.0, 'spark.scheduler.revive.interval': 921.0, 'spark.executor.memoryOverhead': 394.0, 'spark.shuffle.file.buffer': 45.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 67.0, 'spark.sql.autoBroadcastJoinThreshold': 8275618.0, 'spark.sql.shuffle.partitions': 322.0, 'spark.scheduler.revive.interval': 528.0, 'spark.executor.memoryOverhead': 515.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 126.0, 'spark.sql.autoBroadcastJoinThreshold': 7978077.0, 'spark.sql.shuffle.partitions': 263.0, 'spark.scheduler.revive.interval': 505.0, 'spark.executor.memoryOverhead': 479.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 114.0, 'spark.sql.autoBroadcastJoinThreshold': 13298947.0, 'spark.sql.shuffle.partitions': 396.0, 'spark.scheduler.revive.interval': 944.0, 'spark.executor.memoryOverhead': 413.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 79.0, 'spark.sql.autoBroadcastJoinThreshold': 11365686.0, 'spark.sql.shuffle.partitions': 294.0, 'spark.scheduler.revive.interval': 755.0, 'spark.executor.memoryOverhead': 814.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 105.0, 'spark.sql.autoBroadcastJoinThreshold': 13908749.0, 'spark.sql.shuffle.partitions': 310.0, 'spark.scheduler.revive.interval': 512.0, 'spark.executor.memoryOverhead': 478.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 75.0, 'spark.sql.autoBroadcastJoinThreshold': 12822081.0, 'spark.sql.shuffle.partitions': 343.0, 'spark.scheduler.revive.interval': 679.0, 'spark.executor.memoryOverhead': 663.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 72.0, 'spark.sql.autoBroadcastJoinThreshold': 13269900.0, 'spark.sql.shuffle.partitions': 372.0, 'spark.scheduler.revive.interval': 536.0, 'spark.executor.memoryOverhead': 672.0, 'spark.shuffle.file.buffer': 47.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 105.0, 'spark.sql.autoBroadcastJoinThreshold': 5332230.0, 'spark.sql.shuffle.partitions': 332.0, 'spark.scheduler.revive.interval': 899.0, 'spark.executor.memoryOverhead': 490.0, 'spark.shuffle.file.buffer': 39.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 54.0, 'spark.sql.autoBroadcastJoinThreshold': 12052793.0, 'spark.sql.shuffle.partitions': 332.0, 'spark.scheduler.revive.interval': 925.0, 'spark.executor.memoryOverhead': 425.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 93.0, 'spark.sql.autoBroadcastJoinThreshold': 7029418.0, 'spark.sql.shuffle.partitions': 376.0, 'spark.scheduler.revive.interval': 580.0, 'spark.executor.memoryOverhead': 457.0, 'spark.shuffle.file.buffer': 37.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 55.0, 'spark.sql.autoBroadcastJoinThreshold': 8499558.0, 'spark.sql.shuffle.partitions': 384.0, 'spark.scheduler.revive.interval': 937.0, 'spark.executor.memoryOverhead': 805.0, 'spark.shuffle.file.buffer': 39.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 127.0, 'spark.sql.autoBroadcastJoinThreshold': 12217934.0, 'spark.sql.shuffle.partitions': 396.0, 'spark.scheduler.revive.interval': 920.0, 'spark.executor.memoryOverhead': 751.0, 'spark.shuffle.file.buffer': 37.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 124.0, 'spark.sql.autoBroadcastJoinThreshold': 5387845.0, 'spark.sql.shuffle.partitions': 400.0, 'spark.scheduler.revive.interval': 556.0, 'spark.executor.memoryOverhead': 459.0, 'spark.shuffle.file.buffer': 37.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 118.0, 'spark.sql.autoBroadcastJoinThreshold': 13425622.0, 'spark.sql.shuffle.partitions': 388.0, 'spark.scheduler.revive.interval': 656.0, 'spark.executor.memoryOverhead': 752.0, 'spark.shuffle.file.buffer': 48.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 86.0, 'spark.sql.autoBroadcastJoinThreshold': 7099281.0, 'spark.sql.shuffle.partitions': 313.0, 'spark.scheduler.revive.interval': 948.0, 'spark.executor.memoryOverhead': 748.0, 'spark.shuffle.file.buffer': 40.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 69.0, 'spark.sql.autoBroadcastJoinThreshold': 6386453.0, 'spark.sql.shuffle.partitions': 388.0, 'spark.scheduler.revive.interval': 944.0, 'spark.executor.memoryOverhead': 754.0, 'spark.shuffle.file.buffer': 45.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 71.0, 'spark.sql.autoBroadcastJoinThreshold': 12759039.0, 'spark.sql.shuffle.partitions': 325.0, 'spark.scheduler.revive.interval': 502.0, 'spark.executor.memoryOverhead': 733.0, 'spark.shuffle.file.buffer': 45.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 83.0, 'spark.sql.autoBroadcastJoinThreshold': 14771156.0, 'spark.sql.shuffle.partitions': 362.0, 'spark.scheduler.revive.interval': 635.0, 'spark.executor.memoryOverhead': 733.0, 'spark.shuffle.file.buffer': 37.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 84.0, 'spark.sql.autoBroadcastJoinThreshold': 7756545.0, 'spark.sql.shuffle.partitions': 339.0, 'spark.scheduler.revive.interval': 640.0, 'spark.executor.memoryOverhead': 486.0, 'spark.shuffle.file.buffer': 37.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 86.0, 'spark.sql.autoBroadcastJoinThreshold': 9864998.0, 'spark.sql.shuffle.partitions': 300.0, 'spark.scheduler.revive.interval': 577.0, 'spark.executor.memoryOverhead': 753.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 98.0, 'spark.sql.autoBroadcastJoinThreshold': 9276413.0, 'spark.sql.shuffle.partitions': 260.0, 'spark.scheduler.revive.interval': 599.0, 'spark.executor.memoryOverhead': 722.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 42.0, 'spark.sql.autoBroadcastJoinThreshold': 7963493.0, 'spark.sql.shuffle.partitions': 284.0, 'spark.scheduler.revive.interval': 693.0, 'spark.executor.memoryOverhead': 722.0, 'spark.shuffle.file.buffer': 46.0, 'runtime': 3370.3455}
+{'spark.kryoserializer.buffer': 77.0, 'spark.sql.autoBroadcastJoinThreshold': 7145735.0, 'spark.sql.shuffle.partitions': 256.0, 'spark.scheduler.revive.interval': 523.0, 'spark.executor.memoryOverhead': 722.0, 'spark.shuffle.file.buffer': 45.0, 'runtime': 3370.3455}
+
+binary GA rf ,sizePop=30 ,maxIter=30
+['spark.kryoserializer.buffer', 'spark.sql.autoBroadcastJoinThreshold']
+best_x : [1.0100000e+02 1.5027414e+07]
+best_y : [1592.22]
+generation_best 
+
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 15549461.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 101.0, 'spark.sql.autoBroadcastJoinThreshold': 15027414.0, 'runtime': 1592.22}
+{'spark.kryoserializer.buffer': 101.0, 'spark.sql.autoBroadcastJoinThreshold': 14642486.0, 'runtime': 1592.22}
+{'spark.kryoserializer.buffer': 95.0, 'spark.sql.autoBroadcastJoinThreshold': 15608155.0, 'runtime': 1642.68}
+{'spark.kryoserializer.buffer': 100.0, 'spark.sql.autoBroadcastJoinThreshold': 12801644.0, 'runtime': 1682.31}
+{'spark.kryoserializer.buffer': 87.0, 'spark.sql.autoBroadcastJoinThreshold': 8963303.0, 'runtime': 1715.39}
+{'spark.kryoserializer.buffer': 92.0, 'spark.sql.autoBroadcastJoinThreshold': 15364540.0, 'runtime': 1644.21}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 15415252.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 105.0, 'spark.sql.autoBroadcastJoinThreshold': 15403143.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 93.0, 'spark.sql.autoBroadcastJoinThreshold': 14911012.0, 'runtime': 1655.05}
+{'spark.kryoserializer.buffer': 105.0, 'spark.sql.autoBroadcastJoinThreshold': 15396479.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 15208566.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 14466641.0, 'runtime': 1646.92}
+{'spark.kryoserializer.buffer': 89.0, 'spark.sql.autoBroadcastJoinThreshold': 9611330.0, 'runtime': 1709.27}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 9308930.0, 'runtime': 1665.52}
+{'spark.kryoserializer.buffer': 98.0, 'spark.sql.autoBroadcastJoinThreshold': 15659329.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 88.0, 'spark.sql.autoBroadcastJoinThreshold': 9790952.0, 'runtime': 1707.76}
+{'spark.kryoserializer.buffer': 101.0, 'spark.sql.autoBroadcastJoinThreshold': 9888946.0, 'runtime': 1649.13}
+{'spark.kryoserializer.buffer': 90.0, 'spark.sql.autoBroadcastJoinThreshold': 13410189.0, 'runtime': 1679.07}
+{'spark.kryoserializer.buffer': 91.0, 'spark.sql.autoBroadcastJoinThreshold': 9676419.0, 'runtime': 1696.13}
+{'spark.kryoserializer.buffer': 101.0, 'spark.sql.autoBroadcastJoinThreshold': 14007867.0, 'runtime': 1629.22}
+{'spark.kryoserializer.buffer': 98.0, 'spark.sql.autoBroadcastJoinThreshold': 15328665.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 105.0, 'spark.sql.autoBroadcastJoinThreshold': 14932347.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 97.0, 'spark.sql.autoBroadcastJoinThreshold': 14168967.0, 'runtime': 1658.62}
+{'spark.kryoserializer.buffer': 99.0, 'spark.sql.autoBroadcastJoinThreshold': 15586336.0, 'runtime': 1619.74}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 14791115.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 93.0, 'spark.sql.autoBroadcastJoinThreshold': 14888772.0, 'runtime': 1655.05}
+{'spark.kryoserializer.buffer': 123.0, 'spark.sql.autoBroadcastJoinThreshold': 13062994.0, 'runtime': 1829.47}
+{'spark.kryoserializer.buffer': 102.0, 'spark.sql.autoBroadcastJoinThreshold': 15073814.0, 'runtime': 1641.29}
+{'spark.kryoserializer.buffer': 95.0, 'spark.sql.autoBroadcastJoinThreshold': 13622905.0, 'runtime': 1679.68}

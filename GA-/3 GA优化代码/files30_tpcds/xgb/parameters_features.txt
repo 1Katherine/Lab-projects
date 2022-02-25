@@ -1,0 +1,12 @@
+
+2022-02-23 18:35:13
+训练时长0m19s
+使用算法: xgb
+0.12059264789636553
+6
+spark.kryoserializer.buffer: 0.3537079393863678
+spark.sql.autoBroadcastJoinThreshold: 0.2449416071176529
+spark.sql.shuffle.partitions: 0.1798699051141739
+spark.scheduler.revive.interval: 0.13007906079292297
+spark.executor.memoryOverhead: 0.0610346645116806
+spark.shuffle.file.buffer: 0.030366811901330948

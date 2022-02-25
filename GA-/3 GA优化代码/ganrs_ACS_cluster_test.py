@@ -91,8 +91,8 @@ def get_best_n(n):
 # --------------------- 生成 gan-rs 初始种群 end -------------------
 
 if  __name__ == '__main__':
-    name = 'gbdt'
-    modelfile = './sgan_terasort-20G_error_analysis_self/42/'
+    name = 'rf'
+    modelfile = './files30_tpcds/'
     # 采样方式有三种（0所有样本，1前ganrs_group*2个样本，2间隔ganrs_group // 2个样本采样，一组样本中只采样1个rs2个gan）
     sample_type = 0
     # 一组rs+gan的样本数
@@ -106,9 +106,9 @@ if  __name__ == '__main__':
     # 重要参数
     vital_params_path = modelfile + name + "/selected_parameters.txt"
     # 维护的参数-范围表
-    conf_range_table = "Spark_conf_range_terasort.xlsx"
+    conf_range_table = "Spark_conf_range_tpcds.xlsx"
     # 读取初始样本（50%rs+50%gan）
-    initpoint_path = '42terasort-20G-GAN-3+3.csv'
+    initpoint_path = 'tpcds-100G-GAN.csv'
     print('conf_range_table = ' + str(conf_range_table) + ' , model_name = ' + str(name) + ' , initpoint_path = ' + initpoint_path)
     initsamples_df = pd.read_csv(initpoint_path)
 
