@@ -17,6 +17,8 @@ import json
 import random
 # 调用代码：python ganrs_Bayesian_Optimization_laptop.py --sampleType=all --ganrsGroup=4 --niters=10 --initFile=/usr/local/home/yyq/bo/ganrs_bo/wordcount-100G-GAN.csv
 import argparse
+import warnings
+warnings.filterwarnings("ignore")
 from bayes_scode import JSONLogger, Events, BayesianOptimization,SequentialDomainReductionTransformer
 from bayes_scode.sgan import train
 from bayes_scode.configuration import parser
@@ -122,8 +124,6 @@ def black_box_function(**params):
 添加gan网络
 '''
 def gan_random(n):
-
-
     args = parser.parse_args()
     first_time = time.time()
     if n%4 !=0:
@@ -141,7 +141,6 @@ def gan_random(n):
         config=[]
         for conf in vital_params['vital_params']:
             if conf in confDict:
-
                 min=confDict[conf]['min']
                 max=confDict[conf]['max']
                 pre=confDict[conf]['pre']
@@ -168,6 +167,10 @@ def gan_random(n):
     print(generate_data)
     for i in range(2):
         config=generate_data.iloc[i].tolist()
+        # --------- 判断是否越界 ------------
+        for i, conf in enumerate(d2):
+            print('d2中的conf为:' + str(conf))
+            # if config[i] ==
         y = model.predict(np.matrix([config]))[0]
         config.append(y)
         n = pd.DataFrame(data=[config], columns=params_list)
@@ -306,7 +309,7 @@ def run(configNum):
     runtime = float(line.split()[4])
     global last_runtime
     if runtime == last_runtime:
-        rumtime = 100000.0
+        runtime = 100000.0
     else:
         last_runtime = runtime
     return runtime
@@ -317,7 +320,7 @@ configNum = 1
 def schafferRun(p):
     global configNum
     # 打开配置文件模板
-    fTemp = open('configTemp', 'r')
+    fTemp = open('../laptop_rsgan_into_bo/configTemp', 'r')
     # 复制模板，并追加配置
     fNew = open(config_run_path + 'config' + str(configNum), 'a+')
     shutil.copyfileobj(fTemp, fNew, length=1024)
@@ -391,6 +394,7 @@ if __name__ == '__main__':
             precisions.append(confDict[conf]['pre'])
         else:
             print(conf,'-----参数没有维护: ', '-----')
+    print('d2 = \n' + str(d2))
 
     # 按照贝叶斯优化中的key顺序,得到重要参数的名称vital_params_name用于把json结果文件转成dataframe存成csv，以及重要参数+执行时间列vital_params_list用于读取初始样本
     print('获取初始样本时，按照贝叶斯内部的key顺序传初始样本和已有的执行时间：')
