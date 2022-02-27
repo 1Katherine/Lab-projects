@@ -91,8 +91,8 @@ def get_best_n(n):
 # --------------------- 生成 gan-rs 初始种群 end -------------------
 
 if  __name__ == '__main__':
-    name = 'rf'
-    modelfile = './files30_tpcds/'
+    name = 'xgb'
+    modelfile = './2022-2-26/'
     # 采样方式有三种（0所有样本，1前ganrs_group*2个样本，2间隔ganrs_group // 2个样本采样，一组样本中只采样1个rs2个gan）
     sample_type = 0
     # 一组rs+gan的样本数
@@ -146,21 +146,34 @@ if  __name__ == '__main__':
     # ------------新增代码 start--------------
     # 重要参数的特征值
     parameters_features_path = modelfile  + name + "/parameters_features.txt"
-    parameters_features_file = []
-    parameters_features = []
-    for line in open(parameters_features_path, encoding='gb18030'):
-        parameters_features_file.append(line.strip())
+    if os.path.exists(parameters_features_path):
+        parameters_features_file = []
+        parameters_features = []
+        for line in open(parameters_features_path, encoding='gb18030'):
+            parameters_features_file.append(line.strip())
 
-    # 取出重要参数的特征值
-    parameters_features_file = parameters_features_file[-len(vital_params):]
-    print('\n重要参数和特征值列表 =  \n' + str(parameters_features_file))
-    for conf in vital_params_list:
-        for para in parameters_features_file:
-            if conf in para:
-                # 重要参数的特征重要值列表
-                parameters_features.append(float(para.split(':')[1]))
-    print('\n重要参数列表 = \n' + str(vital_params_list))
-    print('\n重要参数的重要性值 = \n' + str(parameters_features))
+        # 取出重要参数的特征值
+        parameters_features_file = parameters_features_file[-len(vital_params):]
+        print('\n重要参数和特征值列表 =  \n' + str(parameters_features_file))
+        for conf in vital_params_list:
+            for para in parameters_features_file:
+                if conf in para:
+                    # 重要参数的特征重要值列表
+                    parameters_features.append(float(para.split(':')[1]))
+        print('\n重要参数列表 = \n' + str(vital_params_list))
+        print('\n重要参数的重要性值 = \n' + str(parameters_features))
+        # 根据重要参数的特征值设置变异系数
+        for i, pf in enumerate(parameters_features):
+            if pf == 0.0:
+                parameters_features[i] = 0.01
+        print('处理后的重要参数的重要性值 = \n' + str(parameters_features))
+        probMut = np.array(parameters_features)
+    else:
+        # probMut = np.zeros(shape=(len(vital_params_list)))
+        problist = []
+        for i, item in enumerate(vital_params_list):
+            problist.append(0.01)
+        probMut = np.array(problist)
     # ------------新增代码 end--------------
     '''
         开始遗传算法
@@ -189,11 +202,6 @@ if  __name__ == '__main__':
 
     sizePop = len(initsamples)  # 种群数量
     # probMut = 0.01  # 变异概率
-    for i,pf in enumerate(parameters_features):
-        if pf == 0.0:
-            parameters_features[i] = 0.01
-    print('处理后的重要参数的重要性值 = \n' + str(parameters_features))
-    probMut = np.array(parameters_features)
 
     ga = myGA(initsamples=initsamples,func=fitFunc,  n_dim=nDim, size_pop=sizePop, max_iter=maxIter, prob_mut=probMut, lb=confLb, ub=confUb,
             precision=precisions)

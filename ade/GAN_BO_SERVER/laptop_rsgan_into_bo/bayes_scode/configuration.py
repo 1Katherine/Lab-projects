@@ -1,14 +1,19 @@
 import argparse
 import torch
+import os
+# 获取当前文件路径
+current_path = os.path.abspath(__file__)
+# 获取当前文件的父目录,比如/usr/local/home/yyq/bo/rs_bo/rs_bo_newEI
+father_path = os.path.abspath(os.path.dirname(os.path.dirname(current_path)) + os.path.sep + ".")
 
 parser = argparse.ArgumentParser()
 
 # basic parameters
 parser.add_argument('--sample_data', type=str, default='../tearsort-20G---data/42terasort-20G-GAN-3+3.csv',
                     help='Data required to be mimced', required=False)
-parser.add_argument('--config_range',type=str,default='../server/Spark_conf_range_wordcount.xlsx',help='get config range and precision')
-parser.add_argument('--csv_toconfig',type=str,default='../config/',help='parameters to config to run ')
-parser.add_argument('--configTemp',type=str,default='../configTemp',help='config to run')
+parser.add_argument('--config_range',type=str,default=father_path + '/Spark_conf_range_wordcount.xlsx',help='get config range and precision')
+parser.add_argument('--csv_toconfig',type=str,default=father_path + '/config/',help='parameters to config to run ')
+parser.add_argument('--configTemp',type=str,default=father_path + '/configTemp',help='config to run')
 
 parser.add_argument('--result_dir', type=str, default='../GAN_result/', help='generator_data', required=False)
 parser.add_argument('--result_model', type=str, default='../GAN_result/model/', help='model', required=False)

@@ -1,12 +1,14 @@
 import warnings
 import pandas as pd
+import numpy as np
 import os
+import time
 
 from .target_space import TargetSpace, _hashable
 from .event import Events, DEFAULT_EVENTS
 from .logger import _get_default_logger
 from .util import UtilityFunction, acq_max, ensure_rng
-from .sgan import train
+from .Snet import train
 from .configuration import parser
 args = parser.parse_args()
 
@@ -121,8 +123,14 @@ class BayesianOptimization(Observable):
         if lazy:
             self._queue.add(params)
         else:
-            self._space.probe(params)
-            self.dispatch(Events.OPTIMIZATION_STEP)
+            # self._space.probe(params)
+            # self.dispatch(Events.OPTIMIZATION_STEP)
+
+            if self._space.probe(params):
+                self.dispatch(Events.OPTIMIZATION_STEP)
+                return True
+            else:
+                return False
 
     def suggest(self, utility_function):
         """Most promissing point to probe next"""
@@ -160,7 +168,6 @@ class BayesianOptimization(Observable):
         print('------------使用lhs生成初始样本点------------')
         lhsample = self._space.lhs_sample(init_points)
         for l in lhsample:
-            # print(l.ravel())
             self._queue.add(l.ravel())
 
 
@@ -183,7 +190,7 @@ class BayesianOptimization(Observable):
         """Mazimize your function"""
         self._prime_subscriptions()
         self.dispatch(Events.OPTIMIZATION_START)
-        import time
+
         # 记录搜索算法开始时间
         start_time = time.time()
 
@@ -196,15 +203,14 @@ class BayesianOptimization(Observable):
                                kappa_decay=kappa_decay,
                                kappa_decay_delay=kappa_decay_delay)
 
-
+        self.Max_time = -2813
 
         print('self._space.keys = ' + str(self._space.keys))
         params_list = []
         for param in self._space.keys:
             params_list.append(param)
         params_list.append('runtime')
-        # dataset 保存所有rs样本和gan样本
-        dataset = pd.DataFrame(columns=params_list)
+
         # m 保存当前所有样本的df
         m = pd.DataFrame(columns=params_list)
 
@@ -214,7 +220,7 @@ class BayesianOptimization(Observable):
             self.probe(x_probe, lazy=False)
             # 获取该随机样本的执行时间
             x = self._space._as_array(x_probe)
-
+            print('self._space._cache[_hashable(x)] \t' + str(self._space._cache[_hashable(x)]))
             target = self._space._cache[_hashable(x)]
             # 随机样本和执行时间存入m dataframe中
             sample = x.tolist()
@@ -225,32 +231,13 @@ class BayesianOptimization(Observable):
             print('随机采样：存储当前样本的df\n' + str(n))
             m = m.append(n, ignore_index=True)
 
-
-
         # 取随机样本中的最优样本 并训练GAN
-        m = m.sort_values('runtime').reset_index(drop=True)
+        m = m.sort_values('runtime', ascending=False).reset_index(drop=True)
+        # m = m.sort_values('runtime').reset_index(drop=True)
         bestconfig = m.iloc[:1, :-1]
-        print(bestconfig)
-        first_time = time.time()
-        generate_data = train(bestconfig, first_time, args)
-        print(generate_data)
-        # 从GAN中选出前2个样本，并运行，保存在df m中
-        for i in range(2):
-            config = generate_data.iloc[i].tolist()
-            self.probe(config, lazy=False)
-            # 获取该样本的执行时间
-            x = self._space._as_array(config)
-            target = self._space._cache[_hashable(x)]
-            config.append(target)
-            print('GAN采样：config\n' + str(config))
-            n = pd.DataFrame(data=[config], columns=params_list)
-            print('GAN采样：存储当前样本的df\n' + str(n))
-            print(n)
-            m = m.append(n, ignore_index=True)
-            print(m)
-        dataset = dataset.append(m, ignore_index=True)
-        dataset.to_csv(father_path + '/dataset2.csv')
-        print('初始样本点个数：' + str(dataset.shape[0]))
+
+
+        self.getBestSample_trainGAN(bestconfig, params_list, m, 2)
 
 
         iteration = 0
@@ -262,8 +249,22 @@ class BayesianOptimization(Observable):
             util.update_params()
             x_probe = self.suggest(util)
             iteration += 1
-            self.probe(x_probe, lazy=False)
-            print('x_probe = ' + str(x_probe))
+            if self.probe(x_probe, lazy=False):
+                print('x_probe = ' + str(x_probe))
+            else:
+                print(str(iteration) + '\titeration：执行时间超过' + str(-self.Max_time) + ' s，杀死该配置，不register该样本 \t')
+                print('选择当前样本空间的最优配置传给GAN，GAN生成一个配置代替失败配置来运行')
+                # test
+                params = self._space.params
+                runtime = np.array([self._space.target]).T
+                inits = np.hstack([params, runtime])
+                train_df = pd.DataFrame(inits, columns=params_list)
+                # 取随机样本中的最优样本 并训练GAN
+                train_df = train_df.sort_values('runtime',ascending =False).reset_index(drop=True)
+                bestconfig = train_df.iloc[:1, :-1]
+
+                self.getBestSample_trainGAN(bestconfig, params_list, train_df, 1)
+
 
             if self._bounds_transformer:
                 self.set_bounds(
@@ -274,6 +275,47 @@ class BayesianOptimization(Observable):
         print(str(int(end_time - start_time)) + 's')  # 秒级时间戳
         self.dispatch(Events.OPTIMIZATION_END)
 
+    def getBestSample_trainGAN(self, bestconfig, params_list, m, num):
+        print('bestconfig\n' + str(bestconfig))
+        # dataset 保存所有rs样本和gan样本
+        dataset = pd.DataFrame(columns=params_list)
+
+        first_time = time.time()
+        generate_data = train(bestconfig, first_time, args)
+        print(generate_data)
+        # 从GAN中选出第一个样本，并运行，保存在df m中
+        for i in range(num):
+            config = generate_data.iloc[i].tolist()
+            # --------- 判断是否越界 ------------
+            print('参数和范围为\n' + str(self._space.keys) + "\n" + str(self._space.bounds))
+            for i, bound in enumerate(self._space.bounds):
+                print('conf为:' + str(self._space.keys[i]) + ' 范围为 = ' + str(bound))
+                if config[i] < bound[0]:
+                    print(str(self._space.keys[i]) + "越界, 原值为 " + str(config[i]))
+                    config[i] = bound[0]
+                    print('越界处理后的值为 ' + str(config[i]))
+                if config[i] > bound[1]:
+                    print(str(self._space.keys[i]) + "越界, 原值为 " + str(config[i]))
+                    config[i] = bound[1]
+                    print('越界处理后的值为 ' + str(config[i]))
+            # --------- 判断是否越界 ------------
+            self.probe(config, lazy=False)
+            # 获取该样本的执行时间
+            try:
+                x = self._space._as_array(config)
+                target = self._space._cache[_hashable(x)]
+                config.append(target)
+                print('GAN采样：config\n' + str(config))
+                n = pd.DataFrame(data=[config], columns=params_list)
+                print('GAN采样：存储当前样本的df\n' + str(n))
+                print(n)
+                m = m.append(n, ignore_index=True)
+                print(m)
+            except KeyError:
+                print('GAN采样：执行时间超过' + str(-self.Max_time) + ' s，杀死该配置，不register该样本 \t')
+        dataset = dataset.append(m, ignore_index=True)
+        dataset.to_csv(father_path + '/dataset/dataset_' + str(num) + '_' + str(time.time()) +'.csv')
+        print('初始样本点个数：' + str(dataset.shape[0]))
 
     def set_bounds(self, new_bounds):
         """

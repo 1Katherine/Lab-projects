@@ -15,7 +15,6 @@ import random
 import warnings
 warnings.filterwarnings("ignore")
 from bayes_scode import JSONLogger, Events, BayesianOptimization,SequentialDomainReductionTransformer
-from bayes_scode.sgan import train
 from bayes_scode.configuration import parser
 
 # 获取当前文件路径

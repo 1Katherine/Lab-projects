@@ -1,6 +1,7 @@
 import numpy as np
 from .util import ensure_rng
 from .LHS_sample import LHSample
+f = open("./output.txt", "w+")
 
 def _hashable(x):
     """ ensure that an point is hashable by a python dict """
@@ -188,6 +189,7 @@ class TargetSpace(object):
         """
         x = self._as_array(params)
 
+
         try:
             target = self._cache[_hashable(x)]
             print('probe说：以前见过你啦！params = ' + str(params) + ' target = ' + str(target))
@@ -195,11 +197,14 @@ class TargetSpace(object):
             params = dict(zip(self._keys, x))
             target = self.target_func(**params)
             print('probe说：没见过！帮你计算target！params = ' + str(params) + ' target = ' + str(target))
-            # if target < -2811:
-            #     print('执行时间超过2810s，杀死该配置，不存入初始样本点中')
-            # else :
-            self.register(x, target)
-        return target
+            Max_time = -2813
+            if target < Max_time:
+                print('执行时间超过' + str(-Max_time) + ' s，杀死该配置，不register该样本 \t' + str(params), file=f)
+                return False
+            else :
+                self.register(x, target)
+                return True
+        # return target
 
     def random_sample(self):
         """

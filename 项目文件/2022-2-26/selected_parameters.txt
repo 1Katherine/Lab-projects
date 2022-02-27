@@ -1,0 +1,11 @@
+vital_params
+spark.kryoserializer.buffer
+spark.sql.autoBroadcastJoinThreshold
+spark.sql.shuffle.partitions
+spark.scheduler.revive.interval
+spark.executor.memoryOverhead
+spark.shuffle.file.buffer
+spark.executor.cores
+spark.executor.instances
+spark.executor.memory
+spark.default.parallelism
