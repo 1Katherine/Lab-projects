@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
     <file url="file://$PROJECT_DIR$/laptop_rsgan_into_bo_replaced/output.txt" charset="GBK" />
+=======
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/laptop_rsgan_into_bo/output.txt" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820
   </component>
 </project>

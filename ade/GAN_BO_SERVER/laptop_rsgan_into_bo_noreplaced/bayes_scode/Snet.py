@@ -5,7 +5,10 @@ from .Dataset import load_dataloader, dataset_to_below_1
 import torch.nn as nn
 import matplotlib.pyplot as plt
 import pandas as pd
+<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/Snet.py
 pd.set_option('display.width',None)
+=======
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/Snet.py
 from .model import generator_module, discriminator_module
 from .configuration import parser
 import time

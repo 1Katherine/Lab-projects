@@ -45,6 +45,7 @@ hibench.streambench.spark.useDirectMode true
 
 
 # Random configuration
+<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/config/config8
  spark.default.parallelism	396
  spark.executor.cores	2
  spark.executor.instances	6
@@ -54,4 +55,15 @@ hibench.streambench.spark.useDirectMode true
  spark.memory.storageFraction	0.75
  spark.reducer.maxBlocksInFlightPerAddress	1642124288
  spark.reducer.maxSizeInFlight	41m
+=======
+ spark.default.parallelism	321
+ spark.executor.cores	3
+ spark.executor.instances	6
+ spark.executor.memory	5g
+ spark.executor.memoryOverhead	617m
+ spark.memory.fraction	0.74
+ spark.memory.storageFraction	0.67
+ spark.reducer.maxBlocksInFlightPerAddress	1608187136
+ spark.reducer.maxSizeInFlight	43m
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/config/config8
  spark.shuffle.file.buffer	36k

@@ -3,6 +3,10 @@ import torch
 import os
 # 获取当前文件路径
 current_path = os.path.abspath(__file__)
+<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/configuration.py
+=======
+# 获取当前文件的父目录,比如/usr/local/home/yyq/bo/rs_bo/rs_bo_newEI
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/configuration.py
 father_path = os.path.abspath(os.path.dirname(os.path.dirname(current_path)) + os.path.sep + ".")
 
 parser = argparse.ArgumentParser()

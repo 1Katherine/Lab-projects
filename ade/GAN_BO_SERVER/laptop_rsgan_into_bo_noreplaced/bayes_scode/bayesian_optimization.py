@@ -123,8 +123,14 @@ class BayesianOptimization(Observable):
         if lazy:
             self._queue.add(params)
         else:
-            self._space.probe(params)
-            self.dispatch(Events.OPTIMIZATION_STEP)
+            # self._space.probe(params)
+            # self.dispatch(Events.OPTIMIZATION_STEP)
+
+            if self._space.probe(params):
+                self.dispatch(Events.OPTIMIZATION_STEP)
+                return True
+            else:
+                return False
 
     def suggest(self, utility_function):
         """Most promissing point to probe next"""
@@ -197,6 +203,10 @@ class BayesianOptimization(Observable):
                                kappa_decay=kappa_decay,
                                kappa_decay_delay=kappa_decay_delay)
 
+<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/bayesian_optimization.py
+=======
+        self.Max_time = -2813
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/bayesian_optimization.py
 
         print('self._space.keys = ' + str(self._space.keys))
         params_list = []
@@ -226,6 +236,10 @@ class BayesianOptimization(Observable):
 
         # 取随机样本中的最优样本 并训练GAN
         m = m.sort_values('runtime', ascending=False).reset_index(drop=True)
+<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/bayesian_optimization.py
+=======
+        # m = m.sort_values('runtime').reset_index(drop=True)
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/bayesian_optimization.py
         bestconfig = m.iloc[:1, :-1]
 
 
@@ -241,8 +255,22 @@ class BayesianOptimization(Observable):
             util.update_params()
             x_probe = self.suggest(util)
             iteration += 1
-            self.probe(x_probe, lazy=False)
-            print('x_probe = ' + str(x_probe))
+            if self.probe(x_probe, lazy=False):
+                print('x_probe = ' + str(x_probe))
+            else:
+                print(str(iteration) + '\titeration：执行时间超过' + str(-self.Max_time) + ' s，杀死该配置，不register该样本 \t')
+                print('选择当前样本空间的最优配置传给GAN，GAN生成一个配置代替失败配置来运行')
+                # test
+                params = self._space.params
+                runtime = np.array([self._space.target]).T
+                inits = np.hstack([params, runtime])
+                train_df = pd.DataFrame(inits, columns=params_list)
+                # 取随机样本中的最优样本 并训练GAN
+                train_df = train_df.sort_values('runtime',ascending =False).reset_index(drop=True)
+                bestconfig = train_df.iloc[:1, :-1]
+
+                self.getBestSample_trainGAN(bestconfig, params_list, train_df, 1)
+
 
 
             if self._bounds_transformer:
@@ -280,6 +308,7 @@ class BayesianOptimization(Observable):
             # --------- 判断是否越界 ------------
             self.probe(config, lazy=False)
             # 获取该样本的执行时间
+<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/bayesian_optimization.py
             x = self._space._as_array(config)
             target = self._space._cache[_hashable(x)]
             config.append(target)
@@ -290,6 +319,20 @@ class BayesianOptimization(Observable):
             m = m.append(n, ignore_index=True)
             print(m)
 
+=======
+            try:
+                x = self._space._as_array(config)
+                target = self._space._cache[_hashable(x)]
+                config.append(target)
+                print('GAN采样：config\n' + str(config))
+                n = pd.DataFrame(data=[config], columns=params_list)
+                print('GAN采样：存储当前样本的df\n' + str(n))
+                print(n)
+                m = m.append(n, ignore_index=True)
+                print(m)
+            except KeyError:
+                print('GAN采样：执行时间超过' + str(-self.Max_time) + ' s，杀死该配置，不register该样本 \t')
+>>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/bayesian_optimization.py
         dataset = dataset.append(m, ignore_index=True)
         dataset.to_csv(father_path + '/dataset/dataset_' + str(num) + '_' + str(time.time()) +'.csv')
         print('初始样本点个数：' + str(dataset.shape[0]))

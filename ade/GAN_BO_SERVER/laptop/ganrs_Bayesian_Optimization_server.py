@@ -168,9 +168,18 @@ def gan_random(n):
     for i in range(2):
         config=generate_data.iloc[i].tolist()
         # --------- 判断是否越界 ------------
-        for i, conf in enumerate(d2):
-            print('d2中的conf为:' + str(conf))
-            # if config[i] ==
+        print('d2参数和范围为\n' + str(d2))
+        for i, conf in enumerate(vital_params['vital_params']):
+            print('d2中的conf为:' + str(conf) + ' 范围为 = ' + str(d2[conf]) + 'min = ' + str(d2[conf][0]))
+            if config[i] < d2[conf][0]:
+                print(str(conf) + "越界, 原值为 " + str(config[i]))
+                config[i] = d2[conf][0]
+                print('越界处理后的值为 ' + str(config[i]))
+            if config[i] > d2[conf][1]:
+                print(str(conf) + "越界, 原值为 " + str(config[i]))
+                config[i] = d2[conf][1]
+                print('越界处理后的值为 ' + str(config[i]))
+        # --------- 判断是否越界 ------------
         y = model.predict(np.matrix([config]))[0]
         config.append(y)
         n = pd.DataFrame(data=[config], columns=params_list)
@@ -376,12 +385,6 @@ if __name__ == '__main__':
     sparkConfRangeDf.set_index('SparkConf', inplace=True)
     confDict = sparkConfRangeDf.to_dict('index')
 
-    '''
-    2022/2/16
-    设置初始样本点
-    共采用8条数据作为初始样本点
-    '''
-    dataset=gan_random(8)
 
     # 遍历训练数据中的参数，读取其对应的参数空间
     d1={}
@@ -403,6 +406,9 @@ if __name__ == '__main__':
     vital_params_list = sorted(d2)
     vital_params_list.append('runtime')
     print('vital_params_list = ' + str(vital_params_list))
+
+    dataset=gan_random(8)
+
     # ------------------ 选择初始样本（3个方法选其一） start -------------
     if sample_type == 'all':
         # 选择所有样本
