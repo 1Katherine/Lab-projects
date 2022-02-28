@@ -320,7 +320,7 @@ configNum = 1
 def schafferRun(p):
     global configNum
     # 打开配置文件模板
-    fTemp = open('../laptop_rsgan_into_bo/configTemp', 'r')
+    fTemp = open('../laptop_rsgan_into_bo_replaced/configTemp', 'r')
     # 复制模板，并追加配置
     fNew = open(config_run_path + 'config' + str(configNum), 'a+')
     shutil.copyfileobj(fTemp, fNew, length=1024)
