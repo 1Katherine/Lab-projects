@@ -1,0 +1,2 @@
+,target,spark.broadcast.compress,spark.default.parallelism,spark.executor.cores,spark.executor.instances,spark.executor.memoryOverhead,spark.locality.wait,spark.memory.offHeap.size,spark.memory.storageFraction,spark.reducer.maxBlocksInFlightPerAddress,spark.reducer.maxSizeInFlight
+1,-2809.781494140625,0.417022004702574,416.09734803264746,1.0003431244520347,5.209330290527359,456.3506541728367,4.554031568612787,190.730456450735,0.6382242908172191,1499767654.4843125,49.86320323216113

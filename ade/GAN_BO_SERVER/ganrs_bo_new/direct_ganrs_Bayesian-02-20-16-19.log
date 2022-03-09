@@ -1,0 +1,75 @@
+nohup: 忽略输入
+/usr/local/home/yyq/bo/ganrs_bo_new
+=============== start terasort-20G ===============
+2022年 02月 20日 星期日 16:19:29 CST
+=============== start terasort-20G ===============
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/logs.json" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/generationConf.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/target.png" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/dataset.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/GAN*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/general_data.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/sgan_sample.csv" 的文件状态(stat): 没有那个文件或目录
+sys.path = ['/usr/local/home/yyq/bo/ganrs_bo_new', '/usr/local/home/python3/python3/lib/python38.zip', '/usr/local/home/python3/python3/lib/python3.8', '/usr/local/home/python3/python3/lib/python3.8/lib-dynload', '/usr/local/home/python3/python3/lib/python3.8/site-packages', '/usr/local/home/yyq/bo/ganrs_bo_new', '/usr/local/home/yyq/bo/ganrs_bo_new/bayes_scode']
+benchmark = terasort-20G	 gan+rs生成的样本数：initpoints = 6	 bo迭代搜索次数：--niters = 44
+重要参数列表（将贝叶斯的x_probe按照重要参数列表顺序转成配置文件实际运行:
+                                 vital_params
+0                   spark.broadcast.blockSize
+1                    spark.broadcast.checksum
+2                    spark.broadcast.compress
+3                   spark.default.parallelism
+4                        spark.executor.cores
+5                    spark.executor.instances
+6                       spark.executor.memory
+7               spark.executor.memoryOverhead
+8                 spark.kryoserializer.buffer
+9             spark.kryoserializer.buffer.max
+10                        spark.locality.wait
+11         spark.maxRemoteBlockSizeFetchToMem
+12                      spark.memory.fraction
+13               spark.memory.offHeap.enabled
+14                  spark.memory.offHeap.size
+15               spark.memory.storageFraction
+16                         spark.rdd.compress
+17  spark.reducer.maxBlocksInFlightPerAddress
+18              spark.reducer.maxReqsInFlight
+19              spark.reducer.maxSizeInFlight
+20                       spark.scheduler.mode
+21            spark.scheduler.revive.interval
+22                     spark.shuffle.compress
+23                  spark.shuffle.file.buffer
+24     spark.shuffle.io.numConnectionsPerPeer
+25    spark.shuffle.sort.bypassMergeThreshold
+26           spark.storage.memoryMapThreshold
+vital_params_name = ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+vital_params_list = ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold', 'runtime']
+np.matrix([config])中的config:
+[12, 1, 1, 491, 4, 8, 12, 944, 89, 56, 7, 1740445132, 0.82, 1, 437, 0.82, 0, 2058315214, 1691949943, 64, 1, 870, 0, 17, 3, 471, 10]
+np.matrix([config]):
+[[1.20000000e+01 1.00000000e+00 1.00000000e+00 4.91000000e+02
+  4.00000000e+00 8.00000000e+00 1.20000000e+01 9.44000000e+02
+  8.90000000e+01 5.60000000e+01 7.00000000e+00 1.74044513e+09
+  8.20000000e-01 1.00000000e+00 4.37000000e+02 8.20000000e-01
+  0.00000000e+00 2.05831521e+09 1.69194994e+09 6.40000000e+01
+  1.00000000e+00 8.70000000e+02 0.00000000e+00 1.70000000e+01
+  3.00000000e+00 4.71000000e+02 1.00000000e+01]]
+Traceback (most recent call last):
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/ganrs_Bayesian_Optimization_server.py", line 283, in <module>
+    dataset=gan_random(args.initpoints)
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/ganrs_Bayesian_Optimization_server.py", line 72, in gan_random
+    y = schafferRun(config)
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/ganrs_Bayesian_Optimization_server.py", line 212, in schafferRun
+    fNew = open(config_run_path + 'config' + str(configNum), 'a+')
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G/config1'
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/logs.json" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/generationConf.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/target.png" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/dataset.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/GAN*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/general_data.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/sgan_sample.csv" 的文件状态(stat): 没有那个文件或目录
+=============== finish terasort-20G ===============
+2022年 02月 20日 星期日 16:19:31 CST
+=============== finish terasort-20G ===============

@@ -1,0 +1,2279 @@
+nohup: 忽略输入
+/usr/local/home/yyq/bo/ganrs_bo_new
+=============== start terasort-20G ===============
+2022年 02月 20日 星期日 16:21:04 CST
+=============== start terasort-20G ===============
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/logs.json" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/generationConf.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/target.png" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/dataset.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/GAN*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/general_data.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/sgan_sample.csv" 的文件状态(stat): 没有那个文件或目录
+================= config1 =================
+2022年 02月 20日 星期日 16:21:06 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (148411) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (297764) - 没有那个进程
+sys.path = ['/usr/local/home/yyq/bo/ganrs_bo_new', '/usr/local/home/python3/python3/lib/python38.zip', '/usr/local/home/python3/python3/lib/python3.8', '/usr/local/home/python3/python3/lib/python3.8/lib-dynload', '/usr/local/home/python3/python3/lib/python3.8/site-packages', '/usr/local/home/yyq/bo/ganrs_bo_new', '/usr/local/home/yyq/bo/ganrs_bo_new/bayes_scode']
+benchmark = terasort-20G	 gan+rs生成的样本数：initpoints = 6	 bo迭代搜索次数：--niters = 44
+重要参数列表（将贝叶斯的x_probe按照重要参数列表顺序转成配置文件实际运行:
+                                 vital_params
+0                   spark.broadcast.blockSize
+1                    spark.broadcast.checksum
+2                    spark.broadcast.compress
+3                   spark.default.parallelism
+4                        spark.executor.cores
+5                    spark.executor.instances
+6                       spark.executor.memory
+7               spark.executor.memoryOverhead
+8                 spark.kryoserializer.buffer
+9             spark.kryoserializer.buffer.max
+10                        spark.locality.wait
+11         spark.maxRemoteBlockSizeFetchToMem
+12                      spark.memory.fraction
+13               spark.memory.offHeap.enabled
+14                  spark.memory.offHeap.size
+15               spark.memory.storageFraction
+16                         spark.rdd.compress
+17  spark.reducer.maxBlocksInFlightPerAddress
+18              spark.reducer.maxReqsInFlight
+19              spark.reducer.maxSizeInFlight
+20                       spark.scheduler.mode
+21            spark.scheduler.revive.interval
+22                     spark.shuffle.compress
+23                  spark.shuffle.file.buffer
+24     spark.shuffle.io.numConnectionsPerPeer
+25    spark.shuffle.sort.bypassMergeThreshold
+26           spark.storage.memoryMapThreshold
+vital_params_name = ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+vital_params_list = ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold', 'runtime']
+np.matrix([config])中的config:
+[14, 0, 0, 358, 5, 13, 13, 1173, 33, 66, 1, 1136382365, 0.57, 1, 154, 0.69, 1, 1848844734, 1121417540, 66, 0, 855, 1, 19, 1, 271, 1]
+np.matrix([config]):
+[[1.40000000e+01 0.00000000e+00 0.00000000e+00 3.58000000e+02
+  5.00000000e+00 1.30000000e+01 1.30000000e+01 1.17300000e+03
+  3.30000000e+01 6.60000000e+01 1.00000000e+00 1.13638236e+09
+  5.70000000e-01 1.00000000e+00 1.54000000e+02 6.90000000e-01
+  1.00000000e+00 1.84884473e+09 1.12141754e+09 6.60000000e+01
+  0.00000000e+00 8.55000000e+02 1.00000000e+00 1.90000000e+01
+  1.00000000e+00 2.71000000e+02 1.00000000e+00]]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 14
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 358
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 5
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 13
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 13
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 1173
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 33
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 66
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 1
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1136382365
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.57
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 1
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 154
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.69
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1848844734
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1121417540
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 66
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 855
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 19
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 1
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 271
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 1
+configNum = 1	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 1 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+y = np.matrix([config])[0]中的 y = 351.79
+[14, 0, 0, 358, 5, 13, 13, 1173, 33, 66, 1, 1136382365, 0.57, 1, 154, 0.69, 1, 1848844734, 1121417540, 66, 0, 855, 1, 19, 1, 271, 1, 351.79]
+   spark.broadcast.blockSize  ...  runtime
+0                         14  ...   351.79
+
+[1 rows x 28 columns]
+  spark.broadcast.blockSize  ... runtime
+0                        14  ...  351.79
+
+[1 rows x 28 columns]
+np.matrix([config])中的config:
+[34, 1, 0, 478, 5, 8, 10, 957, 68, 66, 9, 1435323252, 0.6, 1, 55, 0.89, 1, 1378015560, 2018511272, 53, 1, 976, 0, 21, 1, 168, 5]
+np.matrix([config]):
+[[3.40000000e+01 1.00000000e+00 0.00000000e+00 4.78000000e+02
+  5.00000000e+00 8.00000000e+00 1.00000000e+01 9.57000000e+02
+  6.80000000e+01 6.60000000e+01 9.00000000e+00 1.43532325e+09
+  6.00000000e-01 1.00000000e+00 5.50000000e+01 8.90000000e-01
+  1.00000000e+00 1.37801556e+09 2.01851127e+09 5.30000000e+01
+  1.00000000e+00 9.76000000e+02 0.00000000e+00 2.10000000e+01
+  1.00000000e+00 1.68000000e+02 5.00000000e+00]]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 34
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 478
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 5
+================= config2 =================
+2022年 02月 20日 星期日 16:27:06 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (186025) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (46832) - 没有那个进程
+================= config3 =================
+2022年 02月 20日 星期日 16:38:24 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (206903) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (87242) - 没有那个进程
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 8
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 10
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 957
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 68
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 66
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 9
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1435323252
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.6
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 1
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 55
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.89
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1378015560
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 2018511272
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 53
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 1
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 976
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 21
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 1
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 168
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 5
+configNum = 2	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 2 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+y = np.matrix([config])[0]中的 y = 661.4
+[34, 1, 0, 478, 5, 8, 10, 957, 68, 66, 9, 1435323252, 0.6, 1, 55, 0.89, 1, 1378015560, 2018511272, 53, 1, 976, 0, 21, 1, 168, 5, 661.4]
+   spark.broadcast.blockSize  ...  runtime
+0                         34  ...    661.4
+
+[1 rows x 28 columns]
+  spark.broadcast.blockSize  ... runtime
+0                        14  ...  351.79
+1                        34  ...  661.40
+
+[2 rows x 28 columns]
+np.matrix([config])中的config:
+[28, 1, 0, 370, 5, 12, 13, 1073, 111, 98, 5, 1200366245, 0.74, 0, 297, 0.71, 1, 1692908495, 1741983426, 44, 0, 763, 1, 39, 3, 443, 10]
+np.matrix([config]):
+[[2.80000000e+01 1.00000000e+00 0.00000000e+00 3.70000000e+02
+  5.00000000e+00 1.20000000e+01 1.30000000e+01 1.07300000e+03
+  1.11000000e+02 9.80000000e+01 5.00000000e+00 1.20036624e+09
+  7.40000000e-01 0.00000000e+00 2.97000000e+02 7.10000000e-01
+  1.00000000e+00 1.69290850e+09 1.74198343e+09 4.40000000e+01
+  0.00000000e+00 7.63000000e+02 1.00000000e+00 3.90000000e+01
+  3.00000000e+00 4.43000000e+02 1.00000000e+01]]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 28
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 370
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 5
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 12
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 13
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 1073
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 111
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 98
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 5
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1200366245
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.74
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 297
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.71
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1692908495
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1741983426
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 44
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 763
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 39
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 443
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 10
+configNum = 3	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 3 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+y = np.matrix([config])[0]中的 y = 262.669
+[28, 1, 0, 370, 5, 12, 13, 1073, 111, 98, 5, 1200366245, 0.74, 0, 297, 0.71, 1, 1692908495, 1741983426, 44, 0, 763, 1, 39, 3, 443, 10, 262.669]
+   spark.broadcast.blockSize  ...  runtime
+0                         28  ...  262.669
+
+[1 rows x 28 columns]
+  spark.broadcast.blockSize  ...  runtime
+0                        14  ...  351.790
+1                        34  ...  661.400
+2                        28  ...  262.669
+
+[3 rows x 28 columns]
+  spark.broadcast.blockSize  ... spark.storage.memoryMapThreshold
+0                        28  ...                               10
+
+[1 rows x 27 columns]
+  spark.broadcast.blockSize  ... spark.storage.memoryMapThreshold
+0                     -1.25  ...                              5.0
+
+[1 rows x 27 columns]
+traindata.shape:(1, 27)
+traindata.count_value:28.9508482675347
+0
+2000
+Epoch: 0 Loss D.: -0.006360143423080444
+Epoch: 0 Loss G.: 28.851662786837306
+tensor(28.5762, dtype=torch.float64, grad_fn=<DivBackward0>)
+1
+2000
+Epoch: 1 Loss D.: 0.017283082008361816
+Epoch: 1 Loss G.: 29.113420372949864
+tensor(28.4792, dtype=torch.float64, grad_fn=<DivBackward0>)
+2
+2000
+Epoch: 2 Loss D.: 0.02612459659576416
+Epoch: 2 Loss G.: 29.28572583738399
+tensor(28.3341, dtype=torch.float64, grad_fn=<DivBackward0>)
+3
+2000
+Epoch: 3 Loss D.: 0.013939380645751953
+Epoch: 3 Loss G.: 28.394153594443527
+tensor(28.3375, dtype=torch.float64, grad_fn=<DivBackward0>)
+4
+2000
+Epoch: 4 Loss D.: 0.008023619651794434
+Epoch: 4 Loss G.: 28.3480650902539
+tensor(28.2808, dtype=torch.float64, grad_fn=<DivBackward0>)
+5
+2000
+Epoch: 5 Loss D.: 0.013762712478637695
+Epoch: 5 Loss G.: 28.178200953078093
+tensor(27.8457, dtype=torch.float64, grad_fn=<DivBackward0>)
+6
+2000
+Epoch: 6 Loss D.: 0.03154608607292175
+Epoch: 6 Loss G.: 28.761267312085206
+tensor(27.9982, dtype=torch.float64, grad_fn=<DivBackward0>)
+7
+2000
+Epoch: 7 Loss D.: 0.015924394130706787
+Epoch: 7 Loss G.: 27.58256318367454
+tensor(27.7621, dtype=torch.float64, grad_fn=<DivBackward0>)
+8
+2000
+Epoch: 8 Loss D.: 0.026176154613494873
+Epoch: 8 Loss G.: 27.147086129644837
+tensor(27.5453, dtype=torch.float64, grad_fn=<DivBackward0>)
+9
+2000
+Epoch: 9 Loss D.: 0.021101832389831543
+Epoch: 9 Loss G.: 27.080506323957767
+tensor(27.4606, dtype=torch.float64, grad_fn=<DivBackward0>)
+10
+2000
+Epoch: 10 Loss D.: 0.011619627475738525
+Epoch: 10 Loss G.: 28.034300513969686
+tensor(27.3755, dtype=torch.float64, grad_fn=<DivBackward0>)
+11
+2000
+Epoch: 11 Loss D.: 0.02583444118499756
+Epoch: 11 Loss G.: 27.91043192315531
+tensor(27.1773, dtype=torch.float64, grad_fn=<DivBackward0>)
+12
+2000
+Epoch: 12 Loss D.: 0.01786339282989502
+Epoch: 12 Loss G.: 26.408963501391884
+tensor(26.8037, dtype=torch.float64, grad_fn=<DivBackward0>)
+13
+2000
+Epoch: 13 Loss D.: 0.01579231023788452
+Epoch: 13 Loss G.: 26.999060773384397
+tensor(27.0447, dtype=torch.float64, grad_fn=<DivBackward0>)
+14
+2000
+Epoch: 14 Loss D.: 0.021791934967041016
+Epoch: 14 Loss G.: 26.863966961795416
+tensor(26.7072, dtype=torch.float64, grad_fn=<DivBackward0>)
+15
+2000
+Epoch: 15 Loss D.: 0.0054468512535095215
+Epoch: 15 Loss G.: 26.243576019723537
+tensor(26.4334, dtype=torch.float64, grad_fn=<DivBackward0>)
+16
+2000
+Epoch: 16 Loss D.: 0.018867194652557373
+Epoch: 16 Loss G.: 26.512428795019115
+tensor(26.1559, dtype=torch.float64, grad_fn=<DivBackward0>)
+17
+2000
+Epoch: 17 Loss D.: 0.02046489715576172
+Epoch: 17 Loss G.: 26.41896883392143
+tensor(26.0493, dtype=torch.float64, grad_fn=<DivBackward0>)
+18
+2000
+Epoch: 18 Loss D.: 0.013574600219726562
+Epoch: 18 Loss G.: 26.270581907624326
+tensor(26.1840, dtype=torch.float64, grad_fn=<DivBackward0>)
+19
+2000
+Epoch: 19 Loss D.: 0.0256231427192688
+Epoch: 19 Loss G.: 25.144164143223886
+tensor(25.8501, dtype=torch.float64, grad_fn=<DivBackward0>)
+20
+2000
+Epoch: 20 Loss D.: 0.017308712005615234
+Epoch: 20 Loss G.: 25.176268374113317
+tensor(25.3624, dtype=torch.float64, grad_fn=<DivBackward0>)
+21
+2000
+Epoch: 21 Loss D.: 0.021820545196533203
+Epoch: 21 Loss G.: 25.638849936608796
+tensor(25.6576, dtype=torch.float64, grad_fn=<DivBackward0>)
+22
+2000
+Epoch: 22 Loss D.: 0.024274349212646484
+Epoch: 22 Loss G.: 25.89817018638981
+tensor(25.4813, dtype=torch.float64, grad_fn=<DivBackward0>)
+23
+2000
+Epoch: 23 Loss D.: 0.023533642292022705
+Epoch: 23 Loss G.: 24.154914891192643
+tensor(25.6391, dtype=torch.float64, grad_fn=<DivBackward0>)
+24
+2000
+Epoch: 24 Loss D.: 0.026690781116485596
+Epoch: 24 Loss G.: 23.613676860987468
+tensor(24.4662, dtype=torch.float64, grad_fn=<DivBackward0>)
+25
+2000
+Epoch: 25 Loss D.: 0.008888661861419678
+Epoch: 25 Loss G.: 23.179355441092774
+tensor(24.9738, dtype=torch.float64, grad_fn=<DivBackward0>)
+26
+2000
+Epoch: 26 Loss D.: 0.028897583484649658
+Epoch: 26 Loss G.: 25.04723480067583
+tensor(24.7829, dtype=torch.float64, grad_fn=<DivBackward0>)
+27
+2000
+Epoch: 27 Loss D.: 0.024938464164733887
+Epoch: 27 Loss G.: 25.56538148975305
+tensor(24.0785, dtype=torch.float64, grad_fn=<DivBackward0>)
+28
+2000
+Epoch: 28 Loss D.: 0.02348989248275757
+Epoch: 28 Loss G.: 23.32675798333618
+tensor(24.7291, dtype=torch.float64, grad_fn=<DivBackward0>)
+29
+2000
+Epoch: 29 Loss D.: 0.030867576599121094
+Epoch: 29 Loss G.: 25.114510348036216
+tensor(23.3588, dtype=torch.float64, grad_fn=<DivBackward0>)
+30
+2000
+Epoch: 30 Loss D.: 0.016134023666381836
+Epoch: 30 Loss G.: 23.588517127369172
+tensor(23.3229, dtype=torch.float64, grad_fn=<DivBackward0>)
+31
+2000
+Epoch: 31 Loss D.: 0.018242061138153076
+Epoch: 31 Loss G.: 26.812558322955493
+tensor(23.4512, dtype=torch.float64, grad_fn=<DivBackward0>)
+32
+2000
+Epoch: 32 Loss D.: 0.026097238063812256
+Epoch: 32 Loss G.: 20.980744768897026
+tensor(23.5144, dtype=torch.float64, grad_fn=<DivBackward0>)
+33
+2000
+Epoch: 33 Loss D.: 0.014898419380187988
+Epoch: 33 Loss G.: 21.17275655933651
+tensor(22.9075, dtype=torch.float64, grad_fn=<DivBackward0>)
+34
+2000
+Epoch: 34 Loss D.: 0.021149098873138428
+Epoch: 34 Loss G.: 25.6381291775349
+tensor(22.6029, dtype=torch.float64, grad_fn=<DivBackward0>)
+35
+2000
+Epoch: 35 Loss D.: 0.016746938228607178
+Epoch: 35 Loss G.: 20.993882220207976
+tensor(22.8554, dtype=torch.float64, grad_fn=<DivBackward0>)
+36
+2000
+Epoch: 36 Loss D.: 0.02571338415145874
+Epoch: 36 Loss G.: 26.273176807720784
+tensor(22.0625, dtype=torch.float64, grad_fn=<DivBackward0>)
+37
+2000
+Epoch: 37 Loss D.: 0.011712849140167236
+Epoch: 37 Loss G.: 25.565624347232852
+tensor(22.1497, dtype=torch.float64, grad_fn=<DivBackward0>)
+38
+2000
+Epoch: 38 Loss D.: 0.02128159999847412
+Epoch: 38 Loss G.: 21.763532420430906
+tensor(21.1619, dtype=torch.float64, grad_fn=<DivBackward0>)
+39
+2000
+Epoch: 39 Loss D.: 0.027379095554351807
+Epoch: 39 Loss G.: 19.34644587061736
+tensor(20.4881, dtype=torch.float64, grad_fn=<DivBackward0>)
+40
+2000
+Epoch: 40 Loss D.: 0.015115082263946533
+Epoch: 40 Loss G.: 22.322951401987993
+tensor(21.5692, dtype=torch.float64, grad_fn=<DivBackward0>)
+41
+2000
+Epoch: 41 Loss D.: 0.0109330415725708
+Epoch: 41 Loss G.: 20.777000860059584
+tensor(20.0040, dtype=torch.float64, grad_fn=<DivBackward0>)
+42
+2000
+Epoch: 42 Loss D.: 0.009428679943084717
+Epoch: 42 Loss G.: 23.834233580747572
+tensor(20.7540, dtype=torch.float64, grad_fn=<DivBackward0>)
+43
+2000
+Epoch: 43 Loss D.: 0.016265451908111572
+Epoch: 43 Loss G.: 20.48527391078008
+tensor(19.7710, dtype=torch.float64, grad_fn=<DivBackward0>)
+44
+2000
+Epoch: 44 Loss D.: 0.022224605083465576
+Epoch: 44 Loss G.: 18.002012717037722
+tensor(19.5584, dtype=torch.float64, grad_fn=<DivBackward0>)
+45
+2000
+Epoch: 45 Loss D.: 0.01656365394592285
+Epoch: 45 Loss G.: 22.119170542279207
+tensor(18.6002, dtype=torch.float64, grad_fn=<DivBackward0>)
+46
+2000
+Epoch: 46 Loss D.: 0.02172785997390747
+Epoch: 46 Loss G.: 19.02717205527488
+tensor(18.2886, dtype=torch.float64, grad_fn=<DivBackward0>)
+47
+2000
+Epoch: 47 Loss D.: 0.030752241611480713
+Epoch: 47 Loss G.: 21.31720753333899
+tensor(18.5868, dtype=torch.float64, grad_fn=<DivBackward0>)
+48
+2000
+Epoch: 48 Loss D.: 0.013650953769683838
+Epoch: 48 Loss G.: 17.181957498907373
+tensor(17.4272, dtype=torch.float64, grad_fn=<DivBackward0>)
+49
+2000
+Epoch: 49 Loss D.: 0.03213876485824585
+Epoch: 49 Loss G.: 15.731523334166047
+tensor(16.6340, dtype=torch.float64, grad_fn=<DivBackward0>)
+50
+2000
+Epoch: 50 Loss D.: 0.011921107769012451
+Epoch: 50 Loss G.: 16.38014482534988
+tensor(17.6701, dtype=torch.float64, grad_fn=<DivBackward0>)
+51
+2000
+Epoch: 51 Loss D.: 0.00992804765701294
+Epoch: 51 Loss G.: 18.507735287864335
+tensor(16.6958, dtype=torch.float64, grad_fn=<DivBackward0>)
+52
+2000
+Epoch: 52 Loss D.: 0.025378823280334473
+Epoch: 52 Loss G.: 18.91336286889576
+tensor(17.4343, dtype=torch.float64, grad_fn=<DivBackward0>)
+53
+2000
+Epoch: 53 Loss D.: 0.01429527997970581
+Epoch: 53 Loss G.: 18.82506085382832
+tensor(16.2043, dtype=torch.float64, grad_fn=<DivBackward0>)
+54
+2000
+Epoch: 54 Loss D.: 0.011759698390960693
+Epoch: 54 Loss G.: 19.135999809388643
+tensor(16.0535, dtype=torch.float64, grad_fn=<DivBackward0>)
+55
+2000
+Epoch: 55 Loss D.: 0.019264578819274902
+Epoch: 55 Loss G.: 16.68863309242758
+tensor(15.4117, dtype=torch.float64, grad_fn=<DivBackward0>)
+56
+2000
+Epoch: 56 Loss D.: 0.0388357937335968
+Epoch: 56 Loss G.: 15.200555059582628
+tensor(15.0196, dtype=torch.float64, grad_fn=<DivBackward0>)
+57
+2000
+Epoch: 57 Loss D.: 0.03211808204650879
+Epoch: 57 Loss G.: 13.917729521687463
+tensor(14.5451, dtype=torch.float64, grad_fn=<DivBackward0>)
+58
+2000
+Epoch: 58 Loss D.: 0.010504305362701416
+Epoch: 58 Loss G.: 13.909577972214057
+tensor(15.7085, dtype=torch.float64, grad_fn=<DivBackward0>)
+59
+2000
+Epoch: 59 Loss D.: 0.010187625885009766
+Epoch: 59 Loss G.: 13.706645965755616
+tensor(15.2498, dtype=torch.float64, grad_fn=<DivBackward0>)
+60
+2000
+Epoch: 60 Loss D.: 0.024753034114837646
+Epoch: 60 Loss G.: 13.596063034132754
+tensor(13.8694, dtype=torch.float64, grad_fn=<DivBackward0>)
+61
+2000
+Epoch: 61 Loss D.: 0.019415855407714844
+Epoch: 61 Loss G.: 13.135886817197635
+tensor(13.9619, dtype=torch.float64, grad_fn=<DivBackward0>)
+62
+2000
+Epoch: 62 Loss D.: 0.011647701263427734
+Epoch: 62 Loss G.: 12.583935157885785
+tensor(13.2966, dtype=torch.float64, grad_fn=<DivBackward0>)
+63
+2000
+Epoch: 63 Loss D.: 0.02318507432937622
+Epoch: 63 Loss G.: 13.705556829701496
+tensor(13.4492, dtype=torch.float64, grad_fn=<DivBackward0>)
+64
+2000
+Epoch: 64 Loss D.: 0.024945437908172607
+Epoch: 64 Loss G.: 16.006810870984516
+tensor(12.3449, dtype=torch.float64, grad_fn=<DivBackward0>)
+65
+2000
+Epoch: 65 Loss D.: 0.02723991870880127
+Epoch: 65 Loss G.: 12.959604304463301
+tensor(12.4159, dtype=torch.float64, grad_fn=<DivBackward0>)
+66
+2000
+Epoch: 66 Loss D.: 0.010827898979187012
+Epoch: 66 Loss G.: 14.049750207085735
+tensor(11.8113, dtype=torch.float64, grad_fn=<DivBackward0>)
+67
+2000
+Epoch: 67 Loss D.: 0.01636296510696411
+Epoch: 67 Loss G.: 12.36667932960454
+tensor(11.1689, dtype=torch.float64, grad_fn=<DivBackward0>)
+68
+2000
+Epoch: 68 Loss D.: 0.02172112464904785
+Epoch: 68 Loss G.: 10.650126931091782
+tensor(11.5859, dtype=torch.float64, grad_fn=<DivBackward0>)
+69
+2000
+Epoch: 69 Loss D.: 0.012766003608703613
+Epoch: 69 Loss G.: 10.922084833612676
+tensor(10.4521, dtype=torch.float64, grad_fn=<DivBackward0>)
+70
+2000
+Epoch: 70 Loss D.: 0.027568519115447998
+Epoch: 70 Loss G.: 10.231217437541122
+tensor(11.1168, dtype=torch.float64, grad_fn=<DivBackward0>)
+71
+2000
+Epoch: 71 Loss D.: 0.011784553527832031
+Epoch: 71 Loss G.: 9.706296516727045
+tensor(9.7599, dtype=torch.float64, grad_fn=<DivBackward0>)
+72
+2000
+Epoch: 72 Loss D.: 0.018576860427856445
+Epoch: 72 Loss G.: 11.98784759919775
+tensor(9.8135, dtype=torch.float64, grad_fn=<DivBackward0>)
+73
+2000
+Epoch: 73 Loss D.: 0.015772700309753418
+Epoch: 73 Loss G.: 9.468614555705908
+tensor(9.2028, dtype=torch.float64, grad_fn=<DivBackward0>)
+74
+2000
+Epoch: 74 Loss D.: 0.011196494102478027
+Epoch: 74 Loss G.: 8.30251939513349
+tensor(9.7931, dtype=torch.float64, grad_fn=<DivBackward0>)
+75
+2000
+Epoch: 75 Loss D.: 0.020980417728424072
+Epoch: 75 Loss G.: 8.735104743112448
+tensor(9.9144, dtype=torch.float64, grad_fn=<DivBackward0>)
+76
+2000
+Epoch: 76 Loss D.: 0.02668815851211548
+Epoch: 76 Loss G.: 8.926040228276815
+tensor(9.0116, dtype=torch.float64, grad_fn=<DivBackward0>)
+77
+2000
+Epoch: 77 Loss D.: 0.03570869565010071
+Epoch: 77 Loss G.: 11.245901254126752
+tensor(10.5008, dtype=torch.float64, grad_fn=<DivBackward0>)
+78
+2000
+Epoch: 78 Loss D.: 0.018639802932739258
+Epoch: 78 Loss G.: 10.76697676138016
+tensor(9.2750, dtype=torch.float64, grad_fn=<DivBackward0>)
+79
+2000
+Epoch: 79 Loss D.: 0.024952292442321777
+Epoch: 79 Loss G.: 8.120270052780077
+tensor(8.4934, dtype=torch.float64, grad_fn=<DivBackward0>)
+80
+2000
+Epoch: 80 Loss D.: 0.028989970684051514
+Epoch: 80 Loss G.: 7.862473692183022
+tensor(9.8171, dtype=torch.float64, grad_fn=<DivBackward0>)
+81
+2000
+Epoch: 81 Loss D.: 0.027227818965911865
+Epoch: 81 Loss G.: 8.468078873872125
+tensor(8.7536, dtype=torch.float64, grad_fn=<DivBackward0>)
+82
+2000
+Epoch: 82 Loss D.: 0.022000491619110107
+Epoch: 82 Loss G.: 7.751439058352872
+tensor(8.5164, dtype=torch.float64, grad_fn=<DivBackward0>)
+83
+2000
+Epoch: 83 Loss D.: 0.01985877752304077
+Epoch: 83 Loss G.: 7.612277044087017
+tensor(8.0377, dtype=torch.float64, grad_fn=<DivBackward0>)
+84
+2000
+Epoch: 84 Loss D.: 0.021274864673614502
+Epoch: 84 Loss G.: 7.954566597879603
+tensor(8.6811, dtype=torch.float64, grad_fn=<DivBackward0>)
+85
+2000
+Epoch: 85 Loss D.: 0.027952104806900024
+Epoch: 85 Loss G.: 12.19059651043944
+tensor(7.7080, dtype=torch.float64, grad_fn=<DivBackward0>)
+86
+2000
+Epoch: 86 Loss D.: 0.014065980911254883
+Epoch: 86 Loss G.: 7.387128010919369
+tensor(7.6436, dtype=torch.float64, grad_fn=<DivBackward0>)
+87
+2000
+Epoch: 87 Loss D.: 0.012671113014221191
+Epoch: 87 Loss G.: 7.3482048106994995
+tensor(8.5541, dtype=torch.float64, grad_fn=<DivBackward0>)
+88
+2000
+Epoch: 88 Loss D.: 0.0199735164642334
+Epoch: 88 Loss G.: 6.959647118986325
+tensor(7.4977, dtype=torch.float64, grad_fn=<DivBackward0>)
+89
+2000
+Epoch: 89 Loss D.: 0.023838579654693604
+Epoch: 89 Loss G.: 10.18812656784487
+tensor(7.7419, dtype=torch.float64, grad_fn=<DivBackward0>)
+90
+2000
+Epoch: 90 Loss D.: 0.021802783012390137
+Epoch: 90 Loss G.: 7.022443621049996
+tensor(7.1480, dtype=torch.float64, grad_fn=<DivBackward0>)
+91
+2000
+Epoch: 91 Loss D.: 0.01692807674407959
+Epoch: 91 Loss G.: 7.511397040197576
+tensor(7.0587, dtype=torch.float64, grad_fn=<DivBackward0>)
+92
+2000
+Epoch: 92 Loss D.: 0.020221948623657227
+Epoch: 92 Loss G.: 6.82440646971699
+tensor(6.3262, dtype=torch.float64, grad_fn=<DivBackward0>)
+93
+2000
+Epoch: 93 Loss D.: 0.02122652530670166
+Epoch: 93 Loss G.: 7.850896243533171
+tensor(6.6677, dtype=torch.float64, grad_fn=<DivBackward0>)
+94
+2000
+Epoch: 94 Loss D.: 0.01848769187927246
+Epoch: 94 Loss G.: 7.604530984704063
+tensor(6.5255, dtype=torch.float64, grad_fn=<DivBackward0>)
+95
+2000
+Epoch: 95 Loss D.: 0.011553645133972168
+Epoch: 95 Loss G.: 8.080732057054165
+tensor(6.2659, dtype=torch.float64, grad_fn=<DivBackward0>)
+96
+2000
+Epoch: 96 Loss D.: 0.024500012397766113
+Epoch: 96 Loss G.: 6.133073134502446
+tensor(6.4668, dtype=torch.float64, grad_fn=<DivBackward0>)
+97
+2000
+Epoch: 97 Loss D.: 0.020205259323120117
+Epoch: 97 Loss G.: 5.938089094876613
+tensor(6.7896, dtype=torch.float64, grad_fn=<DivBackward0>)
+98
+2000
+Epoch: 98 Loss D.: 0.020766019821166992
+Epoch: 98 Loss G.: 5.229198470901127
+tensor(6.2848, dtype=torch.float64, grad_fn=<DivBackward0>)
+99
+2000
+Epoch: 99 Loss D.: 0.017592251300811768
+Epoch: 99 Loss G.: 5.6831737892733765
+tensor(5.8040, dtype=torch.float64, grad_fn=<DivBackward0>)
+100
+2000
+Epoch: 100 Loss D.: 0.014336645603179932
+Epoch: 100 Loss G.: 5.054178395560061
+tensor(5.3276, dtype=torch.float64, grad_fn=<DivBackward0>)
+101
+2000
+Epoch: 101 Loss D.: 0.02767118811607361
+Epoch: 101 Loss G.: 5.369339375138953
+tensor(5.7870, dtype=torch.float64, grad_fn=<DivBackward0>)
+102
+2000
+Epoch: 102 Loss D.: 0.020445704460144043
+Epoch: 102 Loss G.: 4.872728757749672
+tensor(6.3641, dtype=torch.float64, grad_fn=<DivBackward0>)
+103
+2000
+Epoch: 103 Loss D.: 0.02968508005142212
+Epoch: 103 Loss G.: 4.350931542556162
+tensor(5.2898, dtype=torch.float64, grad_fn=<DivBackward0>)
+104
+2000
+Epoch: 104 Loss D.: 0.017371654510498047
+Epoch: 104 Loss G.: 4.6620543131424625
+tensor(4.3181, dtype=torch.float64, grad_fn=<DivBackward0>)
+105
+2000
+Epoch: 105 Loss D.: 0.011163532733917236
+Epoch: 105 Loss G.: 5.100570865164872
+tensor(4.6087, dtype=torch.float64, grad_fn=<DivBackward0>)
+106
+2000
+Epoch: 106 Loss D.: 0.01589745283126831
+Epoch: 106 Loss G.: 4.880958963374968
+tensor(4.3260, dtype=torch.float64, grad_fn=<DivBackward0>)
+107
+2000
+Epoch: 107 Loss D.: 0.018487513065338135
+Epoch: 107 Loss G.: 6.074941169529483
+tensor(5.0319, dtype=torch.float64, grad_fn=<DivBackward0>)
+108
+2000
+Epoch: 108 Loss D.: 0.021880626678466797
+Epoch: 108 Loss G.: 3.8494456290646046
+tensor(3.6929, dtype=torch.float64, grad_fn=<DivBackward0>)
+109
+2000
+Epoch: 109 Loss D.: 0.020334184169769287
+Epoch: 109 Loss G.: 3.7192852971759196
+tensor(4.5763, dtype=torch.float64, grad_fn=<DivBackward0>)
+110
+2000
+Epoch: 110 Loss D.: 0.020624279975891113
+Epoch: 110 Loss G.: 3.2708999733819213
+tensor(4.2079, dtype=torch.float64, grad_fn=<DivBackward0>)
+111
+2000
+Epoch: 111 Loss D.: 0.015219151973724365
+Epoch: 111 Loss G.: 2.7798233291202434
+tensor(3.8042, dtype=torch.float64, grad_fn=<DivBackward0>)
+112
+2000
+Epoch: 112 Loss D.: 0.024853944778442383
+Epoch: 112 Loss G.: 3.0490526561283313
+tensor(4.6287, dtype=torch.float64, grad_fn=<DivBackward0>)
+113
+2000
+Epoch: 113 Loss D.: 0.009082138538360596
+Epoch: 113 Loss G.: 3.063476618320421
+tensor(4.2456, dtype=torch.float64, grad_fn=<DivBackward0>)
+114
+2000
+Epoch: 114 Loss D.: 0.02356863021850586
+Epoch: 114 Loss G.: 2.341574550102786
+tensor(3.0204, dtype=torch.float64, grad_fn=<DivBackward0>)
+115
+2000
+Epoch: 115 Loss D.: 0.0217972993850708
+Epoch: 115 Loss G.: 6.619932844707693
+tensor(2.8824, dtype=torch.float64, grad_fn=<DivBackward0>)
+116
+2000
+Epoch: 116 Loss D.: 0.014581084251403809
+Epoch: 116 Loss G.: 2.633717644184156
+tensor(4.4241, dtype=torch.float64, grad_fn=<DivBackward0>)
+117
+2000
+Epoch: 117 Loss D.: 0.004709005355834961
+Epoch: 117 Loss G.: 2.5294001597470404
+tensor(3.0745, dtype=torch.float64, grad_fn=<DivBackward0>)
+118
+2000
+Epoch: 118 Loss D.: 0.015103518962860107
+Epoch: 118 Loss G.: 2.147654160688952
+tensor(2.8846, dtype=torch.float64, grad_fn=<DivBackward0>)
+119
+2000
+Epoch: 119 Loss D.: 0.026179850101470947
+Epoch: 119 Loss G.: 3.5546614133410896
+tensor(4.3839, dtype=torch.float64, grad_fn=<DivBackward0>)
+120
+2000
+Epoch: 120 Loss D.: 0.01285940408706665
+Epoch: 120 Loss G.: 5.4043994486921285
+tensor(3.7231, dtype=torch.float64, grad_fn=<DivBackward0>)
+121
+2000
+Epoch: 121 Loss D.: 0.010344743728637695
+Epoch: 121 Loss G.: 2.2690823401603337
+tensor(2.4452, dtype=torch.float64, grad_fn=<DivBackward0>)
+122
+2000
+Epoch: 122 Loss D.: 0.012789428234100342
+Epoch: 122 Loss G.: 3.2788248915529996
+tensor(2.5872, dtype=torch.float64, grad_fn=<DivBackward0>)
+123
+2000
+Epoch: 123 Loss D.: 0.020858407020568848
+Epoch: 123 Loss G.: 4.399863364354407
+tensor(3.2209, dtype=torch.float64, grad_fn=<DivBackward0>)
+124
+2000
+Epoch: 124 Loss D.: 0.03621247410774231
+Epoch: 124 Loss G.: 1.8818863769677039
+tensor(2.6988, dtype=torch.float64, grad_fn=<DivBackward0>)
+125
+2000
+Epoch: 125 Loss D.: 0.023552000522613525
+Epoch: 125 Loss G.: 2.3207356940302493
+tensor(2.6269, dtype=torch.float64, grad_fn=<DivBackward0>)
+126
+2000
+Epoch: 126 Loss D.: 0.025455057621002197
+Epoch: 126 Loss G.: 1.6446561581697416
+tensor(3.1075, dtype=torch.float64, grad_fn=<DivBackward0>)
+127
+2000
+Epoch: 127 Loss D.: 0.013438820838928223
+Epoch: 127 Loss G.: 1.5631372436576327
+tensor(2.6617, dtype=torch.float64, grad_fn=<DivBackward0>)
+128
+2000
+Epoch: 128 Loss D.: 0.014040708541870117
+Epoch: 128 Loss G.: 2.2471624975198154
+tensor(2.4583, dtype=torch.float64, grad_fn=<DivBackward0>)
+129
+2000
+Epoch: 129 Loss D.: 0.027430057525634766
+Epoch: 129 Loss G.: 3.2792545510139828
+tensor(2.8366, dtype=torch.float64, grad_fn=<DivBackward0>)
+130
+2000
+Epoch: 130 Loss D.: 0.021627068519592285
+Epoch: 130 Loss G.: 1.464726574660019
+tensor(1.7768, dtype=torch.float64, grad_fn=<DivBackward0>)
+131
+2000
+Epoch: 131 Loss D.: 0.015727877616882324
+Epoch: 131 Loss G.: 2.4459978853073476
+tensor(1.7868, dtype=torch.float64, grad_fn=<DivBackward0>)
+132
+2000
+Epoch: 132 Loss D.: 0.021770238876342773
+Epoch: 132 Loss G.: 4.826267862350419
+tensor(1.8525, dtype=torch.float64, grad_fn=<DivBackward0>)
+133
+2000
+Epoch: 133 Loss D.: 0.027221858501434326
+Epoch: 133 Loss G.: 2.1884056700461754
+tensor(2.2455, dtype=torch.float64, grad_fn=<DivBackward0>)
+在第133轮收敛
+----------------第0轮的原数据---------------------
+         range  dissimilarity_value  ...  Euclidean_distance   distance
+0     2.752790             0.085420  ...            2.098484   5.570208
+1     2.864342             0.078664  ...            1.921670   6.605500
+2     2.903496             0.079637  ...            1.808244   6.932419
+3     3.021318             0.076221  ...            1.633564   8.017997
+4     3.119316             0.081499  ...            1.653955   7.406064
+..         ...                  ...  ...                 ...        ...
+195  13.341280             0.058196  ...            1.137308  15.093447
+196  13.425583             0.065500  ...            1.052151  14.500226
+197  13.460079             0.061151  ...            1.093197  14.945320
+198  13.623404             0.062340  ...            1.102401  14.540402
+199  14.074642             0.060458  ...            1.586196  10.416888
+
+[200 rows x 5 columns]
+-----------------按照dissimilarity_value排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0    10.540                0.057         0.999               0.582    29.999
+1    10.407                0.058         0.999               0.557    30.781
+2    13.341                0.058         0.999               1.137    15.093
+3    13.209                0.058         0.999               1.039    16.475
+4    12.374                0.059         0.999               0.385    44.086
+..      ...                  ...           ...                 ...       ...
+195   5.203                0.083         0.999               1.075    11.254
+196   7.271                0.084         0.999               0.899    13.202
+197   2.753                0.085         0.998               2.098     5.570
+198   4.400                0.087         0.999               1.940     5.931
+199   4.597                0.089         0.998               1.751     6.418
+
+[200 rows x 5 columns]
+-----------------按照range排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     2.753                0.085         0.998               2.098     5.570
+1     2.864                0.079         0.999               1.922     6.605
+2     2.903                0.080         0.998               1.808     6.932
+3     3.021                0.076         0.998               1.634     8.018
+4     3.119                0.081         0.998               1.654     7.406
+..      ...                  ...           ...                 ...       ...
+195  13.341                0.058         0.999               1.137    15.093
+196  13.426                0.065         0.999               1.052    14.500
+197  13.460                0.061         0.999               1.093    14.945
+198  13.623                0.062         0.999               1.102    14.540
+199  14.075                0.060         0.999               1.586    10.417
+
+[200 rows x 5 columns]
+-----------------按照cos_distance排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     2.753                0.085         0.998               2.098     5.570
+1     5.937                0.061         0.998               0.529    30.767
+2     7.643                0.070         0.998               0.581    24.497
+3     5.639                0.063         0.998               0.574    27.780
+4    10.865                0.061         0.998               1.017    16.122
+..      ...                  ...           ...                 ...       ...
+195   7.752                0.070         0.999               0.512    27.936
+196   7.764                0.070         0.999               0.449    31.978
+197   7.771                0.068         0.999               0.432    33.984
+198   7.806                0.068         0.999               0.459    31.984
+199  14.075                0.060         0.999               1.586    10.417
+
+[200 rows x 5 columns]
+-----------------按照Euclidean_distance排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     7.825                0.060         0.999               0.299    56.098
+1    10.029                0.062         0.999               0.307    52.917
+2     7.984                0.064         0.999               0.312    50.453
+3    12.034                0.059         0.999               0.326    52.023
+4    12.255                0.060         0.999               0.326    51.393
+..      ...                  ...           ...                 ...       ...
+195   4.597                0.089         0.998               1.751     6.418
+196   2.903                0.080         0.998               1.808     6.932
+197   2.864                0.079         0.999               1.922     6.605
+198   4.400                0.087         0.999               1.940     5.931
+199   2.753                0.085         0.998               2.098     5.570
+
+[200 rows x 5 columns]
+-----------------按照distance排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     7.825                0.060         0.999               0.299    56.098
+1    10.029                0.062         0.999               0.307    52.917
+2    12.034                0.059         0.999               0.326    52.023
+3    12.255                0.060         0.999               0.326    51.393
+4     7.984                0.064         0.999               0.312    50.453
+..      ...                  ...           ...                 ...       ...
+195   2.903                0.080         0.998               1.808     6.932
+196   2.864                0.079         0.999               1.922     6.605
+197   4.597                0.089         0.998               1.751     6.418
+198   4.400                0.087         0.999               1.940     5.931
+199   2.753                0.085         0.998               2.098     5.570
+
+[200 rows x 5 columns]
+   distance
+0    56.098
+1    52.917
+2    52.023
+3    33.579
+4    33.400
+5    32.417
+6     6.418
+7     5.931
+8     5.570
+   distance
+0    56.098
+1    33.579
+2     5.570
+3    52.917
+4    33.400
+5     5.931
+6    52.023
+7    32.417
+8     6.418
+sgan数据生成时间花费为：1313.06
+================= config4 =================
+2022年 02月 20日 星期日 16:42:59 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (220283) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (120887) - 没有那个进程
+================= config5 =================
+2022年 02月 20日 星期日 16:47:18 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (259634) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (194547) - 没有那个进程
+   spark.broadcast.blockSize  ...  spark.storage.memoryMapThreshold
+0                       32.0  ...                               8.0
+1                       32.0  ...                               8.0
+2                       34.0  ...                               8.0
+3                       32.0  ...                               8.0
+4                       32.0  ...                               8.0
+5                       32.0  ...                               8.0
+6                       32.0  ...                               8.0
+7                       32.0  ...                               8.0
+8                       32.0  ...                               8.0
+
+[9 rows x 27 columns]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 32.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 369.0
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 4.0
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 9.0
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 10.0
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 877.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 110.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 98.0
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 5.0
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1226909056.0
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.7200000286102295
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 303.0
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1702687104.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1762992768.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 45.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 764.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 39.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 350.0
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 8.0
+configNum = 4	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 4 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+   spark.broadcast.blockSize  ...  runtime
+0                       32.0  ...  250.268
+
+[1 rows x 28 columns]
+  spark.broadcast.blockSize  ...  runtime
+0                        28  ...  262.669
+1                        14  ...  351.790
+2                        34  ...  661.400
+3                      32.0  ...  250.268
+
+[4 rows x 28 columns]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 32.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 368.0
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 4.0
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 9.0
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 10.0
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 877.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 108.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 96.0
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 5.0
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1228837504.0
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.7200000286102295
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 306.0
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1686744064.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1756950784.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 43.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 764.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 40.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 350.0
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 8.0
+configNum = 5	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 5 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+   spark.broadcast.blockSize  ...  runtime
+0                       32.0  ...  723.715
+
+[1 rows x 28 columns]
+  spark.broadcast.blockSize  ...  runtime
+0                        28  ...  262.669
+1                        14  ...  351.790
+2                        34  ...  661.400
+3                      32.0  ...  250.268
+4                      32.0  ...  723.715
+
+[5 rows x 28 columns]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 34.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 362.0
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 4.0
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 9.0
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 10.0
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 877.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 101.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 94.0
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 6.0
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1312211968.0
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 354.0
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1.0
+================= config6 =================
+2022年 02月 20日 星期日 16:59:31 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (270915) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (217245) - 没有那个进程
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1659764480.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1740709888.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 45.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 761.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 38.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 350.0
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 8.0
+configNum = 6	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 6 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+   spark.broadcast.blockSize  ...  runtime
+0                       34.0  ...  252.609
+
+[1 rows x 28 columns]
+  spark.broadcast.blockSize  ...  runtime
+0                        28  ...  262.669
+1                        14  ...  351.790
+2                        34  ...  661.400
+3                      32.0  ...  250.268
+4                      32.0  ...  723.715
+5                      34.0  ...  252.609
+
+[6 rows x 28 columns]
+  spark.broadcast.blockSize  ... spark.storage.memoryMapThreshold
+0                      32.0  ...                              8.0
+
+[1 rows x 27 columns]
+  spark.broadcast.blockSize  ... spark.storage.memoryMapThreshold
+0                      -1.0  ...                         3.666667
+
+[1 rows x 27 columns]
+traindata.shape:(1, 27)
+traindata.count_value:21.80673821843046
+0
+2000
+Epoch: 0 Loss D.: 0.03358566761016846
+Epoch: 0 Loss G.: 22.443743026685
+tensor(22.1475, dtype=torch.float64, grad_fn=<DivBackward0>)
+1
+2000
+Epoch: 1 Loss D.: 0.008179306983947754
+Epoch: 1 Loss G.: 22.078916221726715
+tensor(22.4673, dtype=torch.float64, grad_fn=<DivBackward0>)
+2
+2000
+Epoch: 2 Loss D.: -0.00037550926208496094
+Epoch: 2 Loss G.: 22.716084914151608
+tensor(22.0617, dtype=torch.float64, grad_fn=<DivBackward0>)
+3
+2000
+Epoch: 3 Loss D.: 0.01068657636642456
+Epoch: 3 Loss G.: 21.058416301254212
+tensor(22.1803, dtype=torch.float64, grad_fn=<DivBackward0>)
+4
+2000
+Epoch: 4 Loss D.: 0.00869673490524292
+Epoch: 4 Loss G.: 22.265947194639622
+tensor(21.6389, dtype=torch.float64, grad_fn=<DivBackward0>)
+5
+2000
+Epoch: 5 Loss D.: 0.009071648120880127
+Epoch: 5 Loss G.: 20.87381818505007
+tensor(21.6004, dtype=torch.float64, grad_fn=<DivBackward0>)
+6
+2000
+Epoch: 6 Loss D.: 0.011000514030456543
+Epoch: 6 Loss G.: 21.017180260140478
+tensor(21.4681, dtype=torch.float64, grad_fn=<DivBackward0>)
+7
+2000
+Epoch: 7 Loss D.: 0.009893715381622314
+Epoch: 7 Loss G.: 21.571663789320766
+tensor(21.2845, dtype=torch.float64, grad_fn=<DivBackward0>)
+8
+2000
+Epoch: 8 Loss D.: 0.014042973518371582
+Epoch: 8 Loss G.: 20.923464659936755
+tensor(20.7431, dtype=torch.float64, grad_fn=<DivBackward0>)
+9
+2000
+Epoch: 9 Loss D.: 0.020691514015197754
+Epoch: 9 Loss G.: 20.81261416884142
+tensor(20.7606, dtype=torch.float64, grad_fn=<DivBackward0>)
+10
+2000
+Epoch: 10 Loss D.: 0.013523876667022705
+Epoch: 10 Loss G.: 21.656170809511124
+tensor(20.2302, dtype=torch.float64, grad_fn=<DivBackward0>)
+11
+2000
+Epoch: 11 Loss D.: -0.0007624626159667969
+Epoch: 11 Loss G.: 20.507432054132252
+tensor(20.2232, dtype=torch.float64, grad_fn=<DivBackward0>)
+12
+2000
+Epoch: 12 Loss D.: 0.025632023811340332
+Epoch: 12 Loss G.: 22.438196718213177
+tensor(20.3529, dtype=torch.float64, grad_fn=<DivBackward0>)
+13
+2000
+Epoch: 13 Loss D.: 0.0069921016693115234
+Epoch: 13 Loss G.: 20.881928594652592
+tensor(19.8864, dtype=torch.float64, grad_fn=<DivBackward0>)
+14
+2000
+Epoch: 14 Loss D.: 0.011241793632507324
+Epoch: 14 Loss G.: 19.28971617469567
+tensor(19.2602, dtype=torch.float64, grad_fn=<DivBackward0>)
+15
+2000
+Epoch: 15 Loss D.: 0.004379689693450928
+Epoch: 15 Loss G.: 21.107795409996093
+tensor(19.8867, dtype=torch.float64, grad_fn=<DivBackward0>)
+16
+2000
+Epoch: 16 Loss D.: 0.009538054466247559
+Epoch: 16 Loss G.: 21.205502998221696
+tensor(19.9692, dtype=torch.float64, grad_fn=<DivBackward0>)
+17
+2000
+Epoch: 17 Loss D.: 0.007784128189086914
+Epoch: 17 Loss G.: 19.668490940574586
+tensor(19.7395, dtype=torch.float64, grad_fn=<DivBackward0>)
+18
+2000
+Epoch: 18 Loss D.: 0.013987183570861816
+Epoch: 18 Loss G.: 17.856596404824437
+tensor(19.3533, dtype=torch.float64, grad_fn=<DivBackward0>)
+19
+2000
+Epoch: 19 Loss D.: 0.011030852794647217
+Epoch: 19 Loss G.: 17.90602424596129
+tensor(18.3628, dtype=torch.float64, grad_fn=<DivBackward0>)
+20
+2000
+Epoch: 20 Loss D.: 0.005952954292297363
+Epoch: 20 Loss G.: 16.999500655053836
+tensor(19.3841, dtype=torch.float64, grad_fn=<DivBackward0>)
+21
+2000
+Epoch: 21 Loss D.: 0.017200589179992676
+Epoch: 21 Loss G.: 17.58660951057452
+tensor(18.0342, dtype=torch.float64, grad_fn=<DivBackward0>)
+22
+2000
+Epoch: 22 Loss D.: -0.003576219081878662
+Epoch: 22 Loss G.: 20.4457913228758
+tensor(17.3914, dtype=torch.float64, grad_fn=<DivBackward0>)
+23
+2000
+Epoch: 23 Loss D.: 0.007237493991851807
+Epoch: 23 Loss G.: 15.457336204810717
+tensor(17.1456, dtype=torch.float64, grad_fn=<DivBackward0>)
+24
+2000
+Epoch: 24 Loss D.: 0.009870409965515137
+Epoch: 24 Loss G.: 17.44855568758029
+tensor(16.1558, dtype=torch.float64, grad_fn=<DivBackward0>)
+25
+2000
+Epoch: 25 Loss D.: 0.015604555606842041
+Epoch: 25 Loss G.: 20.835926391322197
+tensor(17.7181, dtype=torch.float64, grad_fn=<DivBackward0>)
+26
+2000
+Epoch: 26 Loss D.: 0.010818064212799072
+Epoch: 26 Loss G.: 17.1264456698187
+tensor(16.2850, dtype=torch.float64, grad_fn=<DivBackward0>)
+27
+2000
+Epoch: 27 Loss D.: 0.008791089057922363
+Epoch: 27 Loss G.: 18.520964348558365
+tensor(17.2876, dtype=torch.float64, grad_fn=<DivBackward0>)
+28
+2000
+Epoch: 28 Loss D.: 0.002496778964996338
+Epoch: 28 Loss G.: 17.996916796881735
+tensor(16.5121, dtype=torch.float64, grad_fn=<DivBackward0>)
+29
+2000
+Epoch: 29 Loss D.: 0.018282413482666016
+Epoch: 29 Loss G.: 14.542087772998988
+tensor(17.2549, dtype=torch.float64, grad_fn=<DivBackward0>)
+30
+2000
+Epoch: 30 Loss D.: 0.0055599212646484375
+Epoch: 30 Loss G.: 14.90835165059942
+tensor(16.7537, dtype=torch.float64, grad_fn=<DivBackward0>)
+31
+2000
+Epoch: 31 Loss D.: 0.0067861080169677734
+Epoch: 31 Loss G.: 12.866135945959668
+tensor(16.0601, dtype=torch.float64, grad_fn=<DivBackward0>)
+32
+2000
+Epoch: 32 Loss D.: 0.006002604961395264
+Epoch: 32 Loss G.: 14.709545074446778
+tensor(15.8921, dtype=torch.float64, grad_fn=<DivBackward0>)
+33
+2000
+Epoch: 33 Loss D.: 0.008504629135131836
+Epoch: 33 Loss G.: 12.088296499586322
+tensor(14.3828, dtype=torch.float64, grad_fn=<DivBackward0>)
+34
+2000
+Epoch: 34 Loss D.: 0.007693350315093994
+Epoch: 34 Loss G.: 12.596525376800477
+tensor(14.4261, dtype=torch.float64, grad_fn=<DivBackward0>)
+35
+2000
+Epoch: 35 Loss D.: 0.0228879451751709
+Epoch: 35 Loss G.: 11.397638362105907
+tensor(14.4374, dtype=torch.float64, grad_fn=<DivBackward0>)
+36
+2000
+Epoch: 36 Loss D.: -0.0031101107597351074
+Epoch: 36 Loss G.: 20.093494107816397
+tensor(14.2723, dtype=torch.float64, grad_fn=<DivBackward0>)
+37
+2000
+Epoch: 37 Loss D.: 0.009225189685821533
+Epoch: 37 Loss G.: 14.90409786136327
+tensor(14.6402, dtype=torch.float64, grad_fn=<DivBackward0>)
+38
+2000
+Epoch: 38 Loss D.: 0.013271749019622803
+Epoch: 38 Loss G.: 17.172875953976096
+tensor(12.3161, dtype=torch.float64, grad_fn=<DivBackward0>)
+39
+2000
+Epoch: 39 Loss D.: 0.015895366668701172
+Epoch: 39 Loss G.: 12.087562940951406
+tensor(13.4190, dtype=torch.float64, grad_fn=<DivBackward0>)
+40
+2000
+Epoch: 40 Loss D.: 0.005241870880126953
+Epoch: 40 Loss G.: 9.708247221247571
+tensor(10.4245, dtype=torch.float64, grad_fn=<DivBackward0>)
+41
+2000
+Epoch: 41 Loss D.: 0.01677614450454712
+Epoch: 41 Loss G.: 14.34403957227248
+tensor(13.1569, dtype=torch.float64, grad_fn=<DivBackward0>)
+42
+2000
+Epoch: 42 Loss D.: 0.017842411994934082
+Epoch: 42 Loss G.: 9.899122580127138
+tensor(11.2213, dtype=torch.float64, grad_fn=<DivBackward0>)
+43
+2000
+Epoch: 43 Loss D.: 0.006168723106384277
+Epoch: 43 Loss G.: 9.573974576330404
+tensor(11.2503, dtype=torch.float64, grad_fn=<DivBackward0>)
+44
+2000
+Epoch: 44 Loss D.: 0.026807576417922974
+Epoch: 44 Loss G.: 10.171715133375148
+tensor(9.9633, dtype=torch.float64, grad_fn=<DivBackward0>)
+45
+2000
+Epoch: 45 Loss D.: 0.014009714126586914
+Epoch: 45 Loss G.: 10.524125120087245
+tensor(11.5482, dtype=torch.float64, grad_fn=<DivBackward0>)
+46
+2000
+Epoch: 46 Loss D.: 0.014011085033416748
+Epoch: 46 Loss G.: 10.187946056816756
+tensor(10.0826, dtype=torch.float64, grad_fn=<DivBackward0>)
+47
+2000
+Epoch: 47 Loss D.: 0.004557311534881592
+Epoch: 47 Loss G.: 7.607783614830393
+tensor(8.7141, dtype=torch.float64, grad_fn=<DivBackward0>)
+48
+2000
+Epoch: 48 Loss D.: 0.007123708724975586
+Epoch: 48 Loss G.: 10.228814618799866
+tensor(9.8606, dtype=torch.float64, grad_fn=<DivBackward0>)
+49
+2000
+Epoch: 49 Loss D.: 0.013020217418670654
+Epoch: 49 Loss G.: 7.233871537433285
+tensor(9.2097, dtype=torch.float64, grad_fn=<DivBackward0>)
+50
+2000
+Epoch: 50 Loss D.: 0.0014072060585021973
+Epoch: 50 Loss G.: 10.606736906077682
+tensor(7.6423, dtype=torch.float64, grad_fn=<DivBackward0>)
+51
+2000
+Epoch: 51 Loss D.: 0.008530080318450928
+Epoch: 51 Loss G.: 6.917053022316316
+tensor(9.4758, dtype=torch.float64, grad_fn=<DivBackward0>)
+52
+2000
+Epoch: 52 Loss D.: 0.001049816608428955
+Epoch: 52 Loss G.: 6.483243770406861
+tensor(7.7945, dtype=torch.float64, grad_fn=<DivBackward0>)
+53
+2000
+Epoch: 53 Loss D.: 0.00938040018081665
+Epoch: 53 Loss G.: 10.525181135300578
+tensor(8.1153, dtype=torch.float64, grad_fn=<DivBackward0>)
+54
+2000
+Epoch: 54 Loss D.: 0.022631198167800903
+Epoch: 54 Loss G.: 6.265277149981478
+tensor(7.5501, dtype=torch.float64, grad_fn=<DivBackward0>)
+55
+2000
+Epoch: 55 Loss D.: 0.005678892135620117
+Epoch: 55 Loss G.: 6.102569377607325
+tensor(7.0336, dtype=torch.float64, grad_fn=<DivBackward0>)
+56
+2000
+Epoch: 56 Loss D.: 0.008194804191589355
+Epoch: 56 Loss G.: 7.480405829356331
+tensor(7.1387, dtype=torch.float64, grad_fn=<DivBackward0>)
+57
+2000
+Epoch: 57 Loss D.: 0.005270123481750488
+Epoch: 57 Loss G.: 6.388601799389938
+tensor(6.8977, dtype=torch.float64, grad_fn=<DivBackward0>)
+58
+2000
+Epoch: 58 Loss D.: 0.007301926612854004
+Epoch: 58 Loss G.: 7.5510685401719995
+tensor(7.0277, dtype=torch.float64, grad_fn=<DivBackward0>)
+59
+2000
+Epoch: 59 Loss D.: 0.0031891465187072754
+Epoch: 59 Loss G.: 7.868951467935026
+tensor(7.9016, dtype=torch.float64, grad_fn=<DivBackward0>)
+60
+2000
+Epoch: 60 Loss D.: 0.016074836254119873
+Epoch: 60 Loss G.: 6.651744386865476
+tensor(6.9531, dtype=torch.float64, grad_fn=<DivBackward0>)
+61
+2000
+Epoch: 61 Loss D.: 0.018969237804412842
+Epoch: 61 Loss G.: 6.317964414004266
+tensor(7.8930, dtype=torch.float64, grad_fn=<DivBackward0>)
+62
+2000
+Epoch: 62 Loss D.: 0.015035152435302734
+Epoch: 62 Loss G.: 5.73868524606647
+tensor(6.1517, dtype=torch.float64, grad_fn=<DivBackward0>)
+63
+2000
+Epoch: 63 Loss D.: 0.01163417100906372
+Epoch: 63 Loss G.: 6.868397822741449
+tensor(6.6059, dtype=torch.float64, grad_fn=<DivBackward0>)
+64
+2000
+Epoch: 64 Loss D.: 0.016157448291778564
+Epoch: 64 Loss G.: 6.771701684905866
+tensor(6.0692, dtype=torch.float64, grad_fn=<DivBackward0>)
+65
+2000
+Epoch: 65 Loss D.: 0.014913558959960938
+Epoch: 65 Loss G.: 6.520082156346459
+tensor(5.8983, dtype=torch.float64, grad_fn=<DivBackward0>)
+66
+2000
+Epoch: 66 Loss D.: 0.015656888484954834
+Epoch: 66 Loss G.: 7.91415867437301
+tensor(5.9114, dtype=torch.float64, grad_fn=<DivBackward0>)
+67
+2000
+Epoch: 67 Loss D.: 0.013025343418121338
+Epoch: 67 Loss G.: 6.492853800392369
+tensor(7.5321, dtype=torch.float64, grad_fn=<DivBackward0>)
+68
+2000
+Epoch: 68 Loss D.: 0.011613011360168457
+Epoch: 68 Loss G.: 8.180537141100782
+tensor(6.9584, dtype=torch.float64, grad_fn=<DivBackward0>)
+69
+2000
+Epoch: 69 Loss D.: 0.01602727174758911
+Epoch: 69 Loss G.: 5.005154998415489
+tensor(6.1937, dtype=torch.float64, grad_fn=<DivBackward0>)
+70
+2000
+Epoch: 70 Loss D.: 0.01899588108062744
+Epoch: 70 Loss G.: 8.711326218382734
+tensor(5.7064, dtype=torch.float64, grad_fn=<DivBackward0>)
+71
+2000
+Epoch: 71 Loss D.: 0.014912664890289307
+Epoch: 71 Loss G.: 4.50804925068595
+tensor(5.9925, dtype=torch.float64, grad_fn=<DivBackward0>)
+72
+2000
+Epoch: 72 Loss D.: 0.009791910648345947
+Epoch: 72 Loss G.: 6.182940586096266
+tensor(5.0320, dtype=torch.float64, grad_fn=<DivBackward0>)
+73
+2000
+Epoch: 73 Loss D.: 0.006918072700500488
+Epoch: 73 Loss G.: 4.502560394300798
+tensor(6.0338, dtype=torch.float64, grad_fn=<DivBackward0>)
+74
+2000
+Epoch: 74 Loss D.: 0.015517234802246094
+Epoch: 74 Loss G.: 4.21746618555365
+tensor(5.1814, dtype=torch.float64, grad_fn=<DivBackward0>)
+75
+2000
+Epoch: 75 Loss D.: 0.015647828578948975
+Epoch: 75 Loss G.: 5.083012308166642
+tensor(5.5354, dtype=torch.float64, grad_fn=<DivBackward0>)
+76
+2000
+Epoch: 76 Loss D.: 0.01893031597137451
+Epoch: 76 Loss G.: 5.274712744063357
+tensor(5.2284, dtype=torch.float64, grad_fn=<DivBackward0>)
+77
+2000
+Epoch: 77 Loss D.: 0.018566548824310303
+Epoch: 77 Loss G.: 3.589792089674652
+tensor(5.1538, dtype=torch.float64, grad_fn=<DivBackward0>)
+78
+2000
+Epoch: 78 Loss D.: 0.02767840027809143
+Epoch: 78 Loss G.: 5.920972040060938
+tensor(4.6301, dtype=torch.float64, grad_fn=<DivBackward0>)
+79
+2000
+Epoch: 79 Loss D.: 0.011554181575775146
+Epoch: 79 Loss G.: 7.256305258858979
+tensor(6.5161, dtype=torch.float64, grad_fn=<DivBackward0>)
+80
+2000
+Epoch: 80 Loss D.: 0.010511159896850586
+Epoch: 80 Loss G.: 3.859741933580457
+tensor(3.8885, dtype=torch.float64, grad_fn=<DivBackward0>)
+81
+2000
+Epoch: 81 Loss D.: -0.004666507244110107
+Epoch: 81 Loss G.: 3.9674837981798055
+tensor(4.5617, dtype=torch.float64, grad_fn=<DivBackward0>)
+82
+2000
+Epoch: 82 Loss D.: 0.011907398700714111
+Epoch: 82 Loss G.: 5.8538369612284304
+tensor(4.4213, dtype=torch.float64, grad_fn=<DivBackward0>)
+83
+2000
+Epoch: 83 Loss D.: 0.01708853244781494
+Epoch: 83 Loss G.: 2.7207137259977854
+tensor(3.4272, dtype=torch.float64, grad_fn=<DivBackward0>)
+84
+2000
+Epoch: 84 Loss D.: 0.012732088565826416
+Epoch: 84 Loss G.: 4.844162892059702
+tensor(3.4484, dtype=torch.float64, grad_fn=<DivBackward0>)
+85
+2000
+Epoch: 85 Loss D.: 0.0042438507080078125
+Epoch: 85 Loss G.: 4.945421002314705
+tensor(4.9655, dtype=torch.float64, grad_fn=<DivBackward0>)
+86
+2000
+Epoch: 86 Loss D.: 0.009821057319641113
+Epoch: 86 Loss G.: 3.4676057325192096
+tensor(4.6478, dtype=torch.float64, grad_fn=<DivBackward0>)
+87
+2000
+Epoch: 87 Loss D.: 0.013959825038909912
+Epoch: 87 Loss G.: 3.117713706437528
+tensor(5.6232, dtype=torch.float64, grad_fn=<DivBackward0>)
+88
+2000
+Epoch: 88 Loss D.: 0.005592525005340576
+Epoch: 88 Loss G.: 5.819887192789495
+tensor(4.4363, dtype=torch.float64, grad_fn=<DivBackward0>)
+89
+2000
+Epoch: 89 Loss D.: 0.0058553218841552734
+Epoch: 89 Loss G.: 2.38958919662855
+tensor(4.5689, dtype=torch.float64, grad_fn=<DivBackward0>)
+90
+2000
+Epoch: 90 Loss D.: 0.01536870002746582
+Epoch: 90 Loss G.: 3.0816446976723464
+tensor(3.3153, dtype=torch.float64, grad_fn=<DivBackward0>)
+91
+2000
+Epoch: 91 Loss D.: 0.020502567291259766
+Epoch: 91 Loss G.: 2.435233974698961
+tensor(3.7646, dtype=torch.float64, grad_fn=<DivBackward0>)
+92
+2000
+Epoch: 92 Loss D.: 0.010766148567199707
+Epoch: 92 Loss G.: 4.745695950879434
+tensor(4.1397, dtype=torch.float64, grad_fn=<DivBackward0>)
+93
+2000
+Epoch: 93 Loss D.: 0.02299293875694275
+Epoch: 93 Loss G.: 7.252162414355854
+tensor(3.8386, dtype=torch.float64, grad_fn=<DivBackward0>)
+94
+2000
+Epoch: 94 Loss D.: 0.008111655712127686
+Epoch: 94 Loss G.: 2.1552360199254936
+tensor(3.5455, dtype=torch.float64, grad_fn=<DivBackward0>)
+95
+2000
+Epoch: 95 Loss D.: 0.013698697090148926
+Epoch: 95 Loss G.: 4.936529172454059
+tensor(2.4378, dtype=torch.float64, grad_fn=<DivBackward0>)
+96
+2000
+Epoch: 96 Loss D.: 0.012880682945251465
+Epoch: 96 Loss G.: 1.5961830044152527
+tensor(2.7913, dtype=torch.float64, grad_fn=<DivBackward0>)
+97
+2000
+Epoch: 97 Loss D.: 0.014948129653930664
+Epoch: 97 Loss G.: 6.484062152121246
+tensor(3.2300, dtype=torch.float64, grad_fn=<DivBackward0>)
+98
+2000
+Epoch: 98 Loss D.: 0.014354109764099121
+Epoch: 98 Loss G.: 2.0482111486929453
+tensor(2.7381, dtype=torch.float64, grad_fn=<DivBackward0>)
+99
+2000
+Epoch: 99 Loss D.: 0.0040732622146606445
+Epoch: 99 Loss G.: 5.638841813292324
+tensor(3.1165, dtype=torch.float64, grad_fn=<DivBackward0>)
+100
+2000
+Epoch: 100 Loss D.: 0.0014487504959106445
+Epoch: 100 Loss G.: 1.7875383876325877
+tensor(2.4471, dtype=torch.float64, grad_fn=<DivBackward0>)
+101
+2000
+Epoch: 101 Loss D.: 0.02561408281326294
+Epoch: 101 Loss G.: 5.555347027673105
+tensor(3.5894, dtype=torch.float64, grad_fn=<DivBackward0>)
+102
+2000
+Epoch: 102 Loss D.: 0.00942140817642212
+Epoch: 102 Loss G.: 1.6165933430256636
+tensor(3.3167, dtype=torch.float64, grad_fn=<DivBackward0>)
+103
+2000
+Epoch: 103 Loss D.: 0.0045708417892456055
+Epoch: 103 Loss G.: 2.966131886597693
+tensor(2.4242, dtype=torch.float64, grad_fn=<DivBackward0>)
+104
+2000
+Epoch: 104 Loss D.: 0.0034638047218322754
+Epoch: 104 Loss G.: 3.6042113068836725
+tensor(2.2803, dtype=torch.float64, grad_fn=<DivBackward0>)
+105
+2000
+Epoch: 105 Loss D.: 0.028470993041992188
+Epoch: 105 Loss G.: 3.051476786043465
+tensor(2.7100, dtype=torch.float64, grad_fn=<DivBackward0>)
+106
+2000
+Epoch: 106 Loss D.: 0.013697504997253418
+Epoch: 106 Loss G.: 3.101231278721273
+tensor(2.9038, dtype=torch.float64, grad_fn=<DivBackward0>)
+107
+2000
+Epoch: 107 Loss D.: 0.025875598192214966
+Epoch: 107 Loss G.: 1.0446706844679705
+tensor(2.3885, dtype=torch.float64, grad_fn=<DivBackward0>)
+108
+2000
+Epoch: 108 Loss D.: 0.01995939016342163
+Epoch: 108 Loss G.: 1.5260376612283586
+tensor(2.2639, dtype=torch.float64, grad_fn=<DivBackward0>)
+109
+2000
+Epoch: 109 Loss D.: 0.015914082527160645
+Epoch: 109 Loss G.: 2.0137585903070567
+tensor(2.8313, dtype=torch.float64, grad_fn=<DivBackward0>)
+110
+2000
+Epoch: 110 Loss D.: 0.012581288814544678
+Epoch: 110 Loss G.: 1.862319118590375
+tensor(2.5366, dtype=torch.float64, grad_fn=<DivBackward0>)
+111
+2000
+Epoch: 111 Loss D.: 0.005732119083404541
+Epoch: 111 Loss G.: 1.824197043223957
+tensor(1.8901, dtype=torch.float64, grad_fn=<DivBackward0>)
+112
+2000
+Epoch: 112 Loss D.: 0.020597994327545166
+Epoch: 112 Loss G.: 4.439800103442093
+tensor(2.5021, dtype=torch.float64, grad_fn=<DivBackward0>)
+113
+2000
+Epoch: 113 Loss D.: 0.007370412349700928
+Epoch: 113 Loss G.: 2.364278672132671
+tensor(2.7825, dtype=torch.float64, grad_fn=<DivBackward0>)
+114
+2000
+Epoch: 114 Loss D.: 0.006527066230773926
+Epoch: 114 Loss G.: 4.731952266905487
+tensor(2.1346, dtype=torch.float64, grad_fn=<DivBackward0>)
+在第114轮收敛
+----------------第0轮的原数据---------------------
+         range  dissimilarity_value  ...  Euclidean_distance   distance
+0     1.089048             0.052281  ...            1.864395  10.204395
+1     1.098754             0.054665  ...            1.836377   9.932634
+2     1.124300             0.053637  ...            1.814374  10.233309
+3     1.210939             0.061925  ...            1.669362   9.624147
+4     1.211134             0.056932  ...            1.666110  10.521649
+..         ...                  ...  ...                 ...        ...
+195  11.670306             0.037011  ...            0.820836  32.885552
+196  11.707607             0.035243  ...            0.852195  33.272213
+197  11.932849             0.034258  ...            0.932985  31.253474
+198  11.952375             0.033969  ...            0.947605  31.051125
+199  12.362699             0.037243  ...            1.179328  22.737984
+
+[200 rows x 5 columns]
+-----------------按照dissimilarity_value排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     8.600                0.027         0.999               0.326   114.963
+1     6.122                0.027         0.999               0.221   167.794
+2     6.116                0.027         0.999               0.205   179.119
+3     2.199                0.028         0.999               0.223   159.013
+4    10.726                0.028         0.999               0.374    94.413
+..      ...                  ...           ...                 ...       ...
+195   1.124                0.054         0.996               1.814    10.233
+196   1.099                0.055         0.997               1.836     9.933
+197   1.211                0.057         0.998               1.666    10.522
+198   1.211                0.062         0.995               1.669     9.624
+199   1.251                0.063         0.996               1.701     9.294
+
+[200 rows x 5 columns]
+-----------------按照range排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     1.089                0.052         0.995               1.864    10.204
+1     1.099                0.055         0.997               1.836     9.933
+2     1.124                0.054         0.996               1.814    10.233
+3     1.211                0.057         0.998               1.666    10.522
+4     1.211                0.062         0.995               1.669     9.624
+..      ...                  ...           ...                 ...       ...
+195  11.670                0.037         0.999               0.821    32.886
+196  11.708                0.035         0.999               0.852    33.272
+197  11.933                0.034         0.999               0.933    31.253
+198  11.952                0.034         1.000               0.948    31.051
+199  12.363                0.037         0.999               1.179    22.738
+
+[200 rows x 5 columns]
+-----------------按照cos_distance排序----------
+      range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0     1.089                0.052         0.995               1.864    10.204
+1     1.211                0.062         0.995               1.669     9.624
+2     1.233                0.047         0.995               1.500    14.098
+3     1.124                0.054         0.996               1.814    10.233
+4     1.251                0.063         0.996               1.701     9.294
+..      ...                  ...           ...                 ...       ...
+195   4.191                0.033         0.999               0.302    99.031
+196   4.044                0.033         0.999               0.272   110.493
+197  12.363                0.037         0.999               1.179    22.738
+198   8.424                0.028         1.000               0.326   108.456
+199  11.952                0.034         1.000               0.948    31.051
+
+[200 rows x 5 columns]
+-----------------按照Euclidean_distance排序----------
+     range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0    6.046                0.030         0.999               0.190   174.300
+1    6.116                0.027         0.999               0.205   179.119
+2    4.231                0.029         0.999               0.211   161.431
+3    6.122                0.027         0.999               0.221   167.794
+4    6.153                0.031         0.999               0.221   147.544
+..     ...                  ...           ...                 ...       ...
+195  1.211                0.062         0.995               1.669     9.624
+196  1.251                0.063         0.996               1.701     9.294
+197  1.124                0.054         0.996               1.814    10.233
+198  1.099                0.055         0.997               1.836     9.933
+199  1.089                0.052         0.995               1.864    10.204
+
+[200 rows x 5 columns]
+-----------------按照distance排序----------
+================= config7 =================
+2022年 02月 20日 星期日 17:03:56 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (310238) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (299226) - 没有那个进程
+================= config8 =================
+2022年 02月 20日 星期日 17:15:24 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (31580) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (57675) - 没有那个进程
+     range  dissimilarity_value  cos_distance  Euclidean_distance  distance
+0    6.116                0.027         0.999               0.205   179.119
+1    6.046                0.030         0.999               0.190   174.300
+2    6.122                0.027         0.999               0.221   167.794
+3    4.231                0.029         0.999               0.211   161.431
+4    2.199                0.028         0.999               0.223   159.013
+..     ...                  ...           ...                 ...       ...
+195  1.124                0.054         0.996               1.814    10.233
+196  1.089                0.052         0.995               1.864    10.204
+197  1.099                0.055         0.997               1.836     9.933
+198  1.211                0.062         0.995               1.669     9.624
+199  1.251                0.063         0.996               1.701     9.294
+
+[200 rows x 5 columns]
+   distance
+0   179.119
+1   174.300
+2   167.794
+3    82.678
+4    82.601
+5    79.862
+6     9.933
+7     9.624
+8     9.294
+   distance
+0   179.119
+1    82.678
+2     9.294
+3   174.300
+4    82.601
+5     9.624
+6   167.794
+7    79.862
+8     9.933
+sgan数据生成时间花费为：2569.9
+   spark.broadcast.blockSize  ...  spark.storage.memoryMapThreshold
+0                       32.0  ...                               6.0
+1                       32.0  ...                               6.0
+2                       36.0  ...                               6.0
+3                       32.0  ...                               6.0
+4                       33.0  ...                               6.0
+5                       37.0  ...                               6.0
+6                       32.0  ...                               6.0
+7                       33.0  ...                               6.0
+8                       35.0  ...                               6.0
+
+[9 rows x 27 columns]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 32.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 378.0
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 4.0
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 8.0
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 8.0
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 868.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 110.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 98.0
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 5.0
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1220716032.0
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 304.0
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1672898048.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1735287808.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 46.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 767.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 39.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 348.0
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 6.0
+configNum = 7	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 7 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 32.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 369.0
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 4.0
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 8.0
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 8.0
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 863.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 113.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 97.0
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 5.0
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1203054976.0
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.7200000286102295
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 310.0
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1712350336.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1777047808.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 46.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 757.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 41.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 350.0
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 6.0
+configNum = 8	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 8 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 36.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 359.0
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 8.0
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 8.0
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 781.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 99.0
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 92.0
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 5.0
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1296594048.0
+================= config9 =================
+2022年 02月 20日 星期日 17:27:03 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (59104) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (105527) - 没有那个进程
+================= config10 =================
+2022年 02月 20日 星期日 17:37:05 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (113520) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (204790) - 没有那个进程
+================= config11 =================
+2022年 02月 20日 星期日 17:54:39 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (123630) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (221993) - 没有那个进程
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.7200000286102295
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 379.0
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.7099999785423279
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1709444864.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1754296832.0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 44.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0.0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 764.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 38.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 3.0
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 331.0
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 6.0
+configNum = 9	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 9 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+[4, 0, 0, 427, 6, 8, 8, 1489, 112, 89, 8, 2102990459, 0.78, 1, 564, 0.81, 0, 1530082197, 1275897957, 48, 0, 739, 0, 39, 5, 282, 5]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 4
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 427
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 6
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 8
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 8
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 1489
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 112
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 89
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 8
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 2102990459
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.78
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 1
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 564
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.81
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1530082197
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1275897957
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 48
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 0
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 739
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 39
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 5
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 282
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 5
+configNum = 10	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 10 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+[4, 0, 0, 427, 6, 8, 8, 1489, 112, 89, 8, 2102990459, 0.78, 1, 564, 0.81, 0, 1530082197, 1275897957, 48, 0, 739, 0, 39, 5, 282, 5, 1045.74]
+[12, 0, 0, 425, 5, 11, 14, 1309, 72, 87, 1, 1756901021, 0.6, 0, 796, 0.73, 1, 1524044551, 1294271505, 54, 1, 730, 0, 16, 2, 283, 4]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 12
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 425
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 5
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 11
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 14
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 1309
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 72
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 87
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 1
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1756901021
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.6
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 796
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.73
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1524044551
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1294271505
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 54
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 1
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 730
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 16
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 2
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 283
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 4
+configNum = 11	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 11 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+[12, 0, 0, 425, 5, 11, 14, 1309, 72, 87, 1, 1756901021, 0.6, 0, 796, 0.73, 1, 1524044551, 1294271505, 54, 1, 730, 0, 16, 2, 283, 4, 300.569]
+[58, 0, 0, 283, 5, 10, 12, 1401, 32, 55, 2, 1714312276, 0.67, 0, 540, 0.54, 1, 1378423850, 1537979291, 43, 1, 632, 1, 17, 1, 347, 9]
+需要通过formatConf处理的数据 : conf = spark.broadcast.blockSize	 value = 58
+需要通过formatConf处理的数据 : conf = spark.broadcast.checksum	 value = 0
+需要通过formatConf处理的数据 : conf = spark.broadcast.compress	 value = 0
+需要通过formatConf处理的数据 : conf = spark.default.parallelism	 value = 283
+需要通过formatConf处理的数据 : conf = spark.executor.cores	 value = 5
+需要通过formatConf处理的数据 : conf = spark.executor.instances	 value = 10
+需要通过formatConf处理的数据 : conf = spark.executor.memory	 value = 12
+需要通过formatConf处理的数据 : conf = spark.executor.memoryOverhead	 value = 1401
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer	 value = 32
+需要通过formatConf处理的数据 : conf = spark.kryoserializer.buffer.max	 value = 55
+需要通过formatConf处理的数据 : conf = spark.locality.wait	 value = 2================= config12 =================
+2022年 02月 20日 星期日 17:59:50 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (133375) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (309318) - 没有那个进程
+
+需要通过formatConf处理的数据 : conf = spark.maxRemoteBlockSizeFetchToMem	 value = 1714312276
+需要通过formatConf处理的数据 : conf = spark.memory.fraction	 value = 0.67
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.enabled	 value = 0
+需要通过formatConf处理的数据 : conf = spark.memory.offHeap.size	 value = 540
+需要通过formatConf处理的数据 : conf = spark.memory.storageFraction	 value = 0.54
+需要通过formatConf处理的数据 : conf = spark.rdd.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.reducer.maxBlocksInFlightPerAddress	 value = 1378423850
+需要通过formatConf处理的数据 : conf = spark.reducer.maxReqsInFlight	 value = 1537979291
+需要通过formatConf处理的数据 : conf = spark.reducer.maxSizeInFlight	 value = 43
+需要通过formatConf处理的数据 : conf = spark.scheduler.mode	 value = 1
+需要通过formatConf处理的数据 : conf = spark.scheduler.revive.interval	 value = 632
+需要通过formatConf处理的数据 : conf = spark.shuffle.compress	 value = 1
+需要通过formatConf处理的数据 : conf = spark.shuffle.file.buffer	 value = 17
+需要通过formatConf处理的数据 : conf = spark.shuffle.io.numConnectionsPerPeer	 value = 1
+需要通过formatConf处理的数据 : conf = spark.shuffle.sort.bypassMergeThreshold	 value = 347
+需要通过formatConf处理的数据 : conf = spark.storage.memoryMapThreshold	 value = 9
+configNum = 12	 run_cmd = /usr/local/home/zwr/terasort-20G-ga.sh 12 /usr/local/home/yyq/bo/ganrs_bo_new/config/terasort-20G
+run_cmd命令执行成功
+[58, 0, 0, 283, 5, 10, 12, 1401, 32, 55, 2, 1714312276, 0.67, 0, 540, 0.54, 1, 1378423850, 1537979291, 43, 1, 632, 1, 17, 1, 347, 9, 253.497]
+   spark.broadcast.blockSize  ...   runtime
+0                         28  ...   262.669
+1                         14  ...   351.790
+2                         34  ...   661.400
+3                       32.0  ...   250.268
+4                       32.0  ...   723.715
+5                       34.0  ...   252.609
+6                       32.0  ...   678.946
+7                       32.0  ...   690.900
+8                       36.0  ...   593.140
+9                        4.0  ...  1045.740
+10                      12.0  ...   300.569
+11                      58.0  ...   253.497
+
+[12 rows x 28 columns]
+选择50%rs和50%gan的所有样本作为bo算法的初始样本,样本个数为:12
+------------使用ganrs生成初始样本点------------
+Tmax = 137.5
+self._queue.empty = True
+key = 
+['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+bounds = 
+[[2.00000000e+00 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [2.00000000e+02 5.00000000e+02]
+ [4.00000000e+00 7.00000000e+00]
+ [8.00000000e+00 1.40000000e+01]
+ [8.00000000e+00 1.40000000e+01]
+ [3.84000000e+02 1.75500000e+03]
+ [3.20000000e+01 1.28000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [1.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.02400000e+03]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.00000000e+00 5.00000000e+00]
+ [1.00000000e+02 5.00000000e+02]
+ [1.00000000e+00 1.00000000e+01]]
+before probe, param.shape = (12, 27)
+before probe, target = (12,)
+Traceback (most recent call last):
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/ganrs_Bayesian_Optimization_server.py", line 306, in <module>
+    optimizer.maximize(init_points=init_points, n_iter=n_iter, acq='ei')
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/bayes_scode/bayesian_optimization.py", line 228, in maximize
+    x_probe = self.suggest(util)
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/bayes_scode/bayesian_optimization.py", line 133, in suggest
+    self._gp.fit(train_X_temp, train_y_temp)
+  File "/usr/local/home/python3/python3/lib/python3.8/site-packages/sklearn/gaussian_process/_gpr.py", line 224, in fit
+    X, y = self._validate_data(
+  File "/usr/local/home/python3/python3/lib/python3.8/site-packages/sklearn/base.py", line 576, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "/usr/local/home/python3/python3/lib/python3.8/site-packages/sklearn/utils/validation.py", line 956, in check_X_y
+    X = check_array(
+  File "/usr/local/home/python3/python3/lib/python3.8/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/usr/local/home/python3/python3/lib/python3.8/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/generationConf.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/target.png" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/general_data.csv" 的文件状态(stat): 没有那个文件或目录
+=============== finish terasort-20G ===============
+2022年 02月 20日 星期日 18:04:12 CST
+=============== finish terasort-20G ===============

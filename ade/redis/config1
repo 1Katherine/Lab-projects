@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: redis-config
+ namespace: redis
+data:
+ update-node.sh: |
+  #!/bin/sh
+  REDIS_NODES="/data/nodes.conf"
+  sed -i -e "/myself/ s/[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}/${MY_POD_IP}/" ${REDIS_NODES}
+  exec "$@"
+ redis-1.conf: |+
+  port 7000
+  pidfile /var/run/redis-7000
+  cluster-node-timeout 15000
+  cluster-enabled yes
+  cluster-config-file nodes.conf
+  logfile "/data/redis-7000.log"
+  bind 0.0.0.0
+  dir /data/
+  maxmemory-policy allkeys-lru
+  client-output-buffer-limit slave 4096mb 2048mb 1200
+  client-output-buffer-limit pubsub 4096mb 2048mb 1200
+  dbfilename dump-7000.rdb
+
+  aof-rewrite-incremental-fsync yes
+  aof-use-rdb-preamble yes
+  appendfsync no
+  appendonly no
+  auto-aof-rewrite-min-size 88mb
+  auto-aof-rewrite-percentage 108
+  activerehashing no
+  always-show-logo no
+  databases 9
+  hash-max-ziplist-entries 663
+  hash-max-ziplist-value 485
+  hll-sparse-max-bytes 1771
+  hz 30
+  lazyfree-lazy-eviction yes
+  lazyfree-lazy-expire no
+  lazyfree-lazy-server-del yes
+  list-compress-depth 1
+  list-max-ziplist-size -2
+  lua-time-limit 50
+  maxmemory-samples 1
+  no-appendfsync-on-rewrite no
+  rdbchecksum no
+  rdbcompression no
+  repl-disable-tcp-nodelay yes
+  set-max-intset-entries 1768
+  slave-lazy-flush yes
+  slave-priority 144
+  slave-serve-stale-data no
+  slowlog-log-slower-than 13480
+  slowlog-max-len 76
+  stop-writes-on-bgsave-error no
+  supervised no
+  tcp-keepalive 325
+  zset-max-ziplist-entries 2835
+  zset-max-ziplist-value 1926
+  save 127 5
+  maxmemory 2268794531

@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser()
 # basic parameters
 parser.add_argument('--sample_data', type=str, default='../tearsort-20G---data/42terasort-20G-GAN-3+3.csv',
                     help='Data required to be mimced', required=False)
-parser.add_argument('--config_range',type=str,default=father_path + '/Spark_conf_range_wordcount.xlsx',help='get config range and precision')
+parser.add_argument('--config_range_fatherpath',type=str,default=father_path,help='get config range and precision')
 parser.add_argument('--csv_toconfig',type=str,default=father_path + '/config/',help='parameters to config to run ')
 parser.add_argument('--configTemp',type=str,default=father_path + '/configTemp',help='config to run')
 
@@ -44,15 +44,7 @@ parser.add_argument('--real_generator', type=float, default=1, help='real and ge
 
 # Bayesian optimization parameters
 parser.add_argument('--benchmark', type=str, help='benchmark type')
-parser.add_argument('--initpoints', type=int, help='initpoints of bo， also by gan+rs generates')
+parser.add_argument('--initpoints', type=int, help='initpoints of bo， also by lhs generates')
+parser.add_argument('--gan_initpoints', type=int, default=3, help='initpoints of bo， also by gan generates')
 parser.add_argument('--niters', type=int, help='iterarions of bo')
-# parser.add_argument('--csv_toconfig',type=str,help='parameters to config to run ')
 
-# 维护的参数-范围表
-# args = parser.parse_args()
-# args.benchmark = 'wordcount-100G'
-# conf_range_table = father_path + "Spark_conf_range_"  + args.benchmark.split('-')[0] +  ".xlsx"
-# print(conf_range_table)
-# parser.add_argument('--config_range',type=str,default=conf_range_table,help='get config range and precision')
-# print('configuration文件中的config_range = ' + str(args.config_range))
-# print('configuration文件中的csv_toconfig = ' + str(args.csv_toconfig))

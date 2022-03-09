@@ -1,0 +1,8 @@
+digraph {
+"x1" [ shape=box];
+"x2" [ shape=box];
+"x3" [ shape=box];
+"x4" [ shape=box];
+"x5" [ shape=box];
+"x6" [ shape=box];
+}

@@ -4,6 +4,16 @@ from scipy.stats import norm
 from scipy.optimize import minimize
 
 
+# 标准化
+def standardization(data):
+    mu = np.mean(data, axis=0)
+    sigma = np.std(data, axis=0)
+    return (data - mu) / sigma
+
+
+predict_target = []
+
+
 def acq_max(ac, gp, y_max, bounds, random_state, n_warmup=10000, n_iter=10):
     """
     A function to find the maximum of the acquisition function
@@ -40,34 +50,30 @@ def acq_max(ac, gp, y_max, bounds, random_state, n_warmup=10000, n_iter=10):
     :return: x_max, The arg max of the acquisition function.
     """
 
+
     # Warm up with random points
     x_tries = random_state.uniform(bounds[:, 0], bounds[:, 1],
                                    size=(n_warmup, bounds.shape[0]))
-    ys = ac(x_tries, gp=gp, y_max=y_max)
-    x_max = x_tries[ys.argmax()]
-    max_acq = ys.max()
 
-    # Explore the parameter space more throughly
-    x_seeds = random_state.uniform(bounds[:, 0], bounds[:, 1],
-                                   size=(n_iter, bounds.shape[0]))
-    for x_try in x_seeds:
-        # Find the minimum of minus the acquisition function
-        res = minimize(lambda x: -ac(x.reshape(1, -1), gp=gp, y_max=y_max),
-                       x_try.reshape(1, -1),
-                       bounds=bounds,
-                       method="L-BFGS-B")
+    # --------------------------------------------------------
+    test_X_temp = standardization(np.array(x_tries))
+    upper = ac(x=test_X_temp, gp=gp, y_max=y_max)
+    print('upper = \n' + str(upper))
+    # upper 从大到小排序
+    sortnumber = np.argsort(-upper)
+    print('upper.argmax() = ' + str(upper.argmax()))
+    print('all predict_target = \n' + str(-predict_target))
 
-        # See if success
-        if not res.success:
-            continue
+    print('upper.argmax() = ' + str(upper.argmax()) + ', sortnumber[0] = ' + str(sortnumber[0]))
+    x_max = x_tries[upper.argmax()]
+    max_acq = upper.max()
 
-        # Store it if better than previous minimum(maximum).
-        if max_acq is None or -res.fun[0] >= max_acq:
-            x_max = res.x
-            max_acq = -res.fun[0]
+    # --------------------------------------------------
+    print('x_max = ' + str(x_max))
 
     # Clip output to make sure it lies within the bounds. Due to floating
     # point technicalities this is not always the case.
+    # 将数组a中的所有数限定到范围a_min和a_max中，所有比a_min小的数都会强制变为a_min，所有比a_max大的数都会强制变为a_max
     return np.clip(x_max, bounds[:, 0], bounds[:, 1])
 
 
@@ -75,6 +81,7 @@ class UtilityFunction(object):
     """
     An object to compute the acquisition functions.
     """
+
     # kind : 采集函数的类型（ucb、ei、poi）
     def __init__(self, kind, kappa, xi, kappa_decay=1, kappa_decay_delay=0):
 
@@ -83,7 +90,7 @@ class UtilityFunction(object):
         self._kappa_decay_delay = kappa_decay_delay
 
         self.xi = xi
-        
+
         self._iters_counter = 0
 
         if kind not in ['ucb', 'ei', 'poi']:
@@ -121,9 +128,11 @@ class UtilityFunction(object):
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
             mean, std = gp.predict(x, return_std=True)
-  
+
         a = (mean - y_max - xi)
         z = a / std
+        global predict_target
+        predict_target = mean
         return a * norm.cdf(z) + std * norm.pdf(z)
 
     @staticmethod
@@ -132,7 +141,7 @@ class UtilityFunction(object):
             warnings.simplefilter("ignore")
             mean, std = gp.predict(x, return_std=True)
 
-        z = (mean - y_max - xi)/std
+        z = (mean - y_max - xi) / std
         return norm.cdf(z)
 
 

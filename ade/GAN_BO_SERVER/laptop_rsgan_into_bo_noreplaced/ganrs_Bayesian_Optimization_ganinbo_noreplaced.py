@@ -146,10 +146,15 @@ def schafferRun(p):
 
 
 def draw_target(bo):
-    plt.cla()
-    plt.clf()
+    flag = False
+    # bo_target = []
+    if flag:
+        bo_target = -bo.space.target
+    else :
+        bo_target = bo.space.target
+    print(bo_target)
     # 画图
-    plt.plot(-bo.space.target, label='ganrs_bo  init_points = ' + str(init_points) + ', n_iter = ' + str(n_iter))
+    plt.plot(bo_target, label='ganrs_bo  init_points = ' + str(init_points) + ', n_iter = ' + str(n_iter))
     max = bo._space.target.max()
     max_indx = bo._space.target.argmax()
     # 在图上描出执行时间最低点

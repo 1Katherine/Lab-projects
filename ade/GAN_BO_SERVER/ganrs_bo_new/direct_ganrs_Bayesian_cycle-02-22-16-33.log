@@ -1,0 +1,32 @@
+nohup: 忽略输入
+/usr/local/home/yyq/bo/ganrs_bo_new
+=============== start wordcount-100G ===============
+2022年 02月 22日 星期二 16:33:14 CST
+=============== start wordcount-100G ===============
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/config/wordcount-100G" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/logs*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/generationConf.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/target*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/dataset*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/GAN*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/general_data.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/sgan_sample.csv" 的文件状态(stat): 没有那个文件或目录
+Traceback (most recent call last):
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/ganrs_Bayesian_Optimization_server_cycle.py", line 13, in <module>
+    from bayes_scode import JSONLogger, Events, BayesianOptimization,SequentialDomainReductionTransformer
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/bayes_scode/__init__.py", line 1, in <module>
+    from .bayesian_optimization import BayesianOptimization, Events
+  File "/usr/local/home/yyq/bo/ganrs_bo_new/bayes_scode/bayesian_optimization.py", line 183
+    print('custom_initsamples中的sample为 : ' + str(sample) + '\tsample执行时间为 : ' + str(target))   
+                                                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/logs*.json" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/generationConf.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/target*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/dataset*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/GAN*" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/general_data.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/ganrs_bo_new/sgan_sample.csv" 的文件状态(stat): 没有那个文件或目录
+=============== finish wordcount-100G ===============
+2022年 02月 22日 星期二 16:33:15 CST
+=============== finish wordcount-100G ===============

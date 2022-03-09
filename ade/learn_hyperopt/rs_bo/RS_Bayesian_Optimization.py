@@ -1,4 +1,3 @@
-import datetime
 import numpy as np
 from sklearn.ensemble import GradientBoostingRegressor
 import pandas as pd
@@ -6,11 +5,10 @@ import lightgbm as lgb
 from sklearn.ensemble import RandomForestRegressor
 import matplotlib.pyplot as plt
 import joblib
-from bayes_opt import SequentialDomainReductionTransformer
-from bayes_opt import BayesianOptimization
 import warnings
 # Import HyperOpt Library
 from hyperopt import tpe, hp, fmin
+from hyperopt.graph_viz import dot_hyperparameters
 
 warnings.filterwarnings("ignore")
 
@@ -46,16 +44,6 @@ def build_training_model(name):
     return model
 
 
-'''
-    贝叶斯的黑盒模型，传入参数，计算target（根据模型预测参数的执行时间）
-'''
-# def black_box_function(**params):
-#     i = []
-#     model = build_training_model(name)
-#     for conf in vital_params['vital_params']:
-#         i.append(params[conf])
-#     y = model.predict(np.matrix([i]))[0]
-#     return y
 
 def objective(params):
     print(params)
@@ -126,4 +114,7 @@ if __name__ == '__main__':
         algo=tpe.suggest,  # Optimization algorithm (representative TPE)
         max_evals=1000  # Number of optimization attempts
     )
+
+    open('foo.dot', 'w').write(dot_hyperparameters(space()))
     print(best)
+

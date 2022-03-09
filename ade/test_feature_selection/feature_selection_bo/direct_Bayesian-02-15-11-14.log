@@ -1,0 +1,201 @@
+nohup: 忽略输入
+/usr/local/home/yyq/bo/feature_selection_bo
+=============== start wordcount-100G ===============
+2022年 02月 15日 星期二 11:14:15 CST
+=============== start wordcount-100G ===============
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/config/wordcount-100G' 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/logs*.json' 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/generationConf*.csv' 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/target*.png' 的文件状态(stat): 没有那个文件或目录
+--niters = 50	 --ninits = 2
+重要参数列表（将贝叶斯的x_probe按照重要参数列表顺序转成配置文件实际运行:
+                                         vital_params
+0                           spark.broadcast.blockSize
+1                            spark.broadcast.checksum
+2                            spark.broadcast.compress
+3                   spark.cleaner.periodicGC.interval
+4                     spark.cleaner.referenceTracking
+5            spark.cleaner.referenceTracking.blocking
+6    spark.cleaner.referenceTracking.blocking.shuffle
+7    spark.cleaner.referenceTracking.cleanCheckpoints
+8                           spark.default.parallelism
+9                          spark.driver.maxResultSize
+10                        spark.driver.memoryOverhead
+11                               spark.executor.cores
+12                   spark.executor.heartbeatInterval
+13                           spark.executor.instances
+14                              spark.executor.memory
+15                           spark.files.fetchTimeout
+16                      spark.files.maxPartitionBytes
+17                        spark.files.openCostInBytes
+18                              spark.files.overwrite
+19                      spark.reducer.maxReqsInFlight
+20                      spark.reducer.maxSizeInFlight
+21                               spark.rpc.io.backLog
+22                            spark.rpc.lookupTimeout
+23                          spark.rpc.message.maxSize
+24                               spark.rpc.retry.wait
+25  spark.scheduler.blacklist.unschedulableTaskSet...
+26    spark.scheduler.listenerbus.eventqueue.capacity
+27        spark.scheduler.minRegisteredResourcesRatio
+28                               spark.scheduler.mode
+29                    spark.scheduler.revive.interval
+30                 spark.serializer.objectStreamReset
+31                             spark.shuffle.compress
+32                          spark.shuffle.file.buffer
+33                           spark.shuffle.io.backLog
+34                        spark.shuffle.io.maxRetries
+35             spark.shuffle.io.numConnectionsPerPeer
+36                  spark.shuffle.io.preferDirectBufs
+37            spark.shuffle.maxChunksBeingTransferred
+38                       spark.shuffle.memoryFraction
+39                          spark.files.useFetchCache
+40  spark.hadoop.mapreduce.fileoutputcommitter.alg...
+41                 spark.io.compression.lz4.blockSize
+42              spark.io.compression.snappy.blockSize
+43                       spark.kryo.referenceTracking
+44                        spark.kryoserializer.buffer
+45                    spark.kryoserializer.buffer.max
+46                                spark.locality.wait
+47                 spark.maxRemoteBlockSizeFetchToMem
+48                              spark.memory.fraction
+49                       spark.memory.offHeap.enabled
+50                          spark.memory.offHeap.size
+51                       spark.memory.storageFraction
+52                         spark.memory.useLegacyMode
+53                              spark.port.maxRetries
+54                         spark.python.worker.memory
+55                          spark.python.worker.reuse
+56                                 spark.rdd.compress
+57          spark.reducer.maxBlocksInFlightPerAddress
+58             spark.shuffle.service.index.cache.size
+59            spark.shuffle.sort.bypassMergeThreshold
+60                       spark.shuffle.spill.compress
+61                         spark.speculation.interval
+62                       spark.speculation.multiplier
+63                         spark.speculation.quantile
+64                 spark.stage.maxConsecutiveAttempts
+65                       spark.storage.memoryFraction
+66                   spark.storage.memoryMapThreshold
+67                spark.storage.replication.proactive
+68                       spark.storage.unrollFraction
+69               spark.streaming.backpressure.enabled
+70                      spark.streaming.blockInterval
+71      spark.streaming.receiver.writeAheadLog.enable
+72           spark.streaming.stopGracefullyOnShutdown
+73                          spark.streaming.unpersist
+74                             spark.task.maxFailures
+75                          spark.task.reaper.enabled
+76                  spark.task.reaper.pollingInterval
+77                       spark.task.reaper.threadDump
+spark.cleaner.periodicGC.interval -----参数没有维护:  -----
+spark.cleaner.referenceTracking -----参数没有维护:  -----
+spark.cleaner.referenceTracking.blocking -----参数没有维护:  -----
+spark.cleaner.referenceTracking.blocking.shuffle -----参数没有维护:  -----
+spark.cleaner.referenceTracking.cleanCheckpoints -----参数没有维护:  -----
+spark.driver.maxResultSize -----参数没有维护:  -----
+spark.driver.memoryOverhead -----参数没有维护:  -----
+spark.executor.heartbeatInterval -----参数没有维护:  -----
+spark.files.fetchTimeout -----参数没有维护:  -----
+spark.files.maxPartitionBytes -----参数没有维护:  -----
+spark.files.openCostInBytes -----参数没有维护:  -----
+spark.files.overwrite -----参数没有维护:  -----
+spark.rpc.io.backLog -----参数没有维护:  -----
+spark.rpc.lookupTimeout -----参数没有维护:  -----
+spark.rpc.message.maxSize -----参数没有维护:  -----
+spark.rpc.retry.wait -----参数没有维护:  -----
+spark.scheduler.blacklist.unschedulableTaskSetTimeout -----参数没有维护:  -----
+spark.scheduler.listenerbus.eventqueue.capacity -----参数没有维护:  -----
+spark.scheduler.minRegisteredResourcesRatio -----参数没有维护:  -----
+spark.serializer.objectStreamReset -----参数没有维护:  -----
+spark.shuffle.io.backLog -----参数没有维护:  -----
+spark.shuffle.io.maxRetries -----参数没有维护:  -----
+spark.shuffle.io.preferDirectBufs -----参数没有维护:  -----
+spark.shuffle.maxChunksBeingTransferred -----参数没有维护:  -----
+spark.shuffle.memoryFraction -----参数没有维护:  -----
+spark.files.useFetchCache -----参数没有维护:  -----
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version -----参数没有维护:  -----
+spark.io.compression.lz4.blockSize -----参数没有维护:  -----
+spark.io.compression.snappy.blockSize -----参数没有维护:  -----
+spark.kryo.referenceTracking -----参数没有维护:  -----
+spark.memory.useLegacyMode -----参数没有维护:  -----
+spark.port.maxRetries -----参数没有维护:  -----
+spark.python.worker.memory -----参数没有维护:  -----
+spark.python.worker.reuse -----参数没有维护:  -----
+spark.shuffle.service.index.cache.size -----参数没有维护:  -----
+spark.shuffle.spill.compress -----参数没有维护:  -----
+spark.speculation.interval -----参数没有维护:  -----
+spark.speculation.multiplier -----参数没有维护:  -----
+spark.speculation.quantile -----参数没有维护:  -----
+spark.stage.maxConsecutiveAttempts -----参数没有维护:  -----
+spark.storage.replication.proactive -----参数没有维护:  -----
+spark.storage.unrollFraction -----参数没有维护:  -----
+spark.streaming.backpressure.enabled -----参数没有维护:  -----
+spark.streaming.blockInterval -----参数没有维护:  -----
+spark.streaming.receiver.writeAheadLog.enable -----参数没有维护:  -----
+spark.streaming.stopGracefullyOnShutdown -----参数没有维护:  -----
+spark.streaming.unpersist -----参数没有维护:  -----
+spark.task.maxFailures -----参数没有维护:  -----
+spark.task.reaper.enabled -----参数没有维护:  -----
+spark.task.reaper.pollingInterval -----参数没有维护:  -----
+spark.task.reaper.threadDump -----参数没有维护:  -----
+获取初始样本时，按照贝叶斯内部的key顺序传初始样本和已有的执行时间：
+vital_params_name = ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryFraction', 'spark.storage.memoryMapThreshold']
+进入current_niterations，current_niterations = 0
+iterations == 1
+迭代结束条件，当执行时间低于Tmax时，停止搜索，此时对应优化倍数为12倍。Tmax = 91.66666666666667
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [2.00000000e+02 5.00000000e+02]
+ [1.00000000e+00 4.00000000e+00]
+ [4.00000000e+00 8.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [3.20000000e+01 1.28000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.02400000e+03]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.00000000e+00 5.00000000e+00]
+ [1.50000000e+02 3.50000000e+02]
+ [5.00000000e-01 9.00000000e-01]
+ [1.00000000e+00 4.00000000e+00]]
+Traceback (most recent call last):
+  File '/usr/local/home/yyq/bo/feature_selection_bo/rs_bayes_opt/target_space.py', line 200, in probe
+    target = self._cache[_hashable(x)]
+KeyError: (45.34470415048237, 0.7203244934421581, 0.00011437481734488664, 290.69977178955196, 1.440267672451339, 4.369354379075191, 3.7450408455106836, 65.17382979613258, 70.08967752614431, 7.232900404020142, 1523848142.1923923, 0.7740878001587038, 0.20445224973151743, 899.1922548643281, 0.5109550372791705, 0.6704675101784022, 1521819442.6576385, 1673630458.4455886, 30.73857305257122, 0.1981014890848788, 900.3722843377684, 0.9682615757193975, 26.02957370109577, 3.7692904626772563, 325.2778304592076, 0.857842665401539, 1.2551326341093336)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File '/usr/local/home/yyq/bo/feature_selection_bo/feature_selection_bo.py', line 288, in <module>
+    res_samples_df, vitual_params = rs_bo(ninit = args.ninits, iter = 3, vital_params_range = d2)
+  File '/usr/local/home/yyq/bo/feature_selection_bo/feature_selection_bo.py', line 155, in rs_bo
+    optimizer.maximize(init_points=ninit, n_iter=iter, acq='ei')
+  File '/usr/local/home/yyq/bo/feature_selection_bo/rs_bayes_opt/bayesian_optimization.py', line 246, in maximize
+    self.probe(x_probe, lazy=False)
+  File '/usr/local/home/yyq/bo/feature_selection_bo/rs_bayes_opt/bayesian_optimization.py', line 136, in probe
+    self._space.probe(params)
+  File '/usr/local/home/yyq/bo/feature_selection_bo/rs_bayes_opt/target_space.py', line 206, in probe
+    target = self.target_func(**params)
+  File '/usr/local/home/yyq/bo/feature_selection_bo/feature_selection_bo.py', line 50, in black_box_function
+    i.append(params[conf])
+KeyError: 'spark.cleaner.periodicGC.interval'
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/logs*.json' 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/generationConf*.csv' 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取'/usr/local/home/yyq/bo/feature_selection_bo/target*.png' 的文件状态(stat): 没有那个文件或目录
+=============== finish wordcount-100G ===============
+2022年 02月 15日 星期二 11:14:17 CST
+=============== finish wordcount-100G ===============

@@ -106,7 +106,9 @@ def train(df, first_time, args):
     start_time = time.time()
 
     # 导入数据
-    sparkConfRangeDf = pd.read_excel(args.config_range)
+    config_range = args.config_range_fatherpath + "/Spark_conf_range_wordcount.xlsx"
+    print('Snet中config_range' + str(config_range))
+    sparkConfRangeDf = pd.read_excel(config_range)
     sparkConfRangeDf.set_index('SparkConf', inplace=True)
     datasets = dataset_to_below_1(args, df, sparkConfRangeDf)
     # 转换后的数据为

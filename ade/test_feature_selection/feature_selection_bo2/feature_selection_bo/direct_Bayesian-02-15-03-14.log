@@ -1,0 +1,3182 @@
+nohup: 忽略输入
+/usr/local/home/yyq/bo/feature_selection_bo
+=============== start wordcount-100G ===============
+2022年 02月 14日 星期一 23:47:09 CST
+=============== start wordcount-100G ===============
+mv: 无法获取"/usr/local/home/yyq/bo/feature_selection_bo/config/wordcount-100G" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/feature_selection_bo/logs*.json" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/feature_selection_bo/generationConf*.csv" 的文件状态(stat): 没有那个文件或目录
+mv: 无法获取"/usr/local/home/yyq/bo/feature_selection_bo/target*.png" 的文件状态(stat): 没有那个文件或目录
+================= config1 =================
+2022年 02月 14日 星期一 23:47:10 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (309748) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (87369) - 没有那个进程
+================= config2 =================
+2022年 02月 14日 星期一 23:56:00 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (882) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (89433) - 没有那个进程
+--niters = 20	 --ninits = 2
+重要参数列表（将贝叶斯的x_probe按照重要参数列表顺序转成配置文件实际运行:
+                                 vital_params
+0                   spark.broadcast.blockSize
+1                    spark.broadcast.checksum
+2                    spark.broadcast.compress
+3                   spark.default.parallelism
+4                        spark.executor.cores
+5                    spark.executor.instances
+6                       spark.executor.memory
+7               spark.executor.memoryOverhead
+8                 spark.kryoserializer.buffer
+9             spark.kryoserializer.buffer.max
+10                        spark.locality.wait
+11         spark.maxRemoteBlockSizeFetchToMem
+12                      spark.memory.fraction
+13               spark.memory.offHeap.enabled
+14                  spark.memory.offHeap.size
+15               spark.memory.storageFraction
+16                         spark.rdd.compress
+17  spark.reducer.maxBlocksInFlightPerAddress
+18              spark.reducer.maxReqsInFlight
+19              spark.reducer.maxSizeInFlight
+20                       spark.scheduler.mode
+21            spark.scheduler.revive.interval
+22                     spark.shuffle.compress
+23                  spark.shuffle.file.buffer
+24     spark.shuffle.io.numConnectionsPerPeer
+25    spark.shuffle.sort.bypassMergeThreshold
+26           spark.storage.memoryMapThreshold
+获取初始样本时，按照贝叶斯内部的key顺序传初始样本和已有的执行时间：
+vital_params_name = ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+进入current_niterations
+迭代结束条件，当执行时间低于Tmax时，停止搜索，此时对应优化倍数为12倍。Tmax = 91.66666666666667
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [2.00000000e+02 5.00000000e+02]
+ [1.00000000e+00 4.00000000e+00]
+ [4.00000000e+00 8.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [3.84000000e+02 8.77000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.02400000e+03]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.00000000e+00 5.00000000e+00]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+x = [4.53447042e+01 7.20324493e-01 1.14374817e-04 2.90699772e+02
+ 1.44026767e+00 4.36935438e+00 3.74504085e+00 5.54361438e+02
+ 7.00896775e+01 8.37264065e+01 6.51516709e+00 1.80949023e+09
+ 5.81780900e-01 8.78117436e-01 2.80448954e+01 7.68187004e-01
+ 4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+ 8.00744569e-01 9.84130788e+02 3.13424178e-01 3.81543237e+01
+ 4.50555661e+00 3.28921333e+02 1.25513263e+00]
+interations = 0
+real target = -521.717
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [2.00000000e+02 5.00000000e+02]
+ [1.00000000e+00 4.00000000e+00]
+ [4.00000000e+00 8.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [3.84000000e+02 8.77000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.02400000e+03]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.00000000e+00 5.00000000e+00]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+x = [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.29504050e+02
+ 2.26332288e+00 7.83155812e+00 5.13266114e+00 7.25095417e+02
+ 6.22895006e+01 9.79040891e+01 9.00775403e+00 1.09337845e+09
+ 8.00057726e-01 9.88861089e-01 7.66121630e+02 6.12177597e-01
+ 7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+ 2.93614148e-01 6.43887669e+02 1.30028572e-01 1.66197427e+01
+ 3.71534213e+00 1.92325623e+02 1.79663998e+00]
+interations = 0
+real target = -225.213
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [2.00000000e+02 5.00000000e+02]
+ [1.00000000e+00 4.00000000e+00]
+ [4.00000000e+00 8.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [3.84000000e+02 8.77000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [3.20000000e+01 1.28000000e+02]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.02400000e+03]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.00000000e+00 5.00000000e+00]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+标准化前的train_x = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 2.90699772e+02
+  1.44026767e+00 4.36935438e+00 3.74504085e+00 5.54361438e+02
+  7.00896775e+01 8.37264065e+01 6.51516709e+00 1.80949023e+09
+  5.81780900e-01 8.78117436e-01 2.80448954e+01 7.68187004e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  8.00744569e-01 9.84130788e+02 3.13424178e-01 3.81543237e+01
+  4.50555661e+00 3.28921333e+02 1.25513263e+00]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.29504050e+02
+  2.26332288e+00 7.83155812e+00 5.13266114e+00 7.25095417e+02
+  6.22895006e+01 9.79040891e+01 9.00775403e+00 1.09337845e+09
+  8.00057726e-01 9.88861089e-01 7.66121630e+02 6.12177597e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  2.93614148e-01 6.43887669e+02 1.30028572e-01 1.66197427e+01
+  3.71534213e+00 1.92325623e+02 1.79663998e+00]]
+标准化后的train_x = 
+[[ 1.  1. -1.  1. -1. -1. -1. -1.  1. -1. -1.  1. -1. -1. -1.  1. -1.  1.
+  -1. -1.  1.  1.  1.  1.  1.  1. -1.]
+ [-1. -1.  1. -1.  1.  1.  1.  1. -1.  1.  1. -1.  1.  1.  1. -1.  1. -1.
+   1.  1. -1. -1. -1. -1. -1. -1.  1.]]
+train_y = 
+[-521.717 -225.213]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[ 1.  1. -1.  1. -1. -1. -1. -1.  1. -1. -1.  1. -1. -1. -1.  1. -1.  1.
+  -1. -1.  1.  1.  1.  1.  1.  1. -1.]
+ [-1. -1.  1. -1.  1.  1.  1.  1. -1.  1.  1. -1.  1.  1.  1. -1.  1. -1.
+   1.  1. -1. -1. -1. -1. -1. -1.  1.]]
+upper = 
+[12.35168515 12.35168515 12.35168515 ... 12.35168515 12.35168515
+ 12.35168515]
+upper.argmax() = 0
+Tconstraint = 299.339
+all predict_target = 
+[373.465 373.465 373.465 ... 373.465 373.465 373.465]
+upper.argmax() = 0, sortnumber[0] = 0
+================= config3 =================
+2022年 02月 14日 星期一 23:59:54 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (3419) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (91564) - 没有那个进程
+x_max = [3.49548350e+01 1.86260211e-01 3.45560727e-01 3.19030242e+02
+ 2.61645020e+00 5.67677806e+00 5.74087800e+00 4.84794959e+02
+ 1.16299274e+02 3.46292089e+01 8.02280506e+00 1.52181908e+09
+ 7.23475931e-01 1.40386939e-01 2.02855925e+02 8.20297827e-01
+ 9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+ 8.94606664e-01 5.42522106e+02 3.90547832e-02 2.14345734e+01
+ 4.51257001e+00 1.69669367e+02 2.26332288e+00]
+x = [3.49548350e+01 1.86260211e-01 3.45560727e-01 3.19030242e+02
+ 2.61645020e+00 5.67677806e+00 5.74087800e+00 4.84794959e+02
+ 1.16299274e+02 3.46292089e+01 8.02280506e+00 1.52181908e+09
+ 7.23475931e-01 1.40386939e-01 2.02855925e+02 8.20297827e-01
+ 9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+ 8.94606664e-01 5.42522106e+02 3.90547832e-02 2.14345734e+01
+ 4.51257001e+00 1.69669367e+02 2.26332288e+00]
+interations = 1
+real target = -202.772
+975s
+重要参数列表 : ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.default.parallelism', 'spark.executor.cores', 'spark.executor.instances', 'spark.executor.memory', 'spark.executor.memoryOverhead', 'spark.kryoserializer.buffer', 'spark.kryoserializer.buffer.max', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.memory.offHeap.enabled', 'spark.memory.offHeap.size', 'spark.memory.storageFraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.mode', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.io.numConnectionsPerPeer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+target.shape = (3,)
+data.shape = (3,)
+name = spark.broadcast.blockSize pearsonr [0.9813045179392157, 0.12329412927935031] , score = 0.9813045179392157
+name = spark.broadcast.checksum pearsonr [0.9960150294559572, 0.056852819164458085] , score = 0.9960150294559572
+name = spark.broadcast.compress pearsonr [-0.7589440048045741, 0.45143120088587707] , score = 0.7589440048045741
+name = spark.default.parallelism pearsonr [0.14526821642652285, 0.9071909854173983] , score = 0.14526821642652285
+name = spark.executor.cores pearsonr [-0.9727884004051673, 0.1488544860677219] , score = 0.9727884004051673
+name = spark.executor.instances pearsonr [-0.7471420230120602, 0.46285095689520184] , score = 0.7471420230120602
+name = spark.executor.memory pearsonr [-0.9716292899485641, 0.15200657595824363] , score = 0.9716292899485641
+name = spark.executor.memoryOverhead pearsonr [-0.17447359075542393, 0.888355268811738] , score = 0.17447359075542393
+name = spark.kryoserializer.buffer pearsonr [-0.43736905092925954, 0.7118207072757656] , score = 0.43736905092925954
+name = spark.kryoserializer.buffer.max pearsonr [0.3630362885540952, 0.7634801954258555] , score = 0.3630362885540952
+name = spark.locality.wait pearsonr [-0.8932882187061786, 0.2967844842671866] , score = 0.8932882187061786
+name = spark.maxRemoteBlockSizeFetchToMem pearsonr [0.7650487014768178, 0.4454297232437054] , score = 0.7650487014768178
+name = spark.memory.fraction pearsonr [-0.9146654983108955, 0.2649081337920775] , score = 0.9146654983108955
+name = spark.memory.offHeap.enabled pearsonr [0.4496099477867125, 0.7031259848859693] , score = 0.4496099477867125
+name = spark.memory.offHeap.size pearsonr [-0.6358648592380204, 0.5612871220683257] , score = 0.6358648592380204
+name = spark.memory.storageFraction pearsonr [0.21583757441929838, 0.8615036601824403] , score = 0.21583757441929838
+name = spark.rdd.compress pearsonr [-0.966137320175097, 0.16614565733770378] , score = 0.966137320175097
+name = spark.reducer.maxBlocksInFlightPerAddress pearsonr [0.8565508289018319, 0.34520568546386265] , score = 0.8565508289018319
+name = spark.reducer.maxReqsInFlight pearsonr [-0.9231347955226618, 0.2512360243207482] , score = 0.9231347955226618
+name = spark.reducer.maxSizeInFlight pearsonr [-0.9946778552664909, 0.06570996929830221] , score = 0.9946778552664909
+name = spark.scheduler.mode pearsonr [0.3096788313500031, 0.7995569283459885] , score = 0.3096788313500031
+name = spark.scheduler.revive.interval pearsonr [0.9875720796280898, 0.10047202640335219] , score = 0.9875720796280898
+name = spark.shuffle.compress pearsonr [0.9641849181735971, 0.1708963871684367] , score = 0.9641849181735971
+name = spark.shuffle.file.buffer pearsonr [0.9616842126709343, 0.1767992985035306] , score = 0.9616842126709343
+name = spark.shuffle.io.numConnectionsPerPeer pearsonr [0.437552482435131, 0.7116908460053749] , score = 0.437552482435131
+name = spark.shuffle.sort.bypassMergeThreshold pearsonr [0.9976341854037662, 0.043799699720428215] , score = 0.9976341854037662
+name = spark.storage.memoryMapThreshold pearsonr [-0.9140226181248344, 0.2659188335516575] , score = 0.9140226181248344
+{'spark.broadcast.blockSize': 0.9813045179392157, 'spark.broadcast.checksum': 0.9960150294559572, 'spark.broadcast.compress': 0.7589440048045741, 'spark.default.parallelism': 0.14526821642652285, 'spark.executor.cores': 0.9727884004051673, 'spark.executor.instances': 0.7471420230120602, 'spark.executor.memory': 0.9716292899485641, 'spark.executor.memoryOverhead': 0.17447359075542393, 'spark.kryoserializer.buffer': 0.43736905092925954, 'spark.kryoserializer.buffer.max': 0.3630362885540952, 'spark.locality.wait': 0.8932882187061786, 'spark.maxRemoteBlockSizeFetchToMem': 0.7650487014768178, 'spark.memory.fraction': 0.9146654983108955, 'spark.memory.offHeap.enabled': 0.4496099477867125, 'spark.memory.offHeap.size': 0.6358648592380204, 'spark.memory.storageFraction': 0.21583757441929838, 'spark.rdd.compress': 0.966137320175097, 'spark.reducer.maxBlocksInFlightPerAddress': 0.8565508289018319, 'spark.reducer.maxReqsInFlight': 0.9231347955226618, 'spark.reducer.maxSizeInFlight': 0.9946778552664909, 'spark.scheduler.mode': 0.3096788313500031, 'spark.scheduler.revive.interval': 0.9875720796280898, 'spark.shuffle.compress': 0.9641849181735971, 'spark.shuffle.file.buffer': 0.9616842126709343, 'spark.shuffle.io.numConnectionsPerPeer': 0.437552482435131, 'spark.shuffle.sort.bypassMergeThreshold': 0.9976341854037662, 'spark.storage.memoryMapThreshold': 0.9140226181248344}
+[('spark.shuffle.sort.bypassMergeThreshold', 0.9976341854037662), ('spark.broadcast.checksum', 0.9960150294559572), ('spark.reducer.maxSizeInFlight', 0.9946778552664909), ('spark.scheduler.revive.interval', 0.9875720796280898), ('spark.broadcast.blockSize', 0.9813045179392157), ('spark.executor.cores', 0.9727884004051673), ('spark.executor.memory', 0.9716292899485641), ('spark.rdd.compress', 0.966137320175097), ('spark.shuffle.compress', 0.9641849181735971), ('spark.shuffle.file.buffer', 0.9616842126709343), ('spark.reducer.maxReqsInFlight', 0.9231347955226618), ('spark.memory.fraction', 0.9146654983108955), ('spark.storage.memoryMapThreshold', 0.9140226181248344), ('spark.locality.wait', 0.8932882187061786), ('spark.reducer.maxBlocksInFlightPerAddress', 0.8565508289018319), ('spark.maxRemoteBlockSizeFetchToMem', 0.7650487014768178), ('spark.broadcast.compress', 0.7589440048045741), ('spark.executor.instances', 0.7471420230120602), ('spark.memory.offHeap.size', 0.6358648592380204), ('spark.memory.offHeap.enabled', 0.4496099477867125), ('spark.shuffle.io.numConnectionsPerPeer', 0.437552482435131), ('spark.kryoserializer.buffer', 0.43736905092925954), ('spark.kryoserializer.buffer.max', 0.3630362885540952), ('spark.scheduler.mode', 0.3096788313500031), ('spark.memory.storageFraction', 0.21583757441929838), ('spark.executor.memoryOverhead', 0.17447359075542393), ('spark.default.parallelism', 0.14526821642652285)]
+前 17 个重要参数名称 = ['spark.shuffle.sort.bypassMergeThreshold', 'spark.broadcast.checksum', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.broadcast.blockSize', 'spark.executor.cores', 'spark.executor.memory', 'spark.rdd.compress', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.reducer.maxReqsInFlight', 'spark.memory.fraction', 'spark.storage.memoryMapThreshold', 'spark.locality.wait', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.broadcast.compress']
+第 1 次迭代的结果样本为
+   runtime  ...  spark.storage.memoryMapThreshold
+1  521.717  ...                          1.255133
+2  225.213  ...                          1.796640
+3  202.772  ...                          2.263323
+
+[3 rows x 28 columns]
+进入current_niterations
+降维后的vital_params_range = ['spark.shuffle.sort.bypassMergeThreshold', 'spark.broadcast.checksum', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.broadcast.blockSize', 'spark.executor.cores', 'spark.executor.memory', 'spark.rdd.compress', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.reducer.maxReqsInFlight', 'spark.memory.fraction', 'spark.storage.memoryMapThreshold', 'spark.locality.wait', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.broadcast.compress']
+降维后的初始样本 = 
+   runtime  ...  spark.storage.memoryMapThreshold
+1  521.717  ...                          1.255133
+2  225.213  ...                          1.796640
+3  202.772  ...                          2.263323
+
+[3 rows x 28 columns]
+   spark.broadcast.blockSize  ...  runtime
+1                  45.344704  ...  521.717
+2                  33.249753  ...  225.213
+3                  34.954835  ...  202.772
+
+[3 rows x 18 columns]
+从csv文件中获取初始样本:3
+custom_initsamples = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 1.44026767e+00
+  3.74504085e+00 6.51516709e+00 1.80949023e+09 5.81780900e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  9.84130788e+02 3.13424178e-01 3.81543237e+01 3.28921333e+02
+  1.25513263e+00 5.21717000e+02]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.26332288e+00
+  5.13266114e+00 9.00775403e+00 1.09337845e+09 8.00057726e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  6.43887669e+02 1.30028572e-01 1.66197427e+01 1.92325623e+02
+  1.79663998e+00 2.25213000e+02]
+ [3.49548350e+01 1.86260211e-01 3.45560727e-01 2.61645020e+00
+  5.74087800e+00 8.02280506e+00 1.52181908e+09 7.23475931e-01
+  9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+  5.42522106e+02 3.90547832e-02 2.14345734e+01 1.69669367e+02
+  2.26332288e+00 2.02772000e+02]]
+custom_initsamples info = 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3 entries, 0 to 2
+Data columns (total 18 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       3 non-null      float64
+ 1   1       3 non-null      float64
+ 2   2       3 non-null      float64
+ 3   3       3 non-null      float64
+ 4   4       3 non-null      float64
+ 5   5       3 non-null      float64
+ 6   6       3 non-null      float64
+ 7   7       3 non-null      float64
+ 8   8       3 non-null      float64
+ 9   9       3 non-null      float64
+ 10  10      3 non-null      float64
+ 11  11      3 non-null      float64
+ 12  12      3 non-null      float64
+ 13  13      3 non-null      float64
+ 14  14      3 non-null      float64
+ 15  15      3 non-null      float64
+ 16  16      3 non-null      float64
+ 17  17      3 non-null      float64
+dtypes: float64(18)
+memory usage: 560.0 bytes
+None
+interations：5
+------------使用ganrs生成初始样本点------------
+Tmax = 110.0
+key = 
+['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+before probe, param.shape = (3, 17)
+before probe, target = (3,)
+标准化前的train_x = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 1.44026767e+00
+  3.74504085e+00 6.51516709e+00 1.80949023e+09 5.81780900e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  9.84130788e+02 3.13424178e-01 3.81543237e+01 3.28921333e+02
+  1.25513263e+00]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.26332288e+00
+  5.13266114e+00 9.00775403e+00 1.09337845e+09 8.00057726e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  6.43887669e+02 1.30028572e-01 1.66197427e+01 1.92325623e+02
+  1.79663998e+00]
+ [3.49548350e+01 1.86260211e-01 3.45560727e-01 2.61645020e+00
+  5.74087800e+00 8.02280506e+00 1.52181908e+09 7.23475931e-01
+  9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+  5.42522106e+02 3.90547832e-02 2.14345734e+01 1.69669367e+02
+  2.26332288e+00]]
+标准化后的train_x = 
+[[ 1.40217034  1.413727   -1.12921731 -1.35234232 -1.35027726 -1.30085441
+   1.13719317 -1.32699084 -1.3406077   1.25493784 -1.26864258 -1.41307411
+   1.37985133  1.33721006  1.38176059  1.40193461 -1.2538931 ]
+ [-0.86058047 -0.73898797  1.30193572  0.31787283  0.31104595  1.1308784
+  -1.29667197  1.0869591   0.28033174 -1.19213542  0.09311015  0.75569161
+  -0.42158311 -0.26997998 -0.95175049 -0.53992536  0.06054204]
+ [-0.54158988 -0.67473903 -0.1727184   1.03446949  1.03923132  0.16997602
+   0.1594788   0.24003173  1.06027596 -0.06280242  1.17553243  0.6573825
+  -0.95826822 -1.06723009 -0.43001009 -0.86200925  1.19335106]]
+train_y = 
+[-521.717 -225.213 -202.772]
+测试：每一列进行标准化，标准化后的train_x = 
+[[ 1.40217034  1.413727   -1.12921731 -1.35234232 -1.35027726 -1.30085441
+   1.13719317 -1.32699084 -1.3406077   1.25493784 -1.26864258 -1.41307411
+   1.37985133  1.33721006  1.38176059  1.40193461 -1.2538931 ]
+ [-0.86058047 -0.73898797  1.30193572  0.31787283  0.31104595  1.1308784
+  -1.29667197  1.0869591   0.28033174 -1.19213542  0.09311015  0.75569161
+  -0.42158311 -0.26997998 -0.95175049 -0.53992536  0.06054204]
+ [-0.54158988 -0.67473903 -0.1727184   1.03446949  1.03923132  0.16997602
+   0.1594788   0.24003173  1.06027596 -0.06280242  1.17553243  0.6573825
+  -0.95826822 -1.06723009 -0.43001009 -0.86200925  1.19335106]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[ 1.40217034  1.413727   -1.12921731 -1.35234232 -1.35027726 -1.30085441
+   1.13719317 -1.32699084 -1.3406077   1.25493784 -1.26864258 -1.41307411
+   1.37985133  1.33721006  1.38176059  1.40193461 -1.2538931 ]
+ [-0.86058047 -0.73898797  1.30193572  0.31787283  0.31104595  1.1308784
+  -1.29667197  1.0869591   0.28033174 -1.19213542  0.09311015  0.75569161
+  -0.42158311 -0.26997998 -0.95175049 -0.53992536  0.06054204]
+ [-0.54158988 -0.67473903 -0.1727184   1.03446949  1.03923132  0.16997602
+   0.1594788   0.24003173  1.06027596 -0.06280242  1.17553243  0.6573825
+  -0.95826822 -1.06723009 -0.43001009 -0.86200925  1.19335106]]
+upper = 
+[21.9775424  14.65095104 10.80807322 ... 13.8073225  16.89514777
+ 17.81510584]
+upper.argmax() = 2198
+Tconstraint = 213.9925
+all predict_target = 
+[267.74033604 316.10220838 335.93745513 ... 315.74195663 292.11661203
+ 278.0323327 ]
+upper.argmax() = 2198, sortnumber[0] = 2198
+================= config4 =================
+2022年 02月 15日 星期二 00:03:26 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (6447) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (94606) - 没有那个进程
+================= config5 =================
+2022年 02月 15日 星期二 00:09:05 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (11809) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (99752) - 没有那个进程
+x_max = [4.06651591e+01 1.22856142e-01 8.38330363e-01 3.74411391e+00
+ 6.84317989e+00 7.59158610e+00 1.83671467e+09 8.43327646e-01
+ 8.46839838e-01 1.39666378e+09 1.73069189e+09 4.58579377e+01
+ 5.40980328e+02 3.52398449e-01 2.06599431e+01 1.62888860e+02
+ 2.16872188e+00], predict_time = 231.10967311646766 , Tconstraint = 213.9925
+probe说：没见过！帮你计算target！params = {'spark.broadcast.blockSize': 40.66515909034476, 'spark.broadcast.checksum': 0.12285614183763816, 'spark.broadcast.compress': 0.8383303628533995, 'spark.executor.cores': 3.7441139149685867, 'spark.executor.memory': 6.8431798883626636, 'spark.locality.wait': 7.591586096108146, 'spark.maxRemoteBlockSizeFetchToMem': 1836714674.135649, 'spark.memory.fraction': 0.8433276455788971, 'spark.rdd.compress': 0.8468398375847015, 'spark.reducer.maxBlocksInFlightPerAddress': 1396663775.5988417, 'spark.reducer.maxReqsInFlight': 1730691891.1150153, 'spark.reducer.maxSizeInFlight': 45.8579377355271, 'spark.scheduler.revive.interval': 540.9803280555881, 'spark.shuffle.compress': 0.35239844851751334, 'spark.shuffle.file.buffer': 20.659943136910726, 'spark.shuffle.sort.bypassMergeThreshold': 162.88885998479793, 'spark.storage.memoryMapThreshold': 2.1687218776978296} target = -330.056
+x_probe = {'spark.broadcast.blockSize': 40.66515909034476, 'spark.broadcast.checksum': 0.12285614183763816, 'spark.broadcast.compress': 0.8383303628533995, 'spark.executor.cores': 3.7441139149685867, 'spark.executor.memory': 6.8431798883626636, 'spark.locality.wait': 7.591586096108146, 'spark.maxRemoteBlockSizeFetchToMem': 1836714674.135649, 'spark.memory.fraction': 0.8433276455788971, 'spark.rdd.compress': 0.8468398375847015, 'spark.reducer.maxBlocksInFlightPerAddress': 1396663775.5988417, 'spark.reducer.maxReqsInFlight': 1730691891.1150153, 'spark.reducer.maxSizeInFlight': 45.8579377355271, 'spark.scheduler.revive.interval': 540.9803280555881, 'spark.shuffle.compress': 0.35239844851751334, 'spark.shuffle.file.buffer': 20.659943136910726, 'spark.shuffle.sort.bypassMergeThreshold': 162.88885998479793, 'spark.storage.memoryMapThreshold': 2.1687218776978296}
+x = [4.06651591e+01 1.22856142e-01 8.38330363e-01 3.74411391e+00
+ 6.84317989e+00 7.59158610e+00 1.83671467e+09 8.43327646e-01
+ 8.46839838e-01 1.39666378e+09 1.73069189e+09 4.58579377e+01
+ 5.40980328e+02 3.52398449e-01 2.06599431e+01 1.62888860e+02
+ 2.16872188e+00]
+predict_target = [-316.56733333]
+target = -330.056
+key = 
+['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+before probe, param.shape = (4, 17)
+before probe, target = (4,)
+标准化前的train_x = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 1.44026767e+00
+  3.74504085e+00 6.51516709e+00 1.80949023e+09 5.81780900e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  9.84130788e+02 3.13424178e-01 3.81543237e+01 3.28921333e+02
+  1.25513263e+00]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.26332288e+00
+  5.13266114e+00 9.00775403e+00 1.09337845e+09 8.00057726e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  6.43887669e+02 1.30028572e-01 1.66197427e+01 1.92325623e+02
+  1.79663998e+00]
+ [3.49548350e+01 1.86260211e-01 3.45560727e-01 2.61645020e+00
+  5.74087800e+00 8.02280506e+00 1.52181908e+09 7.23475931e-01
+  9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+  5.42522106e+02 3.90547832e-02 2.14345734e+01 1.69669367e+02
+  2.26332288e+00]
+ [4.06651591e+01 1.22856142e-01 8.38330363e-01 3.74411391e+00
+  6.84317989e+00 7.59158610e+00 1.83671467e+09 8.43327646e-01
+  8.46839838e-01 1.39666378e+09 1.73069189e+09 4.58579377e+01
+  5.40980328e+02 3.52398449e-01 2.06599431e+01 1.62888860e+02
+  2.16872188e+00]]
+标准化后的train_x = 
+[[ 1.41866678  1.72415073 -1.41566672 -1.29993643 -1.44867029 -1.41861905
+   0.81618808 -1.56246072 -1.64433159  1.4836969  -1.57443158 -1.38389047
+   1.68580086  0.81148141  1.68900795  1.70935273 -1.55496456]
+ [-1.1079824  -0.532971    0.9959372  -0.30537583 -0.20810908  1.36749822
+  -1.57785963  0.632479    0.16465825 -1.33590476 -0.11931839  1.00545025
+  -0.18711696 -0.60996481 -0.92070821 -0.31273244 -0.18764555]
+ [-0.75178882 -0.46560599 -0.46685911  0.12133494  0.33564936  0.26656036
+  -0.14553113 -0.13760927  1.03508631 -0.03464858  1.03731372  0.89714259
+  -0.74509848 -1.3150763  -0.33721222 -0.64812276  0.99073994]
+ [ 0.44110444 -0.72557373  0.88658863  1.48397732  1.32113001 -0.21543952
+   0.90720268  1.06759099  0.44458703 -0.11314357  0.65643625 -0.51870236
+  -0.75358542  1.11355969 -0.43108752 -0.74849753  0.75187016]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056]
+测试：每一列进行标准化，标准化后的train_x = 
+[[ 1.41866678  1.72415073 -1.41566672 -1.29993643 -1.44867029 -1.41861905
+   0.81618808 -1.56246072 -1.64433159  1.4836969  -1.57443158 -1.38389047
+   1.68580086  0.81148141  1.68900795  1.70935273 -1.55496456]
+ [-1.1079824  -0.532971    0.9959372  -0.30537583 -0.20810908  1.36749822
+  -1.57785963  0.632479    0.16465825 -1.33590476 -0.11931839  1.00545025
+  -0.18711696 -0.60996481 -0.92070821 -0.31273244 -0.18764555]
+ [-0.75178882 -0.46560599 -0.46685911  0.12133494  0.33564936  0.26656036
+  -0.14553113 -0.13760927  1.03508631 -0.03464858  1.03731372  0.89714259
+  -0.74509848 -1.3150763  -0.33721222 -0.64812276  0.99073994]
+ [ 0.44110444 -0.72557373  0.88658863  1.48397732  1.32113001 -0.21543952
+   0.90720268  1.06759099  0.44458703 -0.11314357  0.65643625 -0.51870236
+  -0.75358542  1.11355969 -0.43108752 -0.74849753  0.75187016]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[ 1.41866678  1.72415073 -1.41566672 -1.29993643 -1.44867029 -1.41861905
+   0.81618808 -1.56246072 -1.64433159  1.4836969  -1.57443158 -1.38389047
+   1.68580086  0.81148141  1.68900795  1.70935273 -1.55496456]
+ [-1.1079824  -0.532971    0.9959372  -0.30537583 -0.20810908  1.36749822
+  -1.57785963  0.632479    0.16465825 -1.33590476 -0.11931839  1.00545025
+  -0.18711696 -0.60996481 -0.92070821 -0.31273244 -0.18764555]
+ [-0.75178882 -0.46560599 -0.46685911  0.12133494  0.33564936  0.26656036
+  -0.14553113 -0.13760927  1.03508631 -0.03464858  1.03731372  0.89714259
+  -0.74509848 -1.3150763  -0.33721222 -0.64812276  0.99073994]
+ [ 0.44110444 -0.72557373  0.88658863  1.48397732  1.32113001 -0.21543952
+   0.90720268  1.06759099  0.44458703 -0.11314357  0.65643625 -0.51870236
+  -0.75358542  1.11355969 -0.43108752 -0.74849753  0.75187016]]
+upper = 
+[12.10455334 14.41757513 10.38931972 ... 13.09775239 10.33192476
+  8.76290112]
+upper.argmax() = 4173
+Tconstraint = 219.60275
+all predict_target = 
+[307.26933644 293.58398955 303.90028284 ... 286.06719693 315.01381319
+ 326.23220392]
+upper.argmax() = 4173, sortnumber[0] = 4173
+x_max = [3.29417015e+01 1.00312770e-01 6.97981168e-01 2.08202371e+00
+ 5.41583376e+00 9.41850689e+00 1.24012023e+09 7.07708653e-01
+ 9.20456426e-01 1.15596516e+09 1.84931761e+09 7.19839252e+01
+ 6.46499496e+02 2.99691015e-01 4.04783988e+01 1.53610544e+02
+ 3.66362939e+00], predict_time = 234.78309322348957 , Tconstraint = 219.60275
+probe说：没见过！帮你计算target！params = {'spark.broadcast.blockSize': 32.94170152959586, 'spark.broadcast.checksum': 0.10031277017159368, 'spark.broadcast.compress': 0.6979811680117592, 'spark.executor.cores': 2.082023711032203, 'spark.executor.memory': 5.41583376300931, 'spark.locality.wait': 9.418506886710063, 'spark.maxRemoteBlockSizeFetchToMem': 1240120234.0113263, 'spark.memory.fraction': 0.7077086526141108, 'spark.rdd.compress': 0.9204564258003203, 'spark.reducer.maxBlocksInFlightPerAddress': 1155965159.7299042, 'spark.reducer.maxReqsInFlight': 1849317613.1595788, 'spark.reducer.maxSizeInFlight': 71.98392515837406, 'spark.scheduler.revive.interval': 646.4994961492963, 'spark.shuffle.compress': 0.2996910152365374, 'spark.shuffle.file.buffer': 40.47839875421821, 'spark.shuffle.sort.bypassMergeThreshold': 153.61054365236706, 'spark.storage.memoryMapThreshold': 3.6636293907131563} target = -573.195
+x_probe = {'spark.broadcast.blockSize': 32.94170152959586, 'spark.broadcast.checksum': 0.10031277017159368, 'spark.broadcast.compress': 0.6979811680117592, 'spark.executor.cores': 2.082023711032203, 'spark.executor.memory': 5.41583376300931, 'spark.locality.wait': 9.418506886710063, 'spark.maxRemoteBlockSizeFetchToMem': 1240120234.0113263, 'spark.memory.fraction': 0.7077086526141108, 'spark.rdd.compress': 0.9204564258003203, 'spark.reducer.maxBlocksInFlightPerAddress': 1155965159.7299042, 'spark.reducer.maxReqsInFlight': 1849317613.1595788, 'spark.reducer.maxSizeInFlight': 71.98392515837406, 'spark.scheduler.revive.interval': 646.4994961492963, 'spark.shuffle.compress': 0.2996910152365374, 'spark.shuffle.file.buffer': 40.47839875421821, 'spark.shuffle.sort.bypassMergeThreshold': 153.61054365236706, 'spark.storage.memoryMapThreshold': 3.6636293907131563}
+x = [3.29417015e+01 1.00312770e-01 6.97981168e-01 2.08202371e+00
+ 5.41583376e+00 9.41850689e+00 1.24012023e+09 7.07708653e-01
+ 9.20456426e-01 1.15596516e+09 1.84931761e+09 7.19839252e+01
+ 6.46499496e+02 2.99691015e-01 4.04783988e+01 1.53610544e+02
+ 3.66362939e+00]
+predict_target = [-319.9395]
+target = -573.195
+key = 
+['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+before probe, param.shape = (5, 17)
+before probe, target = (5,)
+标准化前的train_x = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 1.44026767e+00
+  3.74504085e+00 6.51516709e+00 1.80949023e+09 5.81780900e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  9.84130788e+02 3.13424178e-01 3.81543237e+01 3.28921333e+02
+  1.25513263e+00]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.26332288e+00
+  5.13266114e+00 9.00775403e+00 1.09337845e+09 8.00057726e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  6.43887669e+02 1.30028572e-01 1.66197427e+01 1.92325623e+02
+  1.79663998e+00]
+ [3.49548350e+01 1.86260211e-01 3.45560727e-01 2.61645020e+00
+  5.74087800e+00 8.02280506e+00 1.52181908e+09 7.23475931e-01
+  9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+  5.42522106e+02 3.90547832e-02 2.14345734e+01 1.69669367e+02
+  2.26332288e+00]
+ [4.06651591e+01 1.22856142e-01 8.38330363e-01 3.74411391e+00
+  6.84317989e+00 7.59158610e+00 1.83671467e+09 8.43327646e-01
+  8.46839838e-01 1.39666378e+09 1.73069189e+09 4.58579377e+01
+  5.40980328e+02 3.52398449e-01 2.06599431e+01 1.62888860e+02
+  2.16872188e+00]
+ [3.29417015e+01 1.00312770e-01 6.97981168e-01 2.08202371e+00
+  5.41583376e+00 9.41850689e+00 1.24012023e+09 7.07708653e-01
+  9.20456426e-01 1.15596516e+09 1.84931761e+09 7.19839252e+01
+  6.46499496e+02 2.99691015e-01 4.04783988e+01 1.53610544e+02
+  3.66362939e+00]]
+标准化后的train_x = 
+[[ 1.63692735  1.98210467 -1.6537948  -1.30080197 -1.6294061  -1.54464247
+   1.03929854 -1.66611035 -1.89924761  1.65598254 -1.79025658 -1.58755093
+   1.91769474  0.71491688  1.08611729  1.96092294 -1.21826485]
+ [-0.86495201 -0.3878316   0.97720397 -0.21822718 -0.24269795  0.86774068
+  -1.36784363  0.76666142  0.00435471 -0.96147417 -0.35123467  0.71661921
+  -0.17007062 -0.80075215 -1.10286163 -0.14090906 -0.54120341]
+ [-0.51225035 -0.31709958 -0.61866973  0.24624561  0.36511911 -0.08551566
+   0.07231912 -0.08686953  0.92030727  0.2464914   0.79260689  0.61217228
+  -0.79205972 -1.55260307 -0.6134366  -0.48952649  0.04230298]
+ [ 0.66894847 -0.59006093  0.85790746  1.72947577  1.4666964  -0.50285932
+   1.13081095  1.24891985  0.29892412  0.17362392  0.41594133 -0.75320337
+  -0.80152022  1.0370189  -0.69217736 -0.59385982 -0.07597923]
+ [-0.92867346 -0.68711257  0.4373531  -0.45669223  0.04028853  1.26527677
+  -0.87458497 -0.26260139  0.6756615  -1.11462369  0.93294304  1.01196281
+  -0.15404419  0.60141945  1.32235831 -0.73662757  1.79314451]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195]
+测试：每一列进行标准化，标准化后的train_x = 
+[[ 1.63692735  1.98210467 -1.6537948  -1.30080197 -1.6294061  -1.54464247
+   1.03929854 -1.66611035 -1.89924761  1.65598254 -1.79025658 -1.58755093
+   1.91769474  0.71491688  1.08611729  1.96092294 -1.21826485]
+ [-0.86495201 -0.3878316   0.97720397 -0.21822718 -0.24269795  0.86774068
+  -1.36784363  0.76666142  0.00435471 -0.96147417 -0.35123467  0.71661921
+  -0.17007062 -0.80075215 -1.10286163 -0.14090906 -0.54120341]
+ [-0.51225035 -0.31709958 -0.61866973  0.24624561  0.36511911 -0.08551566
+   0.07231912 -0.08686953  0.92030727  0.2464914   0.79260689  0.61217228
+  -0.79205972 -1.55260307 -0.6134366  -0.48952649  0.04230298]
+ [ 0.66894847 -0.59006093  0.85790746  1.72947577  1.4666964  -0.50285932
+   1.13081095  1.24891985  0.29892412  0.17362392  0.41594133 -0.75320337
+  -0.80152022  1.0370189  -0.69217736 -0.59385982 -0.07597923]
+ [-0.92867346 -0.68711257  0.4373531  -0.45669223  0.04028853  1.26527677
+  -0.87458497 -0.26260139  0.6756615  -1.11462369  0.93294304  1.01196281
+  -0.15404419  0.60141945  1.32235831 -0.73662757  1.79314451]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[ 1.63692735  1.98210467 -1.6537948  -1.30080197 -1.6294061  -1.54464247
+   1.03929854 -1.66611035 -1.89924761  1.65598254 -1.79025658 -1.58755093
+   1.91769474  0.71491688  1.08611729  1.96092294 -1.21826485]
+ [-0.86495201 -0.3878316   0.97720397 -0.21822718 -0.24269795  0.86774068
+  -1.36784363  0.76666142  0.00435471 -0.96147417 -0.35123467  0.71661921
+  -0.17007062 -0.80075215 -1.10286163 -0.14090906 -0.54120341]
+ [-0.51225035 -0.31709958 -0.61866973  0.24624561  0.36511911 -0.08551566
+   0.07231912 -0.08686953  0.92030727  0.2464914   0.79260689  0.61217228
+  -0.79205972 -1.55260307 -0.6134366  -0.48952649  0.04230298]
+ [ 0.66894847 -0.59006093  0.85790746  1.72947577  1.4666964  -0.50285932
+   1.13081095  1.24891985  0.29892412  0.17362392  0.41594133 -0.75320337
+  -0.80152022  1.0370189  -0.69217736 -0.59385982 -0.07597923]
+ [-0.92867346 -0.68711257  0.4373531  -0.45669223  0.04028853  1.26527677
+  -0.87458497 -0.26260139  0.6756615  -1.11462369  0.93294304  1.01196281
+  -0.15404419  0.60141945  1.32235831 -0.73662757  1.79314451]]
+upper = 
+[10.28691052 10.18547778 10.37019552 ... 10.54009571 10.65516496
+ 10.69482785]
+upper.argmax() = 8646
+Tconstraint = 225.213
+================= config6 =================
+2022年 02月 15日 星期二 00:18:47 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (17957) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (104932) - 没有那个进程
+all predict_target = 
+[370.2988807  371.05522755 369.67889562 ... 368.42241123 367.55151432
+ 367.20829296]
+upper.argmax() = 8646, sortnumber[0] = 8646
+x_max = [3.56997978e+01 4.51993319e-01 1.65221489e-01 2.87521620e+00
+ 5.79472902e+00 5.94909957e+00 1.51800317e+09 6.27267630e-01
+ 8.33822845e-01 1.47465505e+09 1.77541406e+09 4.56447726e+01
+ 5.38943914e+02 2.06312794e-02 1.92770561e+01 2.28020732e+02
+ 2.59259252e+00], predict_time = 330.7240613687635 , Tconstraint = 225.213
+probe说：没见过！帮你计算target！params = {'spark.broadcast.blockSize': 35.69979780314469, 'spark.broadcast.checksum': 0.4519933189889359, 'spark.broadcast.compress': 0.16522148862854336, 'spark.executor.cores': 2.8752162006634157, 'spark.executor.memory': 5.7947290157360385, 'spark.locality.wait': 5.949099565449046, 'spark.maxRemoteBlockSizeFetchToMem': 1518003170.4431505, 'spark.memory.fraction': 0.6272676302792467, 'spark.rdd.compress': 0.8338228454434564, 'spark.reducer.maxBlocksInFlightPerAddress': 1474655046.2874274, 'spark.reducer.maxReqsInFlight': 1775414060.2834187, 'spark.reducer.maxSizeInFlight': 45.64477256850654, 'spark.scheduler.revive.interval': 538.9439143946486, 'spark.shuffle.compress': 0.020631279395134428, 'spark.shuffle.file.buffer': 19.277056056121364, 'spark.shuffle.sort.bypassMergeThreshold': 228.02073229882603, 'spark.storage.memoryMapThreshold': 2.5925925204587896} target = -527.764
+x_probe = {'spark.broadcast.blockSize': 35.69979780314469, 'spark.broadcast.checksum': 0.4519933189889359, 'spark.broadcast.compress': 0.16522148862854336, 'spark.executor.cores': 2.8752162006634157, 'spark.executor.memory': 5.7947290157360385, 'spark.locality.wait': 5.949099565449046, 'spark.maxRemoteBlockSizeFetchToMem': 1518003170.4431505, 'spark.memory.fraction': 0.6272676302792467, 'spark.rdd.compress': 0.8338228454434564, 'spark.reducer.maxBlocksInFlightPerAddress': 1474655046.2874274, 'spark.reducer.maxReqsInFlight': 1775414060.2834187, 'spark.reducer.maxSizeInFlight': 45.64477256850654, 'spark.scheduler.revive.interval': 538.9439143946486, 'spark.shuffle.compress': 0.020631279395134428, 'spark.shuffle.file.buffer': 19.277056056121364, 'spark.shuffle.sort.bypassMergeThreshold': 228.02073229882603, 'spark.storage.memoryMapThreshold': 2.5925925204587896}
+x = [3.56997978e+01 4.51993319e-01 1.65221489e-01 2.87521620e+00
+ 5.79472902e+00 5.94909957e+00 1.51800317e+09 6.27267630e-01
+ 8.33822845e-01 1.47465505e+09 1.77541406e+09 4.56447726e+01
+ 5.38943914e+02 2.06312794e-02 1.92770561e+01 2.28020732e+02
+ 2.59259252e+00]
+predict_target = [-370.5906]
+target = -527.764
+key = 
+['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+before probe, param.shape = (6, 17)
+before probe, target = (6,)
+标准化前的train_x = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 1.44026767e+00
+  3.74504085e+00 6.51516709e+00 1.80949023e+09 5.81780900e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  9.84130788e+02 3.13424178e-01 3.81543237e+01 3.28921333e+02
+  1.25513263e+00]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.26332288e+00
+  5.13266114e+00 9.00775403e+00 1.09337845e+09 8.00057726e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  6.43887669e+02 1.30028572e-01 1.66197427e+01 1.92325623e+02
+  1.79663998e+00]
+ [3.49548350e+01 1.86260211e-01 3.45560727e-01 2.61645020e+00
+  5.74087800e+00 8.02280506e+00 1.52181908e+09 7.23475931e-01
+  9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+  5.42522106e+02 3.90547832e-02 2.14345734e+01 1.69669367e+02
+  2.26332288e+00]
+ [4.06651591e+01 1.22856142e-01 8.38330363e-01 3.74411391e+00
+  6.84317989e+00 7.59158610e+00 1.83671467e+09 8.43327646e-01
+  8.46839838e-01 1.39666378e+09 1.73069189e+09 4.58579377e+01
+  5.40980328e+02 3.52398449e-01 2.06599431e+01 1.62888860e+02
+  2.16872188e+00]
+ [3.29417015e+01 1.00312770e-01 6.97981168e-01 2.08202371e+00
+  5.41583376e+00 9.41850689e+00 1.24012023e+09 7.07708653e-01
+  9.20456426e-01 1.15596516e+09 1.84931761e+09 7.19839252e+01
+  6.46499496e+02 2.99691015e-01 4.04783988e+01 1.53610544e+02
+  3.66362939e+00]
+ [3.56997978e+01 4.51993319e-01 1.65221489e-01 2.87521620e+00
+  5.79472902e+00 5.94909957e+00 1.51800317e+09 6.27267630e-01
+  8.33822845e-01 1.47465505e+09 1.77541406e+09 4.56447726e+01
+  5.38943914e+02 2.06312794e-02 1.92770561e+01 2.28020732e+02
+  2.59259252e+00]]
+标准化后的train_x = 
+[[ 1.83899956  1.91418326 -1.44628704 -1.48992731 -1.83477055 -0.99607158
+   1.12730031 -1.45844574 -2.1134516   1.65853053 -2.01106275 -1.52576664
+   2.13456617  0.8982623   1.27041116  2.04530594 -1.39369436]
+ [-0.87283728 -0.54557164  1.15889538 -0.33663602 -0.33744915  1.01322684
+  -1.50881443  0.95042012 -0.0374751  -1.12875696 -0.48153658  0.88282871
+  -0.03576174 -0.4644859  -0.99988357 -0.22579461 -0.6644309 ]
+ [-0.49053693 -0.47215894 -0.42131901  0.15817729  0.31885152  0.21924996
+   0.06833971  0.10527649  0.96141841  0.15758612  0.7342445   0.77364825
+  -0.68234795 -1.14048011 -0.49227746 -0.60248753 -0.03593566]
+ [ 0.78978798 -0.75546529  1.04076945  1.73829577  1.50829809 -0.12835982
+   1.22751758  1.42793958  0.28376804  0.07999072  0.33388935 -0.65360636
+  -0.69218258  1.18786639 -0.57394327 -0.71522323 -0.16333754]
+ [-0.94190622 -0.85619511  0.62434173 -0.59067821 -0.03188975  1.34433868
+  -0.96863594 -0.06872852  0.69461958 -1.29184341  0.8834068   1.19155732
+  -0.01910153  0.796216    1.51542802 -0.86948861  1.84989726]
+ [-0.32350711  0.71520773 -0.95640051  0.52076849  0.37695983 -1.45238408
+   0.05429278 -0.95646193  0.21112067  0.52449301  0.54105868 -0.66866128
+  -0.70517236 -1.27737869 -0.71973488  0.36768803  0.4075012 ]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764]
+测试：每一列进行标准化，标准化后的train_x = 
+[[ 1.83899956  1.91418326 -1.44628704 -1.48992731 -1.83477055 -0.99607158
+   1.12730031 -1.45844574 -2.1134516   1.65853053 -2.01106275 -1.52576664
+   2.13456617  0.8982623   1.27041116  2.04530594 -1.39369436]
+ [-0.87283728 -0.54557164  1.15889538 -0.33663602 -0.33744915  1.01322684
+  -1.50881443  0.95042012 -0.0374751  -1.12875696 -0.48153658  0.88282871
+  -0.03576174 -0.4644859  -0.99988357 -0.22579461 -0.6644309 ]
+ [-0.49053693 -0.47215894 -0.42131901  0.15817729  0.31885152  0.21924996
+   0.06833971  0.10527649  0.96141841  0.15758612  0.7342445   0.77364825
+  -0.68234795 -1.14048011 -0.49227746 -0.60248753 -0.03593566]
+ [ 0.78978798 -0.75546529  1.04076945  1.73829577  1.50829809 -0.12835982
+   1.22751758  1.42793958  0.28376804  0.07999072  0.33388935 -0.65360636
+  -0.69218258  1.18786639 -0.57394327 -0.71522323 -0.16333754]
+ [-0.94190622 -0.85619511  0.62434173 -0.59067821 -0.03188975  1.34433868
+  -0.96863594 -0.06872852  0.69461958 -1.29184341  0.8834068   1.19155732
+  -0.01910153  0.796216    1.51542802 -0.86948861  1.84989726]
+ [-0.32350711  0.71520773 -0.95640051  0.52076849  0.37695983 -1.45238408
+   0.05429278 -0.95646193  0.21112067  0.52449301  0.54105868 -0.66866128
+  -0.70517236 -1.27737869 -0.71973488  0.36768803  0.4075012 ]]
+================= config7 =================
+2022年 02月 15日 星期二 00:27:43 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (21686) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (108242) - 没有那个进程
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[ 1.83899956  1.91418326 -1.44628704 -1.48992731 -1.83477055 -0.99607158
+   1.12730031 -1.45844574 -2.1134516   1.65853053 -2.01106275 -1.52576664
+   2.13456617  0.8982623   1.27041116  2.04530594 -1.39369436]
+ [-0.87283728 -0.54557164  1.15889538 -0.33663602 -0.33744915  1.01322684
+  -1.50881443  0.95042012 -0.0374751  -1.12875696 -0.48153658  0.88282871
+  -0.03576174 -0.4644859  -0.99988357 -0.22579461 -0.6644309 ]
+ [-0.49053693 -0.47215894 -0.42131901  0.15817729  0.31885152  0.21924996
+   0.06833971  0.10527649  0.96141841  0.15758612  0.7342445   0.77364825
+  -0.68234795 -1.14048011 -0.49227746 -0.60248753 -0.03593566]
+ [ 0.78978798 -0.75546529  1.04076945  1.73829577  1.50829809 -0.12835982
+   1.22751758  1.42793958  0.28376804  0.07999072  0.33388935 -0.65360636
+  -0.69218258  1.18786639 -0.57394327 -0.71522323 -0.16333754]
+ [-0.94190622 -0.85619511  0.62434173 -0.59067821 -0.03188975  1.34433868
+  -0.96863594 -0.06872852  0.69461958 -1.29184341  0.8834068   1.19155732
+  -0.01910153  0.796216    1.51542802 -0.86948861  1.84989726]
+ [-0.32350711  0.71520773 -0.95640051  0.52076849  0.37695983 -1.45238408
+   0.05429278 -0.95646193  0.21112067  0.52449301  0.54105868 -0.66866128
+  -0.70517236 -1.27737869 -0.71973488  0.36768803  0.4075012 ]]
+upper = 
+[6.96502446 6.96502446 6.96502446 ... 6.96502446 6.96502446 6.96502446]
+upper.argmax() = 886
+Tconstraint = 251.42374999999998
+all predict_target = 
+[396.78616667 396.78616667 396.78616667 ... 396.78616667 396.78616667
+ 396.78616667]
+upper.argmax() = 886, sortnumber[0] = 886
+x_max = [4.39474434e+01 5.27242949e-01 6.28680421e-01 3.80325647e+00
+ 5.77436359e+00 8.30518277e+00 1.70344123e+09 7.61168277e-01
+ 5.70907373e-01 1.39074188e+09 1.88956905e+09 5.36063024e+01
+ 7.12073893e+02 1.25174093e-01 2.88620242e+01 2.27658035e+02
+ 2.64114594e+00], predict_time = 396.78616666666574 , Tconstraint = 251.42374999999998
+probe说：没见过！帮你计算target！params = {'spark.broadcast.blockSize': 43.947443422438155, 'spark.broadcast.checksum': 0.5272429494549221, 'spark.broadcast.compress': 0.6286804213512395, 'spark.executor.cores': 3.803256466338112, 'spark.executor.memory': 5.774363587489567, 'spark.locality.wait': 8.305182772370724, 'spark.maxRemoteBlockSizeFetchToMem': 1703441226.7913618, 'spark.memory.fraction': 0.7611682765028884, 'spark.rdd.compress': 0.5709073729733, 'spark.reducer.maxBlocksInFlightPerAddress': 1390741876.3825402, 'spark.reducer.maxReqsInFlight': 1889569051.5722518, 'spark.reducer.maxSizeInFlight': 53.60630243543534, 'spark.scheduler.revive.interval': 712.0738926359472, 'spark.shuffle.compress': 0.12517409254237521, 'spark.shuffle.file.buffer': 28.862024224510876, 'spark.shuffle.sort.bypassMergeThreshold': 227.65803450706687, 'spark.storage.memoryMapThreshold': 2.641145939152259} target = -337.534
+x_probe = {'spark.broadcast.blockSize': 43.947443422438155, 'spark.broadcast.checksum': 0.5272429494549221, 'spark.broadcast.compress': 0.6286804213512395, 'spark.executor.cores': 3.803256466338112, 'spark.executor.memory': 5.774363587489567, 'spark.locality.wait': 8.305182772370724, 'spark.maxRemoteBlockSizeFetchToMem': 1703441226.7913618, 'spark.memory.fraction': 0.7611682765028884, 'spark.rdd.compress': 0.5709073729733, 'spark.reducer.maxBlocksInFlightPerAddress': 1390741876.3825402, 'spark.reducer.maxReqsInFlight': 1889569051.5722518, 'spark.reducer.maxSizeInFlight': 53.60630243543534, 'spark.scheduler.revive.interval': 712.0738926359472, 'spark.shuffle.compress': 0.12517409254237521, 'spark.shuffle.file.buffer': 28.862024224510876, 'spark.shuffle.sort.bypassMergeThreshold': 227.65803450706687, 'spark.storage.memoryMapThreshold': 2.641145939152259}
+x = [4.39474434e+01 5.27242949e-01 6.28680421e-01 3.80325647e+00
+ 5.77436359e+00 8.30518277e+00 1.70344123e+09 7.61168277e-01
+ 5.70907373e-01 1.39074188e+09 1.88956905e+09 5.36063024e+01
+ 7.12073893e+02 1.25174093e-01 2.88620242e+01 2.27658035e+02
+ 2.64114594e+00]
+predict_target = [-396.78616667]
+target = -337.534
+key = 
+['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+bounds = 
+[[3.20000000e+01 6.40000000e+01]
+ [0.00000000e+00 1.00000000e+00]
+ [0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [1.07374157e+09 2.14748314e+09]
+ [5.00000000e-01 9.00000000e-01]
+ [0.00000000e+00 1.00000000e+00]
+ [1.07374182e+09 2.14748365e+09]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]
+ [5.00000000e+02 1.00000000e+03]
+ [0.00000000e+00 1.00000000e+00]
+ [1.60000000e+01 4.80000000e+01]
+ [1.50000000e+02 3.50000000e+02]
+ [1.00000000e+00 4.00000000e+00]]
+before probe, param.shape = (7, 17)
+before probe, target = (7,)
+标准化前的train_x = 
+[[4.53447042e+01 7.20324493e-01 1.14374817e-04 1.44026767e+00
+  3.74504085e+00 6.51516709e+00 1.80949023e+09 5.81780900e-01
+  4.17304802e-01 1.67363046e+09 1.22448115e+09 3.35088715e+01
+  9.84130788e+02 3.13424178e-01 3.81543237e+01 3.28921333e+02
+  1.25513263e+00]
+ [3.32497531e+01 1.69830420e-01 8.78142503e-01 2.26332288e+00
+  5.13266114e+00 9.00775403e+00 1.09337845e+09 8.00057726e-01
+  7.89279328e-01 1.18457990e+09 1.55466383e+09 6.76125841e+01
+  6.43887669e+02 1.30028572e-01 1.66197427e+01 1.92325623e+02
+  1.79663998e+00]
+ [3.49548350e+01 1.86260211e-01 3.45560727e-01 2.61645020e+00
+  5.74087800e+00 8.02280506e+00 1.52181908e+09 7.23475931e-01
+  9.68261576e-01 1.41027847e+09 1.81711757e+09 6.60666793e+01
+  5.42522106e+02 3.90547832e-02 2.14345734e+01 1.69669367e+02
+  2.26332288e+00]
+ [4.06651591e+01 1.22856142e-01 8.38330363e-01 3.74411391e+00
+  6.84317989e+00 7.59158610e+00 1.83671467e+09 8.43327646e-01
+  8.46839838e-01 1.39666378e+09 1.73069189e+09 4.58579377e+01
+  5.40980328e+02 3.52398449e-01 2.06599431e+01 1.62888860e+02
+  2.16872188e+00]
+ [3.29417015e+01 1.00312770e-01 6.97981168e-01 2.08202371e+00
+  5.41583376e+00 9.41850689e+00 1.24012023e+09 7.07708653e-01
+  9.20456426e-01 1.15596516e+09 1.84931761e+09 7.19839252e+01
+  6.46499496e+02 2.99691015e-01 4.04783988e+01 1.53610544e+02
+  3.66362939e+00]
+ [3.56997978e+01 4.51993319e-01 1.65221489e-01 2.87521620e+00
+  5.79472902e+00 5.94909957e+00 1.51800317e+09 6.27267630e-01
+  8.33822845e-01 1.47465505e+09 1.77541406e+09 4.56447726e+01
+  5.38943914e+02 2.06312794e-02 1.92770561e+01 2.28020732e+02
+  2.59259252e+00]
+ [4.39474434e+01 5.27242949e-01 6.28680421e-01 3.80325647e+00
+  5.77436359e+00 8.30518277e+00 1.70344123e+09 7.61168277e-01
+  5.70907373e-01 1.39074188e+09 1.88956905e+09 5.36063024e+01
+  7.12073893e+02 1.25174093e-01 2.88620242e+01 2.27658035e+02
+  2.64114594e+00]]
+================= config8 =================
+2022年 02月 15日 星期二 00:33:30 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (31588) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (117309) - 没有那个进程
+标准化后的train_x = 
+[[ 1.51679293  1.77061675 -1.60678071 -1.55709251 -2.01846681 -1.12884605
+   1.06343524 -1.62450476 -1.88705055  1.78401037 -2.16682839 -1.63028543
+   2.21888699  1.02921402  1.31939104  2.13353741 -1.55370785]
+ [-1.02064896 -0.69839675  1.17254667 -0.53098704 -0.41553844  1.01113376
+  -1.67948566  0.92829783  0.13853588 -1.22614453 -0.63523286  0.96919475
+  -0.09910054 -0.41706576 -1.11813176 -0.29692979 -0.77830161]
+ [-0.66293388 -0.62470771 -0.51329808 -0.09074211  0.2870515   0.16551796
+  -0.03843074  0.03265441  1.1131833   0.16305264  0.5821931   0.85136156
+  -0.78967766 -1.13449599 -0.5731358  -0.70005583 -0.11003952]
+ [ 0.53505488 -0.90908044  1.04652455  1.31511973  1.56039044 -0.20469977
+   1.16771296  1.43435047  0.4519815   0.07925283  0.18129628 -0.68900513
+  -0.80018139  1.3365698  -0.66081705 -0.82070237 -0.24550251]
+ [-1.08527616 -1.01018942  0.60226046 -0.75701327 -0.08842775  1.36378057
+  -1.11742103 -0.1517479   0.85286047 -1.40227113  0.7315572   1.30239056
+  -0.08130685  0.92091265  1.58245563 -0.98579279  1.89511593]
+ [-0.50664555  0.56712824 -1.08414742  0.23186226  0.34925823 -1.61483634
+  -0.05304681 -1.09252596  0.3810975   0.55929688  0.38874591 -0.70525317
+  -0.81405494 -1.27978595 -0.81734755  0.33819845  0.36145498]
+ [ 1.22365674  0.90462934  0.38289453  1.38885293  0.32573283  0.40794987
+   0.65723605  0.4734759  -1.0506081   0.04280295  0.91826875 -0.09840314
+   0.36543439 -0.45534877  0.26758549  0.33174491  0.43098058]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534]
+测试：每一列进行标准化，标准化后的train_x = 
+[[ 1.51679293  1.77061675 -1.60678071 -1.55709251 -2.01846681 -1.12884605
+   1.06343524 -1.62450476 -1.88705055  1.78401037 -2.16682839 -1.63028543
+   2.21888699  1.02921402  1.31939104  2.13353741 -1.55370785]
+ [-1.02064896 -0.69839675  1.17254667 -0.53098704 -0.41553844  1.01113376
+  -1.67948566  0.92829783  0.13853588 -1.22614453 -0.63523286  0.96919475
+  -0.09910054 -0.41706576 -1.11813176 -0.29692979 -0.77830161]
+ [-0.66293388 -0.62470771 -0.51329808 -0.09074211  0.2870515   0.16551796
+  -0.03843074  0.03265441  1.1131833   0.16305264  0.5821931   0.85136156
+  -0.78967766 -1.13449599 -0.5731358  -0.70005583 -0.11003952]
+ [ 0.53505488 -0.90908044  1.04652455  1.31511973  1.56039044 -0.20469977
+   1.16771296  1.43435047  0.4519815   0.07925283  0.18129628 -0.68900513
+  -0.80018139  1.3365698  -0.66081705 -0.82070237 -0.24550251]
+ [-1.08527616 -1.01018942  0.60226046 -0.75701327 -0.08842775  1.36378057
+  -1.11742103 -0.1517479   0.85286047 -1.40227113  0.7315572   1.30239056
+  -0.08130685  0.92091265  1.58245563 -0.98579279  1.89511593]
+ [-0.50664555  0.56712824 -1.08414742  0.23186226  0.34925823 -1.61483634
+  -0.05304681 -1.09252596  0.3810975   0.55929688  0.38874591 -0.70525317
+  -0.81405494 -1.27978595 -0.81734755  0.33819845  0.36145498]
+ [ 1.22365674  0.90462934  0.38289453  1.38885293  0.32573283  0.40794987
+   0.65723605  0.4734759  -1.0506081   0.04280295  0.91826875 -0.09840314
+   0.36543439 -0.45534877  0.26758549  0.33174491  0.43098058]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[ 1.51679293  1.77061675 -1.60678071 -1.55709251 -2.01846681 -1.12884605
+   1.06343524 -1.62450476 -1.88705055  1.78401037 -2.16682839 -1.63028543
+   2.21888699  1.02921402  1.31939104  2.13353741 -1.55370785]
+ [-1.02064896 -0.69839675  1.17254667 -0.53098704 -0.41553844  1.01113376
+  -1.67948566  0.92829783  0.13853588 -1.22614453 -0.63523286  0.96919475
+  -0.09910054 -0.41706576 -1.11813176 -0.29692979 -0.77830161]
+ [-0.66293388 -0.62470771 -0.51329808 -0.09074211  0.2870515   0.16551796
+  -0.03843074  0.03265441  1.1131833   0.16305264  0.5821931   0.85136156
+  -0.78967766 -1.13449599 -0.5731358  -0.70005583 -0.11003952]
+ [ 0.53505488 -0.90908044  1.04652455  1.31511973  1.56039044 -0.20469977
+   1.16771296  1.43435047  0.4519815   0.07925283  0.18129628 -0.68900513
+  -0.80018139  1.3365698  -0.66081705 -0.82070237 -0.24550251]
+ [-1.08527616 -1.01018942  0.60226046 -0.75701327 -0.08842775  1.36378057
+  -1.11742103 -0.1517479   0.85286047 -1.40227113  0.7315572   1.30239056
+  -0.08130685  0.92091265  1.58245563 -0.98579279  1.89511593]
+ [-0.50664555  0.56712824 -1.08414742  0.23186226  0.34925823 -1.61483634
+  -0.05304681 -1.09252596  0.3810975   0.55929688  0.38874591 -0.70525317
+  -0.81405494 -1.27978595 -0.81734755  0.33819845  0.36145498]
+ [ 1.22365674  0.90462934  0.38289453  1.38885293  0.32573283  0.40794987
+   0.65723605  0.4734759  -1.0506081   0.04280295  0.91826875 -0.09840314
+   0.36543439 -0.45534877  0.26758549  0.33174491  0.43098058]]
+upper = 
+[6.1416309 6.1416309 6.1416309 ... 6.1416309 6.1416309 6.1416309]
+upper.argmax() = 0
+Tconstraint = 277.6345
+all predict_target = 
+[388.32157143 388.32157143 388.32157143 ... 388.32157143 388.32157143
+ 388.32157143]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [4.58806555e+01 4.10999028e-01 1.61096043e-01 1.63185299e+00
+ 5.31665983e+00 6.58001414e+00 1.32156549e+09 7.97000844e-01
+ 2.54122237e-02 1.14395629e+09 1.94621053e+09 5.10168172e+01
+ 8.23286634e+02 8.07699897e-01 2.89891004e+01 2.89627467e+02
+ 1.65996819e+00], predict_time = 388.3215714285715 , Tconstraint = 277.6345
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+-res.fun[0] = 6.141630904919978max_acq = 6.141630904919978
+probe说：没见过！帮你计算target！params = {'spark.broadcast.blockSize': 32.0, 'spark.broadcast.checksum': 0.198299894637494, 'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1073741567.0, 'spark.memory.fraction': 0.5, 'spark.rdd.compress': 0.38183473600261664, 'spark.reducer.maxBlocksInFlightPerAddress': 1073741823.0, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0, 'spark.scheduler.revive.interval': 500.0, 'spark.shuffle.compress': 0.0, 'spark.shuffle.file.buffer': 16.0, 'spark.shuffle.sort.bypassMergeThreshold': 150.0, 'spark.storage.memoryMapThreshold': 1.0} target = -996.556
+x_probe = {'spark.broadcast.blockSize': 32.0, 'spark.broadcast.checksum': 0.198299894637494, 'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.maxRemoteBlockSizeFetchToMem': 1073741567.0, 'spark.memory.fraction': 0.5, 'spark.rdd.compress': 0.38183473600261664, 'spark.reducer.maxBlocksInFlightPerAddress': 1073741823.0, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0, 'spark.scheduler.revive.interval': 500.0, 'spark.shuffle.compress': 0.0, 'spark.shuffle.file.buffer': 16.0, 'spark.shuffle.sort.bypassMergeThreshold': 150.0, 'spark.storage.memoryMapThreshold': 1.0}
+x = [3.20000000e+01 1.98299895e-01 0.00000000e+00 1.00000000e+00
+ 3.00000000e+00 4.00000000e+00 1.07374157e+09 5.00000000e-01
+ 3.81834736e-01 1.07374182e+09 1.07374182e+09 2.40000000e+01
+ 5.00000000e+02 0.00000000e+00 1.60000000e+01 1.50000000e+02
+ 1.00000000e+00]
+predict_target = [-388.32157143]
+target = -996.556
+2809s
+{'maxIndex': 3, 'target': -202.772, 'params': {'spark.broadcast.blockSize': 34.95483503260153, 'spark.broadcast.checksum': 0.1862602113776709, 'spark.broadcast.compress': 0.34556072704304774, 'spark.executor.cores': 2.616450202010071, 'spark.executor.memory': 5.740878001587038, 'spark.locality.wait': 8.022805061070414, 'spark.maxRemoteBlockSizeFetchToMem': 1521819079.827609, 'spark.memory.fraction': 0.7234759313783007, 'spark.rdd.compress': 0.9682615757193975, 'spark.reducer.maxBlocksInFlightPerAddress': 1410278471.7424064, 'spark.reducer.maxReqsInFlight': 1817117571.1452203, 'spark.reducer.maxSizeInFlight': 66.06667931020984, 'spark.scheduler.revive.interval': 542.522105684889, 'spark.shuffle.compress': 0.03905478323288236, 'spark.shuffle.file.buffer': 21.434573426066205, 'spark.shuffle.sort.bypassMergeThreshold': 169.66936676661, 'spark.storage.memoryMapThreshold': 2.2633228750151564}}
+重要参数列表 : ['spark.broadcast.blockSize', 'spark.broadcast.checksum', 'spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.maxRemoteBlockSizeFetchToMem', 'spark.memory.fraction', 'spark.rdd.compress', 'spark.reducer.maxBlocksInFlightPerAddress', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight', 'spark.scheduler.revive.interval', 'spark.shuffle.compress', 'spark.shuffle.file.buffer', 'spark.shuffle.sort.bypassMergeThreshold', 'spark.storage.memoryMapThreshold']
+target.shape = (8,)
+data.shape = (8,)
+name = spark.broadcast.blockSize pearsonr [-0.2812881288536995, 0.49974484174490386] , score = 0.2812881288536995
+name = spark.broadcast.checksum pearsonr [0.03359192146781724, 0.9370625133347494] , score = 0.03359192146781724
+name = spark.broadcast.compress pearsonr [-0.6216275240470461, 0.09990236169863334] , score = 0.6216275240470461
+name = spark.executor.cores pearsonr [-0.6599464772604057, 0.0749395002655775] , score = 0.6599464772604057
+name = spark.executor.memory pearsonr [-0.7255570096564592, 0.04162396373045077] , score = 0.7255570096564592
+name = spark.locality.wait pearsonr [-0.753445270679035, 0.0308826004846286] , score = 0.753445270679035
+name = spark.maxRemoteBlockSizeFetchToMem pearsonr [-0.390406927389423, 0.33896700898122495] , score = 0.390406927389423
+name = spark.memory.fraction pearsonr [-0.8361040836295701, 0.009697800103729308] , score = 0.8361040836295701
+name = spark.rdd.compress pearsonr [-0.60472345799567, 0.1122445010797334] , score = 0.60472345799567
+name = spark.reducer.maxBlocksInFlightPerAddress pearsonr [-0.3668578636465233, 0.3713664798553554] , score = 0.3668578636465233
+name = spark.reducer.maxReqsInFlight pearsonr [-0.6586588697496439, 0.07571106712357413] , score = 0.6586588697496439
+name = spark.reducer.maxSizeInFlight pearsonr [-0.6833467957791011, 0.06171919687018601] , score = 0.6833467957791011
+name = spark.scheduler.revive.interval pearsonr [-0.11233187515044922, 0.7911428445268894] , score = 0.11233187515044922
+name = spark.shuffle.compress pearsonr [-0.20546395614132554, 0.6254599583577067] , score = 0.20546395614132554
+name = spark.shuffle.file.buffer pearsonr [0.018354605414902154, 0.9655928434549722] , score = 0.018354605414902154
+name = spark.shuffle.sort.bypassMergeThreshold pearsonr [-0.10425751820670572, 0.8059290849702918] , score = 0.10425751820670572
+name = spark.storage.memoryMapThreshold pearsonr [-0.3165605891677154, 0.44491019844251545] , score = 0.3165605891677154
+{'spark.broadcast.blockSize': 0.2812881288536995, 'spark.broadcast.checksum': 0.03359192146781724, 'spark.broadcast.compress': 0.6216275240470461, 'spark.executor.cores': 0.6599464772604057, 'spark.executor.memory': 0.7255570096564592, 'spark.locality.wait': 0.753445270679035, 'spark.maxRemoteBlockSizeFetchToMem': 0.390406927389423, 'spark.memory.fraction': 0.8361040836295701, 'spark.rdd.compress': 0.60472345799567, 'spark.reducer.maxBlocksInFlightPerAddress': 0.3668578636465233, 'spark.reducer.maxReqsInFlight': 0.6586588697496439, 'spark.reducer.maxSizeInFlight': 0.6833467957791011, 'spark.scheduler.revive.interval': 0.11233187515044922, 'spark.shuffle.compress': 0.20546395614132554, 'spark.shuffle.file.buffer': 0.018354605414902154, 'spark.shuffle.sort.bypassMergeThreshold': 0.10425751820670572, 'spark.storage.memoryMapThreshold': 0.3165605891677154}
+[('spark.memory.fraction', 0.8361040836295701), ('spark.locality.wait', 0.753445270679035), ('spark.executor.memory', 0.7255570096564592), ('spark.reducer.maxSizeInFlight', 0.6833467957791011), ('spark.executor.cores', 0.6599464772604057), ('spark.reducer.maxReqsInFlight', 0.6586588697496439), ('spark.broadcast.compress', 0.6216275240470461), ('spark.rdd.compress', 0.60472345799567), ('spark.maxRemoteBlockSizeFetchToMem', 0.390406927389423), ('spark.reducer.maxBlocksInFlightPerAddress', 0.3668578636465233), ('spark.storage.memoryMapThreshold', 0.3165605891677154), ('spark.broadcast.blockSize', 0.2812881288536995), ('spark.shuffle.compress', 0.20546395614132554), ('spark.scheduler.revive.interval', 0.11233187515044922), ('spark.shuffle.sort.bypassMergeThreshold', 0.10425751820670572), ('spark.broadcast.checksum', 0.03359192146781724), ('spark.shuffle.file.buffer', 0.018354605414902154)]
+前 7 个重要参数名称 = ['spark.memory.fraction', 'spark.locality.wait', 'spark.executor.memory', 'spark.reducer.maxSizeInFlight', 'spark.executor.cores', 'spark.reducer.maxReqsInFlight', 'spark.broadcast.compress']
+进入current_niterations
+降维后的vital_params_range = ['spark.memory.fraction', 'spark.locality.wait', 'spark.executor.memory', 'spark.reducer.maxSizeInFlight', 'spark.executor.cores', 'spark.reducer.maxReqsInFlight', 'spark.broadcast.compress']
+降维后的初始样本 = 
+   runtime  ...  spark.storage.memoryMapThreshold
+1  521.717  ...                          1.255133
+2  225.213  ...                          1.796640
+3  202.772  ...                          2.263323
+4  330.056  ...                          2.168722
+5  573.195  ...                          3.663629
+6  527.764  ...                          2.592593
+7  337.534  ...                          2.641146
+8  996.556  ...                          1.000000
+
+[8 rows x 18 columns]
+   spark.broadcast.compress  ...  runtime
+1                  0.000114  ...  521.717
+2                  0.878143  ...  225.213
+3                  0.345561  ...  202.772
+4                  0.838330  ...  330.056
+5                  0.697981  ...  573.195
+6                  0.165221  ...  527.764
+7                  0.628680  ...  337.534
+8                  0.000000  ...  996.556
+
+[8 rows x 8 columns]
+从csv文件中获取初始样本:8
+custom_initsamples = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01 5.21717000e+02]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01 2.25213000e+02]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01 2.02772000e+02]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01 3.30056000e+02]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01 5.73195000e+02]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01 5.27764000e+02]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01 3.37534000e+02]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01 9.96556000e+02]]
+custom_initsamples info = 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8 entries, 0 to 7
+Data columns (total 8 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       8 non-null      float64
+ 1   1       8 non-null      float64
+ 2   2       8 non-null      float64
+ 3   3       8 non-null      float64
+ 4   4       8 non-null      float64
+ 5   5       8 non-null      float64
+ 6   6       8 non-null      float64
+ 7   7       8 non-null      float64
+dtypes: float64(8)
+memory usage: 640.0 bytes
+None
+================= config9 =================
+2022年 02月 15日 星期二 00:50:15 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (35984) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (121517) - 没有那个进程
+interations：5
+------------使用ganrs生成初始样本点------------
+Tmax = 110.0
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (8, 7)
+before probe, target = (8,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.30673987 -1.10942561 -1.24258447 -0.50042027 -1.02808089 -1.35808892
+  -1.09749688]
+ [ 1.27657989 -0.22957741 -0.04169193  0.99144386  0.98783164 -0.20798646
+   1.03808211]
+ [-0.29037336  0.14791664  0.48467908  0.40193181  0.28055455  0.70620046
+   0.94127734]
+ [ 1.15944527  1.35339214  1.43864763  0.14383846  1.38745434  0.40515988
+  -0.32419672]
+ [ 0.74651221 -0.4233867   0.20337503  1.23728782  0.13493462  0.81836063
+   1.31181606]
+ [-0.82096446  0.42453818  0.53128353 -0.83922323 -0.60798467  0.56093751
+  -0.33754515]
+ [ 0.5426167   1.41661569  0.51365862  0.57094063  0.62866512  0.95856568
+   0.1610069 ]
+ [-1.30707638 -1.58007292 -1.88736749 -2.00579908 -1.78337472 -1.88314878
+  -1.69294367]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534 -996.556]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.30673987 -1.10942561 -1.24258447 -0.50042027 -1.02808089 -1.35808892
+  -1.09749688]
+ [ 1.27657989 -0.22957741 -0.04169193  0.99144386  0.98783164 -0.20798646
+   1.03808211]
+ [-0.29037336  0.14791664  0.48467908  0.40193181  0.28055455  0.70620046
+   0.94127734]
+ [ 1.15944527  1.35339214  1.43864763  0.14383846  1.38745434  0.40515988
+  -0.32419672]
+ [ 0.74651221 -0.4233867   0.20337503  1.23728782  0.13493462  0.81836063
+   1.31181606]
+ [-0.82096446  0.42453818  0.53128353 -0.83922323 -0.60798467  0.56093751
+  -0.33754515]
+ [ 0.5426167   1.41661569  0.51365862  0.57094063  0.62866512  0.95856568
+   0.1610069 ]
+ [-1.30707638 -1.58007292 -1.88736749 -2.00579908 -1.78337472 -1.88314878
+  -1.69294367]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.30673987 -1.10942561 -1.24258447 -0.50042027 -1.02808089 -1.35808892
+  -1.09749688]
+ [ 1.27657989 -0.22957741 -0.04169193  0.99144386  0.98783164 -0.20798646
+   1.03808211]
+ [-0.29037336  0.14791664  0.48467908  0.40193181  0.28055455  0.70620046
+   0.94127734]
+ [ 1.15944527  1.35339214  1.43864763  0.14383846  1.38745434  0.40515988
+  -0.32419672]
+ [ 0.74651221 -0.4233867   0.20337503  1.23728782  0.13493462  0.81836063
+   1.31181606]
+ [-0.82096446  0.42453818  0.53128353 -0.83922323 -0.60798467  0.56093751
+  -0.33754515]
+ [ 0.5426167   1.41661569  0.51365862  0.57094063  0.62866512  0.95856568
+   0.1610069 ]
+ [-1.30707638 -1.58007292 -1.88736749 -2.00579908 -1.78337472 -1.88314878
+  -1.69294367]]
+upper = 
+[16.87609084 16.87609084 16.87609084 ... 16.87609084 16.87609084
+ 16.87609084]
+upper.argmax() = 7765
+Tconstraint = 303.84524999999996
+all predict_target = 
+[464.350875 464.350875 464.350875 ... 464.350875 464.350875 464.350875]
+upper.argmax() = 7765, sortnumber[0] = 7765
+x_max = [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+ 7.32238745e-01 1.86191787e+09 5.83900507e+01], predict_time = 464.3103357239313 , Tconstraint = 303.84524999999996
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.3633818114356664, 'spark.executor.cores': 2.6120374510155453, 'spark.executor.memory': 5.350272890358244, 'spark.locality.wait': 7.189391797823317, 'spark.memory.fraction': 0.7322387450390375, 'spark.reducer.maxReqsInFlight': 1861917872.6353786, 'spark.reducer.maxSizeInFlight': 58.390050719304575} target = -456.583
+x_probe = {'spark.broadcast.compress': 0.3633818114356664, 'spark.executor.cores': 2.6120374510155453, 'spark.executor.memory': 5.350272890358244, 'spark.locality.wait': 7.189391797823317, 'spark.memory.fraction': 0.7322387450390375, 'spark.reducer.maxReqsInFlight': 1861917872.6353786, 'spark.reducer.maxSizeInFlight': 58.390050719304575}
+x = [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+ 7.32238745e-01 1.86191787e+09 5.83900507e+01]
+predict_target = [-464.350875]
+target = -456.583
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (9, 7)
+before probe, target = (9,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]]
+标准化后的train_x = 
+[[-1.3537142  -1.19224231 -1.33364895 -0.51908746 -1.12490893 -1.4820862
+  -1.20424071]
+ [ 1.37773239 -0.2600837  -0.06142891  1.06244891  0.99793397 -0.30968271
+   1.0346523 ]
+ [-0.27906952  0.13985384  0.49620612  0.43750275  0.25314067  0.62223072
+   0.93316436]
+ [ 1.25388131  1.41699957  1.50683602  0.16389606  1.41875392  0.31535282
+  -0.39353021]
+ [ 0.81727077 -0.46541571  0.19819391  1.32306994  0.0997966   0.73656573
+   1.32162882]
+ [-0.84008457  0.43292161  0.54557866 -0.87825502 -0.68252948  0.47415105
+  -0.4075244 ]
+ [ 0.60168396  1.483982    0.52690691  0.61667027  0.61971612  0.87948942
+   0.11514636]
+ [-1.35407001 -1.69087144 -2.01672911 -2.11495084 -1.92026594 -2.01732721
+  -1.82849374]
+ [-0.22363013  0.13485614  0.13808535 -0.0912946   0.33836307  0.78130638
+   0.42919723]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534 -996.556
+ -456.583]
+================= config10 =================
+2022年 02月 15日 星期二 00:58:01 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (41816) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (127285) - 没有那个进程
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.3537142  -1.19224231 -1.33364895 -0.51908746 -1.12490893 -1.4820862
+  -1.20424071]
+ [ 1.37773239 -0.2600837  -0.06142891  1.06244891  0.99793397 -0.30968271
+   1.0346523 ]
+ [-0.27906952  0.13985384  0.49620612  0.43750275  0.25314067  0.62223072
+   0.93316436]
+ [ 1.25388131  1.41699957  1.50683602  0.16389606  1.41875392  0.31535282
+  -0.39353021]
+ [ 0.81727077 -0.46541571  0.19819391  1.32306994  0.0997966   0.73656573
+   1.32162882]
+ [-0.84008457  0.43292161  0.54557866 -0.87825502 -0.68252948  0.47415105
+  -0.4075244 ]
+ [ 0.60168396  1.483982    0.52690691  0.61667027  0.61971612  0.87948942
+   0.11514636]
+ [-1.35407001 -1.69087144 -2.01672911 -2.11495084 -1.92026594 -2.01732721
+  -1.82849374]
+ [-0.22363013  0.13485614  0.13808535 -0.0912946   0.33836307  0.78130638
+   0.42919723]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.3537142  -1.19224231 -1.33364895 -0.51908746 -1.12490893 -1.4820862
+  -1.20424071]
+ [ 1.37773239 -0.2600837  -0.06142891  1.06244891  0.99793397 -0.30968271
+   1.0346523 ]
+ [-0.27906952  0.13985384  0.49620612  0.43750275  0.25314067  0.62223072
+   0.93316436]
+ [ 1.25388131  1.41699957  1.50683602  0.16389606  1.41875392  0.31535282
+  -0.39353021]
+ [ 0.81727077 -0.46541571  0.19819391  1.32306994  0.0997966   0.73656573
+   1.32162882]
+ [-0.84008457  0.43292161  0.54557866 -0.87825502 -0.68252948  0.47415105
+  -0.4075244 ]
+ [ 0.60168396  1.483982    0.52690691  0.61667027  0.61971612  0.87948942
+   0.11514636]
+ [-1.35407001 -1.69087144 -2.01672911 -2.11495084 -1.92026594 -2.01732721
+  -1.82849374]
+ [-0.22363013  0.13485614  0.13808535 -0.0912946   0.33836307  0.78130638
+   0.42919723]]
+upper = 
+[14.05971843 14.05942906 14.05971796 ... 14.05970128 14.0597518
+ 14.05978336]
+upper.argmax() = 2962
+Tconstraint = 330.056
+all predict_target = 
+[463.48777976 463.49009277 463.48778348 ... 463.48791695 463.48751267
+ 463.48726016]
+upper.argmax() = 2962, sortnumber[0] = 2962
+x_max = [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+ 8.26549554e-01 1.48405220e+09 6.39888690e+01], predict_time = 411.16559800584963 , Tconstraint = 330.056
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.8408813581240488, 'spark.executor.cores': 2.236343954635719, 'spark.executor.memory': 4.8197237934824715, 'spark.locality.wait': 9.645444219245139, 'spark.memory.fraction': 0.826549553918652, 'spark.reducer.maxReqsInFlight': 1484052198.0477157, 'spark.reducer.maxSizeInFlight': 63.98886895608328} target = -633.836
+x_probe = {'spark.broadcast.compress': 0.8408813581240488, 'spark.executor.cores': 2.236343954635719, 'spark.executor.memory': 4.8197237934824715, 'spark.locality.wait': 9.645444219245139, 'spark.memory.fraction': 0.826549553918652, 'spark.reducer.maxReqsInFlight': 1484052198.0477157, 'spark.reducer.maxSizeInFlight': 63.98886895608328}
+x = [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+ 8.26549554e-01 1.48405220e+09 6.39888690e+01]
+predict_target = [-463.48777778]
+target = -633.836
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (10, 7)
+before probe, target = (10,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]]
+标准化后的train_x = 
+[[-1.44886296 -1.2209518  -1.36083963 -0.63663376 -1.22507502 -1.48012127
+  -1.31235216]
+ [ 1.22530605 -0.24249423 -0.02786483  0.87563602  0.85466168 -0.26326001
+   0.97612708]
+ [-0.39675324  0.17730763  0.55640001  0.27806065  0.12499206  0.70399177
+   0.87239142]
+ [ 1.10405208  1.51788733  1.61529245  0.01643711  1.2669365   0.385477
+  -0.48368632]
+ [ 0.67659714 -0.45802478  0.24415625  1.12484262 -0.02523822  0.82266239
+   1.26945946]
+ [-0.94600399  0.48493165  0.60813033 -0.98007085 -0.79167847  0.55029689
+  -0.49799045]
+ [ 0.46553111  1.58819669  0.58856691  0.44938116  0.48412388  0.97100577
+   0.03625625]
+ [-1.44921131 -1.74434712 -2.07654023 -2.16260307 -2.00428159 -2.03565873
+  -1.95043092]
+ [-0.3424764   0.1720617   0.18117721 -0.22757696  0.20848395  0.86909961
+   0.35726261]
+ [ 1.11182153 -0.27456708 -0.32847848  1.26252707  1.10707522 -0.52349342
+   0.73296303]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534 -996.556
+ -456.583 -633.836]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.44886296 -1.2209518  -1.36083963 -0.63663376 -1.22507502 -1.48012127
+  -1.31235216]
+ [ 1.22530605 -0.24249423 -0.02786483  0.87563602  0.85466168 -0.26326001
+   0.97612708]
+ [-0.39675324  0.17730763  0.55640001  0.27806065  0.12499206  0.70399177
+   0.87239142]
+ [ 1.10405208  1.51788733  1.61529245  0.01643711  1.2669365   0.385477
+  -0.48368632]
+ [ 0.67659714 -0.45802478  0.24415625  1.12484262 -0.02523822  0.82266239
+   1.26945946]
+ [-0.94600399  0.48493165  0.60813033 -0.98007085 -0.79167847  0.55029689
+  -0.49799045]
+ [ 0.46553111  1.58819669  0.58856691  0.44938116  0.48412388  0.97100577
+   0.03625625]
+ [-1.44921131 -1.74434712 -2.07654023 -2.16260307 -2.00428159 -2.03565873
+  -1.95043092]
+ [-0.3424764   0.1720617   0.18117721 -0.22757696  0.20848395  0.86909961
+   0.35726261]
+ [ 1.11182153 -0.27456708 -0.32847848  1.26252707  1.10707522 -0.52349342
+   0.73296303]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.44886296 -1.2209518  -1.36083963 -0.63663376 -1.22507502 -1.48012127
+  -1.31235216]
+ [ 1.22530605 -0.24249423 -0.02786483  0.87563602  0.85466168 -0.26326001
+   0.97612708]
+ [-0.39675324  0.17730763  0.55640001  0.27806065  0.12499206  0.70399177
+   0.87239142]
+ [ 1.10405208  1.51788733  1.61529245  0.01643711  1.2669365   0.385477
+  -0.48368632]
+ [ 0.67659714 -0.45802478  0.24415625  1.12484262 -0.02523822  0.82266239
+   1.26945946]
+ [-0.94600399  0.48493165  0.60813033 -0.98007085 -0.79167847  0.55029689
+  -0.49799045]
+ [ 0.46553111  1.58819669  0.58856691  0.44938116  0.48412388  0.97100577
+   0.03625625]
+ [-1.44921131 -1.74434712 -2.07654023 -2.16260307 -2.00428159 -2.03565873
+  -1.95043092]
+ [-0.3424764   0.1720617   0.18117721 -0.22757696  0.20848395  0.86909961
+   0.35726261]
+ [ 1.11182153 -0.27456708 -0.32847848  1.26252707  1.10707522 -0.52349342
+   0.73296303]]
+upper = 
+[11.01757265 11.01757265 11.01757265 ... 11.01757265 11.01757265
+ 11.01757265]
+upper.argmax() = 0
+Tconstraint = 331.9255
+all predict_target = 
+[480.5226 480.5226 480.5226 ... 480.5226 480.5226 480.5226]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [9.11534832e-01 3.59618073e+00 3.02909838e+00 4.04304114e+00
+ 5.80372931e-01 1.18338713e+09 2.43288514e+01], predict_time = 480.52259999999995 , Tconstraint = 331.9255
+================= config11 =================
+2022年 02月 15日 星期二 01:08:43 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (52685) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (137042) - 没有那个进程
+================= config12 =================
+2022年 02月 15日 星期二 01:26:16 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (63264) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (146658) - 没有那个进程
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+-res.fun[0] = 11.017572653187823max_acq = 11.017572653187823
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -1043.736
+x_probe = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+ 5.00000000e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-480.5226]
+target = -1043.736
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (11, 7)
+before probe, target = (11,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.50637031 -0.98615324 -1.0419035  -0.38658854 -0.93611278 -1.15761483
+  -1.02615215]
+ [ 1.0207965  -0.07789646  0.14304204  0.9420062   0.93072833 -0.06990064
+   1.04278583]
+ [-0.51209629  0.31178614  0.66242321  0.41701026  0.27575251  0.79469544
+   0.94900187]
+ [ 0.90620801  1.5561841   1.60372373  0.18716261  1.30079998  0.50998505
+  -0.27698292]
+ [ 0.50225076 -0.27796347  0.38485468  1.16094503  0.1409008   0.90077139
+   1.30797788]
+ [-1.03115408  0.59733925  0.70840879 -0.68831296 -0.54708157  0.6573124
+  -0.28991481]
+ [ 0.30278728  1.62144901  0.69101792  0.56752278  0.59812122  1.0333709
+   0.19307986]
+ [-1.5066995  -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]
+ [-0.46080311  0.30691658  0.32886958 -0.02721436  0.35069762  0.94228017
+   0.48329104]
+ [ 0.91355036 -0.1076682  -0.12418792  1.28190681  1.15730315 -0.30251514
+   0.8229493 ]
+ [ 1.37153039 -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -456.583  -633.836 -1043.736]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.50637031 -0.98615324 -1.0419035  -0.38658854 -0.93611278 -1.15761483
+  -1.02615215]
+ [ 1.0207965  -0.07789646  0.14304204  0.9420062   0.93072833 -0.06990064
+   1.04278583]
+ [-0.51209629  0.31178614  0.66242321  0.41701026  0.27575251  0.79469544
+   0.94900187]
+ [ 0.90620801  1.5561841   1.60372373  0.18716261  1.30079998  0.50998505
+  -0.27698292]
+ [ 0.50225076 -0.27796347  0.38485468  1.16094503  0.1409008   0.90077139
+   1.30797788]
+ [-1.03115408  0.59733925  0.70840879 -0.68831296 -0.54708157  0.6573124
+  -0.28991481]
+ [ 0.30278728  1.62144901  0.69101792  0.56752278  0.59812122  1.0333709
+   0.19307986]
+ [-1.5066995  -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]
+ [-0.46080311  0.30691658  0.32886958 -0.02721436  0.35069762  0.94228017
+   0.48329104]
+ [ 0.91355036 -0.1076682  -0.12418792  1.28190681  1.15730315 -0.30251514
+   0.8229493 ]
+ [ 1.37153039 -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.50637031 -0.98615324 -1.0419035  -0.38658854 -0.93611278 -1.15761483
+  -1.02615215]
+ [ 1.0207965  -0.07789646  0.14304204  0.9420062   0.93072833 -0.06990064
+   1.04278583]
+ [-0.51209629  0.31178614  0.66242321  0.41701026  0.27575251  0.79469544
+   0.94900187]
+ [ 0.90620801  1.5561841   1.60372373  0.18716261  1.30079998  0.50998505
+  -0.27698292]
+ [ 0.50225076 -0.27796347  0.38485468  1.16094503  0.1409008   0.90077139
+   1.30797788]
+ [-1.03115408  0.59733925  0.70840879 -0.68831296 -0.54708157  0.6573124
+  -0.28991481]
+ [ 0.30278728  1.62144901  0.69101792  0.56752278  0.59812122  1.0333709
+   0.19307986]
+ [-1.5066995  -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]
+ [-0.46080311  0.30691658  0.32886958 -0.02721436  0.35069762  0.94228017
+   0.48329104]
+ [ 0.91355036 -0.1076682  -0.12418792  1.28190681  1.15730315 -0.30251514
+   0.8229493 ]
+ [ 1.37153039 -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]]
+upper = 
+[13.78316049 13.78316049 13.78316049 ... 13.78316049 13.78316049
+ 13.78316049]
+upper.argmax() = 0
+Tconstraint = 333.79499999999996
+all predict_target = 
+[531.72381818 531.72381818 531.72381818 ... 531.72381818 531.72381818
+ 531.72381818]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [2.16604791e-01 3.69796756e+00 3.58601442e+00 9.71872514e+00
+ 6.07035001e-01 1.39020688e+09 2.58393420e+01], predict_time = 531.7238181818182 , Tconstraint = 333.79499999999996
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+-res.fun[0] = 13.783160485420943max_acq = 13.783160485420943
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.341385292792406, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.7244168533882438, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -1037.642
+x_probe = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.341385292792406, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.7244168533882438, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+ 7.24416853e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-531.72381818]
+target = -1037.642
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (12, 7)
+before probe, target = (12,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+  7.24416853e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -456.583  -633.836 -1043.736 -1037.642]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+upper = 
+[13.83642412 13.83642412 13.83642412 ... 13.83642412 13.83642412
+ 13.83642412]
+upper.argmax() = 0
+Tconstraint = 335.6645
+all predict_target = 
+[573.88366667 573.88366667 573.88366667 ... 573.88366667 573.88366667
+ 573.88366667]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [6.20450059e-01 3.52249690e+00 6.97504539e+00 7.61609818e+00
+ 6.50325731e-01 1.18506886e+09 7.10991021e+01], predict_time = 573.8836666666666 , Tconstraint = 335.6645
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+-res.fun[0] = 13.836424120146084max_acq = 13.836424120146084
+probe说：以前见过你啦！params = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -996.556
+x_probe = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+ 5.00000000e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-573.88366667]
+target = -996.556
+3206s
+{'maxIndex': 3, 'target': -202.772, 'params': {'spark.broadcast.compress': 0.34556072704304774, 'spark.executor.cores': 2.616450202010071, 'spark.executor.memory': 5.740878001587038, 'spark.locality.wait': 8.022805061070414, 'spark.memory.fraction': 0.7234759313783007, 'spark.reducer.maxReqsInFlight': 1817117571.1452203, 'spark.reducer.maxSizeInFlight': 66.06667931020984}}
+重要参数列表 : ['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+target.shape = (13,)
+data.shape = (13,)
+name = spark.broadcast.compress pearsonr [-0.3554494807340155, 0.23330788438664307] , score = 0.3554494807340155
+name = spark.executor.cores pearsonr [-0.7860947490549899, 0.0014411822540421188] , score = 0.7860947490549899
+name = spark.executor.memory pearsonr [-0.8721982973565539, 0.00010107465588913031] , score = 0.8721982973565539
+name = spark.locality.wait pearsonr [-0.8061517941713513, 0.0008740324906345016] ================= config13 =================
+2022年 02月 15日 星期二 01:43:42 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (67624) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (150914) - 没有那个进程
+, score = 0.8061517941713513
+name = spark.memory.fraction pearsonr [-0.5448681546488578, 0.05416142852764062] , score = 0.5448681546488578
+name = spark.reducer.maxReqsInFlight pearsonr [-0.8349838387053736, 0.0003823692477329849] , score = 0.8349838387053736
+name = spark.reducer.maxSizeInFlight pearsonr [-0.797924129347752, 0.0010800819604070782] , score = 0.797924129347752
+{'spark.broadcast.compress': 0.3554494807340155, 'spark.executor.cores': 0.7860947490549899, 'spark.executor.memory': 0.8721982973565539, 'spark.locality.wait': 0.8061517941713513, 'spark.memory.fraction': 0.5448681546488578, 'spark.reducer.maxReqsInFlight': 0.8349838387053736, 'spark.reducer.maxSizeInFlight': 0.797924129347752}
+[('spark.executor.memory', 0.8721982973565539), ('spark.reducer.maxReqsInFlight', 0.8349838387053736), ('spark.locality.wait', 0.8061517941713513), ('spark.reducer.maxSizeInFlight', 0.797924129347752), ('spark.executor.cores', 0.7860947490549899), ('spark.memory.fraction', 0.5448681546488578), ('spark.broadcast.compress', 0.3554494807340155)]
+前 -3 个重要参数名称 = ['spark.executor.memory', 'spark.reducer.maxReqsInFlight', 'spark.locality.wait', 'spark.reducer.maxSizeInFlight']
+进入current_niterations
+custom_initsamples = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01 5.21717000e+02]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01 2.25213000e+02]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01 2.02772000e+02]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01 3.30056000e+02]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01 5.73195000e+02]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01 5.27764000e+02]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01 3.37534000e+02]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01 9.96556000e+02]]
+custom_initsamples info = 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8 entries, 0 to 7
+Data columns (total 8 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   0       8 non-null      float64
+ 1   1       8 non-null      float64
+ 2   2       8 non-null      float64
+ 3   3       8 non-null      float64
+ 4   4       8 non-null      float64
+ 5   5       8 non-null      float64
+ 6   6       8 non-null      float64
+ 7   7       8 non-null      float64
+dtypes: float64(8)
+memory usage: 640.0 bytes
+None
+interations：9
+------------使用ganrs生成初始样本点------------
+Tmax = 110.0
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (8, 7)
+before probe, target = (8,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.30673987 -1.10942561 -1.24258447 -0.50042027 -1.02808089 -1.35808892
+  -1.09749688]
+ [ 1.27657989 -0.22957741 -0.04169193  0.99144386  0.98783164 -0.20798646
+   1.03808211]
+ [-0.29037336  0.14791664  0.48467908  0.40193181  0.28055455  0.70620046
+   0.94127734]
+ [ 1.15944527  1.35339214  1.43864763  0.14383846  1.38745434  0.40515988
+  -0.32419672]
+ [ 0.74651221 -0.4233867   0.20337503  1.23728782  0.13493462  0.81836063
+   1.31181606]
+ [-0.82096446  0.42453818  0.53128353 -0.83922323 -0.60798467  0.56093751
+  -0.33754515]
+ [ 0.5426167   1.41661569  0.51365862  0.57094063  0.62866512  0.95856568
+   0.1610069 ]
+ [-1.30707638 -1.58007292 -1.88736749 -2.00579908 -1.78337472 -1.88314878
+  -1.69294367]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534 -996.556]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.30673987 -1.10942561 -1.24258447 -0.50042027 -1.02808089 -1.35808892
+  -1.09749688]
+ [ 1.27657989 -0.22957741 -0.04169193  0.99144386  0.98783164 -0.20798646
+   1.03808211]
+ [-0.29037336  0.14791664  0.48467908  0.40193181  0.28055455  0.70620046
+   0.94127734]
+ [ 1.15944527  1.35339214  1.43864763  0.14383846  1.38745434  0.40515988
+  -0.32419672]
+ [ 0.74651221 -0.4233867   0.20337503  1.23728782  0.13493462  0.81836063
+   1.31181606]
+ [-0.82096446  0.42453818  0.53128353 -0.83922323 -0.60798467  0.56093751
+  -0.33754515]
+ [ 0.5426167   1.41661569  0.51365862  0.57094063  0.62866512  0.95856568
+   0.1610069 ]
+ [-1.30707638 -1.58007292 -1.88736749 -2.00579908 -1.78337472 -1.88314878
+  -1.69294367]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.30673987 -1.10942561 -1.24258447 -0.50042027 -1.02808089 -1.35808892
+  -1.09749688]
+ [ 1.27657989 -0.22957741 -0.04169193  0.99144386  0.98783164 -0.20798646
+   1.03808211]
+ [-0.29037336  0.14791664  0.48467908  0.40193181  0.28055455  0.70620046
+   0.94127734]
+ [ 1.15944527  1.35339214  1.43864763  0.14383846  1.38745434  0.40515988
+  -0.32419672]
+ [ 0.74651221 -0.4233867   0.20337503  1.23728782  0.13493462  0.81836063
+   1.31181606]
+ [-0.82096446  0.42453818  0.53128353 -0.83922323 -0.60798467  0.56093751
+  -0.33754515]
+ [ 0.5426167   1.41661569  0.51365862  0.57094063  0.62866512  0.95856568
+   0.1610069 ]
+ [-1.30707638 -1.58007292 -1.88736749 -2.00579908 -1.78337472 -1.88314878
+  -1.69294367]]
+upper = 
+[16.87609084 16.87609084 16.87609084 ... 16.87609084 16.87609084
+ 16.87609084]
+upper.argmax() = 7765
+Tconstraint = 303.84524999999996
+all predict_target = 
+[464.350875 464.350875 464.350875 ... 464.350875 464.350875 464.350875]
+upper.argmax() = 7765, sortnumber[0] = 7765
+x_max = [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+ 7.32238745e-01 1.86191787e+09 5.83900507e+01], predict_time = 464.3103357239313 , Tconstraint = 303.84524999999996
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.3633818114356664, 'spark.executor.cores': 2.6120374510155453, 'spark.executor.memory': 5.350272890358244, 'spark.locality.wait': 7.189391797823317, 'spark.memory.fraction': 0.7322387450390375, 'spark.reducer.maxReqsInFlight': 1861917872.6353786, 'spark.reducer.maxSizeInFlight': 58.390050719304575} target = -448.982
+x_probe = {'spark.broadcast.compress': 0.3633818114356664, 'spark.executor.cores': 2.6120374510155453, 'spark.executor.memory': 5.350272890358244, 'spark.locality.wait': 7.189391797823317, 'spark.memory.fraction': 0.7322387450390375, 'spark.reducer.maxReqsInFlight': 1861917872.6353786, 'spark.reducer.maxSizeInFlight': 58.390050719304575}
+x = [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+ 7.32238745e-01 1.86191787e+09 5.83900507e+01]
+predict_target = [-464.350875]
+target = -448.982
+================= config14 =================
+2022年 02月 15日 星期二 01:51:20 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (74123) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (156779) - 没有那个进程
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (9, 7)
+before probe, target = (9,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]]
+标准化后的train_x = 
+[[-1.3537142  -1.19224231 -1.33364895 -0.51908746 -1.12490893 -1.4820862
+  -1.20424071]
+ [ 1.37773239 -0.2600837  -0.06142891  1.06244891  0.99793397 -0.30968271
+   1.0346523 ]
+ [-0.27906952  0.13985384  0.49620612  0.43750275  0.25314067  0.62223072
+   0.93316436]
+ [ 1.25388131  1.41699957  1.50683602  0.16389606  1.41875392  0.31535282
+  -0.39353021]
+ [ 0.81727077 -0.46541571  0.19819391  1.32306994  0.0997966   0.73656573
+   1.32162882]
+ [-0.84008457  0.43292161  0.54557866 -0.87825502 -0.68252948  0.47415105
+  -0.4075244 ]
+ [ 0.60168396  1.483982    0.52690691  0.61667027  0.61971612  0.87948942
+   0.11514636]
+ [-1.35407001 -1.69087144 -2.01672911 -2.11495084 -1.92026594 -2.01732721
+  -1.82849374]
+ [-0.22363013  0.13485614  0.13808535 -0.0912946   0.33836307  0.78130638
+   0.42919723]]
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534 -996.556
+ -448.982]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.3537142  -1.19224231 -1.33364895 -0.51908746 -1.12490893 -1.4820862
+  -1.20424071]
+ [ 1.37773239 -0.2600837  -0.06142891  1.06244891  0.99793397 -0.30968271
+   1.0346523 ]
+ [-0.27906952  0.13985384  0.49620612  0.43750275  0.25314067  0.62223072
+   0.93316436]
+ [ 1.25388131  1.41699957  1.50683602  0.16389606  1.41875392  0.31535282
+  -0.39353021]
+ [ 0.81727077 -0.46541571  0.19819391  1.32306994  0.0997966   0.73656573
+   1.32162882]
+ [-0.84008457  0.43292161  0.54557866 -0.87825502 -0.68252948  0.47415105
+  -0.4075244 ]
+ [ 0.60168396  1.483982    0.52690691  0.61667027  0.61971612  0.87948942
+   0.11514636]
+ [-1.35407001 -1.69087144 -2.01672911 -2.11495084 -1.92026594 -2.01732721
+  -1.82849374]
+ [-0.22363013  0.13485614  0.13808535 -0.0912946   0.33836307  0.78130638
+   0.42919723]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.3537142  -1.19224231 -1.33364895 -0.51908746 -1.12490893 -1.4820862
+  -1.20424071]
+ [ 1.37773239 -0.2600837  -0.06142891  1.06244891  0.99793397 -0.30968271
+   1.0346523 ]
+ [-0.27906952  0.13985384  0.49620612  0.43750275  0.25314067  0.62223072
+   0.93316436]
+ [ 1.25388131  1.41699957  1.50683602  0.16389606  1.41875392  0.31535282
+  -0.39353021]
+ [ 0.81727077 -0.46541571  0.19819391  1.32306994  0.0997966   0.73656573
+   1.32162882]
+ [-0.84008457  0.43292161  0.54557866 -0.87825502 -0.68252948  0.47415105
+  -0.4075244 ]
+ [ 0.60168396  1.483982    0.52690691  0.61667027  0.61971612  0.87948942
+   0.11514636]
+ [-1.35407001 -1.69087144 -2.01672911 -2.11495084 -1.92026594 -2.01732721
+  -1.82849374]
+ [-0.22363013  0.13485614  0.13808535 -0.0912946   0.33836307  0.78130638
+   0.42919723]]
+upper = 
+[14.17350313 14.17253667 14.17349352 ... 14.17332694 14.17400619
+ 14.17438443]
+upper.argmax() = 2962
+Tconstraint = 330.056
+all predict_target = 
+[462.64328032 462.65084589 462.64335674 ... 462.64468099 462.63928087
+ 462.63627326]
+upper.argmax() = 2962, sortnumber[0] = 2962
+x_max = [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+ 8.26549554e-01 1.48405220e+09 6.39888690e+01], predict_time = 386.8394317286567 , Tconstraint = 330.056
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.8408813581240488, 'spark.executor.cores': 2.236343954635719, 'spark.executor.memory': 4.8197237934824715, 'spark.locality.wait': 9.645444219245139, 'spark.memory.fraction': 0.826549553918652, 'spark.reducer.maxReqsInFlight': 1484052198.0477157, 'spark.reducer.maxSizeInFlight': 63.98886895608328} target = -637.976
+x_probe = {'spark.broadcast.compress': 0.8408813581240488, 'spark.executor.cores': 2.236343954635719, 'spark.executor.memory': 4.8197237934824715, 'spark.locality.wait': 9.645444219245139, 'spark.memory.fraction': 0.826549553918652, 'spark.reducer.maxReqsInFlight': 1484052198.0477157, 'spark.reducer.maxSizeInFlight': 63.98886895608328}
+x = [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+ 8.26549554e-01 1.48405220e+09 6.39888690e+01]
+predict_target = [-462.64322222]
+target = -637.976
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (10, 7)
+before probe, target = (10,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]]
+标准化后的train_x = 
+[[-1.44886296 -1.2209518  -1.36083963 -0.63663376 -1.22507502 -1.48012127
+  -1.31235216]
+ [ 1.22530605 -0.24249423 -0.02786483  0.87563602  0.85466168 -0.26326001
+   0.97612708]
+ [-0.39675324  0.17730763  0.55640001  0.27806065  0.12499206  0.70399177
+   0.87239142]
+ [ 1.10405208  1.51788733  1.61529245  0.01643711  1.2669365   0.385477
+  -0.48368632]
+ [ 0.67659714 -0.45802478  0.24415625  1.12484262 -0.02523822  0.82266239
+   1.26945946]
+ [-0.94600399  0.48493165  0.60813033 -0.98007085 -0.79167847  0.55029689
+  -0.49799045]
+ [ 0.46553111  1.58819669  0.58856691  0.44938116  0.48412388  0.97100577
+   0.03625625]
+ [-1.44921131 -1.74434712 -2.07654023 -2.16260307 -2.00428159 -2.03565873
+  -1.95043092]
+ [-0.3424764   0.1720617   0.18117721 -0.22757696  0.20848395  0.86909961
+   0.35726261]
+ [ 1.11182153 -0.27456708 -0.32847848  1.26252707  1.10707522 -0.52349342
+   0.73296303]]
+================= config15 =================
+2022年 02月 15日 星期二 02:02:07 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (84088) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (166153) - 没有那个进程
+train_y = 
+[-521.717 -225.213 -202.772 -330.056 -573.195 -527.764 -337.534 -996.556
+ -448.982 -637.976]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.44886296 -1.2209518  -1.36083963 -0.63663376 -1.22507502 -1.48012127
+  -1.31235216]
+ [ 1.22530605 -0.24249423 -0.02786483  0.87563602  0.85466168 -0.26326001
+   0.97612708]
+ [-0.39675324  0.17730763  0.55640001  0.27806065  0.12499206  0.70399177
+   0.87239142]
+ [ 1.10405208  1.51788733  1.61529245  0.01643711  1.2669365   0.385477
+  -0.48368632]
+ [ 0.67659714 -0.45802478  0.24415625  1.12484262 -0.02523822  0.82266239
+   1.26945946]
+ [-0.94600399  0.48493165  0.60813033 -0.98007085 -0.79167847  0.55029689
+  -0.49799045]
+ [ 0.46553111  1.58819669  0.58856691  0.44938116  0.48412388  0.97100577
+   0.03625625]
+ [-1.44921131 -1.74434712 -2.07654023 -2.16260307 -2.00428159 -2.03565873
+  -1.95043092]
+ [-0.3424764   0.1720617   0.18117721 -0.22757696  0.20848395  0.86909961
+   0.35726261]
+ [ 1.11182153 -0.27456708 -0.32847848  1.26252707  1.10707522 -0.52349342
+   0.73296303]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.44886296 -1.2209518  -1.36083963 -0.63663376 -1.22507502 -1.48012127
+  -1.31235216]
+ [ 1.22530605 -0.24249423 -0.02786483  0.87563602  0.85466168 -0.26326001
+   0.97612708]
+ [-0.39675324  0.17730763  0.55640001  0.27806065  0.12499206  0.70399177
+   0.87239142]
+ [ 1.10405208  1.51788733  1.61529245  0.01643711  1.2669365   0.385477
+  -0.48368632]
+ [ 0.67659714 -0.45802478  0.24415625  1.12484262 -0.02523822  0.82266239
+   1.26945946]
+ [-0.94600399  0.48493165  0.60813033 -0.98007085 -0.79167847  0.55029689
+  -0.49799045]
+ [ 0.46553111  1.58819669  0.58856691  0.44938116  0.48412388  0.97100577
+   0.03625625]
+ [-1.44921131 -1.74434712 -2.07654023 -2.16260307 -2.00428159 -2.03565873
+  -1.95043092]
+ [-0.3424764   0.1720617   0.18117721 -0.22757696  0.20848395  0.86909961
+   0.35726261]
+ [ 1.11182153 -0.27456708 -0.32847848  1.26252707  1.10707522 -0.52349342
+   0.73296303]]
+upper = 
+[11.12386362 11.12386362 11.12386362 ... 11.12386362 11.12386362
+ 11.12386362]
+upper.argmax() = 0
+Tconstraint = 331.9255
+all predict_target = 
+[480.1765 480.1765 480.1765 ... 480.1765 480.1765 480.1765]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [9.11534832e-01 3.59618073e+00 3.02909838e+00 4.04304114e+00
+ 5.80372931e-01 1.18338713e+09 2.43288514e+01], predict_time = 480.1764999999999 , Tconstraint = 331.9255
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+-res.fun[0] = 11.123863622504814max_acq = 11.123863622504814
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -1032.695
+x_probe = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+ 5.00000000e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-480.1765]
+target = -1032.695
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (11, 7)
+before probe, target = (11,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.50637031 -0.98615324 -1.0419035  -0.38658854 -0.93611278 -1.15761483
+  -1.02615215]
+ [ 1.0207965  -0.07789646  0.14304204  0.9420062   0.93072833 -0.06990064
+   1.04278583]
+ [-0.51209629  0.31178614  0.66242321  0.41701026  0.27575251  0.79469544
+   0.94900187]
+ [ 0.90620801  1.5561841   1.60372373  0.18716261  1.30079998  0.50998505
+  -0.27698292]
+ [ 0.50225076 -0.27796347  0.38485468  1.16094503  0.1409008   0.90077139
+   1.30797788]
+ [-1.03115408  0.59733925  0.70840879 -0.68831296 -0.54708157  0.6573124
+  -0.28991481]
+ [ 0.30278728  1.62144901  0.69101792  0.56752278  0.59812122  1.0333709
+   0.19307986]
+ [-1.5066995  -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]
+ [-0.46080311  0.30691658  0.32886958 -0.02721436  0.35069762  0.94228017
+   0.48329104]
+ [ 0.91355036 -0.1076682  -0.12418792  1.28190681  1.15730315 -0.30251514
+   0.8229493 ]
+ [ 1.37153039 -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -448.982  -637.976 -1032.695]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.50637031 -0.98615324 -1.0419035  -0.38658854 -0.93611278 -1.15761483
+  -1.02615215]
+ [ 1.0207965  -0.07789646  0.14304204  0.9420062   0.93072833 -0.06990064
+   1.04278583]
+ [-0.51209629  0.31178614  0.66242321  0.41701026  0.27575251  0.79469544
+   0.94900187]
+ [ 0.90620801  1.5561841   1.60372373  0.18716261  1.30079998  0.50998505
+  -0.27698292]
+ [ 0.50225076 -0.27796347  0.38485468  1.16094503  0.1409008   0.90077139
+   1.30797788]
+ [-1.03115408  0.59733925  0.70840879 -0.68831296 -0.54708157  0.6573124
+  -0.28991481]
+ [ 0.30278728  1.62144901  0.69101792  0.56752278  0.59812122  1.0333709
+   0.19307986]
+ [-1.5066995  -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]
+ [-0.46080311  0.30691658  0.32886958 -0.02721436  0.35069762  0.94228017
+   0.48329104]
+ [ 0.91355036 -0.1076682  -0.12418792  1.28190681  1.15730315 -0.30251514
+   0.8229493 ]
+ [ 1.37153039 -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]]
+================= config16 =================
+2022年 02月 15日 星期二 02:19:28 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (95769) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (176077) - 没有那个进程
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.50637031 -0.98615324 -1.0419035  -0.38658854 -0.93611278 -1.15761483
+  -1.02615215]
+ [ 1.0207965  -0.07789646  0.14304204  0.9420062   0.93072833 -0.06990064
+   1.04278583]
+ [-0.51209629  0.31178614  0.66242321  0.41701026  0.27575251  0.79469544
+   0.94900187]
+ [ 0.90620801  1.5561841   1.60372373  0.18716261  1.30079998  0.50998505
+  -0.27698292]
+ [ 0.50225076 -0.27796347  0.38485468  1.16094503  0.1409008   0.90077139
+   1.30797788]
+ [-1.03115408  0.59733925  0.70840879 -0.68831296 -0.54708157  0.6573124
+  -0.28991481]
+ [ 0.30278728  1.62144901  0.69101792  0.56752278  0.59812122  1.0333709
+   0.19307986]
+ [-1.5066995  -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]
+ [-0.46080311  0.30691658  0.32886958 -0.02721436  0.35069762  0.94228017
+   0.48329104]
+ [ 0.91355036 -0.1076682  -0.12418792  1.28190681  1.15730315 -0.30251514
+   0.8229493 ]
+ [ 1.37153039 -1.47199684 -1.67812425 -1.72721891 -1.63555463 -1.65419237
+  -1.60301795]]
+upper = 
+[13.63473765 13.63473765 13.63473765 ... 13.63473765 13.63473765
+ 13.63473765]
+upper.argmax() = 0
+Tconstraint = 333.79499999999996
+all predict_target = 
+[530.40545455 530.40545455 530.40545455 ... 530.40545455 530.40545455
+ 530.40545455]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [2.16604791e-01 3.69796756e+00 3.58601442e+00 9.71872514e+00
+ 6.07035001e-01 1.39020688e+09 2.58393420e+01], predict_time = 530.4054545454545 , Tconstraint = 333.79499999999996
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+-res.fun[0] = 13.634737651254419max_acq = 13.634737651254419
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.341385292792406, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.7244168533882438, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -1042.573
+x_probe = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.341385292792406, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.7244168533882438, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+ 7.24416853e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-530.40545455]
+target = -1042.573
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (12, 7)
+before probe, target = (12,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+  7.24416853e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -448.982  -637.976 -1032.695 -1042.573]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+upper = 
+[13.83289069 13.83289069 13.83289069 ... 13.83289069 13.83289069
+ 13.83289069]
+upper.argmax() = 0
+Tconstraint = 335.6645
+all predict_target = 
+[573.08608333 573.08608333 573.08608333 ... 573.08608333 573.08608333
+ 573.08608333]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [6.20450059e-01 3.52249690e+00 6.97504539e+00 7.61609818e+00
+ 6.50325731e-01 1.18506886e+09 7.10991021e+01], predict_time = 573.0860833333332 , Tconstraint = 335.6645
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+probe说：以前见过你啦！params = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -996.556
+x_probe = {'spark.broadcast.compress': 0.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+ 5.00000000e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-573.08608333]
+target = -996.556
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (12, 7)
+before probe, target = (12,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+  7.24416853e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -448.982  -637.976 -1032.695 -1042.573]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+upper = 
+[13.83289069 13.83289069 13.83289069 ... 13.83289069 13.83289069
+ 13.83289069]
+upper.argmax() = 0
+Tconstraint = 335.6645
+all predict_target = 
+[573.08608333 573.08608333 573.08608333 ... 573.08608333 573.08608333
+ 573.08608333]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [5.50443958e-01 1.64215442e+00 6.93066711e+00 6.55813066e+00
+ 8.30019566e-01 1.19028636e+09 3.80451164e+01], predict_time = 573.0860833333332 , Tconstraint = 335.6645
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+probe说：以前见过你啦！params = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -1032.695
+x_probe = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.0, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+ 5.00000000e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-573.08608333]
+target = -1032.695
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (12, 7)
+before probe, target = (12,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+  7.24416853e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -448.982  -637.976 -1032.695 -1042.573]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+================= config17 =================
+2022年 02月 15日 星期二 02:37:00 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (106917) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (185896) - 没有那个进程
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.32252927 -0.89118789 -0.84791687 -0.22681312 -0.99909225 -0.96114786
+  -0.84605984]
+ [ 1.09796826  0.01332099  0.26590651  1.01505051  0.94424889  0.06404293
+   1.11507552]
+ [-0.3702226   0.40139557  0.75411367  0.52432648  0.26243326  0.87894077
+   1.0261782 ]
+ [ 0.98821644  1.64065855  1.63891595  0.30948336  1.32948546  0.61059595
+  -0.13592629]
+ [ 0.60130983 -0.18592045  0.49320521  1.21969694  0.12205555  0.97891932
+   1.36644966]
+ [-0.86737146  0.68577035  0.79733912 -0.50884087 -0.59411918  0.74945471
+  -0.14818436]
+ [ 0.41026552  1.70565414  0.78099208  0.66501349  0.59801211  1.10389681
+   0.30964373]
+ [-1.32284457 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-0.32109446  0.39654611  0.44058041  0.109101    0.3404495   1.01804212
+   0.58473337]
+ [ 0.99524887 -0.0163279   0.01471608  1.3327623   1.18010837 -0.15520054
+   0.90669363]
+ [ 1.43389801 -1.37502666 -1.44595072 -1.4799267  -1.72719605 -1.4291814
+  -1.39286787]
+ [-1.32284457 -0.99985616 -1.44595072 -1.4799267   0.27081039 -1.4291814
+  -1.39286787]]
+upper = 
+[13.83289069 13.83289069 13.83289069 ... 13.83289069 13.83289069
+ 13.83289069]
+upper.argmax() = 0
+Tconstraint = 335.6645
+all predict_target = 
+[573.08608333 573.08608333 573.08608333 ... 573.08608333 573.08608333
+ 573.08608333]
+upper.argmax() = 0, sortnumber[0] = 0
+x_max = [2.71019689e-01 1.94734882e+00 4.09090149e+00 4.27939791e+00
+ 6.16625216e-01 1.08284331e+09 5.64921999e+01], predict_time = 573.0860833333332 , Tconstraint = 335.6645
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+-res.fun[0] = 13.832890688360159max_acq = 13.832890688360159
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.118465631030584, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0} target = -1046.053
+x_probe = {'spark.broadcast.compress': 1.0, 'spark.executor.cores': 1.118465631030584, 'spark.executor.memory': 3.0, 'spark.locality.wait': 4.0, 'spark.memory.fraction': 0.5, 'spark.reducer.maxReqsInFlight': 1073741823.0, 'spark.reducer.maxSizeInFlight': 24.0}
+x = [1.00000000e+00 1.11846563e+00 3.00000000e+00 4.00000000e+00
+ 5.00000000e-01 1.07374182e+09 2.40000000e+01]
+predict_target = [-573.08608333]
+target = -1046.053
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (13, 7)
+before probe, target = (13,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+  7.24416853e-01 1.07374182e+09 2.40000000e+01]
+ [1.00000000e+00 1.11846563e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]]
+标准化后的train_x = 
+[[-1.38577081 -0.78258141 -0.71167496 -0.10877883 -0.81311974 -0.82362402
+  -0.71741659]
+ [ 0.95523049  0.1073156   0.3643276   1.08698424  1.01106922  0.16834146
+   1.18665741]
+ [-0.46474068  0.48912103  0.83595728  0.61447691  0.37105778  0.95682935
+   1.10034666]
+ [ 0.84908324  1.70836436  1.69071536  0.40760921  1.37268575  0.6971813
+  -0.02794515]
+ [ 0.47488378 -0.0887072   0.58390818  1.28403377  0.23928706  1.05356771
+   1.43071755]
+ [-0.94556171  0.76890189  0.87771497 -0.38033711 -0.43297682  0.83153979
+  -0.03984656]
+ [ 0.29011392  1.77230999  0.86192301  0.74994132  0.68606126  1.17449481
+   0.40466053]
+ [-1.38607575 -1.25860402 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]
+ [-0.41722605  0.48434992  0.53307031  0.21466546  0.44429061  1.09142257
+   0.67174614]
+ [ 0.85588471  0.07814567  0.12166656  1.3929019   1.23246743 -0.04379657
+   0.98433862]
+ [ 1.28012732 -1.25860402 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]
+ [-1.38607575 -0.88949421 -1.28940208 -1.31537422  0.37892128 -1.2764891
+  -1.24831466]
+ [ 1.28012732 -1.13051758 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -448.982  -637.976 -1032.695 -1042.573 -1046.053]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.38577081 -0.78258141 -0.71167496 -0.10877883 -0.81311974 -0.82362402
+  -0.71741659]
+ [ 0.95523049  0.1073156   0.3643276   1.08698424  1.01106922  0.16834146
+   1.18665741]
+ [-0.46474068  0.48912103  0.83595728  0.61447691  0.37105778  0.95682935
+   1.10034666]
+ [ 0.84908324  1.70836436  1.69071536  0.40760921  1.37268575  0.6971813
+  -0.02794515]
+ [ 0.47488378 -0.0887072   0.58390818  1.28403377  0.23928706  1.05356771
+   1.43071755]
+ [-0.94556171  0.76890189  0.87771497 -0.38033711 -0.43297682  0.83153979
+  -0.03984656]
+ [ 0.29011392  1.77230999  0.86192301  0.74994132  0.68606126  1.17449481
+   0.40466053]
+ [-1.38607575 -1.25860402 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]
+ [-0.41722605  0.48434992  0.53307031  0.21466546  0.44429061  1.09142257
+   0.67174614]
+ [ 0.85588471  0.07814567  0.12166656  1.3929019   1.23246743 -0.04379657
+   0.98433862]
+ [ 1.28012732 -1.25860402 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]
+ [-1.38607575 -0.88949421 -1.28940208 -1.31537422  0.37892128 -1.2764891
+  -1.24831466]
+ [ 1.28012732 -1.13051758 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]]
+================= config18 =================
+2022年 02月 15日 星期二 02:54:35 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (114479) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (192115) - 没有那个进程
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.38577081 -0.78258141 -0.71167496 -0.10877883 -0.81311974 -0.82362402
+  -0.71741659]
+ [ 0.95523049  0.1073156   0.3643276   1.08698424  1.01106922  0.16834146
+   1.18665741]
+ [-0.46474068  0.48912103  0.83595728  0.61447691  0.37105778  0.95682935
+   1.10034666]
+ [ 0.84908324  1.70836436  1.69071536  0.40760921  1.37268575  0.6971813
+  -0.02794515]
+ [ 0.47488378 -0.0887072   0.58390818  1.28403377  0.23928706  1.05356771
+   1.43071755]
+ [-0.94556171  0.76890189  0.87771497 -0.38033711 -0.43297682  0.83153979
+  -0.03984656]
+ [ 0.29011392  1.77230999  0.86192301  0.74994132  0.68606126  1.17449481
+   0.40466053]
+ [-1.38607575 -1.25860402 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]
+ [-0.41722605  0.48434992  0.53307031  0.21466546  0.44429061  1.09142257
+   0.67174614]
+ [ 0.85588471  0.07814567  0.12166656  1.3929019   1.23246743 -0.04379657
+   0.98433862]
+ [ 1.28012732 -1.25860402 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]
+ [-1.38607575 -0.88949421 -1.28940208 -1.31537422  0.37892128 -1.2764891
+  -1.24831466]
+ [ 1.28012732 -1.13051758 -1.28940208 -1.31537422 -1.49658128 -1.2764891
+  -1.24831466]]
+upper = 
+[13.23988526 13.15104451 13.12498454 ... 11.91325375 16.26100402
+ 14.52630799]
+upper.argmax() = 6661
+Tconstraint = 337.534
+all predict_target = 
+[607.05942579 607.95161563 606.78956505 ... 621.92885834 558.65719757
+ 593.32915122]
+upper.argmax() = 6661, sortnumber[0] = 6661
+x_max = [6.47756024e-01 2.45864730e+00 5.56748304e+00 8.14521188e+00
+ 8.22879827e-01 1.79500139e+09 6.55900172e+01], predict_time = 301.44387332381837 , Tconstraint = 337.534
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.6477560244943136, 'spark.executor.cores': 2.4586473046062896, 'spark.executor.memory': 5.5674830370462844, 'spark.locality.wait': 8.14521188296218, 'spark.memory.fraction': 0.8228798267313941, 'spark.reducer.maxReqsInFlight': 1795001393.9219985, 'spark.reducer.maxSizeInFlight': 65.59001716447767} target = -633.687
+x_probe = {'spark.broadcast.compress': 0.6477560244943136, 'spark.executor.cores': 2.4586473046062896, 'spark.executor.memory': 5.5674830370462844, 'spark.locality.wait': 8.14521188296218, 'spark.memory.fraction': 0.8228798267313941, 'spark.reducer.maxReqsInFlight': 1795001393.9219985, 'spark.reducer.maxSizeInFlight': 65.59001716447767}
+x = [6.47756024e-01 2.45864730e+00 5.56748304e+00 8.14521188e+00
+ 8.22879827e-01 1.79500139e+09 6.55900172e+01]
+predict_target = [-609.46815385]
+target = -633.687
+key = 
+['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+bounds = 
+[[0.00000000e+00 1.00000000e+00]
+ [1.00000000e+00 4.00000000e+00]
+ [3.00000000e+00 7.00000000e+00]
+ [4.00000000e+00 1.00000000e+01]
+ [5.00000000e-01 9.00000000e-01]
+ [1.07374182e+09 2.14748365e+09]
+ [2.40000000e+01 7.20000000e+01]]
+before probe, param.shape = (14, 7)
+before probe, target = (14,)
+标准化前的train_x = 
+[[1.14374817e-04 1.44026767e+00 3.74504085e+00 6.51516709e+00
+  5.81780900e-01 1.22448115e+09 3.35088715e+01]
+ [8.78142503e-01 2.26332288e+00 5.13266114e+00 9.00775403e+00
+  8.00057726e-01 1.55466383e+09 6.76125841e+01]
+ [3.45560727e-01 2.61645020e+00 5.74087800e+00 8.02280506e+00
+  7.23475931e-01 1.81711757e+09 6.60666793e+01]
+ [8.38330363e-01 3.74411391e+00 6.84317989e+00 7.59158610e+00
+  8.43327646e-01 1.73069189e+09 4.58579377e+01]
+ [6.97981168e-01 2.08202371e+00 5.41583376e+00 9.41850689e+00
+  7.07708653e-01 1.84931761e+09 7.19839252e+01]
+ [1.65221489e-01 2.87521620e+00 5.79472902e+00 5.94909957e+00
+  6.27267630e-01 1.77541406e+09 4.56447726e+01]
+ [6.28680421e-01 3.80325647e+00 5.77436359e+00 8.30518277e+00
+  7.61168277e-01 1.88956905e+09 5.36063024e+01]
+ [0.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [3.63381811e-01 2.61203745e+00 5.35027289e+00 7.18939180e+00
+  7.32238745e-01 1.86191787e+09 5.83900507e+01]
+ [8.40881358e-01 2.23634395e+00 4.81972379e+00 9.64544422e+00
+  8.26549554e-01 1.48405220e+09 6.39888690e+01]
+ [1.00000000e+00 1.00000000e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [0.00000000e+00 1.34138529e+00 3.00000000e+00 4.00000000e+00
+  7.24416853e-01 1.07374182e+09 2.40000000e+01]
+ [1.00000000e+00 1.11846563e+00 3.00000000e+00 4.00000000e+00
+  5.00000000e-01 1.07374182e+09 2.40000000e+01]
+ [6.47756024e-01 2.45864730e+00 5.56748304e+00 8.14521188e+00
+  8.22879827e-01 1.79500139e+09 6.55900172e+01]]
+标准化后的train_x = 
+[[-1.45731833 -0.8327206  -0.7770008  -0.16021345 -0.88820567 -0.89570326
+  -0.7921184 ]
+ [ 0.96202858  0.08744144  0.32049771  1.06107862  0.91415535  0.10574362
+   1.10717582]
+ [-0.50546435  0.48223192  0.80154941  0.57848347  0.28180218  0.90176803
+   1.02108173]
+ [ 0.85232893  1.74294122  1.6733835   0.36719925  1.27144484  0.63963821
+  -0.10437773]
+ [ 0.46560625 -0.11524801  0.54446498  1.26233508  0.1516082   0.99943103
+   1.35062329]
+ [-1.00237688  0.77152801  0.84414133 -0.43756938 -0.51261147  0.77528092
+  -0.11624927]
+ [ 0.27465275  1.80906161  0.82803387  0.71684     0.59303638  1.12151398
+   0.32714198]
+ [-1.45763348 -1.32493255 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [-0.45635956  0.47729854  0.49261149  0.17013623  0.35415871  1.03764772
+   0.59355712]
+ [ 0.85935802  0.05727945  0.07298889  1.37352749  1.13290435 -0.10842207
+   0.9053649 ]
+ [ 1.29779864 -1.32493255 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [-1.45763348 -0.94326946 -1.3662695  -1.39256911  0.28957159 -1.35289691
+  -1.32168376]
+ [ 1.29779864 -1.19248994 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [ 0.32721428  0.30581091  0.66440763  0.63845911  1.10260258  0.83468947
+   0.99453559]]
+train_y = 
+[ -521.717  -225.213  -202.772  -330.056  -573.195  -527.764  -337.534
+  -996.556  -448.982  -637.976 -1032.695 -1042.573 -1046.053  -633.687]
+测试：每一列进行标准化，标准化后的train_x = 
+[[-1.45731833 -0.8327206  -0.7770008  -0.16021345 -0.88820567 -0.89570326
+  -0.7921184 ]
+ [ 0.96202858  0.08744144  0.32049771  1.06107862  0.91415535  0.10574362
+   1.10717582]
+ [-0.50546435  0.48223192  0.80154941  0.57848347  0.28180218  0.90176803
+   1.02108173]
+ [ 0.85232893  1.74294122  1.6733835   0.36719925  1.27144484  0.63963821
+  -0.10437773]
+ [ 0.46560625 -0.11524801  0.54446498  1.26233508  0.1516082   0.99943103
+   1.35062329]
+ [-1.00237688  0.77152801  0.84414133 -0.43756938 -0.51261147  0.77528092
+  -0.11624927]
+ [ 0.27465275  1.80906161  0.82803387  0.71684     0.59303638  1.12151398
+   0.32714198]
+ [-1.45763348 -1.32493255 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [-0.45635956  0.47729854  0.49261149  0.17013623  0.35415871  1.03764772
+   0.59355712]
+ [ 0.85935802  0.05727945  0.07298889  1.37352749  1.13290435 -0.10842207
+   0.9053649 ]
+ [ 1.29779864 -1.32493255 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [-1.45763348 -0.94326946 -1.3662695  -1.39256911  0.28957159 -1.35289691
+  -1.32168376]
+ [ 1.29779864 -1.19248994 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [ 0.32721428  0.30581091  0.66440763  0.63845911  1.10260258  0.83468947
+   0.99453559]]
+================= config19 =================
+2022年 02月 15日 星期二 03:05:17 CST
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:848: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+/usr/local/home/python3/python3/lib/python3.8/subprocess.py:853: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stderr = io.open(errread, 'rb', bufsize)
+cmd
+
+end before line
+finish
+-------------------stop k8s-node02 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (120397) - 没有那个进程
+-------------------stop k8s-node03 --------------
+kill: 用法:kill [-s 信号声明 | -n 信号编号 | -信号声明] 进程号 | 任务声明 ... 或 kill -l [信号声明]
+/usr/local/home/zwr/stop.sh: 第 3 行:kill: (197447) - 没有那个进程
+标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 
+[[-1.45731833 -0.8327206  -0.7770008  -0.16021345 -0.88820567 -0.89570326
+  -0.7921184 ]
+ [ 0.96202858  0.08744144  0.32049771  1.06107862  0.91415535  0.10574362
+   1.10717582]
+ [-0.50546435  0.48223192  0.80154941  0.57848347  0.28180218  0.90176803
+   1.02108173]
+ [ 0.85232893  1.74294122  1.6733835   0.36719925  1.27144484  0.63963821
+  -0.10437773]
+ [ 0.46560625 -0.11524801  0.54446498  1.26233508  0.1516082   0.99943103
+   1.35062329]
+ [-1.00237688  0.77152801  0.84414133 -0.43756938 -0.51261147  0.77528092
+  -0.11624927]
+ [ 0.27465275  1.80906161  0.82803387  0.71684     0.59303638  1.12151398
+   0.32714198]
+ [-1.45763348 -1.32493255 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [-0.45635956  0.47729854  0.49261149  0.17013623  0.35415871  1.03764772
+   0.59355712]
+ [ 0.85935802  0.05727945  0.07298889  1.37352749  1.13290435 -0.10842207
+   0.9053649 ]
+ [ 1.29779864 -1.32493255 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [-1.45763348 -0.94326946 -1.3662695  -1.39256911  0.28957159 -1.35289691
+  -1.32168376]
+ [ 1.29779864 -1.19248994 -1.3662695  -1.39256911 -1.56348902 -1.35289691
+  -1.32168376]
+ [ 0.32721428  0.30581091  0.66440763  0.63845911  1.10260258  0.83468947
+   0.99453559]]
+upper = 
+[12.02820008 11.1531783  11.25728809 ... 10.97220792 11.1246458
+ 11.08929362]
+upper.argmax() = 937
+Tconstraint = 365.396
+all predict_target = 
+[591.7004688  610.83038815 609.6372602  ... 613.05309865 611.26341884
+ 611.68965155]
+upper.argmax() = 937, sortnumber[0] = 937
+x_max = [3.06493575e-01 2.90824036e+00 5.93907444e+00 7.32457202e+00
+ 6.93195885e-01 1.97619295e+09 6.63279177e+01], predict_time = 387.26992207357455 , Tconstraint = 365.396
+probe说：没见过！帮你计算target！params = {'spark.broadcast.compress': 0.3064935753579936, 'spark.executor.cores': 2.9082403582441465, 'spark.executor.memory': 5.939074439845335, 'spark.locality.wait': 7.3245720214794146, 'spark.memory.fraction': 0.6931958854108572, 'spark.reducer.maxReqsInFlight': 1976192947.490359, 'spark.reducer.maxSizeInFlight': 66.32791766278615} target = -555.451
+x_probe = {'spark.broadcast.compress': 0.3064935753579936, 'spark.executor.cores': 2.9082403582441465, 'spark.executor.memory': 5.939074439845335, 'spark.locality.wait': 7.3245720214794146, 'spark.memory.fraction': 0.6931958854108572, 'spark.reducer.maxReqsInFlight': 1976192947.490359, 'spark.reducer.maxSizeInFlight': 66.32791766278615}
+x = [3.06493575e-01 2.90824036e+00 5.93907444e+00 7.32457202e+00
+ 6.93195885e-01 1.97619295e+09 6.63279177e+01]
+predict_target = [-611.19807143]
+target = -555.451
+5459s
+{'maxIndex': 3, 'target': -202.772, 'params': {'spark.broadcast.compress': 0.34556072704304774, 'spark.executor.cores': 2.616450202010071, 'spark.executor.memory': 5.740878001587038, 'spark.locality.wait': 8.022805061070414, 'spark.memory.fraction': 0.7234759313783007, 'spark.reducer.maxReqsInFlight': 1817117571.1452203, 'spark.reducer.maxSizeInFlight': 66.06667931020984}}
+重要参数列表 : ['spark.broadcast.compress', 'spark.executor.cores', 'spark.executor.memory', 'spark.locality.wait', 'spark.memory.fraction', 'spark.reducer.maxReqsInFlight', 'spark.reducer.maxSizeInFlight']
+target.shape = (17,)
+data.shape = (17,)
+name = spark.broadcast.compress pearsonr [-0.24934190420032434, 0.33448642172527726] , score = 0.24934190420032434
+name = spark.executor.cores pearsonr [-0.8080902473443318, 8.68629859486978e-05] , score = 0.8080902473443318
+name = spark.executor.memory pearsonr [-0.8716888905980686, 5.155445734936245e-06] , score = 0.8716888905980686
+name = spark.locality.wait pearsonr [-0.8319797343788387, 3.450615319277411e-05] , score = 0.8319797343788387
+name = spark.memory.fraction pearsonr [-0.5273418928408944, 0.029604869624948522] , score = 0.5273418928408944
+name = spark.reducer.maxReqsInFlight pearsonr [-0.8214497677117476, 5.2697350645046914e-05] , score = 0.8214497677117476
+name = spark.reducer.maxSizeInFlight pearsonr [-0.796495003535111, 0.00013008630203949475] , score = 0.796495003535111
+{'spark.broadcast.compress': 0.24934190420032434, 'spark.executor.cores': 0.8080902473443318, 'spark.executor.memory': 0.8716888905980686, 'spark.locality.wait': 0.8319797343788387, 'spark.memory.fraction': 0.5273418928408944, 'spark.reducer.maxReqsInFlight': 0.8214497677117476, 'spark.reducer.maxSizeInFlight': 0.796495003535111}
+[('spark.executor.memory', 0.8716888905980686), ('spark.locality.wait', 0.8319797343788387), ('spark.reducer.maxReqsInFlight', 0.8214497677117476), ('spark.executor.cores', 0.8080902473443318), ('spark.reducer.maxSizeInFlight', 0.796495003535111), ('spark.memory.fraction', 0.5273418928408944), ('spark.broadcast.compress', 0.24934190420032434)]
+前 -3 个重要参数名称 = ['spark.executor.memory', 'spark.locality.wait', 'spark.reducer.maxReqsInFlight', 'spark.executor.cores']
+第 4 次迭代的结果样本为
+     runtime  ...  spark.reducer.maxSizeInFlight
+1    521.717  ...                      33.508871
+2    225.213  ...                      67.612584
+3    202.772  ...                      66.066679
+4    330.056  ...                      45.857938
+5    573.195  ...                      71.983925
+6    527.764  ...                      45.644773
+7    337.534  ...                      53.606302
+8    996.556  ...                      24.000000
+9    448.982  ...                      58.390051
+10   637.976  ...                      63.988869
+11  1032.695  ...                      24.000000
+12  1042.573  ...                      24.000000
+13  1042.573  ...                      24.000000
+14  1042.573  ...                      24.000000
+15  1046.053  ...                      24.000000
+16   633.687  ...                      65.590017
+17   555.451  ...                      66.327918
+
+[17 rows x 8 columns]
+=============== finish wordcount-100G ===============
+2022年 02月 15日 星期二 03:14:42 CST
+=============== finish wordcount-100G ===============

@@ -15,6 +15,12 @@ args = parser.parse_args()
 from sklearn.gaussian_process.kernels import Matern
 from sklearn.gaussian_process import GaussianProcessRegressor
 
+# 标准化
+def standardization(data):
+    mu = np.mean(data, axis=0)
+    sigma = np.std(data, axis=0)
+    return (data - mu) / sigma
+
 # 获取当前文件路径
 current_path = os.path.abspath(__file__)
 # 获取当前文件的父目录,比如/usr/local/home/yyq/bo/rs_bo/rs_bo_newEI
@@ -142,7 +148,32 @@ class BayesianOptimization(Observable):
         # we don't really need to see them here.
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
-            self._gp.fit(self._space.params, self._space.target)
+            # self._gp.fit(self._space.params, self._space.target)
+            # ---------------------- 新增：参数标准化后建立GP模型 start -----------------------
+            train_X_temp = standardization(np.array(self._space.params))
+            train_y_temp = np.array(self._space.target)
+            print('标准化前的train_x = \n' + str(np.array(self._space.params)))
+            print('标准化后的train_x = \n' + str(train_X_temp))
+
+            result_X = np.zeros(shape=(train_X_temp.shape[0],train_X_temp.shape[1]))
+            # 对每一列进行标准化
+            for col in range(train_X_temp.shape[1]):
+                result_X[:,col] = standardization(train_X_temp[:,col])
+            print('测试：每一列进行标准化，标准化后的train_x = \n' + str(result_X))
+
+            train_X_temp[np.isnan(train_X_temp)] = 0
+            print('标准化时如果存在分母（sigma）为0的情况，返回nan。此时将所有nan替换为0 \n' + str(train_X_temp))
+
+            print('train_y = \n' + str(np.array(self._space.target)))
+            y_df = pd.DataFrame(train_y_temp)
+            x_df = pd.DataFrame(train_X_temp)
+            print('train_X_temp info:')
+            print(x_df.info())
+            print('train_y_temp info:')
+            print(y_df.info())
+            self._gp.fit(train_X_temp, train_y_temp)
+
+            # ---------------------- 新增：参数标准化后建立GP模型 end -----------------------
 
         # Finding argmax of the acquisition function.
         suggestion = acq_max(
@@ -204,7 +235,7 @@ class BayesianOptimization(Observable):
                                kappa_decay=kappa_decay,
                                kappa_decay_delay=kappa_decay_delay)
 
-        self.Max_time = -2813
+        self.Max_time = -100000
 
         print('self._space.keys = ' + str(self._space.keys))
         params_list = []
@@ -237,7 +268,7 @@ class BayesianOptimization(Observable):
         bestconfig = m.iloc[:1, :-1]
 
 
-        self.getBestSample_trainGAN(bestconfig, params_list, m, 2)
+        self.getBestSample_trainGAN(bestconfig, params_list, m, args.gan_initpoints)
 
 
         iteration = 0
@@ -312,7 +343,7 @@ class BayesianOptimization(Observable):
                 m = m.append(n, ignore_index=True)
                 print(m)
             except KeyError:
-                print('执行时间超过' + str(-self.Max_time) + ' s，需要使用gan生成一个样本 \t')
+                print('getBestSample_trainGAN:执行时间超过' + str(-self.Max_time) + ' s，需要使用gan生成一个样本 \t')
         dataset = dataset.append(m, ignore_index=True)
         dataset.to_csv(father_path + '/dataset/dataset_' + str(num) + '_' + str(time.time()) +'.csv')
         print('初始样本点个数：' + str(dataset.shape[0]))

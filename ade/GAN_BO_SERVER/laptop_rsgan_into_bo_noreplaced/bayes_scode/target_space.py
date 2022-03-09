@@ -197,19 +197,8 @@ class TargetSpace(object):
             params = dict(zip(self._keys, x))
             target = self.target_func(**params)
             print('probe说：没见过！帮你计算target！params = ' + str(params) + ' target = ' + str(target))
-<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/target_space.py
             self.register(x, target)
         return target
-=======
-            Max_time = -2813
-            if target < Max_time:
-                print('执行时间超过' + str(-Max_time) + ' s，杀死该配置，不register该样本 \t' + str(params), file=f)
-                return False
-            else :
-                self.register(x, target)
-                return True
-        # return target
->>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/target_space.py
 
     def random_sample(self):
         """

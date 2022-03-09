@@ -45,13 +45,13 @@ hibench.streambench.spark.useDirectMode true
 
 
 # Random configuration
- spark.default.parallelism	302
- spark.executor.cores	3
- spark.executor.instances	7
- spark.executor.memory	4g
- spark.executor.memoryOverhead	610m
- spark.memory.fraction	0.72
- spark.memory.storageFraction	0.67
- spark.reducer.maxBlocksInFlightPerAddress	1813591040
- spark.reducer.maxSizeInFlight	38m
- spark.shuffle.file.buffer	38k
+ spark.default.parallelism	388
+ spark.executor.cores	2
+ spark.executor.instances	6
+ spark.executor.memory	6g
+ spark.executor.memoryOverhead	766m
+ spark.memory.fraction	0.83
+ spark.memory.storageFraction	0.65
+ spark.reducer.maxBlocksInFlightPerAddress	1594872960
+ spark.reducer.maxSizeInFlight	36m
+ spark.shuffle.file.buffer	40k

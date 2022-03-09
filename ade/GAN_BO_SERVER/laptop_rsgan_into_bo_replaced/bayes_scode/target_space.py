@@ -198,8 +198,8 @@ class TargetSpace(object):
             target = self.target_func(**params)
             print('probe说：没见过！帮你计算target！params = ' + str(params) + ' target = ' + str(target))
             self.register(x, target)
-            Max_time = -2813
-            if int(target) < Max_time:
+            Max_time = -100000
+            if int(target) == Max_time:
                 print('执行时间超过' + str(-Max_time) + ' s，需要使用gan生成一个样本 \t' + str(params), file=f)
                 return False
             else :

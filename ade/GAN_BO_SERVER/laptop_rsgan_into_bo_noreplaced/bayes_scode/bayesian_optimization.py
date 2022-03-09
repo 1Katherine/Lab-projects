@@ -203,10 +203,7 @@ class BayesianOptimization(Observable):
                                kappa_decay=kappa_decay,
                                kappa_decay_delay=kappa_decay_delay)
 
-<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/bayesian_optimization.py
-=======
         self.Max_time = -2813
->>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/bayesian_optimization.py
 
         print('self._space.keys = ' + str(self._space.keys))
         params_list = []
@@ -236,10 +233,6 @@ class BayesianOptimization(Observable):
 
         # 取随机样本中的最优样本 并训练GAN
         m = m.sort_values('runtime', ascending=False).reset_index(drop=True)
-<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/bayesian_optimization.py
-=======
-        # m = m.sort_values('runtime').reset_index(drop=True)
->>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/bayesian_optimization.py
         bestconfig = m.iloc[:1, :-1]
 
 
@@ -293,46 +286,24 @@ class BayesianOptimization(Observable):
         # 从GAN中选出第一个样本，并运行，保存在df m中
         for i in range(num):
             config = generate_data.iloc[i].tolist()
+            print('generate_data.iloc[i] = ' + str(generate_data.iloc[i]))
+            print('gan选出的config ' + str(config))
             # --------- 判断是否越界 ------------
-            print('参数和范围为\n' + str(self._space.keys) + "\n" + str(self._space.bounds))
-            for i, bound in enumerate(self._space.bounds):
-                print('conf为:' + str(self._space.keys[i]) + ' 范围为 = ' + str(bound))
-                if config[i] < bound[0]:
-                    print(str(self._space.keys[i]) + "越界, 原值为 " + str(config[i]))
-                    config[i] = bound[0]
-                    print('越界处理后的值为 ' + str(config[i]))
-                if config[i] > bound[1]:
-                    print(str(self._space.keys[i]) + "越界, 原值为 " + str(config[i]))
-                    config[i] = bound[1]
-                    print('越界处理后的值为 ' + str(config[i]))
+            # print('参数和范围为\n' + str(self._space.keys))
+            # for i, bound in enumerate(self._space.bounds):
+            #     print('spark.shuffle.file.buffer')
+            #     print(generate_data.iloc[i]['spark.shuffle.file.buffer'])
+            #     print('conf为:' + str(self._space.keys[i]) + ' 范围为 = ' + str(bound) + " , 原值为 " + str(generate_data.iloc[i][self._space.keys[i]]))
+                # if config[i] < bound[0]:
+                #     print(str(self._space.keys[i]) + "越界, 原值为 " + str(generate_data[i][self._space.keys[i]]))
+                #     config[i] = bound[0]
+                #     print('越界处理后的值为 ' + str(config[i]))
+                # if config[i] > bound[1]:
+                #     print(str(self._space.keys[i]) + "越界, 原值为 " + str(config[i]))
+                #     config[i] = bound[1]
+                #     print('越界处理后的值为 ' + str(config[i]))
             # --------- 判断是否越界 ------------
             self.probe(config, lazy=False)
-            # 获取该样本的执行时间
-<<<<<<< HEAD:ade/GAN_BO_SERVER/laptop_rsgan_into_bo_noreplaced/bayes_scode/bayesian_optimization.py
-            x = self._space._as_array(config)
-            target = self._space._cache[_hashable(x)]
-            config.append(target)
-            print('GAN采样：config\n' + str(config))
-            n = pd.DataFrame(data=[config], columns=params_list)
-            print('GAN采样：存储当前样本的df\n' + str(n))
-            print(n)
-            m = m.append(n, ignore_index=True)
-            print(m)
-
-=======
-            try:
-                x = self._space._as_array(config)
-                target = self._space._cache[_hashable(x)]
-                config.append(target)
-                print('GAN采样：config\n' + str(config))
-                n = pd.DataFrame(data=[config], columns=params_list)
-                print('GAN采样：存储当前样本的df\n' + str(n))
-                print(n)
-                m = m.append(n, ignore_index=True)
-                print(m)
-            except KeyError:
-                print('GAN采样：执行时间超过' + str(-self.Max_time) + ' s，杀死该配置，不register该样本 \t')
->>>>>>> 6a0d6a87887e7ac344b4d2b4c131e9cc78a35820:ade/GAN_BO_SERVER/laptop_rsgan_into_bo/bayes_scode/bayesian_optimization.py
         dataset = dataset.append(m, ignore_index=True)
         dataset.to_csv(father_path + '/dataset/dataset_' + str(num) + '_' + str(time.time()) +'.csv')
         print('初始样本点个数：' + str(dataset.shape[0]))
